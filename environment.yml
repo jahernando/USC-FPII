@@ -1,4 +1,4 @@
-name: USC-MIII
+name: USC-FPII
 channels:
   - conda-forge
 dependencies:
