@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro.md
+chapters:
+- file: nu_index.ipynb
+- file: nu_sm.ipynb
+- file: nu_oscillations.ipynb
+- file: nu_majorana.ipynb
