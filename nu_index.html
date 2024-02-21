@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The misteries of the neutrinos &#8212; Neutrinos - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Neutrinos and the construction of the Standard Model" href="nu_sm.html" />
+    <link rel="prev" title="Neutrinos - USC" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Neutrinos - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   The misteries of the neutrinos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_sm.html">
+   Neutrinos and the construction of the Standard Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_oscillations.html">
+   Neutrinos Oscillations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_majorana.html">
+   Are neutrinos Majorana particles?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_index.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_index.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_index.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/nu_index.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrinos-in-nature">
+     Neutrinos in Nature
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-dirac-neutrinos">
+     About Dirac neutrinos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-majorana-neutrinos">
+     About Majorana neutrinos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-urgent-questions">
+     Some urgent questions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>The misteries of the neutrinos</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrinos-in-nature">
+     Neutrinos in Nature
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-dirac-neutrinos">
+     About Dirac neutrinos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-majorana-neutrinos">
+     About Majorana neutrinos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-urgent-questions">
+     Some urgent questions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="the-misteries-of-the-neutrinos">
+<h1>The misteries of the neutrinos<a class="headerlink" href="#the-misteries-of-the-neutrinos" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Jan 30 17:18:48 2023
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>About</em></p>
+<p>These lectures are about some aspects of Neutrino Physics.</p>
+<p>They cover the relevance of the neutrino in the construction of the Standard Model, neutrino oscillations and double-beta decay searches.</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Neutrinos</p>
+<ul class="simple">
+<li><p>are the closest thing to nothing we have discovered.</p></li>
+<li><p>played an important role on the construction of the Standard Model (SM)</p></li>
+<li><p>have provided the <strong>only evidence of Physics Beyond the SM</strong> (BSM)</p></li>
+<li><p>are unique, neutrinos are the only fundamental fermion that can be their own antiparticle.</p></li>
+</ul>
+<p>Two mayor discoveries and on one confirmation in the last decades:</p>
+<ul class="simple">
+<li><p>Higgs discovery (<a class="reference external" href="https://arxiv.org/abs/1207.7214">ATLAS</a>, <a class="reference external" href="https://arxiv.org/abs/1207.7235">CMS</a>) <a class="reference external" href="http://pdg.lbl.gov/2012/reviews/rpp2012-rev-higgs-boson.pdf">pdg-review</a></p></li>
+<li><p>Confirmation of the Cabibbo-Kobayashi-Maskawa Unitary Matrix (BaBar, Belle, LHCb, …), <a class="reference external" href="http://pdg.lbl.gov/2022/reviews/rpp2022-rev-ckm-matrix.pdf">pdg-review</a></p></li>
+<li><p>Discovery of the neutrino oscillations (<a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">Super-Kamiokande</a>, <a class="reference external" href="https://arxiv.org/abs/1109.0763">SNO+</a>) <a class="reference external" href="http://pdg.lbl.gov/2022/reviews/rpp2022-rev-neutrino-mixing.pdf">pdg-review</a></p></li>
+</ul>
+<p>Neutrino oscillation simplified summary:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nu_oscillation_dm2_tan2theta.png"><img alt="_images/nu_oscillation_dm2_tan2theta.png" src="_images/nu_oscillation_dm2_tan2theta.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Fermions in the SM:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="_images/teo_su3_su2l_u1y_fermions.png" src="_images/teo_su3_su2l_u1y_fermions.png" /></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Leptons in the SM:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+L_e= \begin{pmatrix} \nu_{eL} \\ e_L \end{pmatrix}, \, 
+L_\mu = \begin{pmatrix} \nu_{\mu L} \\ \mu_L  \end{pmatrix}, \,
+L_\tau = \begin{pmatrix} \nu_{\tau L} \\ \tau_L  \end{pmatrix}; \;
+e_R, \mu_R, \tau_R 
+\end{split}\]</div>
+<p>Neutrinos in the SM:</p>
+<ul class="simple">
+<li><p>they only interact weakly!</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[s = 1/2, \, m = 0, \; q = 0, \;T_3 = 1/2, \; Y = -1/2\]</div>
+<ul class="simple">
+<li><p>they are <span class="math notranslate nohighlight">\(\nu_L\)</span>, left-chirality neutrinos, and <span class="math notranslate nohighlight">\(\bar{\nu}_R\)</span>, right-chirality anti-neutrinos.</p></li>
+<li><p>neutrinos are massless! There is no <span class="math notranslate nohighlight">\(\nu_R\)</span> to intriduce the mass in the legrangian:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[-\mathcal{L}_{Dirac} = - m \, \bar{\nu} \nu = - m (\bar{\nu_L}  \nu_R + \bar{\nu_R} \nu_L)\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nu_cc_nc_feynman_rules.png"><img alt="_images/nu_cc_nc_feynman_rules.png" src="_images/nu_cc_nc_feynman_rules.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Neutrino interacts only via this interactions lagrangian, CC (<span class="math notranslate nohighlight">\(W^\pm\)</span>) or NC (<span class="math notranslate nohighlight">\(Z\)</span>), :</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_{CC} = - \frac{g}{\sqrt{2}} \sum_{\alpha = e, \mu, \tau} \bar{\nu}_{\alpha L} \gamma^\mu l_{\alpha L} W_\mu + \mathrm{h.c.}, \;\;\;
+\mathcal{L}_{NC} = - \frac{g}{2 \cos \theta_W} \bar{\nu}_{\alpha L} \gamma^\mu \nu_{\alpha L} Z_\mu
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(g\)</span> is the weak constant and <span class="math notranslate nohighlight">\(\theta_W\)</span> the Weiberg angle.</p>
+<p>The V-A structure is explicit in the interaction lagrangian.</p>
+<ul class="simple">
+<li><p>The lepton Number in the SM is (accidently) preserved.</p></li>
+<li><p>Futhermore, Flavour Lepton Number is also accidentally preserved: electronic, muonic and tauonic.</p></li>
+</ul>
+<div class="section" id="neutrinos-in-nature">
+<h3>Neutrinos in Nature<a class="headerlink" href="#neutrinos-in-nature" title="Permalink to this heading">#</a></h3>
+<p>Neutrinos in Nature:</p>
+<ul class="simple">
+<li><p>they have no color, no electric charge, and a tiny mass!</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[s = 1/2, \, m \le \mathcal{O}(eV), \; q = 0; \; T_3 = 1/2, \; Y = -1/2\]</div>
+<ul class="simple">
+<li><p>the <span class="math notranslate nohighlight">\(\nu_L\)</span>, left-chirality, are called ‘neutrinos’ and <span class="math notranslate nohighlight">\(\bar{\nu}_R\)</span>, right-chirality, ‘antineutrinos’</p></li>
+<li><p>there are three light neutrino flavours, <span class="math notranslate nohighlight">\(\nu_e, \nu_\mu, \, \nu_\tau\)</span>.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Neutrinos oscillates between different flavours.</p></li>
+<li><p>Neutrinos do no preserve flavour leptonic number, and may preserve leptonic number</p></li>
+<li><p>There is a mixing neutrino matrix, <span class="math notranslate nohighlight">\(U_{PMNS}\)</span>, Pontecorbo-Maki-Nakagawa-Sakata, with three angles and one CP phase (if neutrinos are Dirac).</p></li>
+<li><p>Their masses are unknown. But there values are very small compared with the rest of the leptons <span class="math notranslate nohighlight">\(m_\nu \ll m_e\)</span>.</p></li>
+<li><p>We need to complete the SM to include neutrinos masses: either Dirac (extended SM) or Majorana (BSM).</p></li>
+</ul>
+</div>
+<div class="section" id="about-dirac-neutrinos">
+<h3>About Dirac neutrinos<a class="headerlink" href="#about-dirac-neutrinos" title="Permalink to this heading">#</a></h3>
+<p>A Dirac spinor fulfills the Dirac equation and it can be decomposed into left and right chirality parts:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi =\Psi_L + \Psi_R 
+\]</div>
+<p>And the parity transformation reverts them:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}: \;\; \Psi_L \leftrightarrow \Psi_R
+\]</div>
+<p>Therefore, a parity conserving theory introduces both in equal footing.</p>
+<p>In the chiral representation, a Dirac spinor is composed of two Weyl spinors <span class="math notranslate nohighlight">\(\psi_L, \psi_R\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}
+\end{split}\]</div>
+<p>They admit a phase redefinition, without physical consequences</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi' = e^{i\theta} \Psi
+\]</div>
+<p>This global simmetry is associated to a conserved charge, electric charge, lepton number, etc.</p>
+<p>A mass term in the lagrangian has the form:</p>
+<div class="math notranslate nohighlight">
+\[
+ - m \bar{\Psi} \Psi  =  - m \left(\bar{\Psi}_L \Psi_R + \bar{\Psi}_R \Psi_L \right)
+\]</div>
+<p>As the left-chiral fields are in a duplet of <span class="math notranslate nohighlight">\(SU(2)_L\)</span>, in order to preserve the original gauge invariant, we introduce an interaction with the Higgs doublet.</p>
+<p>Let’s consider first one family, for charged leptons, the mass term</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_e \bar{L}_e \Phi \, e_R + \mathrm{h.c.}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\lambda_e\)</span> is an adimensional constant, the electron Yukawa coupling.</p>
+<p>And</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+L_e = \begin{pmatrix} \nu_{eL} \\ e_L \end{pmatrix}, \; 
+\Phi = \begin{pmatrix} \phi^+ \\ \Phi^0 \end{pmatrix}
+\end{split}\]</div>
+<p>After spontaneous symmetry breaking (SSB), in the unitary gauge:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\langle \Phi \rangle = \begin{pmatrix} 0 \\ \frac{v}{\sqrt{2}}\end{pmatrix}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v\)</span> is the Higgs expectation value.</p>
+<p>We get:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\lambda_e v}{\sqrt{2}} ( \bar{e}_L e_R + \bar{e}_R e_L ) = m_e \, \bar{e} e
+\]</div>
+<p>where:</p>
+<div class="math notranslate nohighlight">
+\[
+m_e = \lambda_e \frac{v}{\sqrt{2}}
+\]</div>
+<p>We can generate a mass for a Dirac neutrino, using the Higgs charge conjugate, in the unitary gauge:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\tilde{\Phi} = i \sigma^2 \Phi^* \rightarrow
+\langle \tilde{\Phi} \rangle = \begin{pmatrix} \frac{v}{\sqrt{2}}  \\ 0 
+\end{pmatrix}
+\end{split}\]</div>
+<p>The possible mass terms of the lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\nu} \bar{L}_e \tilde{\Phi} \nu_{eR} + h.c.
+\]</div>
+<p>that will result on a mass term:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_\nu \frac{v}{\sqrt{2}} (\bar{\nu_L} \nu_R + \bar{\nu_R} \nu_L) = m_\nu \, \bar{\nu}_e \nu_e
+\]</div>
+</div>
+<div class="section" id="about-majorana-neutrinos">
+<h3>About Majorana neutrinos<a class="headerlink" href="#about-majorana-neutrinos" title="Permalink to this heading">#</a></h3>
+<p>A Majorana spinor is a solution of the Dirac equation.</p>
+<p>In nature all fermions are Dirac. The only one that can be Majorana is the neutrino.</p>
+<p>A Majorana spinor is its own charge conjugate:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_M = \Psi + \Psi^c
+\]</div>
+<p>Where, the charge conjugation operation <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^c = -i \gamma^2 \Psi^*
+\]</div>
+<p>If <span class="math notranslate nohighlight">\(\Psi\)</span> is a left (right) chiral spinor <span class="math notranslate nohighlight">\(\Psi_L\)</span>, the charge conjugate, <span class="math notranslate nohighlight">\(\Psi_L^c\)</span> is a right (left) chiral one:</p>
+<p>A Majorana spinor can be constructed from a single left (right) Weyl spinor <span class="math notranslate nohighlight">\(\psi_L\)</span>, using its charge conjugate:</p>
+<div class="math notranslate nohighlight">
+\[
+\psi^c_L \to i \sigma^2 \psi^*_L
+\]</div>
+<p>That transforms as a right-handed Weyl spinor. The Majorana spinor is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi_M = \begin{pmatrix} \psi_L  \\ i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>That fulfills the condition:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^c_M = \Psi_M
+\]</div>
+<p>And it is own antiparticle</p>
+<p>There is no global phase symmetry for a Majorana spinor.</p>
+<div class="math notranslate nohighlight">
+\[
+\psi'_L = e^{i\theta} \psi_L, \;\;\; (\psi'_L)^c = e^{-i \theta} i \sigma^2 \psi^*_L = e^{-i\theta} \psi^c_L
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi'_M = \begin{pmatrix} e^{i\theta }\; \psi_L  \\ e^{-i \theta} \; i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>And therefore there are no charge conserved. The Majorana spinor is a truly neutral particle!</p>
+<p>The mass term for left-chiral neutrinos will be:</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{m}{2} \left( \overline{\nu_L }\nu^c_L + \overline{\nu^c_L} \nu_L \right)
+\]</div>
+<p>As <span class="math notranslate nohighlight">\(\nu_L\)</span> are part of duplet <span class="math notranslate nohighlight">\(SU(2)_L\)</span> in the SM, in order to preserve the gauge symmetry, the simplest term to generate the mass is to include a <em>double</em> interaction with a scalar Higgs.</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_W = - \frac{\alpha}{\Lambda} \,  \bar{L} \tilde{\Phi} \, \tilde{\Phi}^T L^c + \mathrm{h.c.} 
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is a dimensionless coupling and <span class="math notranslate nohighlight">\(\Lambda\)</span> an energy scale.</p>
+<p>This is known as the Weinberg operator. It is the only 5-dim operation that extends the SM.</p>
+<p>After the SSB. It translates to:</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{L}_W = \frac{\alpha v^2}{\Lambda} (\overline{\nu_L} \nu^c_L + \overline{\nu^c_L} \nu_L)
+\]</div>
+<p>Now the neutrino smalleness of the neutrino mass cal be explained via the energy scale <span class="math notranslate nohighlight">\(\Lambda\)</span>, the coupling <span class="math notranslate nohighlight">\(\alpha\)</span> or both.</p>
+</div>
+<div class="section" id="some-urgent-questions">
+<h3>Some urgent questions<a class="headerlink" href="#some-urgent-questions" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Is there a CP phase in the neutrino sector?</p></li>
+<li><p>Is the neutrino its own antiparticle. Is Dirac or Majorana?</p></li>
+<li><p>What is the neutrino mass? Which is the neutrino mass hierarchy?</p></li>
+<li><p>Why the neutrino mass is so small? Is there a new energy scale, <span class="math notranslate nohighlight">\(\Lambda\)</span>, related with neutrino masses?</p></li>
+</ul>
+<p>The different scale of neutrino masses compared with other fermions may be an indication of a new scale of energy.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nu_mass_scale.png"><img alt="_images/nu_mass_scale.png" src="_images/nu_mass_scale.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Neutrinos - USC</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="nu_sm.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Neutrinos and the construction of the Standard Model</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By José Ángel Hernando Morata<br/>
+  
+      &copy; Copyright USC - J.A. Hernando - 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
