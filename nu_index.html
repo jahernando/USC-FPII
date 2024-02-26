@@ -453,7 +453,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Jan 30 17:18:48 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Feb 22 17:07:05 2024
 </pre></div>
 </div>
 </div>
@@ -472,9 +472,9 @@ title="Print to PDF"
 </ul>
 <p>Two mayor discoveries and on one confirmation in the last decades:</p>
 <ul class="simple">
-<li><p>Higgs discovery (<a class="reference external" href="https://arxiv.org/abs/1207.7214">ATLAS</a>, <a class="reference external" href="https://arxiv.org/abs/1207.7235">CMS</a>) <a class="reference external" href="http://pdg.lbl.gov/2019/reviews/rpp2019-rev-higgs-boson.pdf">pdg-review</a></p></li>
-<li><p>Confirmation of the Cabibbo-Kobayashi-Maskawa Unitary Matrix (BaBar, Belle, LHCb, …), <a class="reference external" href="http://pdg.lbl.gov/2019/reviews/rpp2019-rev-ckm-matrix.pdf">pdg-review</a></p></li>
-<li><p>Discovery of the neutrino oscillations (<a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">Super-Kamiokande</a>, <a class="reference external" href="https://arxiv.org/abs/1109.0763">SNO+</a>) <a class="reference external" href="http://pdg.lbl.gov/2019/reviews/rpp2019-rev-neutrino-mixing.pdf">pdg-review</a></p></li>
+<li><p>Higgs discovery (<a class="reference external" href="https://arxiv.org/abs/1207.7214">ATLAS</a>, <a class="reference external" href="https://arxiv.org/abs/1207.7235">CMS</a>) <a class="reference external" href="http://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf">pdg-review</a></p></li>
+<li><p>Confirmation of the Cabibbo-Kobayashi-Maskawa Unitary Matrix (BaBar, Belle, LHCb, …), <a class="reference external" href="http://pdg.lbl.gov/2022/reviews/rpp2022-rev-ckm-matrix.pdf">pdg-review</a></p></li>
+<li><p>Discovery of the neutrino oscillations (<a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">Super-Kamiokande</a>, <a class="reference external" href="https://arxiv.org/abs/1109.0763">SNO+</a>) <a class="reference external" href="http://pdg.lbl.gov/2022/reviews/rpp2022-rev-neutrino-mixing.pdf">pdg-review</a></p></li>
 </ul>
 <p>Neutrino oscillation simplified summary:</p>
 <table class="colwidths-auto table">
@@ -537,7 +537,7 @@ e_R, \mu_R, \tau_R
 <p>Neutrino interacts only via this interactions lagrangian, CC (<span class="math notranslate nohighlight">\(W^\pm\)</span>) or NC (<span class="math notranslate nohighlight">\(Z\)</span>), :</p>
 <div class="math notranslate nohighlight">
 \[
-\mathcal{L}_{CC} = - \frac{g}{\sqrt{2}} \sum_{\alpha = e, \mu, \tau} \bar{\nu}_{\alpha L} \gamma^\mu l_{\alpha L} W_\mu + \mathrm{h.c.}, \;\;\;
+\mathcal{L}_{CC} = - \frac{g}{\sqrt{2}} \sum_{\alpha = e, \mu, \tau} \bar{\nu}_{\alpha L} \gamma^\mu l_{\alpha L} W^+_\mu + \mathrm{h.c.}, \;\;\;
 \mathcal{L}_{NC} = - \frac{g}{2 \cos \theta_W} \bar{\nu}_{\alpha L} \gamma^\mu \nu_{\alpha L} Z_\mu
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(g\)</span> is the weak constant and <span class="math notranslate nohighlight">\(\theta_W\)</span> the Weiberg angle.</p>
@@ -599,14 +599,14 @@ e_R, \mu_R, \tau_R
 <p>Let’s consider first one family, for charged leptons, the mass term</p>
 <div class="math notranslate nohighlight">
 \[
-\lambda_e \bar{L}_e \Phi \, e_R + \mathrm{h.c.}
+- \mathcal{L}_{\mathrm{mass}, e} = \lambda_e \bar{L}_e \Phi \, e_R + \mathrm{h.c.}
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\lambda_e\)</span> is an adimensional constant, the electron Yukawa coupling.</p>
 <p>And</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 L_e = \begin{pmatrix} \nu_{eL} \\ e_L \end{pmatrix}, \; 
-\Phi = \begin{pmatrix} \phi^+ \\ \Phi^0 \end{pmatrix}
+\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}
 \end{split}\]</div>
 <p>After spontaneous symmetry breaking (SSB), in the unitary gauge:</p>
 <div class="math notranslate nohighlight">
@@ -634,7 +634,7 @@ m_e = \lambda_e \frac{v}{\sqrt{2}}
 <p>The possible mass terms of the lagrangian is:</p>
 <div class="math notranslate nohighlight">
 \[
-\lambda_{\nu} \bar{L}_e \tilde{\Phi} \nu_{eR} + h.c.
+-\mathcal{L}_{\mathrm{mass}, \nu} = \lambda_{\nu} \bar{L}_e \tilde{\Phi} \, \nu_{eR} + h.c.
 \]</div>
 <p>that will result on a mass term:</p>
 <div class="math notranslate nohighlight">
@@ -698,7 +698,7 @@ m_e = \lambda_e \frac{v}{\sqrt{2}}
 <p>After the SSB. It translates to:</p>
 <div class="math notranslate nohighlight">
 \[
- \mathcal{L}_W = \frac{\alpha v^2}{\Lambda} (\overline{\nu_L} \nu^c_L + \overline{\nu^c_L} \nu_L)
+ \mathcal{L}_W = - \frac{\alpha v^2}{2\Lambda} (\overline{\nu_L} \nu^c_L + \overline{\nu^c_L} \nu_L)
 \]</div>
 <p>Now the neutrino smalleness of the neutrino mass cal be explained via the energy scale <span class="math notranslate nohighlight">\(\Lambda\)</span>, the coupling <span class="math notranslate nohighlight">\(\alpha\)</span> or both.</p>
 </div>
