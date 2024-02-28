@@ -743,7 +743,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Feb 27 16:08:51 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Feb 27 17:43:02 2024
 </pre></div>
 </div>
 </div>
@@ -873,16 +873,32 @@ P_{\beta \alpha} = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21} L}{4 E}
 <li><p>mixing angle, <span class="math notranslate nohighlight">\(\theta\)</span>. If <span class="math notranslate nohighlight">\(\theta = 0\)</span> there is no oscillations. It controls the amplitude.</p></li>
 <li><p><span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span>. If neutrinos are mass degenerated, there is no oscillation. It controls the phase.</p></li>
 </ul>
-<p>The probability depends on a detector parameter:</p>
-<ul class="simple">
-<li><p>ratio E/L. Oscillation is maximum with <span class="math notranslate nohighlight">\(E/L = \Delta m^2/2 \pi\)</span></p></li>
-</ul>
-<p>We can expressed in units:</p>
+<p>The oscillation dependes on the relation between <span class="math notranslate nohighlight">\(\Delta m^2\)</span> and <span class="math notranslate nohighlight">\(E/L\)</span>.</p>
+<p>The oscillation length.</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\Delta m^2_{21} L }{4 E} = 1.27 \frac{\Delta m^2_{21}}{\mathrm{eV^2}} \frac{L}{\mathrm{km}} \frac{\mathrm{GeV}}{E}
+L_{osc} = \pi \frac{2 E}{\Delta m^2}
 \]</div>
-<p><em>question:</em> Draw the oscillation probability for <span class="math notranslate nohighlight">\(\Delta m^2_{21} = 2.5 \times 10^{-3} \, \mathrm{eV}^{2}\)</span> and <span class="math notranslate nohighlight">\(\theta = \pi/4\)</span> as a function of <span class="math notranslate nohighlight">\(L/E\)</span></p>
+<p>As the observation if at fixed <span class="math notranslate nohighlight">\(L\)</span> the dependecen with <span class="math notranslate nohighlight">\(E\)</span> of the initial <span class="math notranslate nohighlight">\(\nu\)</span> flux is relevant.</p>
+<p>We consider 3 cases:</p>
+<ul class="simple">
+<li><p>At the first maximum of the oscillation.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  \frac{\Delta m^2 L}{2E_{\mathrm{max}}} = \frac{\pi}{2} \to E_{\mathrm{max}} = \frac{\Delta m^2 L}{\pi}
+  \]</div>
+<p>We observe de oscillation behavior as a function of <span class="math notranslate nohighlight">\(E\)</span>.</p>
+<p>We can write the phase and the probability in the relevant units:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\Delta m^2 L }{4 E} = 1.27 \frac{\Delta m^2}{\mathrm{eV^2}} \frac{L}{\mathrm{km}} \frac{\mathrm{GeV}}{E}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha\beta} = \sin^2(2 \theta) \, \sin^2 \left(1.27 \frac{\Delta m^2}{\mathrm{eV^2}} \frac{L}{\mathrm{km}} \frac{\mathrm{GeV}}{E} \right)
+\]</div>
+<p><em>question:</em> Draw the oscillation probability for <span class="math notranslate nohighlight">\(\Delta m^2 = 2.5 \times 10^{-3} \, \mathrm{eV}^{2}\)</span> and <span class="math notranslate nohighlight">\(\theta = \pi/4\)</span> as a function of <span class="math notranslate nohighlight">\(L/E\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta0</span><span class="p">,</span> <span class="n">dm2_32</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">4.</span><span class="p">,</span> <span class="mf">2.5e-3</span> <span class="c1">#  -, eV^2</span>
@@ -897,7 +913,7 @@ P_{\beta \alpha} = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21} L}{4 E}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/nu_oscillations_13_0.png" src="_images/nu_oscillations_13_0.png" />
+<img alt="_images/nu_oscillations_15_0.png" src="_images/nu_oscillations_15_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -910,9 +926,27 @@ P_{\beta \alpha} = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21} L}{4 E}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/nu_oscillations_14_0.png" src="_images/nu_oscillations_14_0.png" />
+<img alt="_images/nu_oscillations_16_0.png" src="_images/nu_oscillations_16_0.png" />
 </div>
 </div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E/L \ll \Delta m^2\)</span> the oscillation is fast. We observe the average.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  P_{\alpha \beta} \simeq \frac{1}{2} \sin^2 2\theta
+  \]</div>
+<p>In this case the probability does not depend on <span class="math notranslate nohighlight">\(\Delta m^2\)</span> only on <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p>It corresponds to the case where neutrinos are decoupled! It does not show the characteristical signature of neutrino oscillations.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E/L \gg \Delta m^2\)</span> Oscillation is two small in the detector.</p></li>
+</ul>
+<p>The probability is suppresed:</p>
+<div class="math notranslate nohighlight">
+\[
+  P_{\alpha \beta} = \left(\frac{\Delta m^2 L}{2E} \right)^2 \, \sin^2 2\theta 
+  \]</div>
+<p>And we can not separate the two phisical parameters <span class="math notranslate nohighlight">\(\Delta m^2\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -1038,7 +1072,7 @@ P_{\beta \alpha} = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21} L}{4 E}
 </table>
 <ul class="simple">
 <li><p>Correlation with the Solar direction. SK is a neutrino telescope.</p></li>
-<li><p>Less solar (B) flux than predicted: <span class="math notranslate nohighlight">\((2.34 \pm 0.04) \times 10^6\)</span> cm<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-1}\)</span> <a class="reference external" href="https://arxiv.org/abs/1606.07538">[13]</a>, with SSM <span class="math notranslate nohighlight">\((5.46 \pm 0.66) \times 10^6\)</span> cm<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-1}\)</span> [14]</p></li>
+<li><p>Less solar (B) flux than predicted: <span class="math notranslate nohighlight">\((2.34 \pm 0.04) \times 10^6 \, \mathrm{cm}^{-2}\mathrm{s}^{-1}\)</span> <a class="reference external" href="https://arxiv.org/abs/1606.07538">[13]</a>, with SSM <span class="math notranslate nohighlight">\((5.46 \pm 0.66) \times 10^6 \, \mathrm{cm}^{-2}\mathrm{s}^{-1}\)</span> [14]</p></li>
 </ul>
 </div>
 <div class="section" id="sno-experiment">
