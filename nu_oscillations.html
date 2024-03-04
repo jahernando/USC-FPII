@@ -743,7 +743,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Mar  1 11:09:58 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Mar  4 15:31:48 2024
 </pre></div>
 </div>
 </div>
@@ -1168,7 +1168,7 @@ f_e = \frac{n_e}{n_p + n_n}
 <p>In the Sun, for <span class="math notranslate nohighlight">\(E_\nu \sim 1\)</span> MeV, <span class="math notranslate nohighlight">\(f_e \sim 1/2\)</span>, <span class="math notranslate nohighlight">\(\rho_{\mathrm{Sun}} \sim 100 \, \mathrm{g/cm}^3\)</span>. In the Earth,  <span class="math notranslate nohighlight">\(\rho_{\mathrm{Earth}} \sim 10 \, \mathrm{g/cm}^3\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
-V^{\mathrm{Sun}}_e = 4 \times 10 ^{-12} \; \mathrm{eV}, \;\;\;
+V^{\mathrm{Sun}}_e \sim 10 ^{-12} \; \mathrm{eV}, \;\;\;
 V^{\mathrm{Earth}}_e \sim 10^{-13} \, \mathrm{eV}
 \]</div>
 <p>In terms of the electron density, <span class="math notranslate nohighlight">\(n_e\)</span>:</p>
@@ -1199,7 +1199,7 @@ L = \frac{2\pi}{V_e} = 9.8 \times 10^{32}  \left(\frac{\mathrm{cm}^{3}}{n_e}\rig
 </div>
 </div>
 </div>
-<p>The neutrinos propagation in matter can be discribed by quantum mechanics, via the Dirac equation or QFT, with the same result.</p>
+<p>The neutrinos propagation in matter can be discribed by quantum mechanics, via a modified Dirac equation or QFT, with the same result.</p>
 <p>We present here the propagation in quantum mechanics, using the Schödinger equation.</p>
 <p>The Hamiltonian of the neutrino propagation is:</p>
 <div class="math notranslate nohighlight">
@@ -1207,7 +1207,7 @@ L = \frac{2\pi}{V_e} = 9.8 \times 10^{32}  \left(\frac{\mathrm{cm}^{3}}{n_e}\rig
 \mathcal{H} = U \mathcal{H_0}  U^T+ V_e
 \]</div>
 <p>Where <span class="math notranslate nohighlight">\(\mathcal{H_0}\)</span> is the hamiltonian and <span class="math notranslate nohighlight">\(U\)</span> is the mix matrix in vacuum, and <span class="math notranslate nohighlight">\(V_e\)</span> affects only to <span class="math notranslate nohighlight">\(\nu_e\)</span>.</p>
-<p>In two family and <span class="math notranslate nohighlight">\(H_0\)</span>, the free hamiltonian can be re-written removing terms which are proportional to the identity, which retuls on a global phase.</p>
+<p>In two family and <span class="math notranslate nohighlight">\(H_0\)</span>, the free hamiltonian can be re-written removing terms which are proportional to the identity matrix, which retuls on a global phase.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \mathcal{H}_0 = \begin{pmatrix} E_1 &amp; 0 \\ 0 &amp; E_2 \end{pmatrix} \to 
@@ -1342,10 +1342,10 @@ oscillation  3.75e-11
 </div>
 </div>
 <p>Different scenarios:</p>
-<ol class="simple">
+<ul class="simple">
 <li><p>Vacuum limit,  <span class="math notranslate nohighlight">\(x \ll \cos 2 \theta_0, \; N_e = 0\)</span>, we recover: <span class="math notranslate nohighlight">\(\theta_0, \, \Delta m^2_{21}\)</span></p></li>
 <li><p>Resonance condition. When increasing the density for a <span class="math notranslate nohighlight">\(E \sim 0.5\)</span> MeV, a resonance condition may happen:</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 \cos 2 \theta_0 = \frac{2 E}{\Delta m^2_{21}} V_e 
@@ -1359,10 +1359,14 @@ oscillation  3.75e-11
 $<span class="math notranslate nohighlight">\(
 \Delta m^2_{21} \cos 2 \theta_0 &gt; 0
 \)</span>$</p>
-<p>That is, if <span class="math notranslate nohighlight">\(|\theta_0| &lt; \pi/4 \Rightarrow \Delta m^2_{21} &gt; 0\)</span></p>
-<ol class="simple">
+<p>That is:</p>
+<div class="math notranslate nohighlight">
+\[
+|\theta_0| &lt; \pi/4 \Rightarrow \Delta m^2_{21} &gt; 0
+\]</div>
+<ul class="simple">
 <li><p>Matter domination. In the case <span class="math notranslate nohighlight">\(x &gt;&gt; \cos 2 \theta_0\)</span>:</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 \tan 2 \theta_m \to 0^-, \; \theta_m = \pi/2
