@@ -743,7 +743,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Feb 28 16:58:12 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Mar  1 11:09:58 2024
 </pre></div>
 </div>
 </div>
@@ -1153,42 +1153,61 @@ P_{\alpha\beta} = \sin^2(2 \theta) \, \sin^2 \left(1.27 \frac{\Delta m^2}{\mathr
 </tbody>
 </table>
 <p>Neutrinos can <em>coherence scatter</em> via NC in matter, but only <span class="math notranslate nohighlight">\(\nu_e\)</span> can CC! (Mikheyev, Smirnov effect [20])</p>
-<p>We can associate a potencial <span class="math notranslate nohighlight">\(V_e = \sqrt{2} G_F N_e\)</span>,</p>
+<p>The interaction will be related with the <em>density of the electrons</em> in the media, <span class="math notranslate nohighlight">\(n_e\)</span>, and <span class="math notranslate nohighlight">\(G_F\)</span>.</p>
+<p>We model this interaction with a potencial <span class="math notranslate nohighlight">\(V_e = \sqrt{2} G_F N_e\)</span></p>
 <p>Where:</p>
 <div class="math notranslate nohighlight">
 \[
-V_e \sim 8 \times 10^{-14} \, f_e \, \rho  \;\; \mathrm{eV \; cm}^3/\mathrm{g}
+V_e \simeq 8 \times 10^{-14} \, f_e \, \rho  \;\; \left(\mathrm{eV \, cm}^3/\mathrm{g}\right)
 \]</div>
-<p>with:</p>
+<p>with <span class="math notranslate nohighlight">\(f_e\)</span> the fraction of electrons over nucleons</p>
 <div class="math notranslate nohighlight">
 \[
 f_e = \frac{n_e}{n_p + n_n}
 \]</div>
-<p>And <span class="math notranslate nohighlight">\(\rho_{Earth} \sim 10 \, \mathrm{g/cm}^3\)</span>, <span class="math notranslate nohighlight">\(\rho_{Sun} \sim 100 \, \mathrm{g/cm}^3\)</span></p>
-<p>In the Sun, for <span class="math notranslate nohighlight">\(E_\nu \sim 1\)</span> MeV, <span class="math notranslate nohighlight">\(f_e \sim 1/2\)</span>,</p>
+<p>In the Sun, for <span class="math notranslate nohighlight">\(E_\nu \sim 1\)</span> MeV, <span class="math notranslate nohighlight">\(f_e \sim 1/2\)</span>, <span class="math notranslate nohighlight">\(\rho_{\mathrm{Sun}} \sim 100 \, \mathrm{g/cm}^3\)</span>. In the Earth,  <span class="math notranslate nohighlight">\(\rho_{\mathrm{Earth}} \sim 10 \, \mathrm{g/cm}^3\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
-V_e = 4 \times 10 ^{-12} \; \mathrm{eV}
+V^{\mathrm{Sun}}_e = 4 \times 10 ^{-12} \; \mathrm{eV}, \;\;\;
+V^{\mathrm{Earth}}_e \sim 10^{-13} \, \mathrm{eV}
 \]</div>
-<p>In the Earth:</p>
+<p>In terms of the electron density, <span class="math notranslate nohighlight">\(n_e\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-B_e \sim 19^{-13} \, \mathrm{eV}
+V_e = 1.256 \times 10^{-37} n_e \, \left(\mathrm{eV} \, \mathrm{cm}^{3}\right)
 \]</div>
-<p>We can associate a potencial <span class="math notranslate nohighlight">\(V_e = \sqrt{2} G_F N_e\)</span> to coherence CC <span class="math notranslate nohighlight">\(\nu_e\)</span> in matter with density of electrons, <span class="math notranslate nohighlight">\(N_e\)</span>.</p>
-<p>The Hamiltonian:</p>
+<p>We can associate a typical <em>length</em> to this effect:</p>
+<div class="math notranslate nohighlight">
+\[
+L = \frac{2\pi}{V_e} = 9.8 \times 10^{32}  \left(\frac{\mathrm{cm}^{3}}{n_e}\right) \, \mathrm{cm}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">V0e</span> <span class="o">=</span> <span class="mf">1.256e-36</span> <span class="c1">#ev/cm3</span>
+<span class="n">ne</span>  <span class="o">=</span> <span class="mf">5e25</span> <span class="c1"># elec/cm3</span>
+<span class="n">VFe</span> <span class="o">=</span> <span class="n">V0e</span><span class="o">*</span><span class="n">ne</span>
+<span class="n">Lm</span>  <span class="o">=</span> <span class="mf">9.8e32</span><span class="o">/</span><span class="n">ne</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">VFe</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Lm</span><span class="o">/</span><span class="mf">1e3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.28e-11
+19600.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>The neutrinos propagation in matter can be discribed by quantum mechanics, via the Dirac equation or QFT, with the same result.</p>
+<p>We present here the propagation in quantum mechanics, using the Schödinger equation.</p>
+<p>The Hamiltonian of the neutrino propagation is:</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{H} = U \mathcal{H_0}  U^T+ V_e
 \]</div>
-<p>Where <span class="math notranslate nohighlight">\(\mathcal{H_0}\)</span> is the hamiltonian associated to propagation of <span class="math notranslate nohighlight">\(\nu_i\)</span> in vacuum, and <span class="math notranslate nohighlight">\(V_e\)</span> affects only to <span class="math notranslate nohighlight">\(\nu_e\)</span>.</p>
-<p>The amplitude evolution is:</p>
-<div class="math notranslate nohighlight">
-\[
-i \frac{\partial \mathcal{A}_{\alpha}}{\partial t} = U \mathcal{H} U^T \mathcal{A}_{\alpha} 
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> indicates neutrinos in flavour basis.</p>
-<p>In two family and <span class="math notranslate nohighlight">\(H_0\)</span>, the free hamiltonian, except for common terms in the diagonal can be re-written:</p>
+<p>Where <span class="math notranslate nohighlight">\(\mathcal{H_0}\)</span> is the hamiltonian and <span class="math notranslate nohighlight">\(U\)</span> is the mix matrix in vacuum, and <span class="math notranslate nohighlight">\(V_e\)</span> affects only to <span class="math notranslate nohighlight">\(\nu_e\)</span>.</p>
+<p>In two family and <span class="math notranslate nohighlight">\(H_0\)</span>, the free hamiltonian can be re-written removing terms which are proportional to the identity, which retuls on a global phase.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \mathcal{H}_0 = \begin{pmatrix} E_1 &amp; 0 \\ 0 &amp; E_2 \end{pmatrix} \to 
@@ -1196,7 +1215,8 @@ i \frac{\partial \mathcal{A}_{\alpha}}{\partial t} = U \mathcal{H} U^T \mathcal{
  \frac{1}{2E}\begin{pmatrix} m^2_1 &amp; 0 \\ 0 &amp; m^2_2 \end{pmatrix} \to 
  \frac{1}{4E} \begin{pmatrix}  - \Delta m^2_{21}&amp; 0 \\ 0 &amp; \Delta m^2_{21} \end{pmatrix} 
 \end{split}\]</div>
-<p>With</p>
+<p>With <span class="math notranslate nohighlight">\(\Delta m^2_{21} = m^2_2 - m^2_1\)</span></p>
+<p>Introducing the mixing matrix:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 U = \begin{pmatrix} \cos \theta_0 &amp; \sin \theta_0 \\ - \sin \theta_0 &amp; \cos \theta_0 \end{pmatrix}
@@ -1209,15 +1229,28 @@ U  \mathcal{H}_0 U^T = \frac{\Delta m^2_{21}}{4E}\begin{pmatrix}
 \sin 2\theta_0 &amp;   \cos 2 \theta_0 \\
 \end{pmatrix}
 \end{split}\]</div>
-<p>The evolution of the neutrino amplitudes in flavour are, except for an common value in the diagonal, the hamiltonial is:</p>
+<p>From here we obtain the time evolution:</p>
+<div class="math notranslate nohighlight">
+\[
+i \frac{\partial \mathcal{A}_{\alpha}}{\partial t} = U \mathcal{H} U^T \mathcal{A}_{\alpha} 
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> indicates neutrinos in flavour basis.</p>
+<p>And the oscillation probability formula:</p>
+<p>The effective propagation probability:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha\beta} = \sin^2 2 \theta_0 \, \sin^2 \frac{\Delta m^2_{21} L}{ 4 E}
+\]</div>
+<p>The part of the hamiltonian in matter, we can also re-write it as:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 V_e = \begin{pmatrix} V_e &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \to
  \begin{pmatrix} V_e/2 &amp; 0 \\ 0 &amp; -V_e/2 \end{pmatrix} 
 \end{split}\]</div>
+<p>The total hamiltonian is:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathcal{H} = U \mathcal{H}_0 U^t + V_e  = \frac{\Delta m^2_{21}}{4E}
+\mathcal{H} = U \mathcal{H}_0 U^T + V_e  = \frac{\Delta m^2_{21}}{4E}
 \begin{pmatrix} 
 - (\cos 2\theta_0 - x) &amp;  \sin 2 \theta_0 \\
  \sin 2\theta_0 &amp;   (\cos 2 \theta_0  - x)\\
@@ -1226,9 +1259,17 @@ V_e = \begin{pmatrix} V_e &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \to
 <p>with:</p>
 <div class="math notranslate nohighlight">
 \[
-x = \frac{2 E} {\Delta m^2_{21}} \; \sqrt{2} G_F N_e
+x = \frac{2 E V_e} {\Delta m^2_{21}}
 \]</div>
-<p>The neutrino time propagation in matter is equal to in vacuum with the effective parameters:</p>
+<p>We can re-write <span class="math notranslate nohighlight">\(H\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U  \mathcal{H} U^T = \frac{\Delta m^2_m}{4E}\begin{pmatrix} 
+-\cos 2\theta_m &amp; \sin 2 \theta_m \\
+\sin 2\theta_m &amp;   \cos 2 \theta_m \\
+\end{pmatrix}
+\end{split}\]</div>
+<p>we encounter that neutrino propagation in matter has the same behavior, oscillates, but with the effective parameters:</p>
 <div class="math notranslate nohighlight">
 \[
 \tan 2 \theta_m = \frac{\sin 2 \theta_0}{\cos 2 \theta_0 - x}
@@ -1245,50 +1286,69 @@ P_{\alpha\beta} = \sin^2 2 \theta_m \, \sin^2 \frac{\Delta m^2_{m} L}{ 4 E}
 <p><em>questions:</em> Check that they correspond to the eigen-values of <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> and the rotation angle between eigen and flavour states.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta0</span><span class="p">,</span> <span class="n">dm2_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="mf">1.</span>
-<span class="n">dm2_eff</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">dm2_0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="c1">#dm2_eff = lambda x: dm2_0 * np.sqrt( (np.cos(2 * theta0) - x)**2 + (np.sin(2 * theta0)**2))</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dm2_eff</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">V0e</span> <span class="o">=</span> <span class="mf">1.256e-36</span> <span class="c1"># eV/cm3</span>
+<span class="n">ne</span>  <span class="o">=</span> <span class="mf">5e25</span>      <span class="c1"># elec/cm3 [3-6]</span>
+<span class="n">Ve</span>  <span class="o">=</span> <span class="n">V0e</span><span class="o">*</span><span class="n">ne</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;coh. esc potential &quot;</span><span class="p">,</span> <span class="n">Ve</span><span class="p">,</span> <span class="s2">&quot;eV&quot;</span><span class="p">)</span>
+
+<span class="n">dm2_0</span>   <span class="o">=</span>  <span class="mf">7.5e-5</span> <span class="c1">## eV2 </span>
+<span class="n">theta0</span>  <span class="o">=</span>  <span class="mf">0.1845</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">E0</span> <span class="o">=</span> <span class="mf">1.e6</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;oscillation &quot;</span><span class="p">,</span> <span class="n">dm2_0</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">E0</span><span class="p">))</span>
+
+<span class="n">E</span>        <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.e6</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>  <span class="c1">#eV</span>
+<span class="n">x</span>        <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">Ve</span><span class="o">*</span><span class="n">E</span><span class="o">/</span><span class="n">dm2_0</span>
+<span class="n">s_2th0</span><span class="p">,</span> <span class="n">c_2th0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">)</span>
+
+<span class="n">dm2_eff</span>  <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">dm2_0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">c_2th0</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">s_2th0</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">t_2theff</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">s_2th0</span><span class="o">/</span><span class="p">(</span><span class="n">c_2th0</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
+<span class="n">theff</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">t2</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>coh. esc potential  6.28e-11 eV
+oscillation  3.75e-11
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta0</span><span class="p">,</span> <span class="n">dm2_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="mf">1.</span>
-<span class="n">dm2_eff</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">dm2_0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="c1">#dm2_eff = lambda x: dm2_0 * np.sqrt( (np.cos(2 * theta0) - x)**2 + (np.sin(2 * theta0)**2))</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="c1">#plt.plot(x,dm2_eff(x)); #plt.ylabel(r&#39;$\Delta m^2$&#39;); plt.xlabel(r&#39;$x$&#39;);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">c_2th0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">E</span><span class="p">)),</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;$\cos 2\theta_0$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;x&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Energy (MeV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/nu_oscillations_40_0.png" src="_images/nu_oscillations_40_0.png" />
+<img alt="_images/nu_oscillations_44_0.png" src="_images/nu_oscillations_44_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dm2_eff</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">dm2_eff</span><span class="p">(</span><span class="mf">0.</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">dm2_eff</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;E (MeV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\Delta m^2$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">theff</span><span class="p">(</span><span class="n">t_2theff</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;E (MeV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\theta/\pi$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
-</pre></div>
-</div>
+<img alt="_images/nu_oscillations_45_0.png" src="_images/nu_oscillations_45_0.png" />
 </div>
 </div>
 <p>Different scenarios:</p>
 <ol class="simple">
 <li><p>Vacuum limit,  <span class="math notranslate nohighlight">\(x \ll \cos 2 \theta_0, \; N_e = 0\)</span>, we recover: <span class="math notranslate nohighlight">\(\theta_0, \, \Delta m^2_{21}\)</span></p></li>
-<li><p>Resonance condition. When increasing the density for a <span class="math notranslate nohighlight">\(E \sim 1\)</span> MeV, a resonance condition may happen:</p></li>
+<li><p>Resonance condition. When increasing the density for a <span class="math notranslate nohighlight">\(E \sim 0.5\)</span> MeV, a resonance condition may happen:</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
-\cos 2 \theta_0 = \frac{2 E}{\Delta m^2_{21}} \sqrt{2} G_F N_e 
+\cos 2 \theta_0 = \frac{2 E}{\Delta m^2_{21}} V_e 
 \]</div>
 <p>In this case the effective:</p>
 <div class="math notranslate nohighlight">
@@ -1369,6 +1429,20 @@ P_{ee} = 1 - \frac{1}{2}\sin^2 2 \theta_0
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta0  0.18450505978277268  pi
 p0 = 1- 0.5* sin (2theta) = 0.5800000000000001
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta0</span> <span class="o">=</span> <span class="mf">0.1845</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">st</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta0</span><span class="p">)</span>
+<span class="n">st</span><span class="o">*</span><span class="n">st</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.29998543138136763
 </pre></div>
 </div>
 </div>
