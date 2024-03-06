@@ -506,8 +506,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sbl-juno-2022">
-     SBL: JUNO (2022 ? - )
+    <a class="reference internal nav-link" href="#sbl-juno-2024">
+     SBL: JUNO (2024  - )
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -697,8 +697,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sbl-juno-2022">
-     SBL: JUNO (2022 ? - )
+    <a class="reference internal nav-link" href="#sbl-juno-2024">
+     SBL: JUNO (2024  - )
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -743,7 +743,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Mar  4 15:31:48 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Mar  5 16:03:39 2024
 </pre></div>
 </div>
 </div>
@@ -1284,6 +1284,44 @@ U  \mathcal{H} U^T = \frac{\Delta m^2_m}{4E}\begin{pmatrix}
 P_{\alpha\beta} = \sin^2 2 \theta_m \, \sin^2 \frac{\Delta m^2_{m} L}{ 4 E}
 \]</div>
 <p><em>questions:</em> Check that they correspond to the eigen-values of <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> and the rotation angle between eigen and flavour states.</p>
+<p>Different scenarios:</p>
+<ul class="simple">
+<li><p>Vacuum limit,  <span class="math notranslate nohighlight">\(x \ll \cos 2 \theta_0, \; N_e = 0\)</span>, we recover: <span class="math notranslate nohighlight">\(\theta_0, \, \Delta m^2_{21}\)</span></p></li>
+<li><p>Matter domination. In the case <span class="math notranslate nohighlight">\(x &gt;&gt; \cos 2 \theta_0\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\tan 2 \theta_m \to 0^-, \; \theta_m = \pi/2
+\]</div>
+<p>With <span class="math notranslate nohighlight">\(\theta_m = \pi/2\)</span> we have:</p>
+<div class="math notranslate nohighlight">
+\[
+U(\theta_m) = \begin{pmat}\]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$\nu_e \leftrightarrow \nu_2$ and  $\nu_\mu \leftrightarrow \nu_1$
+</pre></div>
+</div>
+<p>Therefore, neutrinos of a given flavour has a unique mass states and they do not oscille!</p>
+<ul class="simple">
+<li><p>Resonance condition. When increasing the density for a <span class="math notranslate nohighlight">\(E \sim 0.5\)</span> MeV, a resonance condition may happen:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\cos 2 \theta_0 = \frac{2 E}{\Delta m^2_{21}} V_e 
+\]</div>
+<p>In this case the effective:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta m^2_m = \Delta m^2_{21}  \sin 2 \theta_0, \; \tan 2 \theta_m  = \infty, \theta_m = \pi/4 
+\]</div>
+<p>That condition requires:
+$<span class="math notranslate nohighlight">\(
+\Delta m^2_{21} \cos 2 \theta_0 &gt; 0
+\)</span>$</p>
+<p>That is:</p>
+<div class="math notranslate nohighlight">
+\[
+|\theta_0| &lt; \pi/4 \Rightarrow \Delta m^2_{21} &gt; 0
+\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">V0e</span> <span class="o">=</span> <span class="mf">1.256e-36</span> <span class="c1"># eV/cm3</span>
@@ -1315,18 +1353,6 @@ oscillation  3.75e-11
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">c_2th0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">E</span><span class="p">)),</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;$\cos 2\theta_0$&quot;</span><span class="p">);</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;x&quot;</span><span class="p">);</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Energy (MeV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/nu_oscillations_44_0.png" src="_images/nu_oscillations_44_0.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">dm2_eff</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;E (MeV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\Delta m^2$&quot;</span><span class="p">);</span>
@@ -1338,44 +1364,9 @@ oscillation  3.75e-11
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/nu_oscillations_45_0.png" src="_images/nu_oscillations_45_0.png" />
+<img alt="_images/nu_oscillations_46_0.png" src="_images/nu_oscillations_46_0.png" />
 </div>
 </div>
-<p>Different scenarios:</p>
-<ul class="simple">
-<li><p>Vacuum limit,  <span class="math notranslate nohighlight">\(x \ll \cos 2 \theta_0, \; N_e = 0\)</span>, we recover: <span class="math notranslate nohighlight">\(\theta_0, \, \Delta m^2_{21}\)</span></p></li>
-<li><p>Resonance condition. When increasing the density for a <span class="math notranslate nohighlight">\(E \sim 0.5\)</span> MeV, a resonance condition may happen:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-\cos 2 \theta_0 = \frac{2 E}{\Delta m^2_{21}} V_e 
-\]</div>
-<p>In this case the effective:</p>
-<div class="math notranslate nohighlight">
-\[
-\Delta m^2_m = \Delta m^2_{21}  \sin 2 \theta_0, \; \tan 2 \theta_m  = \infty, \theta_m = \pi/4 
-\]</div>
-<p>That condition requires:
-$<span class="math notranslate nohighlight">\(
-\Delta m^2_{21} \cos 2 \theta_0 &gt; 0
-\)</span>$</p>
-<p>That is:</p>
-<div class="math notranslate nohighlight">
-\[
-|\theta_0| &lt; \pi/4 \Rightarrow \Delta m^2_{21} &gt; 0
-\]</div>
-<ul class="simple">
-<li><p>Matter domination. In the case <span class="math notranslate nohighlight">\(x &gt;&gt; \cos 2 \theta_0\)</span>:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-\tan 2 \theta_m \to 0^-, \; \theta_m = \pi/2
-\]</div>
-<p>And:</p>
-<div class="math notranslate nohighlight">
-\[
-\nu_2 = \nu_e
-\]</div>
 <p>In matter density varies along propagation, the solutions are more complicated (numerical solutions).</p>
 <p>But if the variation of density is slow, and the initial scenarios if matter dominated, as for neutrinos in the core of the sun, <span class="math notranslate nohighlight">\(\nu_2\)</span>, they are in the same state.</p>
 <p>In the Sun:</p>
@@ -1390,7 +1381,7 @@ N_e(t) = N_e(0) e^{-r/R}
 \[
 P_{ee} = \sin^2 \theta_0
 \]</div>
-<p>If the energy of the neutrino is bellow the resonance, in the vacuum dominated, and the detector distance, large compared with the oscillations, the probability is averaged:</p>
+<p>If the energy of the neutrino is bellow the resonance, in the vacuum dominated, and the detector size (Earth), large compared with the oscillations, the probability is averaged:</p>
 <div class="math notranslate nohighlight">
 \[
 P_{ee} = 1 - \frac{1}{2}\sin^2 2 \theta_0
@@ -1977,7 +1968,7 @@ P(\nu_\mu \to \nu_e, \bar{\nu}_\mu \to \bar{\nu}_e)  \simeq s^2_{23} \sin^2 2 \t
 <p>The first term is sensible to mass hierarchy. <span class="math notranslate nohighlight">\(V_e\)</span> changes sign depending of <span class="math notranslate nohighlight">\(\nu(\bar{\nu})\)</span> oscillations.</p>
 <p>The second term is sensible to the mass hierarchy and the <span class="math notranslate nohighlight">\(\delta\)</span>-CP phase.</p>
 <p>But the second term is supressed by <span class="math notranslate nohighlight">\(J\)</span> with <span class="math notranslate nohighlight">\(\sin 2 \theta_{13}\)</span>.</p>
-<p>To observe both effects it is better to have several experimets with different ranges of energies and distances.</p>
+<p>To observe both effects it is better to have several experiments with different ranges of energies and distances.</p>
 </div>
 <div class="section" id="nova">
 <h3>NOvA<a class="headerlink" href="#nova" title="Permalink to this heading">#</a></h3>
@@ -2028,39 +2019,44 @@ P(\nu_\mu \to \nu_e, \bar{\nu}_\mu \to \bar{\nu}_e)  \simeq s^2_{23} \sin^2 2 \t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_numu_nue_2019.png"><img alt="_images/NOvA_numu_nue_2019.png" class="align-center" src="_images/NOvA_numu_nue_2019.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_numu_nue_2021.png"><img alt="_images/NOvA_numu_nue_2021.png" class="align-center" src="_images/NOvA_numu_nue_2021.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
-<p>NOvA results 2019 <a class="reference external" href="https://arxiv.org/abs/1906.04907">[31]</a></p>
+<p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_delta_limits_2019.png"><img alt="_images/NOvA_delta_limits_2019.png" class="align-center" src="_images/NOvA_delta_limits_2019.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_delta_limits_2021.png"><img alt="_images/NOvA_delta_limits_2021.png" class="align-center" src="_images/NOvA_delta_limits_2021.png" style="width: 400px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
-<p>NOvA results 2019 <a class="reference external" href="https://arxiv.org/abs/1906.04907">[31]</a></p>
+<p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_2019.png"><img alt="_images/NOvA_pnue_pbarnue_2019.png" class="align-center" src="_images/NOvA_pnue_pbarnue_2019.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_plot_ichep2022.png"><img alt="_images/NOvA_pnue_pbarnue_plot_ichep2022.png" class="align-center" src="_images/NOvA_pnue_pbarnue_plot_ichep2022.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>TAUP 2019 conference</p></td>
+<td class="text-align:center"><p>ICHEP 2021</p></td>
 </tr>
 </tbody>
 </table>
-<p>NOvA preliminary 2019, TAUP conference</p>
+<p>NOvA conference results: TAUP 2019, ICHEP 2022 |</p>
 </div>
 <div class="section" id="id1">
 <h3>T2K<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <a class="reference internal image-reference" href="_images/T2K_pnue_pbarnue_vsE.png"><img alt="_images/T2K_pnue_pbarnue_vsE.png" class="align-center" src="_images/T2K_pnue_pbarnue_vsE.png" style="width: 800px;" /></a>
 <ul class="simple">
-<li><p>T2K is less sensible to matter effects bu t have some sensibility to <span class="math notranslate nohighlight">\(\delta\)</span>-CP in <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}_\mu \to \bar{\nu}_e\)</span> oscillations.</p></li>
+<li><p>T2K is less sensible to matter effects but have some sensibility to <span class="math notranslate nohighlight">\(\delta\)</span>-CP in <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}_\mu \to \bar{\nu}_e\)</span> oscillations.</p></li>
 </ul>
 <table class="colwidths-auto table">
 <thead>
@@ -2130,8 +2126,8 @@ P(\nu_\mu \to \nu_e, \bar{\nu}_\mu \to \bar{\nu}_e)  \simeq s^2_{23} \sin^2 2 \t
 <div class="section" id="reach-of-t2k-nova">
 <h3>Reach of T2K &amp; NOvA<a class="headerlink" href="#reach-of-t2k-nova" title="Permalink to this heading">#</a></h3>
 </div>
-<div class="section" id="sbl-juno-2022">
-<h3>SBL: JUNO (2022 ? - )<a class="headerlink" href="#sbl-juno-2022" title="Permalink to this heading">#</a></h3>
+<div class="section" id="sbl-juno-2024">
+<h3>SBL: JUNO (2024  - )<a class="headerlink" href="#sbl-juno-2024" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The Jiangmen Underground Neutrino Observatory (JUNO), China, a 20 kton multi-purpose underground liquid scintillator detector. In construction, (202X-)</p></li>
 <li><p>Excelent energy resolution 3% and scale precision.</p></li>
@@ -2294,7 +2290,7 @@ Rev. Lett. 107 (2011) 141302; M. Agostini et al., BOREXINO Collaboration, Nature
 <p>[29] H. de Kerret et al. (Double Chooz) (2019), [arXiv:1901.09445].</p>
 <p>[30] A. Cervera et al., Nucl. Phys. B 579 (2000) 17 [Erratum: Nucl. Phys. B 593 (2001) 731]; M. Freund,
 Phys. Rev. D 64 (2001) 053003; E. K. Akhmedov et al., JHEP 0404 (2004) 078.</p>
-<p>[31] M. A. Acero et al. (NOvA), Phys. Rev. Lett. 123, 151803 (2019), [arXiv:1906.04907].</p>
+<p>[31] M. A. Acero et al. (NOvA), Phys. Rev. Lett. 123, 151803 (2019), <a class="reference external" href="https://arxiv.org/abs/1906.04907">[arXiv:1906.04907]</a>. M. Baird et al. (NOvA), Phys. Rev. D. 106 032004 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[arXiv:2208.08219]</a></p>
 <p>[32] Abe et al. (T2K) (2019), [arXiv:1910.03887].</p>
 <p>[33] I. Esteban et al., JHEP 01 (2019) 106, NuFIT 4.1 (2019), <a class="reference external" href="http://www.nu-fit.org">www.nu-fit.org</a></p>
 <p>[34] F. An et al. (JUNO), J. Phys. G43, 3, 030401 (2016), [arXiv:1507.05613].</p>

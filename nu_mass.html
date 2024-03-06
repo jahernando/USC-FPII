@@ -765,6 +765,7 @@ $<span class="math notranslate nohighlight">\(
 - \mathcal{L}_{NC} =  \frac{g}{2 \cos \theta_W} \bar{\nu}'_{L} \gamma^\mu \nu'_{L} Z_\mu
 =  \frac{g}{2 \cos \theta_W} \bar{\nu}_{L} \gamma^\mu \, (U^\dagger_\nu U_\nu) \, \nu_{L} Z_\mu
 \]</div>
+<p>because <span class="math notranslate nohighlight">\(U^\dagger_\nu U_\nu = I\)</span></p>
 <p>But it does the CC lagrangian:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -772,12 +773,12 @@ $<span class="math notranslate nohighlight">\(
 \frac{g}{\sqrt{2}} \bar{l}'_{L} \gamma^\mu \nu'_L W^+_\mu + \mathrm{h.c.} = 
 \frac{g}{\sqrt{2}} \bar{l}_{L}  \gamma^\mu \, (U^\dagger_l U_\nu) \, \nu_L W^+_\mu + \mathrm{h.c.}
 \]</div>
-<p>where:</p>
+<p>where it shows a unitary matrix:</p>
 <div class="math notranslate nohighlight">
 \[
 U = U^\dagger_l \, U_\nu
 \]</div>
-<p>Is the <em>unitary</em> matrix that mix the neutrino flavour and mass states, known ad Pontecorbo-Maki-Nakawaga-Sakata matrix, responsible of the <em>neutrino oscillations</em>.</p>
+<p>It is the <em>unitary</em> matrix that mix the neutrino flavour and mass states, known ad Pontecorbo-Maki-Nakawaga-Sakata matrix, responsible of the <em>neutrino oscillations</em>.</p>
 <p>This a unitary <span class="math notranslate nohighlight">\(3\times3\)</span> matrix has <span class="math notranslate nohighlight">\(9\)</span> parameters, <span class="math notranslate nohighlight">\(3\)</span> mixing angles, and <span class="math notranslate nohighlight">\(6\)</span> phases.</p>
 <p>But we can use the global symmetries of the Dirac fields to re-absorbe the some phases of <span class="math notranslate nohighlight">\(U\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -814,7 +815,7 @@ l_\alpha \to e^{i\phi} l_\alpha, \;\; \nu_{i} \to e^{i\phi} \nu_i
 \]</div>
 <p>and the interaction and the mass lagrangian terms are invariant.</p>
 <p>But the <em>family lepton number</em> is nor preserved.</p>
-<p>As the transformation, of only one family</p>
+<p>As the transformation, for only one family</p>
 <div class="math notranslate nohighlight">
 \[
 l_\alpha \to e^{i\phi} l_\alpha, \;\; \nu_{\alpha} \to e^{i\phi} \nu_\alpha
@@ -846,7 +847,7 @@ of antiparticles, corresponding to the `holes’ of negative energy.”</em></p>
 i \gamma^\mu \partial_\mu \Psi = m \Psi
 \]</div>
 <p>decouples for the real, <span class="math notranslate nohighlight">\(\Psi_{\mathcal{R}}\)</span> and imaginary part of the field, <span class="math notranslate nohighlight">\(\Psi_{\mathcal{I}}\)</span>, that is, <span class="math notranslate nohighlight">\(\Psi = \Psi_{\mathcal{R}} + \Psi_{\mathcal{I}}\)</span></p>
-<p>The charge conjungation operations is defined as:</p>
+<p>The charge conjungation matrix is defined as:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi^c = C \bar{\Psi}^T = C \gamma^0 \, \Psi^*
@@ -854,38 +855,91 @@ i \gamma^\mu \partial_\mu \Psi = m \Psi
 <p>Where <span class="math notranslate nohighlight">\(C\)</span> is the change conjugation matrix, in any representation, it fulfills:</p>
 <div class="math notranslate nohighlight">
 \[
-C^{-1} \gamma^\mu C = - (\gamma^\mu)^T
+C \gamma^\mu C^{-1} = - (\gamma^\mu)^T
 \]</div>
 <p>In the case <span class="math notranslate nohighlight">\(\gamma^0\)</span> is hermitial and <span class="math notranslate nohighlight">\(\gamma^k\)</span> anti-hermitian, is taken as real, antisymmetric and unitary:</p>
 <div class="math notranslate nohighlight">
 \[
 C^{-1} = C^\dagger = C^T =  - C, 
 \]</div>
-<p>That is the case for the Pauli-Dirac, Weyl-chiral, and Majorana representations</p>
+<p>That is the case for the Pauli-Dirac and Weyl-chiral representations</p>
 <p>In the Pauli-Dirac representation:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\gamma^0 = \begin{pmatrix} I &amp; 0 \\ 0 &amp; I\end{pmatrix}, \gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0\end{pmatrix}, \gamma^5  = \begin{pmatrix} 0 &amp; I \\ I &amp; 0\end{pmatrix}, C = i \gamma^2 \gamma^0 = \begin{pmatrix} 0 &amp; -i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pmatrix}
+\gamma^0 = \begin{pmatrix} I &amp; 0 \\ 0 &amp; I\end{pmatrix},
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0\end{pmatrix},
+\gamma^5  = \begin{pmatrix} 0 &amp; I \\ I &amp; 0\end{pmatrix},
+C = i \gamma^2 \gamma^0 = \begin{pmatrix} 0 &amp; -i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pmatrix}
 \end{split}\]</div>
 <p>In the Weyl-chiral representation:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\gamma^0 = \begin{pmatrix} 0 &amp; -I \\ -I &amp; 0\end{pmatrix}, \gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0\end{pmatrix}, \gamma^5  = \begin{pmatrix} -I &amp; 0 \\ 0 &amp; I\end{pmatrix}, C = i \gamma^2 \gamma^0 = \begin{pmatrix} i \sigma^2 &amp; 0 \\ 0 &amp; -i \sigma^2 \end{pmatrix}
+\gamma^0 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0\end{pmatrix},
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0\end{pmatrix},
+\gamma^5  = \begin{pmatrix} -I &amp; 0 \\ 0 &amp; I\end{pmatrix},
+C = i \gamma^2 \gamma^0 = \begin{pmatrix} i \sigma^2 &amp; 0 \\ 0 &amp; -i \sigma^2 \end{pmatrix}
 \end{split}\]</div>
 <p>In the Majorana representation:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\gamma^0 = \begin{pmatrix} 0 &amp; \sigma^2 \\ \sigma^2 &amp; 0\end{pmatrix}, \gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0\end{pmatrix}, \gamma^5  = \begin{pmatrix} I &amp; 0 \\ 0 &amp; I\end{pmatrix}, C = i \gamma^2 \gamma^0 = \begin{pmatrix} i \sigma^2 &amp; 0 \\ 0 &amp; -i \sigma^2 \end{pmatrix}
+\gamma^0 = \begin{pmatrix} 0 &amp; \sigma^2 \\ \sigma^2 &amp; 0\end{pmatrix},
+\gamma^1 = \begin{pmatrix} i\sigma^3 &amp; 0 \\ 0 &amp; i\sigma^3\end{pmatrix},
+\gamma^2 = \begin{pmatrix} 0 &amp; -\sigma^2 \\ \sigma^2 &amp; 0\end{pmatrix},
 \end{split}\]</div>
-<p>If we define the Majorana spinor, <span class="math notranslate nohighlight">\(\Psi^M\)</span>, as:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^3 = \begin{pmatrix} i\sigma^1 &amp; 0 \\ 0 &amp; i\sigma^1 \end{pmatrix}, 
+\gamma^5 = \begin{pmatrix} \sigma^2 &amp; 0 \\ 0 &amp; -\sigma^2 \end{pmatrix}, 
+C        = \begin{pmatrix} 0 &amp;  - i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>In the Weyl-chiral representation, a spinor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}
+\end{split}\]</div>
+<p>transforms under C:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi^c = C \gamma^0 \Psi^* = i \gamma^2 \Psi^* = \begin{pmatrix} 0 &amp; i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pmatrix} \begin{pmatrix} \psi^*_L \\ \psi^*_R \end{pmatrix} = \begin{pmatrix} i \sigma^2 \psi^*_R \\ -i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>Therefore the charge conjugate of a left-chiral spinor is a right-chiral spinor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi_L = \begin{pmatrix} \psi_L \\ 0 \end{pmatrix} \to
+(\Psi^c)_R = \begin{pmatrix} 0 \\ -i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>A spinor is <span class="math notranslate nohighlight">\(\Psi^M\)</span> is Majorana if:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^M = (\Psi^M)^c
+\]</div>
+<p>That can be created starting from a <span class="math notranslate nohighlight">\(\Psi\)</span> spinor:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi^M = \Psi + \Psi^c
 \]</div>
-<p>it fulfills that:</p>
+<p>Therefore the Majorana spinor formed with a Weyl <span class="math notranslate nohighlight">\(\psi_L\)</span> bi-spinor is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi^M = \begin{pmatrix} \psi_L \\ -i \sigma^2 \psi^*_L \end{pmatrix} 
+\end{split}\]</div>
+<p>And the Dirac equation becames the Majorana equation:</p>
 <div class="math notranslate nohighlight">
 \[
-(\Psi^M)^c = \Psi^c + C C^T \Psi =   \Psi^c + \Psi
+i \gamma^\mu \partial_\mu \Psi_L - m \Psi_R = 0 \; \to \;
+\bar{\sigma}^\mu \partial_\mu \psi_L +  m \sigma^2 \psi^*_L = 0
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\bar{\sigma}^\mu \equiv \left( I, -\sigma^k \right) \)</span></p>
+<p>We can not take a global phase of a Majorana spinor, as <span class="math notranslate nohighlight">\(\psi_L \to e^{i\phi} \psi_L\)</span>, implies</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi^M \to \begin{pmatrix} e^{i\phi} \, \psi_L \\ e^{-i\phi} (-i \sigma^2 \psi^*_L) \end{pmatrix}
+\end{split}\]</div>
+<p>Therefore it has no associated charge. It is a pure neutral fermion.</p>
+<p><em>exercise</em> Demostrate that the current of Majorana spinors vanishes:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi}^c \gamma^\mu \Psi^c = - \bar{\Psi} \gamma^\mu \Psi
 \]</div>
 </div>
 <div class="section" id="majorana-mass">
