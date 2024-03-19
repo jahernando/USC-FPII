@@ -359,6 +359,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-spinors">
+   Dirac, Weyl and Mayorana spinors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicity-and-chirality">
+     Helicity and Chirality
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-masses-the-appareance-of-the-mixing-matrix">
    Dirac masses. The appareance of the mixing matrix
   </a>
@@ -384,6 +396,17 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#majorana-neutrinos">
    Majorana neutrinos
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-helicidad-states-working">
+     about
+     <em>
+      Helicidad
+     </em>
+     states [WORKING]
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#majorana-mass">
@@ -512,6 +535,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-spinors">
+   Dirac, Weyl and Mayorana spinors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicity-and-chirality">
+     Helicity and Chirality
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-masses-the-appareance-of-the-mixing-matrix">
    Dirac masses. The appareance of the mixing matrix
   </a>
@@ -537,6 +572,17 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#majorana-neutrinos">
    Majorana neutrinos
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-helicidad-states-working">
+     about
+     <em>
+      Helicidad
+     </em>
+     states [WORKING]
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#majorana-mass">
@@ -696,6 +742,55 @@ title="Print to PDF"
 <p>About Majorana masses.</p>
 <p>The See-Saw Mechanisme and the Weinberg operator</p>
 <p>Search for the N Majorana neutrinos</p>
+<div class="section" id="dirac-weyl-and-mayorana-spinors">
+<h2>Dirac, Weyl and Mayorana spinors<a class="headerlink" href="#dirac-weyl-and-mayorana-spinors" title="Permalink to this heading">#</a></h2>
+<p>The objetice of Dirac when introducing his equation was to describe free electrons.</p>
+<p>The Dirac ecuation describes the dinamic of free fermions (<span class="math notranslate nohighlight">\(s = 1/2\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[
+i \gamma^\mu \partial_\mu \Psi - m \Psi = 0
+\]</div>
+<p>with mass <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p>The Dirac equation:</p>
+<ul class="simple">
+<li><p>is linear in the space-coordenates <span class="math notranslate nohighlight">\(\partial_\mu\)</span>. Time and space enter in equal condition.</p></li>
+<li><p>has embebed the Einstein equation <span class="math notranslate nohighlight">\(m^2 = E - p^2\)</span>, via the 4 Dirac matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>, they fulfill</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+ \{ \gamma^\mu, \gamma^\nu \} = 2 g^{\mu\nu}, \;\; 
+ (\gamma^0)^\dagger = \gamma^0, \; (\gamma^i)^\dagger = \gamma^i
+ \]</div>
+<p>We define the adjoint as <span class="math notranslate nohighlight">\(\bar{\Psi} = \gamma^0 \Psi^\dagger\)</span></p>
+<p>The Dirac equation comes from the Euler equation of the Lagrangian:</p>
+<div class="math notranslate nohighlight">
+\[
+i \bar{\Psi} \gamma^\mu \Psi - m \bar{\Psi} \Psi = 0
+\]</div>
+<p>And the Hamiltonian is:</p>
+<div class="math notranslate nohighlight">
+\[
+H \Psi = (i \gamma^0 \gamma^i \partial_i - \gamma^0 m) \Psi
+\]</div>
+<p>The Dirac equation admits the Fourier decomposition:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi(x) = \sum_{s} \int_p \left[ u_s(p) a_s(p) e^{-i p x} + v_s(p) b^\dagger(p) e^{+ipx} \right]
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(s = 1, 2\)</span> for the spins and <span class="math notranslate nohighlight">\(u_s(p)\)</span>, and <span class="math notranslate nohighlight">\(v_s(p)\)</span> are the Dirac spinors, composed of 4 complex elements, which depends on <span class="math notranslate nohighlight">\(\mathrm{p}\)</span>.</p>
+<p>The <span class="math notranslate nohighlight">\(u_s(p)\)</span> spinor is associated to the particle, the positive energy solutions of the Dirac equation, and the <span class="math notranslate nohighlight">\(v_s(p)\)</span> spinor is associated to the anti-particles.</p>
+<div class="section" id="helicity-and-chirality">
+<h3>Helicity and Chirality<a class="headerlink" href="#helicity-and-chirality" title="Permalink to this heading">#</a></h3>
+<p>We define the helicity as the projection of the spin in the momentun direction of the particle:</p>
+<div class="math notranslate nohighlight">
+\[
+h = \Sigma \cdot {\hat p}, \;\; \Sigma = 2 \, S
+\]</div>
+<p>As the Hamiltonian conmutes with the total angular momentun <span class="math notranslate nohighlight">\(J = L + S\)</span>, then the helicity conmutes with <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\([H, h] = 0\)</span>, and it is a conserved quantity.</p>
+<p>We can descopompose the solutions of the Dirac equation in the base of the helicity. The eigen-values of helicity are <span class="math notranslate nohighlight">\(\pm 1\)</span>.</p>
+<p>But, it is not a Lorentz invariante, as changing to a reference frame where the observer goes with larger <span class="math notranslate nohighlight">\(\bf{p}\)</span> than then particle, it changes its helicity.</p>
+</div>
+</div>
 <div class="section" id="dirac-masses-the-appareance-of-the-mixing-matrix">
 <h2>Dirac masses. The appareance of the mixing matrix<a class="headerlink" href="#dirac-masses-the-appareance-of-the-mixing-matrix" title="Permalink to this heading">#</a></h2>
 <div class="section" id="no-mass-neutrinos-as-a-weyld-spinor">
@@ -773,7 +868,7 @@ $<span class="math notranslate nohighlight">\(
 \frac{g}{\sqrt{2}} \bar{l}'_{L} \gamma^\mu \nu'_L W^+_\mu + \mathrm{h.c.} = 
 \frac{g}{\sqrt{2}} \bar{l}_{L}  \gamma^\mu \, (U^\dagger_l U_\nu) \, \nu_L W^+_\mu + \mathrm{h.c.}
 \]</div>
-<p>where it shows a unitary matrix:</p>
+<p>Where:</p>
 <div class="math notranslate nohighlight">
 \[
 U = U^\dagger_l \, U_\nu
@@ -841,16 +936,23 @@ positron quantum theory by means of a new quantization process. The meaning of D
 equations is somewhat modified and it is no more necessary to speak of negative-energy
 states; nor to assume, for any other type of particles, especially neutral ones, the existence
 of antiparticles, corresponding to the `holes’ of negative energy.”</em></p>
-<p>In Dirac Matrices in Majorana representation are imaginary, therefore the Dirac equation:</p>
+<p>In Dirac Matrices in Majorana representation are imaginary, therefore the Dirac equation is real:</p>
 <div class="math notranslate nohighlight">
 \[
 i \gamma^\mu \partial_\mu \Psi = m \Psi
 \]</div>
-<p>decouples for the real, <span class="math notranslate nohighlight">\(\Psi_{\mathcal{R}}\)</span> and imaginary part of the field, <span class="math notranslate nohighlight">\(\Psi_{\mathcal{I}}\)</span>, that is, <span class="math notranslate nohighlight">\(\Psi = \Psi_{\mathcal{R}} + \Psi_{\mathcal{I}}\)</span></p>
+<p>And admits a real solution, <span class="math notranslate nohighlight">\(\Psi = \Psi^*\)</span></p>
+<p>The Majorana condition, in a different representation of the Dirac matrices translates to:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi = \Psi^c 
+\]</div>
+<p>That means that a particle is its antiparticle.</p>
+<p>In Majorana words there is a <em>symetrization</em>, no need to speak of <em>negative-states</em> for neutral particles.</p>
 <p>The charge conjungation matrix is defined as:</p>
 <div class="math notranslate nohighlight">
 \[
-\Psi^c = C \bar{\Psi}^T = C \gamma^0 \, \Psi^*
+\Psi^c = C \, \bar{\Psi}^T = C' \, \Psi^*
 \]</div>
 <p>Where <span class="math notranslate nohighlight">\(C\)</span> is the change conjugation matrix, in any representation, it fulfills:</p>
 <div class="math notranslate nohighlight">
@@ -918,7 +1020,7 @@ C        = \begin{pmatrix} 0 &amp;  - i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pma
 \[
 \Psi^M = \Psi + \Psi^c
 \]</div>
-<p>Therefore the Majorana spinor formed with a Weyl <span class="math notranslate nohighlight">\(\psi_L\)</span> bi-spinor is:</p>
+<p>Therefore the Majorana spinor formed with from a Weyl <span class="math notranslate nohighlight">\(\psi_L\)</span> bi-spinor is:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Psi^M = \begin{pmatrix} \psi_L \\ -i \sigma^2 \psi^*_L \end{pmatrix} 
@@ -941,6 +1043,58 @@ i \gamma^\mu \partial_\mu \Psi_L - m \Psi_R = 0 \; \to \;
 \[
 \bar{\Psi}^c \gamma^\mu \Psi^c = - \bar{\Psi} \gamma^\mu \Psi
 \]</div>
+<div class="section" id="about-helicidad-states-working">
+<h3>about <em>Helicidad</em> states [WORKING]<a class="headerlink" href="#about-helicidad-states-working" title="Permalink to this heading">#</a></h3>
+<p>Helicity spinors:</p>
+<div class="math notranslate nohighlight">
+\[
+(\sigma \cdot {\hat p}) \, \xi_\pm = \pm \, \xi_\pm
+\]</div>
+<p>with:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\xi_{-} = \begin{pmatrix} e^{-i\phi} \sin \frac{\theta}{2} \\ -\cos \frac{\theta}{2} \end{pmatrix}, \;\;\;
+\xi_{+} = \begin{pmatrix} \cos \frac{\theta}{2} \\ e^{-i\phi}\sin \frac{\theta}{2} \end{pmatrix}
+\end{split}\]</div>
+<p>Defined such that:</p>
+<div class="math notranslate nohighlight">
+\[
+\xi_+ = -i \sigma^2 \xi^*_-, \;\; \xi_- = i \sigma^2 \xi^*_+
+\]</div>
+<p>Notice that:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+-i \sigma^2 = \begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix} \equiv \tau
+\end{split}\]</div>
+<p>The Fourier expansion of the Majorana Field can be expressed in terms of the helicity bi-spinors:</p>
+<div class="math notranslate nohighlight">
+\[
+\omega(x) = \int_p \left[ \left(\xi_- a_-+ \kappa \, \xi_+ a_+ \right) e^{-ipx} + \left(\xi_+ a^\dagger_- + \kappa \, \xi_- a^\dagger_+ \right) e^{+ipx} \right]
+\]</div>
+<p>where:</p>
+<div class="math notranslate nohighlight">
+\[
+\kappa = \frac{m}{E+p}
+\]</div>
+<p>If we compute:</p>
+<div class="math notranslate nohighlight">
+\[
+-i \sigma^2 \omega^*(x) = 
+\]</div>
+<p>The Fourier expansion of the Majorana Field expressed in the Chiral representation, with spinor <span class="math notranslate nohighlight">\(u_\pm, v_\pm\)</span> in the helicity basis is:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi(x) = \int_p \left[ \left(u_- a_- + \, u_+ a_+ \right) e^{-ipx} + \left(v_+ a^\dagger_- +  v_+ a^\dagger_+ \right) e^{+ipx} \right]
+\]</div>
+<p>Where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_- = \begin{pmatrix}            \xi_-  \\ \kappa\, \xi_- \end{pmatrix}, \; 
+u_+ = \begin{pmatrix}   \kappa\, \xi_+  \\        \xi_+ \end{pmatrix}, \; 
+v_+ = \begin{pmatrix}  -\kappa\, \xi_+  \\        \xi_+ \end{pmatrix}, \; 
+v_- = \begin{pmatrix}            \xi_-  \\  \kappa\, \xi_- \end{pmatrix}, \; 
+\end{split}\]</div>
+</div>
 </div>
 <div class="section" id="majorana-mass">
 <h2>Majorana mass.<a class="headerlink" href="#majorana-mass" title="Permalink to this heading">#</a></h2>
