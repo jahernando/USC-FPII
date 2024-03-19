@@ -360,11 +360,6 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-fermions">
    Dirac, Weyl and Mayorana fermions
   </a>
@@ -493,8 +488,8 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#kamland-zen">
-     KamLAND-Zen
+    <a class="reference internal nav-link" href="#kamland2-zen">
+     KamLAND2-Zen
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -518,6 +513,11 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#references">
@@ -551,11 +551,6 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-fermions">
    Dirac, Weyl and Mayorana fermions
   </a>
@@ -684,8 +679,8 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#kamland-zen">
-     KamLAND-Zen
+    <a class="reference internal nav-link" href="#kamland2-zen">
+     KamLAND2-Zen
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -709,6 +704,11 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#references">
@@ -770,9 +770,6 @@ title="Print to PDF"
 <p>A tour to Dirac, Weyl and Majorana fermions.</p>
 <p>How to give masses to the neutrinos? Dirac and Majorana cases. The mixing matrix.</p>
 <p>How to detect Majorana neutrinos? The <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments</p>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-</div>
 <div class="section" id="dirac-weyl-and-mayorana-fermions">
 <h2>Dirac, Weyl and Mayorana fermions<a class="headerlink" href="#dirac-weyl-and-mayorana-fermions" title="Permalink to this heading">#</a></h2>
 <div class="section" id="dirac-fermions">
@@ -873,8 +870,8 @@ i \gamma^\mu \partial_\mu \Psi_R - m \Psi_L = 0,
 <p>We define a <strong>Weyl spinor</strong> if <span class="math notranslate nohighlight">\(m = 0\)</span>, in that case, both chiral fields are independent, and we obtain the Weyl equations:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-i \gamma^\mu \partial_\mu \psi_L = 0, \\
-i \gamma^\mu \partial_\mu \psi_R = 0. 
+i \gamma^\mu \partial_\mu \Psi_L = 0, \\
+i \gamma^\mu \partial_\mu \Psi_R = 0. 
 \end{split}\]</div>
 <p><em>Neutrinos in the SM are (were) Weyl fermions</em>. There were the only fermions that were in fact not Dirac fermions!</p>
 <p>As in the CC and NC only left-handed chiral neutrinos (and right-handle anti-neutrinos) participate, then only two fields are necesarry in the SM:</p>
@@ -897,11 +894,15 @@ i \gamma^\mu \partial_\mu \psi_R = 0.
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p>L</p></td>
+<tr class="row-even"><td class="text-align:center"><p>——</p></td>
+<td class="text-align:center"><p>————</p></td>
+<td class="text-align:center"><p>————</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>L</p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sim 1\)</span></p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(m/E)\)</span></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p>R</p></td>
+<tr class="row-even"><td class="text-align:center"><p>R</p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(m/E)\)</span></p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sim 1\)</span></p></td>
 </tr>
@@ -946,6 +947,7 @@ i \gamma^\mu \partial_\mu \psi_R = 0.
 </div>
 <div class="section" id="majorana-fermions">
 <h3>Majorana fermions<a class="headerlink" href="#majorana-fermions" title="Permalink to this heading">#</a></h3>
+<p>Pure neutral particle do not need to be Dirac, in fact Dirac spinor could be redundant!</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Ettore_Majorana">Etorre Majorana</a> in the 30’s of the XX century proposed that neutral fermions can be in fact <em>symmetric</em>, that is, they can be its own antiparticle.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1104,11 +1106,15 @@ i \gamma^\mu \partial_\mu \psi_L - m \psi_R = 0 \; \to \;
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p>L</p></td>
+<tr class="row-even"><td class="text-align:center"><p>– –</p></td>
+<td class="text-align:center"><p>————</p></td>
+<td class="text-align:center"><p>————</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>L</p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sim 1\)</span></p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(m/E)\)</span></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p>R</p></td>
+<tr class="row-even"><td class="text-align:center"><p>R</p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(m/E)\)</span></p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sim 1\)</span></p></td>
 </tr>
@@ -1402,7 +1408,7 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 </table>
 <p>How we can experimentally distinguish a Majorana neutrino?</p>
 <p>If neutrino is Majorana, a neutrino created in a <span class="math notranslate nohighlight">\(\pi^+\)</span> decay whould be able to interact and produce either <span class="math notranslate nohighlight">\(\mu^+\)</span> or <span class="math notranslate nohighlight">\(\mu^-\)</span></p>
-<p>In the SM neutrinos are Weyl spinor, in that case we have a triple degenerancy: Lepton number, quirality, helicity!</p>
+<p>In the SM neutrinos are Weyl spinor, in that case we have a triple degenerancy: Lepton number, quirality and helicity!</p>
 <ul class="simple">
 <li><p>A neutrino is a left-chiral field and has negative helicity.</p></li>
 </ul>
@@ -1456,11 +1462,11 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p></p></td>
-<td class="text-align:center"><p>L</p></td>
-<td class="text-align:center"><p>Q</p></td>
-<td class="text-align:center"><p>H -1</p></td>
-<td class="text-align:center"><p>H +1</p></td>
+<tr class="row-even"><td class="text-align:center"><p>– –</p></td>
+<td class="text-align:center"><p>– L –</p></td>
+<td class="text-align:center"><p>– Q –</p></td>
+<td class="text-align:center"><p>– H -1 –</p></td>
+<td class="text-align:center"><p>– H +1 –</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_L\)</span></p></td>
 <td class="text-align:center"><p>+1</p></td>
@@ -1500,22 +1506,22 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p></p></td>
-<td class="text-align:center"><p>L</p></td>
-<td class="text-align:center"><p>Q</p></td>
-<td class="text-align:center"><p>H -1</p></td>
-<td class="text-align:center"><p>H +1</p></td>
+<tr class="row-even"><td class="text-align:center"><p>–  –</p></td>
+<td class="text-align:center"><p>– L –</p></td>
+<td class="text-align:center"><p>– Q –</p></td>
+<td class="text-align:center"><p>– H -1 –</p></td>
+<td class="text-align:center"><p>– H +1 –</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_L\)</span></p></td>
 <td class="text-align:center"><p>-</p></td>
 <td class="text-align:center"><p>L</p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sim 1\)</span></p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(m/E)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(\frac{m}{E})\)</span></p></td>
 </tr>
 <tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_R\)</span></p></td>
 <td class="text-align:center"><p>-</p></td>
 <td class="text-align:center"><p>R</p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(m/E)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mathcal{O}(\frac{m}{E})\)</span></p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sim 1\)</span></p></td>
 </tr>
 </tbody>
@@ -1549,7 +1555,7 @@ U^2_{ei} \frac{m_i}{E}
 <p>The transition amplitude is proportional to</p>
 <div class="math notranslate nohighlight">
 \[
-\mathcal{A} \propto  m_{\beta\beta} = \sqrt{\sum_i U^2_{ei} \, m_i} 
+\mathcal{A} \propto  m_{\beta\beta} = \sum_i U^2_{ei} \, m_i
 \]</div>
 <p>the Majorana mass, <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span>.</p>
 <p>Note that the Majorana mass depends on the first row of the neutrino <span class="math notranslate nohighlight">\(U\)</span> Majorana mixing matrix and the neutrino masses.</p>
@@ -1579,12 +1585,12 @@ U^2_{ei} \frac{m_i}{E}
 <p>The half-life time of this decay is:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{1}{T^{0\nu}_{1/2}} = G^{0\nu} \, \left| M^{0\nu} \right|^2 \, \frac{m^2_{\beta\beta}}{m^2_e}
+\frac{1}{T^{0\nu}_{1/2}} = G^{0\nu} \, \left| M^{0\nu} \right|^2 \, m^2_{\beta\beta}
 \]</div>
 <p>Where <span class="math notranslate nohighlight">\(G^{0\nu}\)</span> is the phase factor, and <span class="math notranslate nohighlight">\(\left| M^{0\nu} \right|^2\)</span>, the nuclear matrix elemment (NME) squared</p>
 <div class="math notranslate nohighlight">
 \[
-m_{\beta\beta} = \left| \sqrt{\sum_i U^2_{ei} \, m_i} \right|
+m_{\beta\beta} =  \sum_i U^2_{ei} \, m_i
 \]</div>
 <p>Is the effective majorana mass which depends of the elements of the mixing matrix <span class="math notranslate nohighlight">\(U_{ei}\)</span> and the neutrino masses <span class="math notranslate nohighlight">\(m_i\)</span>.</p>
 <p>About the phase factor:</p>
@@ -1827,6 +1833,9 @@ N_{sig} \propto M \, t
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_detector.png"><img alt="_images/EXO200_detector.png" class="align-center" src="_images/EXO200_detector.png" style="width: 350px;" /></a></p></td>
 <td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_photo.png"><img alt="_images/EXO200_photo.png" class="align-center" src="_images/EXO200_photo.png" style="width: 450px;" /></a></p></td>
 </tr>
+<tr class="row-odd"><td class="text-align:center"><p>Exo200 drawing</p></td>
+<td class="text-align:center"><p>Exo200 detector</p></td>
+</tr>
 </tbody>
 </table>
 <table class="colwidths-auto table">
@@ -1836,8 +1845,11 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_detector_operation.png"><img alt="_images/EXO200_detector_operation.png" class="align-center" src="_images/EXO200_detector_operation.png" style="width: 400px;" /></a></p></td>
-<td class="text-align:center"><p></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_detector_operation.png"><img alt="_images/EXO200_detector_operation.png" class="align-center" src="_images/EXO200_detector_operation.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_calibration.png"><img alt="_images/EXO200_calibration.png" class="align-center" src="_images/EXO200_calibration.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Exo technique</p></td>
+<td class="text-align:center"><p>Calibration</p></td>
 </tr>
 </tbody>
 </table>
@@ -1913,7 +1925,7 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_event_distribution.png"><img alt="_images/KamLAND-zen_event_distribution.png" class="align-center" src="_images/KamLAND-zen_event_distribution.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_event_distribution.png"><img alt="_images/KamLAND-zen_event_distribution.png" class="align-center" src="_images/KamLAND-zen_event_distribution.png" style="width: 400px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1927,8 +1939,8 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_energy_spectrum.png"><img alt="_images/KamLAND-zen_energy_spectrum.png" class="align-center" src="_images/KamLAND-zen_energy_spectrum.png" style="width: 400px;" /></a></p></td>
-<td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_energy_spectrum_zoom.png"><img alt="_images/KamLAND-zen_energy_spectrum_zoom.png" class="align-center" src="_images/KamLAND-zen_energy_spectrum_zoom.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_energy_spectrum.png"><img alt="_images/KamLAND-zen_energy_spectrum.png" class="align-center" src="_images/KamLAND-zen_energy_spectrum.png" style="width: 350px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_energy_spectrum_zoom.png"><img alt="_images/KamLAND-zen_energy_spectrum_zoom.png" class="align-center" src="_images/KamLAND-zen_energy_spectrum_zoom.png" style="width: 350px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1941,7 +1953,7 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_mbb_vs_mlightest.png"><img alt="_images/KamLAND-zen_mbb_vs_mlightest.png" class="align-center" src="_images/KamLAND-zen_mbb_vs_mlightest.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_mbb_vs_mlightest.png"><img alt="_images/KamLAND-zen_mbb_vs_mlightest.png" class="align-center" src="_images/KamLAND-zen_mbb_vs_mlightest.png" style="width: 350px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1964,13 +1976,24 @@ N_{sig} \propto M \, t
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/kamlandzen800_spectrum_2022.png"><img alt="_images/kamlandzen800_spectrum_2022.png" class="align-center" src="_images/kamlandzen800_spectrum_2022.png" style="width: 400px;" /></a></p></td>
-<td class="text-align:center"><p><a class="reference internal" href="_images/kamlandzen800_bkg_2022.png"><img alt="_images/kamlandzen800_bkg_2022.png" class="align-center" src="_images/kamlandzen800_bkg_2022.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/kamlandzen800_bkg_2022.png"><img alt="_images/kamlandzen800_bkg_2022.png" class="align-center" src="_images/kamlandzen800_bkg_2022.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>spectrum</p></td>
+<td class="text-align:center"><p>bkg estimation in RoI</p></td>
 </tr>
 </tbody>
 </table>
 <p><a class="reference external" href="https://arxiv.org/abs/2203.02139">KamLAND-Zen 800 2022</a></p>
-<p>| :–: |
-| <a class="reference internal" href="_images/kamlandzen800_mbb_2022.png"><img alt="_images/kamlandzen800_mbb_2022.png" class="align-center" src="_images/kamlandzen800_mbb_2022.png" style="width: 400px;" /></a>  |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/kamlandzen800_mbb_2022.png"><img alt="_images/kamlandzen800_mbb_2022.png" class="align-center" src="_images/kamlandzen800_mbb_2022.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
 <ul class="simple">
 <li><p>with 970 kg y exposure, they reach a limit <span class="math notranslate nohighlight">\(\tau^{2\beta0\nu}_{1/2} &gt; 2.3 \times 10^{26}\)</span> yr at 90% C.L, and
 <span class="math notranslate nohighlight">\(m_{\beta\beta} \;\; 36-156\)</span> meV.</p></li>
@@ -1988,8 +2011,8 @@ N_{sig} \propto M \, t
 </ul>
 </li>
 <li><p>Located in strings with very low mass and radio-pure electronics</p></li>
-<li><p>inside a cryogenic bath of 63 m<span class="math notranslate nohighlight">\(^3\)</span> of Liquid Argon. Detector are instrumented with a courtain of light-fibers with SiPM readout</p></li>
-<li><p>in a water tank 590 m<span class="math notranslate nohighlight">\(^3\)</span> instrumented with PMTs</p></li>
+<li><p>inside a cryogenic bath of 63 <span class="math notranslate nohighlight">\(\mathrm{m}^3\)</span> of Liquid Argon. Detector are instrumented with a courtain of light-fibers with SiPM readout</p></li>
+<li><p>in a water tank 590 <span class="math notranslate nohighlight">\(\mathrm{m}^3\)</span> instrumented with PMTs</p></li>
 <li><p>detector at LNGS, Italy</p></li>
 </ul>
 <table class="colwidths-auto table">
@@ -1999,8 +2022,11 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detector.png"><img alt="_images/GERDA_detector.png" class="align-left" src="_images/GERDA_detector.png" style="width: 400px;" /></a></p></td>
-<td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detector_strings.png"><img alt="_images/GERDA_detector_strings.png" class="align-right" src="_images/GERDA_detector_strings.png" style="width: 300px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detector.png"><img alt="_images/GERDA_detector.png" class="align-left" src="_images/GERDA_detector.png" style="width: 250px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detector_strings.png"><img alt="_images/GERDA_detector_strings.png" class="align-right" src="_images/GERDA_detector_strings.png" style="width: 250px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Gerda drawing</p></td>
+<td class="text-align:center"><p>Gerda veto+Ge detectors</p></td>
 </tr>
 </tbody>
 </table>
@@ -2023,9 +2049,13 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_Gesensors_photo.png"><img alt="_images/GERDA_Gesensors_photo.png" class="align-left" src="_images/GERDA_Gesensors_photo.png" style="width: 250px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_Gesensors_photo.png"><img alt="_images/GERDA_Gesensors_photo.png" class="align-left" src="_images/GERDA_Gesensors_photo.png" style="width: 200px;" /></a></p></td>
 <td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_sensor_operation.png"><img alt="_images/GERDA_sensor_operation.png" class="align-right" src="_images/GERDA_sensor_operation.png" style="width: 250px;" /></a></p></td>
-<td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detection_scheme.png"><img alt="_images/GERDA_detection_scheme.png" class="align-center" src="_images/GERDA_detection_scheme.png" style="width: 250px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detection_scheme.png"><img alt="_images/GERDA_detection_scheme.png" class="align-center" src="_images/GERDA_detection_scheme.png" style="width: 200px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>sesor</p></td>
+<td class="text-align:center"><p>operation</p></td>
+<td class="text-align:center"><p>discrimination</p></td>
 </tr>
 </tbody>
 </table>
@@ -2037,9 +2067,10 @@ N_{sig} \propto M \, t
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_energy_spectrum_phaseII.png"><img alt="_images/GERDA_energy_spectrum_phaseII.png" class="align-center" src="_images/GERDA_energy_spectrum_phaseII.png" style="width: 600px;" /></a></p></td>
 </tr>
+<tr class="row-odd"><td class="text-align:center"><p>Energy spectum of phase-II GERDA (2019) <a class="reference external" href="https://arxiv.org/abs/1909.02726">[7]</a></p></td>
+</tr>
 </tbody>
 </table>
-<p>Energy spectum of phase-II GERDA (2019) <a class="reference external" href="https://arxiv.org/abs/1909.02726">[7]</a></p>
 <p>With  82.4 kg yr, GERDA established a limit <span class="math notranslate nohighlight">\(\mathcal{L}(T^{0\nu}_{1/2}) \gt 9 \times 10^{25}\)</span> yr at 90% CL, with a sensitivity  <span class="math notranslate nohighlight">\(\mathcal{S}(T^{0\nu}_{1/2}) &gt; 11 \times 10^{25}\)</span> yr</p>
 <p>With 103.7 kg y, final GERDA result (2020), <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.252502">[7b]</a>, impossed a limit of <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}) &gt; 1.8 \times 10^{26}\)</span> y.</p>
 <p>Its translates to a range in <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> 104 - 228 meV</p>
@@ -2049,7 +2080,7 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_mbb_vs_mlight_exclusion.png"><img alt="_images/GERDA_mbb_vs_mlight_exclusion.png" class="align-center" src="_images/GERDA_mbb_vs_mlight_exclusion.png" style="width: 800px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_mbb_vs_mlight_exclusion.png"><img alt="_images/GERDA_mbb_vs_mlight_exclusion.png" class="align-center" src="_images/GERDA_mbb_vs_mlight_exclusion.png" style="width: 700px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2073,7 +2104,7 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_soft.png"><img alt="_images/NEXT_soft.png" class="align-center" src="_images/NEXT_soft.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_soft.png"><img alt="_images/NEXT_soft.png" class="align-center" src="_images/NEXT_soft.png" style="width: 400px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2106,7 +2137,7 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT100_xsection.png"><img alt="_images/NEXT100_xsection.png" class="align-center" src="_images/NEXT100_xsection.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT100_xsection.png"><img alt="_images/NEXT100_xsection.png" class="align-center" src="_images/NEXT100_xsection.png" style="width: 400px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2117,18 +2148,8 @@ N_{sig} \propto M \, t
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_topology_tracks.png"><img alt="_images/NEXT_topology_tracks.png" class="align-center" src="_images/NEXT_topology_tracks.png" style="width: 800px;" /></a></p></td>
-<td class="text-align:center"><p></p></td>
-</tr>
-</tbody>
-</table>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_blobs_discrimination.png"><img alt="_images/NEXT_blobs_discrimination.png" class="align-center" src="_images/NEXT_blobs_discrimination.png" style="width: 250px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_topology_tracks.png"><img alt="_images/NEXT_topology_tracks.png" class="align-center" src="_images/NEXT_topology_tracks.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_blobs_discrimination.png"><img alt="_images/NEXT_blobs_discrimination.png" class="align-center" src="_images/NEXT_blobs_discrimination.png" style="width: 250px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2163,45 +2184,34 @@ N_{sig} \propto M \, t
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_foto.png"><img alt="_images/NEW_foto.png" class="align-center" src="_images/NEW_foto.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_foto.png"><img alt="_images/NEW_foto.png" class="align-center" src="_images/NEW_foto.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEW_in_platform.png"><img alt="_images/NEW_in_platform.png" class="align-center" src="_images/NEW_in_platform.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>NEXT-White detector</p></td>
+<td class="text-align:center"><p>Hall-A LSC NEXT installation</p></td>
 </tr>
 </tbody>
 </table>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_in_platform.png"><img alt="_images/NEW_in_platform.png" class="align-center" src="_images/NEW_in_platform.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_LR_events.png"><img alt="_images/NEW_LR_events.png" class="align-center" src="_images/NEW_LR_events.png" style="width: 350px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEW_blobs_de.png"><img alt="_images/NEW_blobs_de.png" class="align-center" src="_images/NEW_blobs_de.png" style="width: 350px;" /></a></p></td>
 </tr>
-</tbody>
-</table>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_LR_events.png"><img alt="_images/NEW_LR_events.png" class="align-center" src="_images/NEW_LR_events.png" style="width: 250px;" /></a></p></td>
+<tr class="row-odd"><td class="text-align:center"><p>events in NEXT-White</p></td>
+<td class="text-align:center"><p>blob energy distributions in NEXT-White</p></td>
 </tr>
 </tbody>
 </table>
 <p>Reconstructed double and single electrons using NEW calibration data [NEXT-3] [NEXT-4].</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_blobs_de.png"><img alt="_images/NEW_blobs_de.png" class="align-center" src="_images/NEW_blobs_de.png" style="width: 550px;" /></a></p></td>
-</tr>
-</tbody>
-</table>
-<p>Blob energys for double and single electrons using NEW calibration data [NEXT-3] [NEXT-4].</p>
 </div>
 <div class="section" id="next-generation-of-beta-beta0-nu-experiments">
 <h2>NEXT generation of <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments<a class="headerlink" href="#next-generation-of-beta-beta0-nu-experiments" title="Permalink to this heading">#</a></h2>
@@ -2248,18 +2258,8 @@ N_{sig} \propto M \, t
 <li><p>NEMO (different isotopes) [14].</p></li>
 </ul>
 <p>Note: The dates with <span class="math notranslate nohighlight">\(?\)</span> indicate proposed experiments not yet approved or funded.</p>
-<div class="section" id="kamland-zen">
-<h3>KamLAND-Zen<a class="headerlink" href="#kamland-zen" title="Permalink to this heading">#</a></h3>
-<p>KamLANZ-Zen 800:</p>
-<ul class="simple">
-<li><p>started 2019-</p></li>
-<li><p>745 kg <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span></p></li>
-<li><p>2 times large balloon and more radiopure</p></li>
-<li><p>reduction <span class="math notranslate nohighlight">\(^{12}\mathrm{C}\)</span>, <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span> spallation by analysis</p></li>
-<li><p>current exposure: 419 kg y</p></li>
-<li><p>Expected: Improve KamLand-Zeon 400 by a factor 4 in 5 y, (<span class="math notranslate nohighlight">\(m_{\beta\beta} &lt; 20-80\)</span> meV)</p></li>
-</ul>
-<p>KamLAND2-Zen</p>
+<div class="section" id="kamland2-zen">
+<h3>KamLAND2-Zen<a class="headerlink" href="#kamland2-zen" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Planned</p></li>
 <li><p>large source (&gt; ton of <span class="math notranslate nohighlight">\(^{136}\)</span>Xe), more ambitious in the future</p></li>
@@ -2288,7 +2288,7 @@ N_{sig} \propto M \, t
 <th class="text-align:center head"><p>— BI (c/(keV kg y)—</p></th>
 <th class="text-align:center head"><p>— Exposure (kg y) —</p></th>
 <th class="text-align:center head"><p>——- <span class="math notranslate nohighlight">\(T_{1/2}\)</span> y ——</p></th>
-<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span> —</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV —</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2319,7 +2319,7 @@ N_{sig} \propto M \, t
 <div class="section" id="legend-200">
 <h3>Legend-200<a class="headerlink" href="#legend-200" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>In construction, expected start of data taking: 2022-</p></li>
+<li><p>In construction, expected start of data taking: 2024-</p></li>
 <li><p>Combination of GERDA and MJD collaborations</p></li>
 <li><p>Installed at LNGG, upgrade of Gerda, Germanio detectors</p></li>
 <li><p>Radiopurity parts from MJD selection</p></li>
@@ -2358,7 +2358,7 @@ N_{sig} \propto M \, t
 <th class="text-align:center head"><p>— BI (c/(keV kg y)—</p></th>
 <th class="text-align:center head"><p>— Exposure (kg y) —</p></th>
 <th class="text-align:center head"><p>——- <span class="math notranslate nohighlight">\(T_{1/2}\)</span> y ——</p></th>
-<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span> —</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV —</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2396,7 +2396,7 @@ N_{sig} \propto M \, t
 <li><p>Liquid Xe TPC, measurement of scintilation and charge</p></li>
 </ul>
 </li>
-<li><p>5 tons of <span class="math notranslate nohighlight">\(^{136}\)</span>Xe.</p>
+<li><p>5 tons of <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span>.</p>
 <ul>
 <li><p>cilindrical TPC <span class="math notranslate nohighlight">\(\phi = 1.3\)</span> m, in a cryostat and Vacuum.</p></li>
 </ul>
@@ -2421,7 +2421,7 @@ N_{sig} \propto M \, t
 <th class="text-align:center head"><p>— BI (c/(keV kg y)—</p></th>
 <th class="text-align:center head"><p>— Exposure (kg y) —</p></th>
 <th class="text-align:center head"><p>——- <span class="math notranslate nohighlight">\(T_{1/2}\)</span> y ——</p></th>
-<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span> —</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV —</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2447,25 +2447,28 @@ N_{sig} \propto M \, t
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT1ton_design.png"><img alt="_images/NEXT1ton_design.png" class="align-center" src="_images/NEXT1ton_design.png" style="width: 600px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT1ton_design.png"><img alt="_images/NEXT1ton_design.png" class="align-center" src="_images/NEXT1ton_design.png" style="width: 350px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEXT1ton_reach_vs_expon.png"><img alt="_images/NEXT1ton_reach_vs_expon.png" class="align-center" src="_images/NEXT1ton_reach_vs_expon.png" style="width: 250px;" /></a></p></td>
 </tr>
-</tbody>
-</table>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT1ton_reach_vs_expon.png"><img alt="_images/NEXT1ton_reach_vs_expon.png" class="align-center" src="_images/NEXT1ton_reach_vs_expon.png" style="width: 500px;" /></a></p></td>
+<tr class="row-odd"><td class="text-align:center"><p>NEX-ton drawing</p></td>
+<td class="text-align:center"><p>NEXT-ton sensitibity</p></td>
 </tr>
 </tbody>
 </table>
 <p>[NEXT-5]</p>
 </div>
+</div>
+<div class="section" id="conclusions">
+<h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h2>
+<p>The fact that neutrinos can be its one particle is one of the crucial questions still open in Particle Physics.</p>
+<p>If neutrinos are Majorana this implies NP at a large scale.</p>
+<p>The search of Majorana neutrinos is experimentally very challenging.</p>
+<p>Several best limit experiments KamLAND-Zen, <span class="math notranslate nohighlight">\(\tau^{2\beta0\nu}_{1/2}(^{126}\mathrm{Xe}) &gt; 1.23 \times 10^{26}\)</span> y at 90 % C.L. and Gerda <span class="math notranslate nohighlight">\(T^{2\beta0\nu}_{1/2}(^{76}\mathrm{Ge}) &gt; 1.8 \times 10^{26}\)</span> y at 90 % C.L.</p>
+<p>Several next generation experiment is construction: CUPID, NEXT, KamLAND2-Zen, LEGEND, they will cover the IH <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> allowed region in the next decades.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="references">
