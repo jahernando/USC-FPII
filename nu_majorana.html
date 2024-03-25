@@ -746,7 +746,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Mar 19 17:09:46 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Mar 21 16:01:25 2024
 </pre></div>
 </div>
 </div>
@@ -771,15 +771,18 @@ title="Print to PDF"
 </div>
 </div>
 <p><em>About</em></p>
-<p>A tour to Dirac, Weyl and Majorana fermions.</p>
-<p>How to give masses to the neutrinos? Dirac and Majorana cases. The mixing matrix.</p>
-<p>How to detect Majorana neutrinos? The <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments</p>
+<ul class="simple">
+<li><p>A tour to Dirac, Weyl and Majorana fermions.</p></li>
+<li><p>How to give masses to the neutrinos? Dirac and Majorana cases. The <span class="math notranslate nohighlight">\(U_{PMNS}\)</span> neutrino mixing matrix.</p></li>
+<li><p>How to detect Majorana neutrinos? The <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments, status and future.</p></li>
+</ul>
 <div class="section" id="dirac-weyl-and-mayorana-fermions">
 <h2>Dirac, Weyl and Mayorana fermions<a class="headerlink" href="#dirac-weyl-and-mayorana-fermions" title="Permalink to this heading">#</a></h2>
 <div class="section" id="dirac-fermions">
 <h3>Dirac fermions<a class="headerlink" href="#dirac-fermions" title="Permalink to this heading">#</a></h3>
-<p>In the SM the charged leptons are Dirac particles.</p>
-<p>They have defined masses, charges i.e electrical charge and leptonic number. Charged leptons show as particle and anti-particle. Anti-particles have the same mass but opposed charges.</p>
+<p>In the SM the charged leptons are Dirac fermions.</p>
+<p>They have defined masses, charges, i.e electrical charge and leptonic number.</p>
+<p>Charged leptons come in pair of particle and anti-particle. Anti-particles have the same mass but opposed charges.</p>
 <p>The Dirac ecuation describes the dinamic of free half-spin fermions:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -788,18 +791,18 @@ i \gamma^\mu \partial_\mu \Psi - m \Psi = 0
 <p>with mass <span class="math notranslate nohighlight">\(m\)</span>.</p>
 <p>The Dirac equation:</p>
 <ul class="simple">
-<li><p>is linear in the space-coordenates <span class="math notranslate nohighlight">\(\partial_\mu\)</span>. Time and space enter in equal condition.</p></li>
-<li><p>has embebed the Einstein equation <span class="math notranslate nohighlight">\(m^2 = E - p^2\)</span>, via the 4 Dirac matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>, they fulfill</p></li>
+<li><p>Is linear in the space-coordenates <span class="math notranslate nohighlight">\(\partial_\mu\)</span>. Time and space enter in equal condition.</p></li>
+<li><p>Has embebed the Einstein equation <span class="math notranslate nohighlight">\(m^2 = E - p^2\)</span>, via the 4 Dirac matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>.</p></li>
 </ul>
+<p>The <span class="math notranslate nohighlight">\(\gamma\)</span> matrices fulfill the Clidfold algebra:</p>
 <div class="math notranslate nohighlight">
 \[
  \{ \gamma^\mu, \gamma^\nu \} = 2 g^{\mu\nu}, \;\; 
  (\gamma^0)^\dagger = \gamma^0, \; (\gamma^i)^\dagger = \gamma^i
- \]</div>
-<div class="math notranslate nohighlight">
-\[\]</div>
+\]</div>
+<p>And admits different representations, the most common is the Pauli-Dirac.</p>
 <p>We define the adjoint as <span class="math notranslate nohighlight">\(\bar{\Psi} = \gamma^0 \Psi^\dagger\)</span></p>
-<p>The Dirac equation comes from the Euler equation of the Lagrangian:</p>
+<p>The Dirac equation comes from the Euler equation associated to the Lagrangian:</p>
 <div class="math notranslate nohighlight">
 \[
 i \bar{\Psi} \gamma^\mu \partial_\mu \Psi - m \bar{\Psi} \Psi = 0
@@ -834,7 +837,7 @@ H \Psi = (i \gamma^0 \gamma^i \partial_i - \gamma^0 m) \Psi
 \[
 P_R = \frac{1}{2} (1 + \gamma^5), \;\;\; P_L = \frac{1}{2} (1 - \gamma^5) \;\;\;
 \]</div>
-<p>We decompose the field into left and right chiral fields:</p>
+<p>We decompose A Dirac field into left and right chiral fields:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi = P_L \Psi + P_R \Psi = \Psi_L + \Psi_R
@@ -858,37 +861,41 @@ P_R = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; I\end{pmatrix}, \;\;\;
 \[\begin{split}
 \Psi = \begin{pmatrix} \psi_L  \\ \psi_R \end{pmatrix}
 \end{split}\]</div>
-<p>Which in fact the Weyl decomposition corresponds to the irreductible representation of the Lorentz group for Dirac spinors.</p>
+<p>The Weyl decomposition corresponds to the irreductible representation of the Lorentz group for Dirac spinors.</p>
 <p>The mass term of the Dirac lagrangian mixes the two Weyl fields:</p>
 <div class="math notranslate nohighlight">
 \[
 m \bar{\Psi} \Psi = m \, \bar{\psi}_L \psi_R + m \, \bar{\psi}_R \psi_L
 \]</div>
-<p>Therefore to have a Dirac mass we need the left and right chiral fields</p>
+<p>Therefore a field to have a massive particle, needs a left and a right chiral fields.</p>
 <p>In the Weyl representation, the Dirac equation splits into two coupled equations:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 i \gamma^\mu \partial_\mu \Psi_L - m \Psi_R = 0, \\
 i \gamma^\mu \partial_\mu \Psi_R - m \Psi_L = 0, 
 \end{split}\]</div>
-<p>We define a <strong>Weyl spinor</strong> if <span class="math notranslate nohighlight">\(m = 0\)</span>, in that case, both chiral fields are independent, and we obtain the Weyl equations:</p>
+<p>We define a <strong>Weyl spinor</strong> if <span class="math notranslate nohighlight">\(m = 0\)</span>, in that case, both chiral fields are independent.</p>
+<p>For Weyl spinor the Dirac equation becames the Weyl equation:</p>
+<p>In the Chiral representation is:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-i \gamma^\mu \partial_\mu \Psi_L = 0, \\
-i \gamma^\mu \partial_\mu \Psi_R = 0. 
+i \gamma^\mu \sigma_\mu \psi_R = 0, \\
+i \gamma^\mu \bar{\sigma}_\mu \psi_L = 0. 
 \end{split}\]</div>
-<p><em>Neutrinos in the SM are (were) Weyl fermions</em>. There were the only fermions that were in fact not Dirac fermions!</p>
-<p>As in the CC and NC only left-handed chiral neutrinos (and right-handle anti-neutrinos) participate, then only two fields are necesarry in the SM:</p>
+<p>Where <span class="math notranslate nohighlight">\(\bar{\sigma}_\mu \equiv \{I, - \sigma_\mu \}\)</span></p>
+<p><em>Neutrinos in the SM were Weyl fermions</em>. There were the only fermions that were in fact not Dirac fermions!</p>
+<p>As in the CC and NC only left-handed chiral neutrinos (and right-handle anti-neutrinos) participate.</p>
+<p>Only two fields were necesary in the SM:</p>
 <div class="math notranslate nohighlight">
 \[
 \nu_L, \;\;\; \bar{\nu}_R
 \]</div>
 <p>Contrary to Dirac fermions, Weyl fermions have defined chirality and helicity.</p>
-<p>Chirality if a Lorentz invariant (Weyl spinors are the irreducible Lorentz group representation), but it is not a preserved quantity (<span class="math notranslate nohighlight">\(\gamma^5\)</span> does not conmute with the Dirac Hamiltonian due to the mass term).</p>
-<p>In the case of Weyl fermions as there is no mass term, Chirality is a Lorentz and a preserved quantity. It can be used for any observer any time as a good quantity.</p>
-<p>Helicity (the projection of the spin in the momentum direction) is a preserved quantity (as the total angular momentum conmutes the Hamiltonian, and also does the helicity <span class="math notranslate nohighlight">\(h \equiv S \cdot \hat{p}\)</span>), but it is not a Lorentz invariant as an observed which moves with a larger momentum in the same direccion that the particle sees the inverse helicity than other observer that moves with lower momentum.</p>
-<p>But in the case of Weyl particles, as they have no mass, helicity is preserved and it is a Lorentz invariant. It is the same for all the observers and any time.</p>
-<p>We can resume the situation:</p>
+<p>Chirality if a Lorentz invariant (Weyl spinors are the irreducible representation of the Lorentz group), but it is not a preserved quantity (because <span class="math notranslate nohighlight">\(\gamma^5\)</span> does not conmute with the mass term of the Hamiltonian).</p>
+<p>In the case of Weyl fermions as there is no mass term, Chirality is a Lorentz and a preserved quantity. It can be used for any observer any time as a good quantity of a particle.</p>
+<p>Helicity (the projection of the spin along the momentum direction) is a preserved quantity (as the total angular momentum conmutes the Hamiltonian, and also does the helicity <span class="math notranslate nohighlight">\(h \equiv S \cdot \hat{p}\)</span>), but it is not a Lorentz invariant as an observed which moves with a larger momentum in the same direccion that the particle sees the inverse helicity than other observer that moves with lower momentum.</p>
+<p>But in the case of Weyl particles, as they have no mass, helicity is preserved and a Lorentz invariant quatity. It is the same for all the observers and any time.</p>
+<p>We can resume the situation of helicity and quirality:</p>
 <p>For Dirac fermions</p>
 <table class="colwidths-auto table">
 <thead>
@@ -951,8 +958,8 @@ i \gamma^\mu \partial_\mu \Psi_R = 0.
 </div>
 <div class="section" id="majorana-fermions">
 <h3>Majorana fermions<a class="headerlink" href="#majorana-fermions" title="Permalink to this heading">#</a></h3>
-<p>Pure neutral particle do not need to be Dirac, in fact Dirac spinor could be redundant!</p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ettore_Majorana">Etore Majorana</a> in the 30’s of the XX century proposed that neutral fermions can be in fact <em>symmetric</em>, that is, they can be its own antiparticle.</p>
+<p>Pure neutral fermions do not need to be Dirac, in fact a Dirac spinor could be redundant to describe a neutral fermion!</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ettore_Majorana">Etore Majorana</a> in the 30’s of the XX century proposed that neutral fermions can be <em>symmetric</em>, that is, they can be its own antiparticle.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -968,7 +975,7 @@ positron quantum theory by means of a new quantization process. The meaning of D
 equations is somewhat modified and it is no more necessary to speak of negative-energy
 states; nor to assume, for any other type of particles, especially neutral ones, the existence
 of antiparticles, corresponding to the `holes’ of negative energy.”</em></p>
-<p>Majorana introducies a new representation of the Dirac matrices:</p>
+<p>Majorana introducd a new representation of the Dirac matrices:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \gamma^0 = \begin{pmatrix} 0 &amp; \sigma^2 \\ \sigma^2 &amp; 0\end{pmatrix},
@@ -1003,8 +1010,8 @@ i \gamma^\mu \partial_\mu \Psi = m \Psi
 \]</div>
 <p>The carge conjugation matrix, <span class="math notranslate nohighlight">\(C\)</span>, can be obtained either by:</p>
 <ul class="simple">
-<li><p>imposing the covariance of the Dirac equation with respect charge conjugation</p></li>
-<li><p>changing from the Majorana representation <span class="math notranslate nohighlight">\(\tilde{\gamma}^\mu\)</span> to another representation, <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>. The two representatations are connected by a unitary matrix <span class="math notranslate nohighlight">\(U\)</span>. The <span class="math notranslate nohighlight">\(\tilde{\Psi}\)</span> indicates that is expressed in the Majorana representation.</p></li>
+<li><p>Imposing the covariance of the Dirac equation with respect charge conjugation</p></li>
+<li><p>Changing from the Majorana representation <span class="math notranslate nohighlight">\(\tilde{\gamma}^\mu\)</span> to another representation, <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>. The two representatations are connected by a unitary matrix <span class="math notranslate nohighlight">\(U\)</span>. The <span class="math notranslate nohighlight">\(\tilde{\Psi}\)</span> indicates that is expressed in the Majorana representation.</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1015,11 +1022,6 @@ i \gamma^\mu \partial_\mu \Psi = m \Psi
 <div class="math notranslate nohighlight">
 \[
 (\Psi^c)^c = \Psi
-\]</div>
-<p>and the C matrix fulfills:</p>
-<div class="math notranslate nohighlight">
-\[
-C \gamma^\mu C^{-1} = - (\gamma^\mu)^T
 \]</div>
 <p>In the Weyl-chiral representation, a spinor:</p>
 <div class="math notranslate nohighlight">
@@ -1054,8 +1056,13 @@ C \gamma^\mu C^{-1} = - (\gamma^\mu)^T
 \]</div>
 <p>Therefore the Majorana spinor formed with from a Weyl <span class="math notranslate nohighlight">\(\psi_L\)</span> bi-spinor is:</p>
 <div class="math notranslate nohighlight">
+\[
+\Psi^M = \Psi + \Psi^c 
+\]</div>
+<div class="math notranslate nohighlight">
 \[\begin{split}
-\Psi^M = \begin{pmatrix} \psi_L \\ -i \sigma^2 \psi^*_L \end{pmatrix} 
+\Psi^M =  \begin{pmatrix} \psi_L \\ 0 \end{pmatrix} + \begin{pmatrix} 0 \\ -i \sigma^2 \psi^*_L \end{pmatrix}  = 
+\begin{pmatrix} \psi_L \\ -i \sigma^2 \psi^*_L \end{pmatrix} 
 \end{split}\]</div>
 <p>That implies that a Majorana spinor has left and right chiral components.</p>
 <p>And given a Majorana spinor:</p>
@@ -1066,39 +1073,49 @@ C \gamma^\mu C^{-1} = - (\gamma^\mu)^T
 <p>The Dirac equation becames the Majorana equation:</p>
 <div class="math notranslate nohighlight">
 \[
-i \gamma^\mu \partial_\mu \psi_L - m \psi_R = 0 \; \to \;
 \bar{\sigma}^\mu \partial_\mu \psi_L +  m \sigma^2 \psi^*_L = 0
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(\bar{\sigma}^\mu \equiv \left( I, -\sigma^k \right) \)</span></p>
-<p>The last equation shows that the Majorana fermion has the two chiral components and it has a mass otherwise we obtain back the Weyl equation.</p>
-<p>In addition, we can not take a global phase of a Majorana spinor, as <span class="math notranslate nohighlight">\(\psi_L \to e^{i\phi} \psi_L\)</span>, implies</p>
+<p>where <span class="math notranslate nohighlight">\(\bar{\sigma}^\mu \equiv \{ I, -\sigma^k \} \)</span></p>
+<p>The last equation shows that a Majorana fermion has:</p>
+<ul class="simple">
+<li><p>left and right chiral components</p></li>
+<li><p>a mass, otherwise we obtain back the Weyl equation.</p></li>
+</ul>
+<p>In addition, a Majorana spinor has not the ambiguity of a global phase.</p>
+<p>If we transform <span class="math notranslate nohighlight">\(\psi_L \to e^{i\phi} \psi_L\)</span>, that implies:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Psi^M \to \begin{pmatrix} e^{i\phi} \, \psi_L \\ e^{-i\phi} (-i \sigma^2 \psi^*_L) \end{pmatrix}
 \end{split}\]</div>
-<p>Therefore a Majorana fermion has no associated charge. It is a pure neutral fermion. It has not electrical charge, no lepton number.</p>
+<p>There is no <span class="math notranslate nohighlight">\(U(1)\)</span> global symmetry that can be associated to a Majorana fermion.
+Therefore a Majorana fermion has no associated charge.</p>
+<p>It is a pure neutral fermion: It has not electrical charge, no lepton number.</p>
 <p>In Majorana’s words: Majorana solutions can only describe pure neutral fermions!</p>
-<p>We can give the Lagrangian of a Majorana fermion as:</p>
+<p>The Lagrangian of a Majorana fermion is:</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L}_M =  \frac{1}{2} \bar{\Psi} i \gamma^\mu \partial_\mu \Psi - \frac{1}{2} m \bar{\Psi} \Psi
 \]</div>
-<p>With the fact <span class="math notranslate nohighlight">\(1/2\)</span> we obtain back the Majorana equation deriving for example with respect <span class="math notranslate nohighlight">\(\psi_L\)</span>, and reflects the fact that the Majorana fermion is constructed from a bi-spinor, <span class="math notranslate nohighlight">\(\psi_L\)</span>, even if we express it as a four-spinor, <span class="math notranslate nohighlight">\(\Psi\)</span>.</p>
+<p>With the fact <span class="math notranslate nohighlight">\(1/2\)</span>, The Euler equation is the Majorana equation. If we express <span class="math notranslate nohighlight">\(\Psi\)</span> as a function of <span class="math notranslate nohighlight">\(\psi_L\)</span>,
+we obtain the Euler equation deriving with respect <span class="math notranslate nohighlight">\(\psi_L\)</span>.</p>
+<p>The <span class="math notranslate nohighlight">\(1/2\)</span> factor reflects the fact that the Majorana fermion is constructed from a bi-spinor, <span class="math notranslate nohighlight">\(\psi_L\)</span>, even if we express it as a four-spinor, <span class="math notranslate nohighlight">\(\Psi\)</span>.</p>
 <p>We can express the Majorana mass term as a function of the Weyl spinor <span class="math notranslate nohighlight">\(\psi_L\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
 -\mathcal{L}_m = \frac{1}{2} m (\overline{\psi_L} \, (\psi_L)^c + \overline{(\psi_L)^c} \, \psi_L)
 \]</div>
-<p>Os course, identically we could have created a Majorana spinor from a <span class="math notranslate nohighlight">\(\psi_R\)</span> Weyl spinor, in that case the mass term will be:</p>
-<div class="math notranslate nohighlight">
-\[
--\mathcal{L}_m = \frac{1}{2} m (\overline{\psi_R} \, (\psi_R)^c + \overline{(\psi_R)^c} \, \psi_R)
-\]</div>
-<p>The Majorana field admits the Fourier decomposition:</p>
+<p>Notice that again the mass term mixes the left and chiral componentes. The right component is nos associated to <span class="math notranslate nohighlight">\((\psi_L)^c\)</span>.</p>
+<p>The Majorana field, in 4 componentes, admits the Fourier decomposition:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi^M = \sum_s \int_p  \left[ u_s(p) a_s(p) e^{-i p \cdot x} + v_s(p) a^\dagger_s(p) e^{i p \cdot x} \right]
 \]</div>
+<p>Notice that with the last expression:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^M = (\Psi^M)^c
+\]</div>
+<p>Charge conjugation switches the left and right terms of the Fourier decomposition.</p>
 <p>As a Majorana fermion has mass we have lost again the helicity and chirarity as Lorentz and time invariants, and as it happens with a Dirac fermion.</p>
 <p>Therefore we are back to the situation:</p>
 <p>For Dirac and Majorana:</p>
@@ -1130,7 +1147,7 @@ i \gamma^\mu \partial_\mu \psi_L - m \psi_R = 0 \; \to \;
 <h2>Relation of neutrino mixing and masses.<a class="headerlink" href="#relation-of-neutrino-mixing-and-masses" title="Permalink to this heading">#</a></h2>
 <div class="section" id="dirac-case">
 <h3>Dirac case<a class="headerlink" href="#dirac-case" title="Permalink to this heading">#</a></h3>
-<p>The mass for a Dirac fermion enters in the free lagrancian as:</p>
+<p>The mass for a Dirac fermion enters in the free lagrangian as:</p>
 <div class="math notranslate nohighlight">
 \[
 -\mathcal{L}_m = m \bar{\Psi} \Psi
@@ -1144,13 +1161,16 @@ i \gamma^\mu \partial_\mu \psi_L - m \psi_R = 0 \; \to \;
 </div>
 <div class="section" id="dirac-masses-in-the-sm-one-family">
 <h3>Dirac masses in the SM: one family<a class="headerlink" href="#dirac-masses-in-the-sm-one-family" title="Permalink to this heading">#</a></h3>
-<p>Nevertheless the SM splits the fields by quirality, assumes that they have no masses, and locates the left chiral fields into douplets and the right ones into singlets of <span class="math notranslate nohighlight">\(SU(2)_L\)</span></p>
-<p>To give masses to the weak boson the SM introduces the Higgs as a doublet of 2 complex fields, in a mexican hat potential, that after SSB, reduces to a single scalar field, <span class="math notranslate nohighlight">\(H(x)\)</span>, providing masses to the <span class="math notranslate nohighlight">\(W^\pm, Z\)</span>, that we express above the minimum value in the vacuum.</p>
+<p>Nevertheless the SM splits the fields by quirality and consider them different. In addition, the SM establosh that fermions have no bare masses.</p>
+<p>The SM locates the left chiral fields into douplets and the right ones into singlets of <span class="math notranslate nohighlight">\(SU(2)_L\)</span>.</p>
+<p>To give masses to the weak bosons, the SM introduces the Higgs field as a doublet of 2 complex fields, in a mexican hat potential, that after SSB, it reduces to a single scalar field, <span class="math notranslate nohighlight">\(H(x)\)</span>, an in the process it providing masses to the <span class="math notranslate nohighlight">\(W^\pm, Z\)</span>.</p>
+<p>The Higgs field adter SSB converto into two parts:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Phi(x) = \begin{pmatrix} \phi^+(x) \\ \phi^0(x) \end{pmatrix} \rightarrow \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}  + \begin{pmatrix} 0 \\ H(x) \end{pmatrix}
 \end{split}\]</div>
-<p>The SM also provides masses to the leptons. To do so, it couples the Higgs doublet with the left-handed lepton doublet and add then with the scalar right field, therefore the interatioon term is scalar under all the groups.</p>
+<p>One which is <em>universal</em>, associated to the vacuum energy of the field, will give rise to the femions masses and the other, the Higgs field itself, to the Higgs Physics.</p>
+<p>The SM also provides masses to the leptons. To do so, it couples the Higgs doublet with the left-handed lepton doublet and add then with the scalar right field, therefore the interation term is an scalar under the SM symmetry groups.</p>
 <p>For one lepton family, where <span class="math notranslate nohighlight">\(l = e, \mu, \tau\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1161,8 +1181,15 @@ L \equiv \begin{pmatrix} \nu_L \\  l_L \end{pmatrix}, \;\; l_R
 \[
 -\mathcal{L}_H = \lambda^l \, (\bar{L}  \Phi) \, l_R + \mathrm{h.c.}   
 \]</div>
-<p>Where <span class="math notranslate nohighlight">\(\lambda^l\)</span> is the Yukawa constants (which has no dimensions)</p>
-<p>This term docuples into the coupling of the Higgs field, <span class="math notranslate nohighlight">\(H(x)\)</span> with the charged lepton; and the charged lepton mass:</p>
+<p>Where <span class="math notranslate nohighlight">\(\lambda^l\)</span> is the Yukawa constant (which has no dimensions)</p>
+<p>This term docuples into the Higgs field, <span class="math notranslate nohighlight">\(H(x)\)</span> interaction with the charged lepton; and the charged lepton mass.
+The first gives the Higgs Physics with leptons.</p>
+<p>as after SSB we obtain, the term associated with the vacuum value of the Higgs is:</p>
+<div class="math notranslate nohighlight">
+\[
+\left( \bar{L} \Phi \right) = \frac{v}{\sqrt{2}} \, l_L
+\]</div>
+<p>We obtain back the mass term:</p>
 <div class="math notranslate nohighlight">
 \[
 -\mathcal{L}_m = \frac{\lambda^l \, v}{\sqrt{2}} \, (\bar{l}_L l_R + \bar{l}_R l_L)
@@ -1187,7 +1214,12 @@ m_l = \lambda^l \frac{v}{\sqrt{2}}
 -\mathcal{L}_H = \lambda^{\nu} (\bar{L} \tilde{\Phi}) \, \nu_R + \mathrm{h.c}
 \]</div>
 <p>This introduces the questions about the need of a <span class="math notranslate nohighlight">\(\nu_R\)</span> field which only purpose in Nature is provide the mass to the neutrino.</p>
-<p>This term generates the Higgs interaction with the neutrino and the neutrino mass:</p>
+<p>Notice that now, the interaction term after SSB gives:</p>
+<div class="math notranslate nohighlight">
+\[
+\left(\bar{L} \tilde{\Phi}\right) \to \frac{v}{\sqrt{2}}\bar{\nu}_L
+\]</div>
+<p>This term generates the Higgs interaction with the neutrino (not discussed here) and the neutrino mass:</p>
 <div class="math notranslate nohighlight">
 \[
 -\mathcal{L}_m = \lambda^\nu \frac{v}{\sqrt{2}} \bar{\nu}_L \nu_R + \mathrm{h.c.}
@@ -1205,6 +1237,7 @@ m_\nu = \lambda^\nu \frac{v}{\sqrt{2}}
 </div>
 <div class="section" id="dirac-masses-in-the-sm-several-families">
 <h3>Dirac masses in the SM. Several families.<a class="headerlink" href="#dirac-masses-in-the-sm-several-families" title="Permalink to this heading">#</a></h3>
+<p>In the SM there are three flavour families: <span class="math notranslate nohighlight">\(e, \mu, \tau\)</span>, and a general Yukawa interaction could imply mixing between them.</p>
 <p>Consider the three families lepton flavour states, <span class="math notranslate nohighlight">\(l'_i,\nu'_i, \; i=1,2,3\)</span>, the left-chiral components doublets <span class="math notranslate nohighlight">\(L'_i\)</span> and the right-chiral singlets <span class="math notranslate nohighlight">\(l'_R\)</span>, including <span class="math notranslate nohighlight">\(\nu'_{i, R}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1221,7 +1254,7 @@ L'_i = \begin{pmatrix} \nu'_{iL} \\ l'_{iL} \end{pmatrix}, \;\;\; l'_{iR}, \nu'_
 {\bf l}_{L/R} = \begin{pmatrix} e \\ \mu \\ \tau \end{pmatrix}_{L/R}, \;\;
 {\bf \nu}_{L/R} = \begin{pmatrix} \nu_e \\ \nu_\mu \\ \nu_\tau \end{pmatrix}_{L/R}, 
 \end{split}\]</div>
-<p>After SSM, we can write the mass lagrangian term in a compact form:</p>
+<p>After SSB, we can write the mass lagrangian term in a compact form:</p>
 <div class="math notranslate nohighlight">
 \[
 -\mathcal{L}_m = \frac{v}{\sqrt{2}} \left( {\bf \lambda}_l \bar{{\bf l}}'_L {\bf l'}_R + \lambda_\nu \bar{{\bf \nu}}'_L {\bf \nu}'_R + \mathrm{h.c.} \right)
@@ -1247,15 +1280,15 @@ L'_i = \begin{pmatrix} \nu'_{iL} \\ l'_{iL} \end{pmatrix}, \;\;\; l'_{iR}, \nu'_
 </div>
 <div class="section" id="how-the-mix-affect-the-nc-and-the-cc">
 <h3>How the mix affect the NC and the CC?<a class="headerlink" href="#how-the-mix-affect-the-nc-and-the-cc" title="Permalink to this heading">#</a></h3>
-<p>This does the mix of mass and weak states the CC and NN?</p>
-<p>First, it does not affect the NC. The lagrangian is not altered!</p>
+<p>Does the mix of mass and weak states affect the CC and NC?</p>
+<p>First, it does not affect the NC. Notice that the NC part of the lagrangian is not altered!</p>
 <div class="math notranslate nohighlight">
 \[
 - \mathcal{L}_{NC} =  \frac{g}{2 \cos \theta_W} \bar{\nu}'_{L} \gamma^\mu \nu'_{L} Z_\mu = 
 \frac{g}{2 \cos \theta_W} \bar{\nu}_{L} \gamma^\mu \, (U^\dagger_\nu U_\nu) \, \nu_{L} Z_\mu
 \]</div>
-<p>And <span class="math notranslate nohighlight">\((U^\dagger_\nu U_\nu) = 1\)</span> as <span class="math notranslate nohighlight">\(U_\nu\)</span> is a unitary matrix.</p>
-<p>But it does affect the CC lagrangian:</p>
+<p>And <span class="math notranslate nohighlight">\((U^\dagger_\nu U_\nu) = I\)</span> as <span class="math notranslate nohighlight">\(U_\nu\)</span> is a unitary matrix.</p>
+<p>But it does affect the CC lagrangian term:</p>
 <div class="math notranslate nohighlight">
 \[
 - \mathcal{L}_{CC} = 
@@ -1268,13 +1301,12 @@ L'_i = \begin{pmatrix} \nu'_{iL} \\ l'_{iL} \end{pmatrix}, \;\;\; l'_{iR}, \nu'_
 U = U^\dagger_l \, U_\nu
 \]</div>
 <p>This matrix is known as <em>Pontecorbo-Maki-Nakawaga-Sakata</em> matrix, <span class="math notranslate nohighlight">\(U_{PMNS}\)</span>, and it is reponsible of the neutrino-oscillations.</p>
-<p>We associate the matrix to the neutrinos, that is the mixing matrix:</p>
+<p>As only the CC are affected by the mixing, in an effective way we can asociate the mix between the flavour and mass states in leptons only two the neutrinos, via the <span class="math notranslate nohighlight">\(U\)</span> (PMNS) mixing matrix.</p>
 <div class="math notranslate nohighlight">
 \[
 \nu' = U \, \nu 
 \]</div>
-<p>As the NC and un-afected and the CC only afected to the neutrinos, we resume the flavor to mass relation only with neutrinos.</p>
-<p>In the quark sector a similar mechanims happens which generates the <span class="math notranslate nohighlight">\(V_{CKM}\)</span>, the <em>Cabibbo-Kowayashi-Maskawa</em> matrix.</p>
+<p>In the quark sector a similar mechanims happens. It generates the <span class="math notranslate nohighlight">\(V_{CKM}\)</span>, the <em>Cabibbo-Kowayashi-Maskawa</em> matrix.</p>
 <p>In that case, the matrix is associated to the fields of the bottoms quarks:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1286,7 +1318,7 @@ U = U^\dagger_l \, U_\nu
 <div class="section" id="parameters-of-the-u-pmns">
 <h3>Parameters of the <span class="math notranslate nohighlight">\(U_{PMNS}\)</span><a class="headerlink" href="#parameters-of-the-u-pmns" title="Permalink to this heading">#</a></h3>
 <p>This a unitary <span class="math notranslate nohighlight">\(3\times3\)</span> matrix has <span class="math notranslate nohighlight">\(9\)</span> parameters, <span class="math notranslate nohighlight">\(3\)</span> mixing angles, and <span class="math notranslate nohighlight">\(6\)</span> phases.</p>
-<p>We can use the global symmetries of the Dirac fields to re-absorbe the some phases of <span class="math notranslate nohighlight">\({\bf U}\)</span>:</p>
+<p>We can use the global symmetries of the Dirac fields to re-absorbe some phases of <span class="math notranslate nohighlight">\({\bf U}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 l_\alpha \to e^{i\phi_\alpha} l_\alpha, \;\;\; \nu_k \to e^{i \phi_k} \nu_k
@@ -1294,14 +1326,14 @@ l_\alpha \to e^{i\phi_\alpha} l_\alpha, \;\;\; \nu_k \to e^{i \phi_k} \nu_k
 <p>The CC lagrangian is:</p>
 <div class="math notranslate nohighlight">
 \[
-\sum_{\alpha, k} \bar{l}_{\alpha L} e^{-i\phi_\alpha} U_{\alpha k} \gamma^\mu e^{i\phi_k} \nu_{k L} \, W^+_\mu + \mathrm{hc}
+\sum_{\alpha, k} \bar{l}_{\alpha L} e^{-i\phi_\alpha} U_{\alpha k} \gamma^\mu e^{i\phi_k} \nu_{k L} \, W^+_\mu + \mathrm{h.c.}
 \]</div>
 <p>We can take a global factor:</p>
 <div class="math notranslate nohighlight">
 \[
 e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\phi_\alpha-\phi_e)} U_{\alpha k } \gamma^\mu e^{i(\phi_k-\phi_1)} ) \, \nu_{k L} W^+_\mu + \mathrm{h.c.}
 \]</div>
-<p>In total we can reabsorb <span class="math notranslate nohighlight">\(5\)</span> phases. Therefore there is only one phase left <span class="math notranslate nohighlight">\(\delta_{CP}\)</span>.</p>
+<p>In total we can reabsorb <span class="math notranslate nohighlight">\(5\)</span> phases. Therefore there is only one phase left: <span class="math notranslate nohighlight">\(\delta_{CP}\)</span>, the CP violation phase.</p>
 <p>The usual parameterization of <span class="math notranslate nohighlight">\(U_{PMNS}\)</span> in terms of 3 angles and one CP-phase:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1317,26 +1349,26 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 </div>
 <div class="section" id="majorana-mass">
 <h2>Majorana mass<a class="headerlink" href="#majorana-mass" title="Permalink to this heading">#</a></h2>
-<p>The term in the lagrangian associated to a Majorana mass, given that the Majorana spinor is constructed from a <span class="math notranslate nohighlight">\(\nu_L\)</span> field:</p>
+<p>The term in the lagrangian associated to a Majorana mass, given that the Majorana spinor is constructed from a <span class="math notranslate nohighlight">\(\nu_L\)</span> field, is:</p>
 <div class="math notranslate nohighlight">
 \[
 -\mathcal{L}_m = \frac{1}{2} m ( \overline{\nu_L} (\nu_L)^c +  \overline{(\nu_L)^c} \nu_L ) 
 \]</div>
-<p>But in the SM to obtain an scalar term with the field <span class="math notranslate nohighlight">\(\psi_L\)</span>, we need to introduce the coupling between the L douplet ant the <span class="math notranslate nohighlight">\(\tilde{\Psi}\)</span> Higgs conjugate.</p>
+<p>But in the SM to obtain an scalar term with the field <span class="math notranslate nohighlight">\(\nu_L\)</span>, we need to introduce the coupling between the L douplet ant the <span class="math notranslate nohighlight">\(\tilde{\Phi}\)</span> Higgs conjugate. After SSB:</p>
 <div class="math notranslate nohighlight">
 \[
 \bar{L} \tilde{\Phi} \to \frac{v}{\sqrt{2}} \overline{\nu_L}  
 \]</div>
-<p>The lagrangian mass term:</p>
+<p>The lagrangian Majorana mass term is:</p>
 <div class="math notranslate nohighlight">
 \[
 -\mathcal{L}_m = \frac{\alpha}{\Lambda} (\bar{L} \tilde{\Phi}) \, (\tilde{\Phi}^T L^c ) + \mathrm{h.c.}
 \]</div>
-<p>Where <span class="math notranslate nohighlight">\(\alpha\)</span> is a un-dimensional coupling (similar to Yukawa) and <span class="math notranslate nohighlight">\(\Lambda\)</span> is an unknown large. energy scale</p>
-<p>The terms is the coupling of 4 fields, two from fermions and two from a scalar. It has  5-dim in <span class="math notranslate nohighlight">\([E]^5\)</span></p>
+<p>Where <span class="math notranslate nohighlight">\(\alpha\)</span> is a un-dimensional coupling (similar to Yukawa) and <span class="math notranslate nohighlight">\(\Lambda\)</span> is an unknown <em>large</em> energy scale</p>
+<p>This term couples 4 fields, two from fermions and two from a scalar. It has 5-dim in <span class="math notranslate nohighlight">\([E]^5\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-    [\Psi] = [E]^{3/2}, \;\;\; [\Phi] = [E]
+    [L] = [E]^{3/2}, \;\;\; [\Phi] = [E]
 \]</div>
 <p>This term is known as the Weinberg operator.</p>
 <p>We do not know the energy scale <span class="math notranslate nohighlight">\(\Lambda\)</span>, but if we take <span class="math notranslate nohighlight">\(\alpha \sim 1\)</span>, and <span class="math notranslate nohighlight">\(v = 246\)</span> GeV, and <span class="math notranslate nohighlight">\(m_\nu \sim 1\)</span> eV, we get:</p>
@@ -1344,16 +1376,16 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 \[
 \Lambda \sim 10^{14} \;\; \mathrm{GeV}
 \]</div>
-<p>The fact the Majorana neutrinos adquire mass via a different mechanism that Dirac fermions do, and that it enters a <span class="math notranslate nohighlight">\(\Lambda\)</span> energy scale, large, could explain why neutrinos the small masses of the neutrinos.</p>
-<p>The SM lagrangian has only 4-dim terms.</p>
-<p>We can always interpret the SM as the effective low energy theory of a complete theory at a large energy scale <span class="math notranslate nohighlight">\(\Lambda\)</span>.</p>
-<p>The effect of the larger theory are present at low energy via n-dim operators:</p>
+<p>The fact the Majorana neutrinos adquire mass via a different mechanism that Dirac fermions do, can explain why neutrinos has a smaller mass then their parners charged leptons.</p>
+<p>We should remember that the SM lagrangian has only 4-dim, renormalizable, terms.</p>
+<p>We can always interpret the SM as the effective low energy theory of a complete theory realized at a large energy scale <span class="math notranslate nohighlight">\(\Lambda\)</span>.</p>
+<p>The effects of the larger theory are present at low energy via n-dim operators:</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L}_{eff} = \mathcal{L}_{SM} + \sum_{d = 5}^n \delta \mathcal{L}_{d}
 \]</div>
-<p>The Weinberg operator [Wein] is the only 5-dim operator in this expansion. It is the first effect of the theory at <span class="math notranslate nohighlight">\(\Lambda\)</span> energy scale.</p>
-<p>This operator can be represented as the following Feynman diagram:</p>
+<p>The Weinberg operator [Wein] is the only 5-dim operator in this expansion. It is the first effect of this general theory at “low” energy.</p>
+<p>The Weinberg operator can be represented as the following Feynman diagram:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -1369,10 +1401,11 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 </tr>
 </tbody>
 </table>
-<p>The operator can be realized or interpreted as the interchange of a heavy particle, in the right diagram, via a <span class="math notranslate nohighlight">\(N\)</span> massive extra sterile right-chiral majorana neutrino. In this models, knows as see-saw, the large the mass of the intercharged particle, smaller is the mass of the SM neutrino.</p>
+<p>The operator can be realized or interpreted as the interchange of a heavy particle, in the right diagram, via a <span class="math notranslate nohighlight">\(N\)</span> massive extra sterile right-chiral majorana neutrino.</p>
+<p>In these models, known as see-saw, the larger the mass of the intercharged particle, the smaller is the mass of the SM neutrino.</p>
 <div class="section" id="majorana-mass-several-families">
 <h3>Majorana mass, several families<a class="headerlink" href="#majorana-mass-several-families" title="Permalink to this heading">#</a></h3>
-<p>In the Majorana case, we extend the SM with the Weinberg 5-dim operator:</p>
+<p>In the Majorana case, we extend the SM with the Weinberg 5-dim operator, to the 3 families:</p>
 <div class="math notranslate nohighlight">
 \[
 - \mathcal{L}_m =  \sum_{\beta, \beta'} \frac{\alpha^\nu_{\beta\beta'}}{\Lambda} \,  (\bar{L'_\beta} \tilde{\Phi}) \, (\tilde{\Phi}^T L'^c_{\beta'}) + \mathrm{h.c.} 
@@ -1381,14 +1414,14 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 <p>After SSB:</p>
 <div class="math notranslate nohighlight">
 \[
--\mathcal{L}_m = \frac{v^2 \alpha}{2 \Lambda} \left(\bar{\nu}'_L {\nu'_L}^c + \mathrm{hc} \right)
+-\mathcal{L}_m = \frac{v^2}{2 \Lambda} \left(\alpha \, \bar{\nu}'_L {\nu'_L}^c + \mathrm{hc} \right)
 \]</div>
-<p>The  symmetric complex <span class="math notranslate nohighlight">\(3\times3\)</span>,  <span class="math notranslate nohighlight">\(\frac{v}{\sqrt{2} \Lambda} \alpha_\nu\)</span> matrix can be diagonialized to the mass matrix <span class="math notranslate nohighlight">\(M^M_\nu\)</span> with only the unitary <span class="math notranslate nohighlight">\(U_\nu\)</span>.</p>
+<p>Now, the  <span class="math notranslate nohighlight">\(3\times3\)</span>,  <span class="math notranslate nohighlight">\(\frac{v}{\sqrt{2} \Lambda} \alpha_\nu\)</span> matrix is symmetric and complex, and it can be diagonalized to a mass matrix <span class="math notranslate nohighlight">\(M^M_\nu\)</span> with onbly a unitary <span class="math notranslate nohighlight">\(U_\nu\)</span> matrix.</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{v^2}{\Lambda}\alpha_\nu = U^\dagger_\nu M^M_\nu U^*_\nu
+\frac{v^2}{2\Lambda}\alpha_\nu = U^\dagger_\nu M^M_\nu U^*_\nu
 \]</div>
-<p>The mixing matrix <span class="math notranslate nohighlight">\(U\)</span> have now 3 angles 3 phases. Because there is no global phase in the Majorana neutrinos spinors, and we can only reabsorb 3 phases.</p>
+<p>The mixing matrix <span class="math notranslate nohighlight">\(U\)</span> have now 3 angles 3 phases. Because there are no global phases that can be extracted from the Majorana neutrinos fields, and therefore we can only reabsorb the 3 phases associated to the charged lepton Dirac fields. Finally, there are 3 phases left: <span class="math notranslate nohighlight">\(\delta_CP\)</span>, and two Majorana phases: <span class="math notranslate nohighlight">\(\eta_1, \eta_2\)</span>.</p>
 <p>The Majorana mixing matrix is parametized as:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1417,7 +1450,7 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 </tbody>
 </table>
 <p>How we can experimentally distinguish a Majorana neutrino?</p>
-<p>If neutrino is Majorana, a neutrino created in a <span class="math notranslate nohighlight">\(\pi^+\)</span> decay whould be able to interact and produce either <span class="math notranslate nohighlight">\(\mu^+\)</span> or <span class="math notranslate nohighlight">\(\mu^-\)</span></p>
+<p>If neutrino is Majorana, a neutrino created in a <span class="math notranslate nohighlight">\(\pi^+\)</span> decay whould be able to interact and to produce either <span class="math notranslate nohighlight">\(\mu^+\)</span> or <span class="math notranslate nohighlight">\(\mu^-\)</span></p>
 <p>In the SM neutrinos are Weyl spinor, in that case we have a triple degenerancy: Lepton number, quirality and helicity!</p>
 <ul class="simple">
 <li><p>A neutrino is a left-chiral field and has negative helicity.</p></li>
@@ -1457,7 +1490,7 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 <p>A neutrino is created in a CC from a lepton and it is destroyed in a CC creating back a lepton.</p>
 <p>An anti-neutrino is created in a CC from an anti-lepton and it is destroyed in a CC creating back an anti-lepton.</p>
 <p>A Majorana neutrino is clasified by its helicity. The rol played by lepton number is transfered to the helicity.</p>
-<p>We we call <em>neutrino</em> in Dirac we imply <em>negative helicity</em> in Majorana, when we call <em>antinuetrino</em> we implied <em>positive helicity</em></p>
+<p>When we call <em>neutrino</em> in Dirac we imply a <em>negative helicity</em> in Majorana, when we call <em>antinuetrino</em> we imply <em>positive</em> helicity.</p>
 <p>A neutrino is created in CC from a lepton and it can be destroyed in a CC creating back a lepton.</p>
 <ul class="simple">
 <li><p>The neutrino is the CC is left-handed and mostly negative helicity.</p></li>
@@ -1506,6 +1539,7 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 <li><p>For a <span class="math notranslate nohighlight">\(m_\nu \sim 1\)</span> eV and <span class="math notranslate nohighlight">\(E \sim 1\)</span> Gev, <span class="math notranslate nohighlight">\(\to 10^{-18}\)</span></p></li>
 </ul>
 <p>Experimentally almost impossible!</p>
+<p>Majora and Dirac are <em>experimentally</em> almost identical due to the small mass of the neutrino.</p>
 <div class="section" id="double-beta-decay-without-neutrinos">
 <h3>Double beta decay without neutrinos<a class="headerlink" href="#double-beta-decay-without-neutrinos" title="Permalink to this heading">#</a></h3>
 <table class="colwidths-auto table">
@@ -1518,17 +1552,17 @@ e^{-i(\phi_e-\phi_1)} \sum_{k,\alpha} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\
 </tr>
 </tbody>
 </table>
-<p>The experimentally accesible experiment is the hypothetical vary rare double beta decay <em>without neutrinos</em>.</p>
+<p>The only experimentally accesible experiment is the hypothetical vary rare double beta decay <em>without neutrinos</em>.</p>
 <p>The three mass neutrinos participate in the process, each have with a suppresed coeficient:</p>
 <div class="math notranslate nohighlight">
 \[
 U^2_{ei} \frac{m_i}{E}
 \]</div>
-<p>As it planes as <em>neutrino</em> in one <span class="math notranslate nohighlight">\(\beta\)</span> and as <em>anti-neutrino</em> in the other.</p>
+<p>As the <em>electron neutrino</em> is decomposed in 3 massive neutrinos and each one enter as <em>neutrino</em> in one <span class="math notranslate nohighlight">\(\beta\)</span> vertex and as <em>anti-neutrino</em> in the other.</p>
 <p>The transition amplitude is proportional to</p>
 <div class="math notranslate nohighlight">
 \[
-\mathcal{A} \propto  m_{\beta\beta} = \sum_i U^2_{ei} \, m_i
+\mathcal{A} \propto  m_{\beta\beta} \equiv \sum_i U^2_{ei} \, m_i
 \]</div>
 <p>the Majorana mass, <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span>.</p>
 <p>Note that the Majorana mass depends on the first row of the neutrino <span class="math notranslate nohighlight">\(U\)</span> Majorana mixing matrix and the neutrino masses.</p>
@@ -1558,14 +1592,14 @@ U^2_{ei} \frac{m_i}{E}
 <p>The half-life time of this decay is:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{1}{T^{0\nu}_{1/2}} = G^{0\nu} \, \left| M^{0\nu} \right|^2 \, m^2_{\beta\beta}
+\left(T^{0\nu}_{1/2}\right)^{-1} = G^{0\nu} \, \left| M^{0\nu} \right|^2 \, m^2_{\beta\beta}
 \]</div>
-<p>Where <span class="math notranslate nohighlight">\(G^{0\nu}\)</span> is the phase factor, and <span class="math notranslate nohighlight">\(\left| M^{0\nu} \right|^2\)</span>, the nuclear matrix elemment (NME) squared</p>
+<p>Where <span class="math notranslate nohighlight">\(G^{0\nu}\)</span> is the phase factor, <span class="math notranslate nohighlight">\(\left| M^{0\nu} \right|^2\)</span>, the nuclear matrix elemment (NME) squared, and</p>
 <div class="math notranslate nohighlight">
 \[
 m_{\beta\beta} =  \sum_i U^2_{ei} \, m_i
 \]</div>
-<p>Is the effective majorana mass which depends of the elements of the mixing matrix <span class="math notranslate nohighlight">\(U_{ei}\)</span> and the neutrino masses <span class="math notranslate nohighlight">\(m_i\)</span>.</p>
+<p>is the effective majorana mass which depends of the elements of the mixing matrix <span class="math notranslate nohighlight">\(U_{ei}\)</span> and the neutrino masses <span class="math notranslate nohighlight">\(m_i\)</span>.</p>
 <p>About the phase factor:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1583,6 +1617,8 @@ m_{\beta\beta} =  \sum_i U^2_{ei} \, m_i
 $<span class="math notranslate nohighlight">\(
 G^{0\nu}/m^2_e \sim \, \mathcal{O}(10^{-26}) \;\; 1/ (\mathrm{y \, eV}^2)
 \)</span>$</p>
+<p>The best isotope will be the one with the largest phase space and largest Q, and with a larga <em>natural</em> abundance.</p>
+<p>There is no <em>best isotope</em>. The current experiments use as a targer, mostly, <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span> and <span class="math notranslate nohighlight">\(^{76}\mathrm{Ge}\)</span>.</p>
 <p>About the majorana mass:</p>
 <p>The majorana mass, <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> depends on the <span class="math notranslate nohighlight">\(U_{\alpha i}\)</span> matrix elements, the mass of the lightest neutrino, <span class="math notranslate nohighlight">\(m_0\)</span>, and <span class="math notranslate nohighlight">\(\Delta m^2_{32}, \; \Delta m^2_{21}\)</span></p>
 <p>In NH:</p>
@@ -1619,6 +1655,7 @@ m_{\beta\beta} \simeq \ \sqrt{|\Delta m^2_{32}|} \, c^2_{13} \left| s^2_{12} + \
 </table>
 <p>The majorana mass vs the lightest neutrino for Normal (red) or Inverted (blue) Hierarchy.</p>
 <p>Values of <span class="math notranslate nohighlight">\(U_{\alpha i}\)</span> from NuFit group 2019.</p>
+<p>The objective of the next generation of <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments is to cover the IH region.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -1660,7 +1697,7 @@ m_{\beta\beta} \simeq \ \sqrt{|\Delta m^2_{32}|} \, c^2_{13} \left| s^2_{12} + \
 </tbody>
 </table>
 <ul class="simple">
-<li><p>Signature: A mono-energetic spectrum of the two electrios, its energy is <span class="math notranslate nohighlight">\(Q_{\beta\beta}\)</span></p></li>
+<li><p>Signature: A mono-energetic spectrum of the two electrons which energy is <span class="math notranslate nohighlight">\(Q_{\beta\beta}\)</span></p></li>
 </ul>
 <p>Given the fact the the <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}\)</span> is very large, <span class="math notranslate nohighlight">\(\mathcal{O}(10^{25})\)</span> y, we approximate, the number of expected <span class="math notranslate nohighlight">\(\beta\beta2\nu\)</span> events:</p>
 <div class="math notranslate nohighlight">
@@ -1668,7 +1705,7 @@ m_{\beta\beta} \simeq \ \sqrt{|\Delta m^2_{32}|} \, c^2_{13} \left| s^2_{12} + \
 N_{\beta\beta} = \ln(2) \frac{N_A}{W} \frac{a \epsilon M t}{T^{0\nu}_{1/2}}
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(N_A\)</span> is Avogradro’s number, <span class="math notranslate nohighlight">\(W\)</span> is the molar mass, <span class="math notranslate nohighlight">\(a\)</span> the isotopic abundance, <span class="math notranslate nohighlight">\(\epsilon\)</span> the detection efficiency in the RoI, <span class="math notranslate nohighlight">\(t\)</span> the time of exposure, <span class="math notranslate nohighlight">\(M\)</span> the target mass and <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}\)</span> the half-live.</p>
-<p>The number of events depends on the exposure: <span class="math notranslate nohighlight">\(M \, t\)</span> (ton y)</p>
+<p>The number of events depends on the <em>exposure</em>: <span class="math notranslate nohighlight">\(M \, t\)</span> (ton y)</p>
 <p><em>question:</em> Compute the number of events expected in 100 kg y  of <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span> at 90% abundance vs the <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1703,7 +1740,7 @@ N_{\beta\beta} = \ln(2) \frac{N_A}{W} \frac{a \epsilon M t}{T^{0\nu}_{1/2}}
 </ul>
 </li>
 <li><p><span class="math notranslate nohighlight">\(^{220-222}\mathrm{Rn}\)</span> natural radioactivity. Abatement systems, degasing of materials</p></li>
-<li><p>neutrinos from the rock (activation). Detector inner shielding.</p></li>
+<li><p>neutrons from the rock (activation). Detector inner shielding.</p></li>
 </ul>
 <table class="colwidths-auto table">
 <thead>
@@ -1728,7 +1765,7 @@ N_{\beta\beta} = \ln(2) \frac{N_A}{W} \frac{a \epsilon M t}{T^{0\nu}_{1/2}}
 </tr>
 </tbody>
 </table>
-<p>water equivalent meters of the main underground laboratories.</p>
+<p>Water equivalent meters of the main underground laboratories.</p>
 <p>The background events depends in the background-index, <span class="math notranslate nohighlight">\(b\)</span>, in counts/(ton yr keV).</p>
 <p>And the RoI (FWHM, <span class="math notranslate nohighlight">\(\Delta E\)</span>) in keV</p>
 <div class="math notranslate nohighlight">
@@ -1740,7 +1777,7 @@ N_{bkg} \propto b \, \Delta E \, M \, t
 \[
 N_{sig} \propto M \, t 
 \]</div>
-<p>The sensitivity, <span class="math notranslate nohighlight">\(S^{0\nu}\)</span>, of an experiments, that is the Z-number, number of sigmas, of the <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> events above the fluctuation of number of background events has two domains:</p>
+<p>The sensitivity, <span class="math notranslate nohighlight">\(S^{0\nu}\)</span>, of an experiment, that is the <span class="math notranslate nohighlight">\(Z\)</span> number of sigmas, of the <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> events above the fluctuation of number of background events has two domains:</p>
 <p>i) background free experiment</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1770,19 +1807,19 @@ N_{sig} \propto M \, t
 <p><em>question</em>: Show the dependence of <span class="math notranslate nohighlight">\(S(T^{0\nu}_{1/2})\)</span> as a function of <span class="math notranslate nohighlight">\(b\)</span> index and exposure.</p>
 <p>The main ingredientes for a <span class="math notranslate nohighlight">\(\beta\beta\)</span> detector are:</p>
 <ul class="simple">
-<li><p>large mass of the target isotope, large <span class="math notranslate nohighlight">\(M\)</span></p></li>
+<li><p>large exposure of the target isotope, <span class="math notranslate nohighlight">\(M \, t\)</span></p></li>
 <li><p>excelellent energy resolution, small <span class="math notranslate nohighlight">\(\Delta E\)</span></p></li>
-<li><p>ultra radiopure detector and extra handles to reject the bacground, very small <span class="math notranslate nohighlight">\(b\)</span></p></li>
+<li><p>ultra radiopure detector and  extra handles to reject the bacground, very small <span class="math notranslate nohighlight">\(b\)</span></p></li>
 </ul>
 <p>For the next generation experiments we aim:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(M \; \mathcal{O}(1)\)</span> ton, <span class="math notranslate nohighlight">\(\Delta E \; \mathcal{O}(1-0.1)\)</span> %, <span class="math notranslate nohighlight">\(b \; \mathcal{O}(1)\)</span> c/(ton RoI yr)</p></li>
+<li><p><span class="math notranslate nohighlight">\(M \, t \; \mathcal{O}(1)\)</span> ton yr, <span class="math notranslate nohighlight">\(\Delta E \; \mathcal{O}(1-0.1)\)</span> %, and <span class="math notranslate nohighlight">\(b \; \mathcal{O}(1)\)</span> c/(ton RoI yr)</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="search-for-majorana-neutrinos">
 <h2>Search for Majorana Neutrinos<a class="headerlink" href="#search-for-majorana-neutrinos" title="Permalink to this heading">#</a></h2>
-<p>We present the results of three main experiments:</p>
+<p>We present the results of the three main experiments:</p>
 <ul class="simple">
 <li><p>EXO</p></li>
 <li><p>KamLAND-Zen</p></li>
@@ -1866,7 +1903,7 @@ N_{sig} \propto M \, t
 <h3>KamLAND-Zen (2011-2018)<a class="headerlink" href="#kamland-zen-2011-2018" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Located the Kamioka mine, re-use of KamLAND detector</p></li>
-<li><p>Inner transparent balloon 3 m diameter with LS and 300 kg of <span class="math notranslate nohighlight">\(^{136}\)</span>Xe</p></li>
+<li><p>Inner transparent balloon 3 m diameter with LS and 300 kg of <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span></p></li>
 <li><p>Base mass 300 kg Xenon</p></li>
 <li><p>Total exposure 504 kg yr</p></li>
 <li><p><span class="math notranslate nohighlight">\(Q_{\beta\beta} = 2458\)</span> keV, <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe} \to ^{136}\mathrm{Ba} + 2 e^-\)</span></p></li>
@@ -1874,7 +1911,7 @@ N_{sig} \propto M \, t
 <li><p>Poor energy resolution 11 % FWHM</p></li>
 <li><p>bkg-index <span class="math notranslate nohighlight">\(1.6 \times 10^{-4}\)</span> counts/(kg yr keV) dominated by muon spallation and <span class="math notranslate nohighlight">\(\beta\beta2\nu\)</span></p>
 <ul>
-<li><p>in phase-I LS was contaminated with <span class="math notranslate nohighlight">\(^{110m}\)</span>Ag and required 18 months of LS purification.</p></li>
+<li><p>in phase-I LS was contaminated with <span class="math notranslate nohighlight">\(^{110m}\mathrm{Ag}\)</span> and required 18 months of LS purification.</p></li>
 </ul>
 </li>
 </ul>
@@ -1890,7 +1927,7 @@ N_{sig} \propto M \, t
 </table>
 <p><span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span> is disolved in LS inside a transparent thin 3 meter balloon.</p>
 <p>Energy is measured from the scintillating light and the position with the light distribution in PMTs.</p>
-<p>The energy resolution is ‘poor’ 11% FWHM</p>
+<p>The energy resolution is <em>poor</em> 11% FWHM</p>
 <p>Target mass is large, 300 kg</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1937,7 +1974,7 @@ N_{sig} \propto M \, t
 <ul class="simple">
 <li><p>745 kg <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span></p></li>
 <li><p>2 times large balloon and better radiopure materials</p></li>
-<li><p>reduction <span class="math notranslate nohighlight">\(^{12}\mathrm{C}\)</span>, <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span> spallation by analysis</p></li>
+<li><p>reduction <span class="math notranslate nohighlight">\(^{12}\mathrm{C}\)</span>, <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span> spallation by data analysis</p></li>
 <li><p>current exposure: 970 kg yr</p></li>
 <li><p>Expected: Improve KamLand-Zeon 400 by a factor 4 in 5 y, (<span class="math notranslate nohighlight">\(m_{\beta\beta} &lt; 20-80\)</span> meV)</p></li>
 </ul>
@@ -1968,7 +2005,7 @@ N_{sig} \propto M \, t
 </tbody>
 </table>
 <ul class="simple">
-<li><p>with 970 kg y exposure, they reach a limit <span class="math notranslate nohighlight">\(\tau^{2\beta0\nu}_{1/2} &gt; 2.3 \times 10^{26}\)</span> yr at 90% C.L, and
+<li><p>with 970 kg y exposure, they reach a limit <span class="math notranslate nohighlight">\(\mathcal{\tau}^{2\beta0\nu}_{1/2} &gt; 2.3 \times 10^{26}\)</span> yr at 90% C.L, and
 <span class="math notranslate nohighlight">\(m_{\beta\beta} \;\; 36-156\)</span> meV.</p></li>
 </ul>
 <p><a class="reference external" href="https://arxiv.org/abs/2203.02139">KamLAND-Zen 800 2022</a></p>
@@ -2004,8 +2041,8 @@ N_{sig} \propto M \, t
 </table>
 <ul class="simple">
 <li><p>base mass 35 kg</p></li>
-<li><p><span class="math notranslate nohighlight">\(Q_{\beta\beta} = 2039\)</span> keV, <span class="math notranslate nohighlight">\(^{76}\)</span>Ge <span class="math notranslate nohighlight">\(\to ^{76}\)</span>Se<span class="math notranslate nohighlight">\( + 2e^-\)</span></p></li>
-<li><p>weekly calibration with <span class="math notranslate nohighlight">\(^{228}\)</span>Th</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q_{\beta\beta} = 2039\)</span> keV, <span class="math notranslate nohighlight">\(^{76}\mathrm{Ge} \to ^{76}\mathrm{Se} + 2e^-\)</span></p></li>
+<li><p>weekly calibration with <span class="math notranslate nohighlight">\(^{228}\mathrm{Th}\)</span></p></li>
 <li><p><strong>Excellent energy resolution</strong> 0.2 % FWHM</p></li>
 <li><p>bkg-index <span class="math notranslate nohighlight">\(5.6^{+3.4}_{-2.4}\times 10^{-4}\)</span> c/(kg y keV) for BEGe detectors and <span class="math notranslate nohighlight">\(5.7^{+4.1}_{-2.6}\times 10^{-4}\)</span> c/(kg y keV) CD.</p>
 <ul>
@@ -2188,7 +2225,6 @@ N_{sig} \propto M \, t
 </div>
 <div class="section" id="next-generation-of-beta-beta0-nu-experiments">
 <h2>NEXT generation of <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments<a class="headerlink" href="#next-generation-of-beta-beta0-nu-experiments" title="Permalink to this heading">#</a></h2>
-<p>Some experiments, i.e <strong>GERDA</strong> has already a large exposure than presented in current results, other upgraded detector, i.e <strong>KamLAND-zen 800</strong> with are already taking data.</p>
 <p>There is a large list of proposal and next-generation experiments for <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span></p>
 <p>They use different techniques.</p>
 <p>They target is to cover the IH allowed <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> &gt;15 meV</p>
@@ -2212,7 +2248,7 @@ N_{sig} \propto M \, t
 </ul>
 <p><strong>Time Proyection Chambers</strong> :</p>
 <ul class="simple">
-<li><p>nEXO (2025?), 5 tons, Liquid <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span></p></li>
+<li><p>nEXO (202?), 5 tons, Liquid <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span></p></li>
 <li><p>NEXT-White (2018-2021), NEXT-100 (2024-), -ton (2028-?), 100 kg (ton) High Preasure <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span> at Canfranc, Spain</p></li>
 </ul>
 <p><strong>Germanio</strong>:</p>
@@ -2235,9 +2271,9 @@ N_{sig} \propto M \, t
 <h3>KamLAND2-Zen<a class="headerlink" href="#kamland2-zen" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Planned</p></li>
-<li><p>large source (&gt; ton of <span class="math notranslate nohighlight">\(^{136}\)</span>Xe), more ambitious in the future</p></li>
-<li><p>Reduce <span class="math notranslate nohighlight">\(^{214}\)</span>Bi (tagging events) and <span class="math notranslate nohighlight">\(\beta\beta2\nu\)</span> bkg (improve energy resolution),</p></li>
-<li><p>brighter (<span class="math notranslate nohighlight">\(\times\)</span>5), <span class="math notranslate nohighlight">\(\times\)</span>2 better energy resolution <span class="math notranslate nohighlight">\(\sigma_E = 2.5\)</span> % at <span class="math notranslate nohighlight">\(Q_{\beta\beta}\)</span>.</p>
+<li><p>large source (&gt; ton of <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe}\)</span>), more ambitious in the future</p></li>
+<li><p>Reduce <span class="math notranslate nohighlight">\(^{214}\mathrm{Bi}\)</span> (tagging events) and <span class="math notranslate nohighlight">\(\beta\beta2\nu\)</span> bkg (improve energy resolution),</p></li>
+<li><p>brighter (<span class="math notranslate nohighlight">\(5 \times \)</span>), <span class="math notranslate nohighlight">\( 2 \times \)</span> better energy resolution <span class="math notranslate nohighlight">\(\sigma_E = 2.5\)</span> % at <span class="math notranslate nohighlight">\(Q_{\beta\beta}\)</span>.</p>
 <ul>
 <li><p>Improvement in PMT QE (20%-&gt;30%)</p></li>
 </ul>
@@ -2292,7 +2328,7 @@ N_{sig} \propto M \, t
 <div class="section" id="legend-200">
 <h3>Legend-200<a class="headerlink" href="#legend-200" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>In construction, expected start of data taking: 2024-</p></li>
+<li><p>In construction, expected start of data taking: 2025-</p></li>
 <li><p>Combination of GERDA and MJD collaborations</p></li>
 <li><p>Installed at LNGG, upgrade of Gerda, Germanio detectors</p></li>
 <li><p>Radiopurity parts from MJD selection</p></li>
@@ -2439,7 +2475,7 @@ N_{sig} \propto M \, t
 <h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h2>
 <p>The fact that neutrinos can be its one particle is one of the crucial questions still open in Particle Physics.</p>
 <p>If neutrinos are Majorana this implies NP at a large scale.</p>
-<p>The search of Majorana neutrinos is experimentally very challenging.</p>
+<p>The search of Majorana neutrinos is experimentally very challenging. The only experimental way is to observe a <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> decay.</p>
 <p>Several best limit experiments KamLAND-Zen, <span class="math notranslate nohighlight">\(\tau^{2\beta0\nu}_{1/2}(^{126}\mathrm{Xe}) &gt; 1.23 \times 10^{26}\)</span> y at 90 % C.L. and Gerda <span class="math notranslate nohighlight">\(T^{2\beta0\nu}_{1/2}(^{76}\mathrm{Ge}) &gt; 1.8 \times 10^{26}\)</span> y at 90 % C.L.</p>
 <p>Several next generation experiment is construction: CUPID, NEXT, KamLAND2-Zen, LEGEND, they will cover the IH <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> allowed region in the next decades.</p>
 </div>
