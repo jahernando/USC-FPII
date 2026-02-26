@@ -1,0 +1,2148 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About neutrino masses &#8212; Neutrinos - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Neutrinos - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_index.html">
+   The misteries of the neutrinos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_sm.html">
+   Neutrinos and the construction of the Standard Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_oscillations.html">
+   Neutrinos Oscillations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_majorana.html">
+   Are neutrinos Majorana particles?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_mass.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_mass.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_mass.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/nu_mass.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-spinors">
+   Dirac, Weyl and Mayorana spinors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicity-and-chirality">
+     Helicity and Chirality
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dirac-masses-the-appareance-of-the-mixing-matrix">
+   Dirac masses. The appareance of the mixing matrix
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#no-mass-neutrinos-as-a-weyld-spinor">
+     No mass. Neutrinos as a Weyld spinor
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#one-family">
+     One family
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#three-families">
+     Three families
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#majorana-neutrinos">
+   Majorana neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-helicidad-states-working">
+     about
+     <em>
+      Helicidad
+     </em>
+     states [WORKING]
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#majorana-mass">
+   Majorana mass.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Three families
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Majorana Neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#double-beta-decay">
+     double beta decay
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beta-beta-experimental-signature">
+     <span class="math notranslate nohighlight">
+      \(\beta\beta\)
+     </span>
+     experimental signature
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#search-for-majorana-neutrinos">
+   Search for Majorana Neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exo-200-2011-2015">
+     EXO-200  (2011-2015)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kamland-zen-2011">
+     KamLAND-Zen (2011-
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gerda-2015-2020">
+   Gerda (2015-2020)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-experiment-2017">
+   NEXT Experiment (2017-)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-generation-of-beta-beta0-nu-experiments">
+   NEXT generation of
+   <span class="math notranslate nohighlight">
+    \(\beta\beta0\nu\)
+   </span>
+   experiments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kamland-zen">
+     KamLAND-Zen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#legend-200">
+     Legend-200
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#legend-1000">
+     Legend-1000
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nexo">
+     nEXO
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-1ton">
+     NEXT-1ton
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conferences">
+     Conferences
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>About neutrino masses</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-spinors">
+   Dirac, Weyl and Mayorana spinors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicity-and-chirality">
+     Helicity and Chirality
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dirac-masses-the-appareance-of-the-mixing-matrix">
+   Dirac masses. The appareance of the mixing matrix
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#no-mass-neutrinos-as-a-weyld-spinor">
+     No mass. Neutrinos as a Weyld spinor
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#one-family">
+     One family
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#three-families">
+     Three families
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#majorana-neutrinos">
+   Majorana neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-helicidad-states-working">
+     about
+     <em>
+      Helicidad
+     </em>
+     states [WORKING]
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#majorana-mass">
+   Majorana mass.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Three families
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Majorana Neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#double-beta-decay">
+     double beta decay
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beta-beta-experimental-signature">
+     <span class="math notranslate nohighlight">
+      \(\beta\beta\)
+     </span>
+     experimental signature
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#search-for-majorana-neutrinos">
+   Search for Majorana Neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exo-200-2011-2015">
+     EXO-200  (2011-2015)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kamland-zen-2011">
+     KamLAND-Zen (2011-
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gerda-2015-2020">
+   Gerda (2015-2020)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-experiment-2017">
+   NEXT Experiment (2017-)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-generation-of-beta-beta0-nu-experiments">
+   NEXT generation of
+   <span class="math notranslate nohighlight">
+    \(\beta\beta0\nu\)
+   </span>
+   experiments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kamland-zen">
+     KamLAND-Zen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#legend-200">
+     Legend-200
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#legend-1000">
+     Legend-1000
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nexo">
+     nEXO
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-1ton">
+     NEXT-1ton
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conferences">
+     Conferences
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="about-neutrino-masses">
+<h1>About neutrino masses<a class="headerlink" href="#about-neutrino-masses" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Feb 13 17:46:36 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+ 
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span>     <span class="k">as</span> <span class="nn">stats</span>
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="s1">&#39;seaborn-colorblind&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>About</em></p>
+<p>About the masses of Dirac Fermions. The appereance of the maxing matrix</p>
+<p>About the basic of Majorana neutrinos.</p>
+<p>The Degenerancy between leptonic, helicity and chirality in the low mass regime.</p>
+<p>About Majorana masses.</p>
+<p>The See-Saw Mechanisme and the Weinberg operator</p>
+<p>Search for the N Majorana neutrinos</p>
+<div class="section" id="dirac-weyl-and-mayorana-spinors">
+<h2>Dirac, Weyl and Mayorana spinors<a class="headerlink" href="#dirac-weyl-and-mayorana-spinors" title="Permalink to this heading">#</a></h2>
+<p>The objetice of Dirac when introducing his equation was to describe free electrons.</p>
+<p>The Dirac ecuation describes the dinamic of free fermions (<span class="math notranslate nohighlight">\(s = 1/2\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[
+i \gamma^\mu \partial_\mu \Psi - m \Psi = 0
+\]</div>
+<p>with mass <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p>The Dirac equation:</p>
+<ul class="simple">
+<li><p>is linear in the space-coordenates <span class="math notranslate nohighlight">\(\partial_\mu\)</span>. Time and space enter in equal condition.</p></li>
+<li><p>has embebed the Einstein equation <span class="math notranslate nohighlight">\(m^2 = E - p^2\)</span>, via the 4 Dirac matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>, they fulfill</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+ \{ \gamma^\mu, \gamma^\nu \} = 2 g^{\mu\nu}, \;\; 
+ (\gamma^0)^\dagger = \gamma^0, \; (\gamma^i)^\dagger = \gamma^i
+ \]</div>
+<p>We define the adjoint as <span class="math notranslate nohighlight">\(\bar{\Psi} = \gamma^0 \Psi^\dagger\)</span></p>
+<p>The Dirac equation comes from the Euler equation of the Lagrangian:</p>
+<div class="math notranslate nohighlight">
+\[
+i \bar{\Psi} \gamma^\mu \Psi - m \bar{\Psi} \Psi = 0
+\]</div>
+<p>And the Hamiltonian is:</p>
+<div class="math notranslate nohighlight">
+\[
+H \Psi = (i \gamma^0 \gamma^i \partial_i - \gamma^0 m) \Psi
+\]</div>
+<p>The Dirac equation admits the Fourier decomposition:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi(x) = \sum_{s} \int_p \left[ u_s(p) a_s(p) e^{-i p x} + v_s(p) b^\dagger(p) e^{+ipx} \right]
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(s = 1, 2\)</span> for the spins and <span class="math notranslate nohighlight">\(u_s(p)\)</span>, and <span class="math notranslate nohighlight">\(v_s(p)\)</span> are the Dirac spinors, composed of 4 complex elements, which depends on <span class="math notranslate nohighlight">\(\mathrm{p}\)</span>.</p>
+<p>The <span class="math notranslate nohighlight">\(u_s(p)\)</span> spinor is associated to the particle, the positive energy solutions of the Dirac equation, and the <span class="math notranslate nohighlight">\(v_s(p)\)</span> spinor is associated to the anti-particles.</p>
+<div class="section" id="helicity-and-chirality">
+<h3>Helicity and Chirality<a class="headerlink" href="#helicity-and-chirality" title="Permalink to this heading">#</a></h3>
+<p>We define the helicity as the projection of the spin in the momentun direction of the particle:</p>
+<div class="math notranslate nohighlight">
+\[
+h = \Sigma \cdot {\hat p}, \;\; \Sigma = 2 \, S
+\]</div>
+<p>As the Hamiltonian conmutes with the total angular momentun <span class="math notranslate nohighlight">\(J = L + S\)</span>, then the helicity conmutes with <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\([H, h] = 0\)</span>, and it is a conserved quantity.</p>
+<p>We can descopompose the solutions of the Dirac equation in the base of the helicity. The eigen-values of helicity are <span class="math notranslate nohighlight">\(\pm 1\)</span>.</p>
+<p>But, it is not a Lorentz invariante, as changing to a reference frame where the observer goes with larger <span class="math notranslate nohighlight">\(\bf{p}\)</span> than then particle, it changes its helicity.</p>
+</div>
+</div>
+<div class="section" id="dirac-masses-the-appareance-of-the-mixing-matrix">
+<h2>Dirac masses. The appareance of the mixing matrix<a class="headerlink" href="#dirac-masses-the-appareance-of-the-mixing-matrix" title="Permalink to this heading">#</a></h2>
+<div class="section" id="no-mass-neutrinos-as-a-weyld-spinor">
+<h3>No mass. Neutrinos as a Weyld spinor<a class="headerlink" href="#no-mass-neutrinos-as-a-weyld-spinor" title="Permalink to this heading">#</a></h3>
+<p>The Dirac equation translates to two coupled equations, expressed in terms of the quirality fields,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+i \gamma^\mu \partial_\mu \Psi_L = m \Psi_R, \\
+i \gamma^\mu \partial_\mu \Psi_R = m \Psi_L
+\end{split}\]</div>
+<p>They decouple if <span class="math notranslate nohighlight">\(m = 0\)</span>.</p>
+<p>In the 60’s, Landau, Lee-Yand and Salam, from the V-A interaccions of the weak decays, and the almost null, non-observed mass of the neutrino, postulated that <span class="math notranslate nohighlight">\(m_\nu = 0\)</span>, and therefore only one field <span class="math notranslate nohighlight">\(\nu_L\)</span> was needed in the SM to describe the neutrino interactions.</p>
+</div>
+<div class="section" id="one-family">
+<h3>One family<a class="headerlink" href="#one-family" title="Permalink to this heading">#</a></h3>
+<p>We can introduce a Dirac mass term introducing a <em>sterile</em> field <span class="math notranslate nohighlight">\(\nu_R\)</span> that couples with the Higgs conjugate <span class="math notranslate nohighlight">\(\tilde{\Phi}\)</span>. The mass term in the lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[
+-\mathcal{L}^D = \lambda^\nu (L^T \tilde{\Psi}) \nu_R + \mathrm{h.c.}
+\]</div>
+<p>That after SSB, we obtain the mass term:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\lambda^\nu v}{\sqrt{2}} \bar{\nu}_L \nu_R + \mathrm{h.c.}
+\]</div>
+<p>And we encounter the <em>un-natural</em> fact that <span class="math notranslate nohighlight">\(\lambda^\nu \ll \lambda^e\)</span>. Or in other words, why the neutrino mass is so small compared with the other fermion masses if the mechanims that provides mass to the neutrinos is the same than works for electrons?</p>
+</div>
+<div class="section" id="three-families">
+<h3>Three families<a class="headerlink" href="#three-families" title="Permalink to this heading">#</a></h3>
+<p>Consider the three families lepton flavour states, <span class="math notranslate nohighlight">\(l'_\alpha,\nu'_\alpha, \; i=e,\mu,\tau\)</span>, the left-chiral components doublets <span class="math notranslate nohighlight">\(L'_\alpha\)</span> and the right-chiral singlets <span class="math notranslate nohighlight">\(l'_R\)</span>, including <span class="math notranslate nohighlight">\(\nu'_{\alpha, R}\)</span></p>
+<p>The most <strong>general</strong> Dirac mass lagrangian via de <em>complex</em> Yukawa couplings with the Higgs doublet <span class="math notranslate nohighlight">\(\Phi\)</span> and its conjugate <span class="math notranslate nohighlight">\(\tilde{\Phi}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+-\mathcal{L}_m = \sum_{\alpha,\beta} \lambda^l_{\alpha \beta} (\bar{L}'_\alpha \, \Phi) \, l'_{\beta R} + \lambda^\nu_{\alpha\beta} (\bar{L}'_\alpha \, \tilde{\Phi}) \,\nu'_{\beta R} + \mathrm{h.c.}
+\]</div>
+<p>Notice that we couple the different doublets <span class="math notranslate nohighlight">\(L_{\alpha}\)</span> with the singles <span class="math notranslate nohighlight">\(l_{\alpha R}, \, \nu_{\alpha R}\)</span></p>
+<p>After SSB:
+$<span class="math notranslate nohighlight">\(
+-\mathcal{L}_m = \frac{v}{\sqrt{2}} \left( {\bf \lambda}_l \bar{{\bf l}}'_L {\bf l'}_R + \lambda_\nu \bar{{\bf \nu}}'_L {\bf \nu}'_R + \mathrm{h.c.} \right)
+\)</span>$</p>
+<p>where <span class="math notranslate nohighlight">\(\lambda_l, \, \lambda_\nu\)</span> are <span class="math notranslate nohighlight">\(3\times3\)</span> complex matrices, kown as Yukawa. And</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\bf l}'_L = \begin{pmatrix} e'_L\\ \mu'_L \\ \tau'_L \end{pmatrix} \;\;\,
+{\bf \nu}'_L = \begin{pmatrix} \nu'_{eL}\\ \nu'_{\mu L} \\ \nu'_{\tau L} \end{pmatrix} 
+\end{split}\]</div>
+<p>There is a theorem that says that a complex matrix <span class="math notranslate nohighlight">\(Y\)</span> can be written as, <span class="math notranslate nohighlight">\(Y = H U\)</span>, where <span class="math notranslate nohighlight">\(H\)</span> es hermitian and <span class="math notranslate nohighlight">\(U\)</span> unitary, and as a corollary, <span class="math notranslate nohighlight">\(Y = U^\dagger M V\)</span>, where <span class="math notranslate nohighlight">\(U, V\)</span> are unitary and <span class="math notranslate nohighlight">\(M\)</span> es diagonal, with non-zero, possitive elements.</p>
+<p>Therefore, the <span class="math notranslate nohighlight">\(\frac{v}{\sqrt{2}}\lambda_k\)</span> matrix can be diagonalized with real values in the diagonal, <span class="math notranslate nohighlight">\(M_k\)</span> via a bi-unitary transformation <span class="math notranslate nohighlight">\(V_k, \,U_h\)</span>, with <span class="math notranslate nohighlight">\(k = l, \, \nu\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_k = U^\dagger_k \, M_\alpha V_k
+\]</div>
+<p>And we can relate the weak states to the mass states via:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  l_L = U_l \, l'_L, \,\; \nu_L = U_\nu \, \nu'_L \\
+  l_R = V_l \, l'_R, \,\; \nu_R = V_\nu \, \nu'_R
+\end{split}\]</div>
+<p>And the mass part of the lagrangian:</p>
+<div class="math notranslate nohighlight">
+\[
+-\mathcal{L}_m =   M_l \, \bar{l}_L l_R + M_\nu \, \bar{\nu}_L \nu_R + \mathrm{hc} 
+\]</div>
+<p>This does not affect the NC of the lagrangian:</p>
+<div class="math notranslate nohighlight">
+\[
+- \mathcal{L}_{NC} =  \frac{g}{2 \cos \theta_W} \bar{\nu}'_{L} \gamma^\mu \nu'_{L} Z_\mu
+=  \frac{g}{2 \cos \theta_W} \bar{\nu}_{L} \gamma^\mu \, (U^\dagger_\nu U_\nu) \, \nu_{L} Z_\mu
+\]</div>
+<p>because <span class="math notranslate nohighlight">\(U^\dagger_\nu U_\nu = I\)</span></p>
+<p>But it does the CC lagrangian:</p>
+<div class="math notranslate nohighlight">
+\[
+- \mathcal{L}_{CC} = 
+\frac{g}{\sqrt{2}} \bar{l}'_{L} \gamma^\mu \nu'_L W^+_\mu + \mathrm{h.c.} = 
+\frac{g}{\sqrt{2}} \bar{l}_{L}  \gamma^\mu \, (U^\dagger_l U_\nu) \, \nu_L W^+_\mu + \mathrm{h.c.}
+\]</div>
+<p>Where:</p>
+<div class="math notranslate nohighlight">
+\[
+U = U^\dagger_l \, U_\nu
+\]</div>
+<p>It is the <em>unitary</em> matrix that mix the neutrino flavour and mass states, known ad Pontecorbo-Maki-Nakawaga-Sakata matrix, responsible of the <em>neutrino oscillations</em>.</p>
+<p>This a unitary <span class="math notranslate nohighlight">\(3\times3\)</span> matrix has <span class="math notranslate nohighlight">\(9\)</span> parameters, <span class="math notranslate nohighlight">\(3\)</span> mixing angles, and <span class="math notranslate nohighlight">\(6\)</span> phases.</p>
+<p>But we can use the global symmetries of the Dirac fields to re-absorbe the some phases of <span class="math notranslate nohighlight">\(U\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+l_\alpha \to e^{i\phi_\alpha} l_\alpha, \;\;\; \nu_i \to e^{i \phi_i} \nu_i
+\]</div>
+<p>With <span class="math notranslate nohighlight">\(\alpha = e, \mu, \tau\)</span> and <span class="math notranslate nohighlight">\(i = 1, 2, 3\)</span>.</p>
+<p>The CC lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{\alpha i } \bar{l}_{\alpha L} e^{-i\phi_\alpha} U_{\alpha i} \gamma^\mu \, e^{i\phi_i} \nu_{i L} \, W^+_\mu + \mathrm{h.c.}
+\]</div>
+<p>We can take out a global factor that does not affect the physics:</p>
+<div class="math notranslate nohighlight">
+\[
+e^{-i(\phi_e-\phi_1)} \sum_{\alpha i} \bar{l}_{\alpha L} \gamma^\mu \, ( e^{-i(\phi_\alpha-\phi_e)} U_{\alpha i} \gamma^\mu e^{i(\phi_\beta-\phi_1)} ) \, \nu_{i L} W^+_\mu + \mathrm{h.c.}
+\]</div>
+<p>In total we can reabsorb <span class="math notranslate nohighlight">\(5\)</span> phases. Therefore there is only one phase left in <span class="math notranslate nohighlight">\(U\)</span>, that is, the CP-violation phase, <span class="math notranslate nohighlight">\(\delta_{CP}\)</span>.</p>
+<p>The usual parameterization of <span class="math notranslate nohighlight">\(U_{PMNS}\)</span> in terms of 3 angles and one CP-phase:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Umatrix_dirac.png"><img alt="_images/Umatrix_dirac.png" src="_images/Umatrix_dirac.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The <span class="math notranslate nohighlight">\(U\)</span> mixing matrix still preserves the <em>lepton number</em>, as we can take a global phase in all the fermions at the same time.</p>
+<div class="math notranslate nohighlight">
+\[
+l_\alpha \to e^{i\phi} l_\alpha, \;\; \nu_{i} \to e^{i\phi} \nu_i
+\]</div>
+<p>and the interaction and the mass lagrangian terms are invariant.</p>
+<p>But the <em>family lepton number</em> is nor preserved.</p>
+<p>As the transformation, for only one family</p>
+<div class="math notranslate nohighlight">
+\[
+l_\alpha \to e^{i\phi} l_\alpha, \;\; \nu_{\alpha} \to e^{i\phi} \nu_\alpha
+\]</div>
+<p>Will not affect the interaction term, but the mass terms!</p>
+</div>
+</div>
+<div class="section" id="majorana-neutrinos">
+<h2>Majorana neutrinos<a class="headerlink" href="#majorana-neutrinos" title="Permalink to this heading">#</a></h2>
+<p>Majorana in the 30’s discover that a solution of the Dirac equation was possible, without negative energy states, for neutral particles [Maj]</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/numass_majorana_abstract.png"><img alt="_images/numass_majorana_abstract.png" src="_images/numass_majorana_abstract.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p><em>“We show that it is possible to achieve complete formal symmetrization in the electron and
+positron quantum theory by means of a new quantization process. The meaning of Dirac
+equations is somewhat modified and it is no more necessary to speak of negative-energy
+states; nor to assume, for any other type of particles, especially neutral ones, the existence
+of antiparticles, corresponding to the `holes’ of negative energy.”</em></p>
+<p>In Dirac Matrices in Majorana representation are imaginary, therefore the Dirac equation is real:</p>
+<div class="math notranslate nohighlight">
+\[
+i \gamma^\mu \partial_\mu \Psi = m \Psi
+\]</div>
+<p>And admits a real solution, <span class="math notranslate nohighlight">\(\Psi = \Psi^*\)</span></p>
+<p>The Majorana condition, in a different representation of the Dirac matrices translates to:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi = \Psi^c 
+\]</div>
+<p>That means that a particle is its antiparticle.</p>
+<p>In Majorana words there is a <em>symetrization</em>, no need to speak of <em>negative-states</em> for neutral particles.</p>
+<p>The charge conjungation matrix is defined as:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^c = C \, \bar{\Psi}^T = C' \, \Psi^*
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(C\)</span> is the change conjugation matrix, in any representation, it fulfills:</p>
+<div class="math notranslate nohighlight">
+\[
+C \gamma^\mu C^{-1} = - (\gamma^\mu)^T
+\]</div>
+<p>In the case <span class="math notranslate nohighlight">\(\gamma^0\)</span> is hermitial and <span class="math notranslate nohighlight">\(\gamma^k\)</span> anti-hermitian, is taken as real, antisymmetric and unitary:</p>
+<div class="math notranslate nohighlight">
+\[
+C^{-1} = C^\dagger = C^T =  - C, 
+\]</div>
+<p>That is the case for the Pauli-Dirac and Weyl-chiral representations</p>
+<p>In the Pauli-Dirac representation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} I &amp; 0 \\ 0 &amp; I\end{pmatrix},
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0\end{pmatrix},
+\gamma^5  = \begin{pmatrix} 0 &amp; I \\ I &amp; 0\end{pmatrix},
+C = i \gamma^2 \gamma^0 = \begin{pmatrix} 0 &amp; -i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>In the Weyl-chiral representation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0\end{pmatrix},
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0\end{pmatrix},
+\gamma^5  = \begin{pmatrix} -I &amp; 0 \\ 0 &amp; I\end{pmatrix},
+C = i \gamma^2 \gamma^0 = \begin{pmatrix} i \sigma^2 &amp; 0 \\ 0 &amp; -i \sigma^2 \end{pmatrix}
+\end{split}\]</div>
+<p>In the Majorana representation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} 0 &amp; \sigma^2 \\ \sigma^2 &amp; 0\end{pmatrix},
+\gamma^1 = \begin{pmatrix} i\sigma^3 &amp; 0 \\ 0 &amp; i\sigma^3\end{pmatrix},
+\gamma^2 = \begin{pmatrix} 0 &amp; -\sigma^2 \\ \sigma^2 &amp; 0\end{pmatrix},
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^3 = \begin{pmatrix} i\sigma^1 &amp; 0 \\ 0 &amp; i\sigma^1 \end{pmatrix}, 
+\gamma^5 = \begin{pmatrix} \sigma^2 &amp; 0 \\ 0 &amp; -\sigma^2 \end{pmatrix}, 
+C        = \begin{pmatrix} 0 &amp;  - i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>In the Weyl-chiral representation, a spinor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}
+\end{split}\]</div>
+<p>transforms under C:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi^c = C \gamma^0 \Psi^* = i \gamma^2 \Psi^* = \begin{pmatrix} 0 &amp; i \sigma^2 \\ -i \sigma^2 &amp; 0 \end{pmatrix} \begin{pmatrix} \psi^*_L \\ \psi^*_R \end{pmatrix} = \begin{pmatrix} i \sigma^2 \psi^*_R \\ -i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>Therefore the charge conjugate of a left-chiral spinor is a right-chiral spinor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi_L = \begin{pmatrix} \psi_L \\ 0 \end{pmatrix} \to
+(\Psi^c)_R = \begin{pmatrix} 0 \\ -i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>A spinor is <span class="math notranslate nohighlight">\(\Psi^M\)</span> is Majorana if:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^M = (\Psi^M)^c
+\]</div>
+<p>That can be created starting from a <span class="math notranslate nohighlight">\(\Psi\)</span> spinor:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^M = \Psi + \Psi^c
+\]</div>
+<p>Therefore the Majorana spinor formed with from a Weyl <span class="math notranslate nohighlight">\(\psi_L\)</span> bi-spinor is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi^M = \begin{pmatrix} \psi_L \\ -i \sigma^2 \psi^*_L \end{pmatrix} 
+\end{split}\]</div>
+<p>And the Dirac equation becames the Majorana equation:</p>
+<div class="math notranslate nohighlight">
+\[
+i \gamma^\mu \partial_\mu \Psi_L - m \Psi_R = 0 \; \to \;
+\bar{\sigma}^\mu \partial_\mu \psi_L +  m \sigma^2 \psi^*_L = 0
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\bar{\sigma}^\mu \equiv \left( I, -\sigma^k \right) \)</span></p>
+<p>We can not take a global phase of a Majorana spinor, as <span class="math notranslate nohighlight">\(\psi_L \to e^{i\phi} \psi_L\)</span>, implies</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi^M \to \begin{pmatrix} e^{i\phi} \, \psi_L \\ e^{-i\phi} (-i \sigma^2 \psi^*_L) \end{pmatrix}
+\end{split}\]</div>
+<p>Therefore it has no associated charge. It is a pure neutral fermion.</p>
+<p><em>exercise</em> Demostrate that the current of Majorana spinors vanishes:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi}^c \gamma^\mu \Psi^c = - \bar{\Psi} \gamma^\mu \Psi
+\]</div>
+<div class="section" id="about-helicidad-states-working">
+<h3>about <em>Helicidad</em> states [WORKING]<a class="headerlink" href="#about-helicidad-states-working" title="Permalink to this heading">#</a></h3>
+<p>Helicity spinors:</p>
+<div class="math notranslate nohighlight">
+\[
+(\sigma \cdot {\hat p}) \, \xi_\pm = \pm \, \xi_\pm
+\]</div>
+<p>with:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\xi_{-} = \begin{pmatrix} e^{-i\phi} \sin \frac{\theta}{2} \\ -\cos \frac{\theta}{2} \end{pmatrix}, \;\;\;
+\xi_{+} = \begin{pmatrix} \cos \frac{\theta}{2} \\ e^{-i\phi}\sin \frac{\theta}{2} \end{pmatrix}
+\end{split}\]</div>
+<p>Defined such that:</p>
+<div class="math notranslate nohighlight">
+\[
+\xi_+ = -i \sigma^2 \xi^*_-, \;\; \xi_- = i \sigma^2 \xi^*_+
+\]</div>
+<p>Notice that:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+-i \sigma^2 = \begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix} \equiv \tau
+\end{split}\]</div>
+<p>The Fourier expansion of the Majorana Field can be expressed in terms of the helicity bi-spinors:</p>
+<div class="math notranslate nohighlight">
+\[
+\omega(x) = \int_p \left[ \left(\xi_- a_-+ \kappa \, \xi_+ a_+ \right) e^{-ipx} + \left(\xi_+ a^\dagger_- + \kappa \, \xi_- a^\dagger_+ \right) e^{+ipx} \right]
+\]</div>
+<p>where:</p>
+<div class="math notranslate nohighlight">
+\[
+\kappa = \frac{m}{E+p}
+\]</div>
+<p>If we compute:</p>
+<div class="math notranslate nohighlight">
+\[
+-i \sigma^2 \omega^*(x) = 
+\]</div>
+<p>The Fourier expansion of the Majorana Field expressed in the Chiral representation, with spinor <span class="math notranslate nohighlight">\(u_\pm, v_\pm\)</span> in the helicity basis is:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi(x) = \int_p \left[ \left(u_- a_- + \, u_+ a_+ \right) e^{-ipx} + \left(v_+ a^\dagger_- +  v_+ a^\dagger_+ \right) e^{+ipx} \right]
+\]</div>
+<p>Where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_- = \begin{pmatrix}            \xi_-  \\ \kappa\, \xi_- \end{pmatrix}, \; 
+u_+ = \begin{pmatrix}   \kappa\, \xi_+  \\        \xi_+ \end{pmatrix}, \; 
+v_+ = \begin{pmatrix}  -\kappa\, \xi_+  \\        \xi_+ \end{pmatrix}, \; 
+v_- = \begin{pmatrix}            \xi_-  \\  \kappa\, \xi_- \end{pmatrix}, \; 
+\end{split}\]</div>
+</div>
+</div>
+<div class="section" id="majorana-mass">
+<h2>Majorana mass.<a class="headerlink" href="#majorana-mass" title="Permalink to this heading">#</a></h2>
+<div class="section" id="id1">
+<h3>Three families<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>In the Majorana case, we extend the SM with the Weinberg 5-dim operator:</p>
+<div class="math notranslate nohighlight">
+\[
+- \mathcal{L}_m =  \sum_{\beta, \beta'} \frac{\alpha_{\beta\beta'}}{\Lambda} \,  \bar{L'_\beta} \tilde{\Phi} \, \tilde{\Phi}^T L'^c_{\beta'} + \mathrm{h.c.} 
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is a complex coupling and <span class="math notranslate nohighlight">\(\Lambda\)</span> an energy scale.</p>
+<p>After SSB:</p>
+<div class="math notranslate nohighlight">
+\[
+-\mathcal{L}_m = \frac{v^2}{2 \Lambda} \left( \alpha \,  \bar{\nu}'_L (\nu'_L)^c + \mathrm{h.c.} \right)
+\]</div>
+<p>The  <span class="math notranslate nohighlight">\(3\times3\)</span>,  <span class="math notranslate nohighlight">\(\frac{v^2}{2 \Lambda} \alpha\)</span> matrix, is <em>symmetric complex</em>, <span class="math notranslate nohighlight">\(\alpha^T = \alpha\)</span>, wnad we can nbow diagonialized to the mass matrix <span class="math notranslate nohighlight">\(M^M_\nu\)</span> with only the unitary <span class="math notranslate nohighlight">\(U_\nu\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{v^2}{2 \Lambda}\alpha  = U_\nu M^M_\nu U^T_\nu
+\]</div>
+<p>The mixing matrix <span class="math notranslate nohighlight">\(U\)</span> have now 3 angles 3 phases. Because there is no global phase in the Majorana neutrinos spinors, and we can only reabsorb 3 phases.</p>
+<p>The Majorana mixing matrix is:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Umatrix_majorana.png"><img alt="_images/Umatrix_majorana.png" src="_images/Umatrix_majorana.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>With <span class="math notranslate nohighlight">\(\theta_{ij} \in [0, \pi/2]\)</span> and <span class="math notranslate nohighlight">\(\delta, \eta_{1,2} \in [0, 2\pi)\)</span></p>
+<p><em>Question</em>: Show that the Majorana phases <span class="math notranslate nohighlight">\(\eta_{1,2}\)</span> have no effect in neutrino oscillations.</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Majorana Neutrinos<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/pidecay_majorana_dirac.png"><img alt="_images/pidecay_majorana_dirac.png" src="_images/pidecay_majorana_dirac.png" style="width: 700px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>How we can experimentally distinguish a Majorana neutrino?</p>
+<p>The curse of helicity!</p>
+<p>As neutrinos have negative helicity, their right-chiral component is supressed by <span class="math notranslate nohighlight">\(\mathcal{O}(m/E)\)</span>.</p>
+<p>Consider <span class="math notranslate nohighlight">\(m \; \mathcal{O}(1)\)</span> eV and <span class="math notranslate nohighlight">\(E \; \mathcal{O}(1)\)</span> GeV, the probability of an oppossite sign lepton appereance is <span class="math notranslate nohighlight">\(\mathcal{O}(10^{-18})\)</span>.</p>
+<div class="section" id="double-beta-decay">
+<h3>double beta decay<a class="headerlink" href="#double-beta-decay" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/bb0nu_Feynman.png"><img alt="_images/bb0nu_Feynman.png" src="_images/bb0nu_Feynman.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The experimentally accesible experiment is the hypothetetical vary rare double beta decay without neutrinos</p>
+<p>The Majorana mass enter is the coupling of the neutirnos in both vertices, <span class="math notranslate nohighlight">\(U_{ei}\)</span> in each vertex, and via its helicity supression <span class="math notranslate nohighlight">\(m_i/E\)</span> factor.</p>
+<p>The transition amplitude is proportional to</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A} \propto  \sqrt{\sum_i U^2_{ei} \, m^2_i}
+\]</div>
+<p>The <span class="math notranslate nohighlight">\(\beta\beta2 \nu\)</span> (with neutrinos) was proposed [1] by <a class="reference external" href="https://en.wikipedia.org/wiki/Maria_Goeppert-Mayer">M. Goeppert-Mayer</a> in 1935.</p>
+<div class="math notranslate nohighlight">
+\[
+(A, Z) \to (A, Z+ 2) + 2 e^- + 2 \bar{\nu}_e + Q_{\beta\beta}
+\]</div>
+<p>This is a second order decay, that happens in 35 isotopes, where single <span class="math notranslate nohighlight">\(\beta\)</span> is kinematically forbiden.</p>
+<p>In particular in: <span class="math notranslate nohighlight">\(^{48}\)</span>Ca, <span class="math notranslate nohighlight">\(^{76}\)</span>Ge, <span class="math notranslate nohighlight">\(^{82}\)</span>Se, <span class="math notranslate nohighlight">\(^{100}\)</span>Mo, <span class="math notranslate nohighlight">\(^{130}\)</span>Te and <span class="math notranslate nohighlight">\(^{136}\)</span>Xe.</p>
+<p>The half-life is quite large <span class="math notranslate nohighlight">\(\mathcal{O}(10^{19})\)</span> yr</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/bb2nu_isotopes_T12.png"><img alt="_images/bb2nu_isotopes_T12.png" src="_images/bb2nu_isotopes_T12.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>In 1939 W. Furry proposed [2] the hypothetical decay <span class="math notranslate nohighlight">\(\beta\beta 0\nu\)</span> if <span class="math notranslate nohighlight">\(\nu\)</span> are Majorana</p>
+<div class="math notranslate nohighlight">
+\[
+(A, Z) \to (A, Z+ 2) + 2 e^-  + Q_{\beta\beta}
+\]</div>
+<p>The half-life time of this decay is:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{T^{0\nu}_{1/2}} = G^{0\nu} \, \left| M^{0\nu} \right|^2 \, \frac{m^2_{\beta\beta}}{m^2_e}
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(G^{0\nu}\)</span> is the phase factor, and <span class="math notranslate nohighlight">\(\left| M^{0\nu} \right|^2\)</span>, the nuclear matrix elemment (NME) squared</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\beta\beta} = \left| \sqrt{\sum_i U^2_{ei} \, m^2_i} \right|
+\]</div>
+<p>Is the effective majorana mass which depends of the elements of the mixing matrix <span class="math notranslate nohighlight">\(U_{ei}\)</span></p>
+<p>About the phase factor:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/bb0nu_table_G0nu_Qbb.png"><img alt="_images/bb0nu_table_G0nu_Qbb.png" src="_images/bb0nu_table_G0nu_Qbb.png" style="width: 350px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/bb0nu_isotope_table_Qbb.png"><img alt="_images/bb0nu_isotope_table_Qbb.png" src="_images/bb0nu_isotope_table_Qbb.png" style="width: 350px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Notice:
+$<span class="math notranslate nohighlight">\(
+G^{0\nu}/m^2_e \sim \, \mathcal{O}(10^{-26}) \;\; 1/ (\mathrm{y \, eV}^2)
+\)</span>$</p>
+<p>About the majorana mass:</p>
+<p>The majorana mass, <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> depends on the <span class="math notranslate nohighlight">\(U_{\alpha i}\)</span> matrix elements and <span class="math notranslate nohighlight">\(\Delta m^2_{32}, \; \Delta m^2_{21}\)</span></p>
+<p>In NH:</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\beta\beta} = \left| m_0 c^2_{12} c^2_{13} + \sqrt{m^2_0 + \Delta m^2_{21}} \, s^2_{12} c^2_{13} e^{2i (\eta_2 -\eta_1)} + \sqrt{m^2_0 + \Delta m^2_{32} + \Delta m^2_{21}} \, s^2_{13} e^{-2i(\delta_{CP} + \eta_1)}\right|
+\]</div>
+<p>In IH:</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\beta\beta} = \left| m_0  s^2_{13} + \sqrt{|m^2_0 - \Delta m^2_{32}|} \, s^2_{12} c^2_{13} e^{2i (\eta_2 + \delta_{CP})} + \sqrt{|m^2_0 - \Delta m^2_{32} - \Delta m^2_{21}|} \, c^2_{12} c^2_{13} e^{2i(\eta_1 + \delta_{CP})}\right|
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(m_0\)</span> is the mass of the lightest neutrino.</p>
+<p>In the limit <span class="math notranslate nohighlight">\(m_0 \to 0\)</span></p>
+<p>in NH:</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\beta\beta} \simeq \left| \sqrt{\Delta m^2_{21}} \, s^2_{12} c^2_{13} + \sqrt{\Delta m^2_{32}} \, s^2_{13} e^{-2i(\delta_{CP} + \eta_2 )} \right| \simeq 1.1 - 4.2 \; \mathrm{meV}
+\]</div>
+<p>In IH:</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\beta\beta} \simeq \ \sqrt{|\Delta m^2_{32}|} \, c^2_{13} \left| s^2_{12} + \, c^2_{12} e^{-2i(\eta_2 - \eta_1)}\right| \ge \sqrt{|\Delta m^2_{32}|} \, c^2_{13} \cos^2 2\theta_{12} \simeq 15 - 50 \; \mathrm{meV}
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/mbb_vs_mlight.png"><img alt="_images/mbb_vs_mlight.png" src="_images/mbb_vs_mlight.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The majorana mass vs the lightest neutrino for Normal (red) or Inverted (blue) Hierarchy.</p>
+<p>Values of <span class="math notranslate nohighlight">\(U_{\alpha i}\)</span> from NuFit group 2019.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/bb0nu_NME.png"><img alt="_images/bb0nu_NME.png" src="_images/bb0nu_NME.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The matrix element has a large uncertainty theoretical error (see [3]).</p>
+<p>It translates in a large uncertainty on <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}\)</span> for <span class="math notranslate nohighlight">\(m_{\beta\beta} = 1\)</span> meV (bottom plot). <span class="math notranslate nohighlight">\(M^{0\nu} \sim \, \mathcal{O}(1)\)</span></p>
+<p><em>Question:</em> Compute <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}\)</span> for <span class="math notranslate nohighlight">\(^{136}\)</span>Xe for <span class="math notranslate nohighlight">\(m_{\beta\beta} = 50\)</span> meV.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G0nu</span><span class="p">,</span> <span class="n">M0nu</span><span class="p">,</span> <span class="n">mbb</span> <span class="o">=</span> <span class="mf">5.5e-26</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">50e-3</span>
+<span class="n">T0nu</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="n">G0nu</span> <span class="o">*</span> <span class="n">M0nu</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">mbb</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;life-time </span><span class="si">{:1.2e}</span><span class="s1"> y&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">T0nu</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>life-time 8.08e+26 y
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="beta-beta-experimental-signature">
+<h3><span class="math notranslate nohighlight">\(\beta\beta\)</span> experimental signature<a class="headerlink" href="#beta-beta-experimental-signature" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/bb2nu_bb0nu_spectrum.png"><img alt="_images/bb2nu_bb0nu_spectrum.png" src="_images/bb2nu_bb0nu_spectrum.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Signature: 2 electrons with monocromatic energy at <span class="math notranslate nohighlight">\(Q_{\beta\beta}\)</span></p></li>
+</ul>
+<p>Number of expected <span class="math notranslate nohighlight">\(\beta\beta2\nu\)</span> events:</p>
+<div class="math notranslate nohighlight">
+\[
+N_{\beta\beta} = \ln(2) \frac{N_A}{W} \frac{a \epsilon M t}{T^{0\nu}_{1/2}}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(N_A\)</span> is Avogradro’s number, <span class="math notranslate nohighlight">\(W\)</span> is the molar mass, <span class="math notranslate nohighlight">\(a\)</span> the isotopic abundance, <span class="math notranslate nohighlight">\(\epsilon\)</span> the detection efficiency in the RoI, <span class="math notranslate nohighlight">\(t\)</span> the time of exposure, <span class="math notranslate nohighlight">\(M\)</span> the target mass and <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}\)</span> the half-live.</p>
+<p>The number of events depends on the exposure: <span class="math notranslate nohighlight">\(M \, t\)</span> (ton y)</p>
+<p><em>question:</em> Compute the number of events expected in 100 kg y  of <span class="math notranslate nohighlight">\(^{136}\)</span>Xenon at 90% abundance vs the <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">NA</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="n">eff</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="mf">6.02e23</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">136.</span>
+<span class="n">T0nu</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="mf">1e26</span><span class="p">,</span> <span class="mf">1e5</span><span class="p">,</span> <span class="mi">1</span>
+<span class="n">nbb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">2.</span><span class="p">)</span> <span class="o">*</span> <span class="n">NA</span> <span class="o">*</span> <span class="n">acc</span> <span class="o">*</span> <span class="n">eff</span> <span class="o">*</span> <span class="n">M</span> <span class="o">*</span> <span class="n">t</span> <span class="o">/</span> <span class="p">(</span><span class="n">W</span> <span class="o">*</span> <span class="n">T0nu</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nbb = </span><span class="si">{:6.2f}</span><span class="s1"> events&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nbb</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nbb =   2.76 events
+</pre></div>
+</div>
+</div>
+</div>
+<p>The signal is identified:</p>
+<ul class="simple">
+<li><p>energy resolutiion, Region of Interest (RoI), <span class="math notranslate nohighlight">\(\Delta E = \mathrm{FWHM} = 2{\sqrt {2\ln 2}}\;\sigma \simeq 2.355 \;\sigma\)</span></p></li>
+<li><p>other discrimination variables: i.e tracks (2 <span class="math notranslate nohighlight">\(\beta\)</span>), pulse shape, …</p></li>
+</ul>
+<p>The background comes from different sources (mostly gamma interactions in the detector):</p>
+<ul class="simple">
+<li><p>cosmogenic muons (spalation). Detector installed underground and  veto-system.</p>
+<ul>
+<li><p>Reduction: <span class="math notranslate nohighlight">\(\mathcal{O}(10^6)\)</span></p></li>
+</ul>
+</li>
+<li><p>natural radioactivity (U, Th radio-active chains). Ultra radio-pure materials and handeling.</p>
+<ul>
+<li><p>Activities: <span class="math notranslate nohighlight">\(\mathcal{O}(10^{-6})\)</span> Bq/kg, tipical activities 1-100 Bq/kg.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(^{220-222}\)</span>Rn natural radioactivity. Abatement systems, degasing of materials</p></li>
+<li><p>neutrinos from the rock (activation). Detector inner shielding.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Th232_chain.png"><img alt="_images/Th232_chain.png" class="align-left" src="_images/Th232_chain.png" style="width: 250px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/U238_chain.png"><img alt="_images/U238_chain.png" class="align-right" src="_images/U238_chain.png" style="width: 250px;" /></a> !</p></td>
+</tr>
+</tbody>
+</table>
+<p>For <span class="math notranslate nohighlight">\(^{136}\)</span>Xe <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> search are very dangerous the isotopes <span class="math notranslate nohighlight">\(^{208}\)</span>Tl y <span class="math notranslate nohighlight">\(^{214}\)</span>Bi, with <span class="math notranslate nohighlight">\(\gamma\)</span> similar in energy to Qbb.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/muflux_undergroundlabs.png"><img alt="_images/muflux_undergroundlabs.png" class="align-center" src="_images/muflux_undergroundlabs.png" style="width: 450px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The background events depends in the background-index, <span class="math notranslate nohighlight">\(b\)</span>, in counts/(ton yr keV).</p>
+<p>And the RoI (FWHM, <span class="math notranslate nohighlight">\(\Delta E\)</span>) in keV</p>
+<div class="math notranslate nohighlight">
+\[
+N_{bkg} \propto b \, \Delta E \, M \, t
+\]</div>
+<p>The sensitivity, <span class="math notranslate nohighlight">\(S^{0\nu}\)</span>, of an experiments, that is the Z-number, number of sigmas, of the <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> events above the fluctuation of number of background events has two domains:</p>
+<p>i) background free experiment</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{S}(T^{0\nu}_{1/2}) \propto \epsilon \, M \, t
+ \]</div>
+<p>ii) expected background index, <span class="math notranslate nohighlight">\(b\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{S}(T^{0\nu}_{1/2}) \propto \epsilon \sqrt{\frac{M \, t}{b \Delta E}}
+ \]</div>
+<p><em>Question</em>: What is the sensitivity to <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span>? An increase of a factor 100 is mass is a factor 10 in <span class="math notranslate nohighlight">\(T^{0\nu}_{\beta\beta}\)</span> and <span class="math notranslate nohighlight">\(\sqrt{10}\)</span> in <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span>!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Xe_mbb_vs_exposure_bkginRoI.png"><img alt="_images/Xe_mbb_vs_exposure_bkginRoI.png" class="align-center" src="_images/Xe_mbb_vs_exposure_bkginRoI.png" style="width: 550px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Possible limits on <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> of a perfect Xe experiment for different bkg-index in RoI <a class="reference external" href="https://arxiv.org/abs/1502.00581">[4]</a>.</p>
+<p>To cover the IH allowed region (grey area) we aim for a 1 ton detector, 1 counts/(RoI ton yr).</p>
+<ul class="simple">
+<li><p>Next Generation Experiment holy grail!</p></li>
+</ul>
+<p><em>question</em>: Show the dependence of <span class="math notranslate nohighlight">\(S(T^{0\nu}_{1/2})\)</span> as a function of <span class="math notranslate nohighlight">\(b\)</span> index and exposure.</p>
+<p>The main ingredientes for a <span class="math notranslate nohighlight">\(\beta\beta\)</span> detector are:</p>
+<ul class="simple">
+<li><p>large mass of the target isotope, large <span class="math notranslate nohighlight">\(M\)</span></p></li>
+<li><p>excelellent energy resolution, small <span class="math notranslate nohighlight">\(\Delta E\)</span></p></li>
+<li><p>ultra radiopure detector and extra handles to reject the bacground, very small <span class="math notranslate nohighlight">\(b\)</span></p></li>
+</ul>
+<p>For the next generation experiments we aim:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(M \; \mathcal{O}(1)\)</span> ton, <span class="math notranslate nohighlight">\(\Delta E \; \mathcal{O}(1-0.1)\)</span> %, <span class="math notranslate nohighlight">\(b \; \mathcal{O}(1)\)</span> c/(ton RoI yr)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-for-majorana-neutrinos">
+<h2>Search for Majorana Neutrinos<a class="headerlink" href="#search-for-majorana-neutrinos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>EXO</p></li>
+<li><p>KamLAND-Zen</p></li>
+<li><p>GERDA</p></li>
+</ul>
+<div class="section" id="exo-200-2011-2015">
+<h3>EXO-200  (2011-2015)<a class="headerlink" href="#exo-200-2011-2015" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Located at <a class="reference external" href="https://www.wipp.energy.gov">WIPP</a> MN-USA</p></li>
+<li><p>175 kg enriched 80% <span class="math notranslate nohighlight">\(^{136}\)</span>Xe</p></li>
+<li><p>Symmetric Liquid Xenon TPC with charge readout (ionization) in the anodes and light collection (scintillation) with APDs</p></li>
+<li><p>Inside a cryostat, shielded by a lead castle and protected with a muon veto</p></li>
+</ul>
+<ul class="simple">
+<li><p>total exposure <span class="math notranslate nohighlight">\(234.1\)</span> kg yr</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q_{\beta\beta} = 2458\)</span> keV, <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe} \to ^{136}\mathrm{Ba} + 2 e^-\)</span></p></li>
+<li><p>Energy resolution: 3% FWHM</p>
+<ul>
+<li><p>1.23 % <span class="math notranslate nohighlight">\(\sigma\)</span> energy resolution phase-I and  1.15 % <span class="math notranslate nohighlight">\(\sigma\)</span> phase-II</p></li>
+</ul>
+</li>
+<li><p>bkg-index <span class="math notranslate nohighlight">\(1.7\times 10^{-3}\)</span> c/(kg keV yr) phase-I and <span class="math notranslate nohighlight">\(1.9\times 10^{-3}\)</span> c/(kg keV yr), phase-II</p>
+<ul>
+<li><p>separation of Multi-Site (mostly background) and Single-Site (mostly signal) events</p></li>
+</ul>
+</li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_detector.png"><img alt="_images/EXO200_detector.png" class="align-center" src="_images/EXO200_detector.png" style="width: 550px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_photo.png"><img alt="_images/EXO200_photo.png" class="align-center" src="_images/EXO200_photo.png" style="width: 700px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_detector_operation.png"><img alt="_images/EXO200_detector_operation.png" class="align-center" src="_images/EXO200_detector_operation.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Principle of operation:</p>
+<ul class="simple">
+<li><p>interaction in <span class="math notranslate nohighlight">\(^{136}\)</span>Xe produce scintillation light (detected by the APDs) and ionization electrons.</p></li>
+<li><p>electrons drift in the E field of the TPC (~300 V/cm)</p></li>
+<li><p>they are collected in the wires at the anode</p></li>
+</ul>
+<p>Calibration using <span class="math notranslate nohighlight">\(^{228}\)</span>Th with a peak at 2.6 MeV. Scintillation and ionization light are correlated</p>
+<p>Signal is mostly a single point deposition (SS) while background (<span class="math notranslate nohighlight">\(\gamma\)</span>) can produce several depositions (MS)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/EXO200_energy_spectrum.png"><img alt="_images/EXO200_energy_spectrum.png" class="align-center" src="_images/EXO200_energy_spectrum.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>With 324.1 kg y exposure, EXO-200 established a limit <span class="math notranslate nohighlight">\(\mathcal{L}(T^{0\nu}_{1/2}) \gt 3.5 \times 10^{25}\)</span> y at 90% CL, with an expected sensitivity <span class="math notranslate nohighlight">\(\mathcal{S}(T^{0\nu}_{1/2}) \gt 5 \times 10^{25}\)</span>, complete dataset (2019) <a class="reference external" href="https://arxiv.org/abs/1906.02723">[5]</a></p>
+<p>Its translates to a range in <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> 93 - 286 meV (using [3])</p>
+</div>
+<div class="section" id="kamland-zen-2011">
+<h3>KamLAND-Zen (2011-<a class="headerlink" href="#kamland-zen-2011" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>located the Kamioka mine, re-use of KamLAND detector</p></li>
+<li><p>inner transparent balloon 3 m diameter with LS and 300 kg of <span class="math notranslate nohighlight">\(^{136}\)</span>Xe</p></li>
+<li><p>base mass 300 kg Xenon</p></li>
+<li><p>total exposure 504 kg yr</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q_{\beta\beta} = 2458\)</span> keV, <span class="math notranslate nohighlight">\(^{136}\mathrm{Xe} \to ^{136}\mathrm{Ba} + 2 e^-\)</span></p></li>
+<li><p>calibration with <span class="math notranslate nohighlight">\(^{228}\)</span>Th</p></li>
+<li><p>Poor energy resolution 11 % FWHM</p></li>
+<li><p>bkg-index <span class="math notranslate nohighlight">\(1.6 \times 10^{-4}\)</span> counts/(kg yr keV) dominated by muon spallation and <span class="math notranslate nohighlight">\(\beta\beta2\nu\)</span></p>
+<ul>
+<li><p>in phase-I LS was contaminated with <span class="math notranslate nohighlight">\(^{110m}\)</span>Ag and required 18 months of LS purification.</p></li>
+</ul>
+</li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_detector.png"><img alt="_images/KamLAND-zen_detector.png" class="align-center" src="_images/KamLAND-zen_detector.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(^{136}\)</span>Xe is disolved in LS inside a transparent thin 3 meter balloon.</p>
+<p>Energy is measured from the scintillating light and the position with the light distribution in PMTs.</p>
+<p>The energy resolution is ‘poor’ 11% FWHM</p>
+<p>Target mass is large, 300 kg</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_event_distribution.png"><img alt="_images/KamLAND-zen_event_distribution.png" class="align-center" src="_images/KamLAND-zen_event_distribution.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Position of evens in RoI in <span class="math notranslate nohighlight">\(z\)</span> and <span class="math notranslate nohighlight">\(r^2\)</span>, radius squared, in the balloon.</p>
+<p>Most of the events are close or originating from the balloon wall (black line).</p>
+<p>Only events inside a 1 m sphere (dashed line) are accepted.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_energy_spectrum.png"><img alt="_images/KamLAND-zen_energy_spectrum.png" class="align-center" src="_images/KamLAND-zen_energy_spectrum.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_energy_spectrum_zoom.png"><img alt="_images/KamLAND-zen_energy_spectrum_zoom.png" class="align-center" src="_images/KamLAND-zen_energy_spectrum_zoom.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Energy spectum KamLAND-zen (2016) <a class="reference external" href="https://arxiv.org/abs/1605.02889">[6]</a></p>
+<p>With  504 kg yr, KamLAND-zen established a limit <span class="math notranslate nohighlight">\(\mathcal{L}(T^{0\nu}_{1/2})  \ge 10.7 \times 10^{25}\)</span> yr at 90% CL, with a sensitivity  <span class="math notranslate nohighlight">\(\mathcal{S}(T^{0\nu}_{1/2}) &gt; 5.6 \times 10^{25}\)</span> yr</p>
+<p>It translates to a range in <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> 61 - 165 meV</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND-zen_mbb_vs_mlightest.png"><img alt="_images/KamLAND-zen_mbb_vs_mlightest.png" class="align-center" src="_images/KamLAND-zen_mbb_vs_mlightest.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Limits on <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> vs <span class="math notranslate nohighlight">\(m_{light}\)</span> imposed by KamLAND-Zen [6] vs the mass of the lightest neutrino.</p>
+</div>
+</div>
+<div class="section" id="gerda-2015-2020">
+<h2>Gerda (2015-2020)<a class="headerlink" href="#gerda-2015-2020" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>37 High Purity Ge diodes (87% <span class="math notranslate nohighlight">\(^{76}\)</span>Ge):</p>
+<ul>
+<li><p>15.6 kg Coaxial detectors (CD). Phase-I</p></li>
+<li><p>20 kg of Broad Energy Germanium (BEG). Phase-II 35 kg</p></li>
+</ul>
+</li>
+<li><p>Located in strings with very low mass and radio-pure electronics</p></li>
+<li><p>inside a cryogenic bath of 63 m<span class="math notranslate nohighlight">\(^3\)</span> of Liquid Argon. Detector are instrumented with a courtain of light-fibers with SiPM readout</p></li>
+<li><p>in a water tank 590 m<span class="math notranslate nohighlight">\(^3\)</span> instrumented with PMTs</p></li>
+<li><p>detector at LNGS, Italy</p></li>
+</ul>
+<ul class="simple">
+<li><p>base mass 35 kg</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q_{\beta\beta} = 2039\)</span> keV, <span class="math notranslate nohighlight">\(^{76}\)</span>Ge <span class="math notranslate nohighlight">\(\to ^{76}\)</span>Se<span class="math notranslate nohighlight">\( + 2e^-\)</span></p></li>
+<li><p>weekly calibration with <span class="math notranslate nohighlight">\(^{228}\)</span>Th</p></li>
+<li><p><strong>Excellent energy resolution</strong> 0.2 % FWHM</p></li>
+<li><p>bkg-index <span class="math notranslate nohighlight">\(5.6^{+3.4}_{-2.4}\times 10^{-4}\)</span> c/(kg y keV) for BEGe detectors and <span class="math notranslate nohighlight">\(5.7^{+4.1}_{-2.6}\times 10^{-4}\)</span> c/(kg y keV) CD.</p>
+<ul>
+<li><p><strong>Almost background free experiment</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detector.png"><img alt="_images/GERDA_detector.png" class="align-left" src="_images/GERDA_detector.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detector_strings.png"><img alt="_images/GERDA_detector_strings.png" class="align-right" src="_images/GERDA_detector_strings.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_Gesensors_photo.png"><img alt="_images/GERDA_Gesensors_photo.png" class="align-left" src="_images/GERDA_Gesensors_photo.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_sensor_operation.png"><img alt="_images/GERDA_sensor_operation.png" class="align-right" src="_images/GERDA_sensor_operation.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_detection_scheme.png"><img alt="_images/GERDA_detection_scheme.png" class="align-center" src="_images/GERDA_detection_scheme.png" style="width: 250px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The energy deposition inside the Ge is different for signal and background <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>The Pulse Shape of the charge collection allow GERDA a further background discrimination.</p>
+<p>An extra background rejection is obtained with the LAr velo system.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_energy_spectrum_phaseII.png"><img alt="_images/GERDA_energy_spectrum_phaseII.png" class="align-center" src="_images/GERDA_energy_spectrum_phaseII.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Energy spectum of phase-II GERDA (2019) <a class="reference external" href="https://arxiv.org/abs/1909.02726">[7]</a></p>
+<p>With  82.4 kg yr, GERDA established a limit <span class="math notranslate nohighlight">\(\mathcal{L}(T^{0\nu}_{1/2}) \gt 9 \times 10^{25}\)</span> yr at 90% CL, with a sensitivity  <span class="math notranslate nohighlight">\(\mathcal{S}(T^{0\nu}_{1/2}) &gt; 11 \times 10^{25}\)</span> yr</p>
+<p>With 103.7 kg y, final GERDA result (2020), <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.252502">[7b]</a>, impossed a limit of <span class="math notranslate nohighlight">\(T^{0\nu}_{1/2}) &gt; 1.8 \times 10^{26}\)</span> y.</p>
+<p>Its translates to a range in <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> 104 - 228 meV</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/GERDA_mbb_vs_mlight_exclusion.png"><img alt="_images/GERDA_mbb_vs_mlight_exclusion.png" class="align-center" src="_images/GERDA_mbb_vs_mlight_exclusion.png" style="width: 1000px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>GERDA (2019) <a class="reference external" href="https://arxiv.org/abs/1909.02726">[6]</a> <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> limit vs the mass of the lightest neutrino, the sum of neutrino masses and the effective neutrino electron mass.</p>
+</div>
+<div class="section" id="next-experiment-2017">
+<h2>NEXT Experiment (2017-)<a class="headerlink" href="#next-experiment-2017" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>100 kg <span class="math notranslate nohighlight">\(^{136}\)</span>Xe High Pressure Gas</p>
+<ul>
+<li><p>Excellent resolution &lt; 1 % FWHM at Qbb (2.48 MeV)</p></li>
+<li><p>NEXT-White ~10 kg NEXT-White prototype (2017-2021)</p></li>
+<li><p>NEXT-100, ~100 kg (2022-)</p></li>
+</ul>
+</li>
+<li><p>An asymmetric Time Projection Chamber (600 V/cm)</p>
+<ul>
+<li><p>Cilinder (1 m length, 1 m diameter)</p></li>
+<li><p>Cathode: PMTs plane (light detector, energy measurement)</p></li>
+<li><p>Anode: SiPMs in a fine grid (1 x 1 cm<span class="math notranslate nohighlight">\(^2\)</span>), light collection near source, tracking reconstruction</p>
+<ul>
+<li><p>Topology discrimination (separation of <span class="math notranslate nohighlight">\(\beta\beta\)</span> events with respect single <span class="math notranslate nohighlight">\(\beta\)</span>)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Electro-Luminiscence region at the Anode</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\times 10\)</span> E field, to convert secondary electrons to light, linear production</p></li>
+<li><p>Light is proportional to secondary electrons</p></li>
+<li><p>Number of secondary electrons are proportional to energy interaction</p></li>
+</ul>
+</li>
+<li><p>In a Roman-time Pb castle</p></li>
+<li><p>Detectors located at <a class="reference external" href="https://lsc-canfranc.es">Canfranc Laboratory</a>, Spain</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_soft.png"><img alt="_images/NEXT_soft.png" class="align-center" src="_images/NEXT_soft.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Concept:</p>
+<ol class="simple">
+<li><p>Scintillation emission (S1), <span class="math notranslate nohighlight">\(t_0\)</span> time</p></li>
+<li><p>Secondary electrons drift towards the anode (1 mm/ 1 <span class="math notranslate nohighlight">\(\mu\)</span>s)</p></li>
+<li><p>EL light emission, (S2), detector at energy plane (energy) and in tracking plane (position)</p></li>
+</ol>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT100_xsection.png"><img alt="_images/NEXT100_xsection.png" class="align-center" src="_images/NEXT100_xsection.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_Eloss.png"><img alt="_images/NEXT_Eloss.png" class="align-center" src="_images/NEXT_Eloss.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_topology_tracks.png"><img alt="_images/NEXT_topology_tracks.png" class="align-center" src="_images/NEXT_topology_tracks.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_blobs_discrimination.png"><img alt="_images/NEXT_blobs_discrimination.png" class="align-center" src="_images/NEXT_blobs_discrimination.png" style="width: 250px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_Tbb0nu_vs_Expo.png"><img alt="_images/NEXT_Tbb0nu_vs_Expo.png" class="align-left" src="_images/NEXT_Tbb0nu_vs_Expo.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEXT_Tbb0nu_vs_BkgIndex.png"><img alt="_images/NEXT_Tbb0nu_vs_BkgIndex.png" class="align-right" src="_images/NEXT_Tbb0nu_vs_BkgIndex.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Background index <span class="math notranslate nohighlight">\(= 4 \times 10^4\)</span> counts/keV kg y and Exposure = 275  kg y. [NEXT-1]</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_xsection.png"><img alt="_images/NEW_xsection.png" class="align-center" src="_images/NEW_xsection.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEW_foto_energy_plane.png"><img alt="_images/NEW_foto_energy_plane.png" class="align-left" src="_images/NEW_foto_energy_plane.png" style="width: 480px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NEW_foto_tracking_plane.png"><img alt="_images/NEW_foto_tracking_plane.png" class="align-right" src="_images/NEW_foto_tracking_plane.png" style="width: 480px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>[NEXT-2]</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_foto.png"><img alt="_images/NEW_foto.png" class="align-center" src="_images/NEW_foto.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_in_platform.png"><img alt="_images/NEW_in_platform.png" class="align-center" src="_images/NEW_in_platform.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_LR_events.png"><img alt="_images/NEW_LR_events.png" class="align-center" src="_images/NEW_LR_events.png" style="width: 250px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Reconstructed double and single electrons using NEW calibration data [NEXT-3] [NEXT-4].</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEW_blobs_de.png"><img alt="_images/NEW_blobs_de.png" class="align-center" src="_images/NEW_blobs_de.png" style="width: 550px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Blob energys for double and single electrons using NEW calibration data [NEXT-3] [NEXT-4].</p>
+</div>
+<div class="section" id="next-generation-of-beta-beta0-nu-experiments">
+<h2>NEXT generation of <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments<a class="headerlink" href="#next-generation-of-beta-beta0-nu-experiments" title="Permalink to this heading">#</a></h2>
+<p>Some experiments, i.e <strong>GERDA</strong> has already a large exposure than presented in current results, other upgraded detector, i.e <strong>KamLAND-zen 800</strong> with are already taking data.</p>
+<p>There is a large list of proposal and next-generation experiments for <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span></p>
+<p>They use different techniques.</p>
+<p>They target is to cover the IH allowed <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> &gt;15 meV</p>
+<p>reach <span class="math notranslate nohighlight">\(\mathcal{O}(10)\)</span> meV with different isotopes and techniques.</p>
+<p>In general: ton detectors, with BI &lt; 1 c / (ton FWHM y)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/bb0nu_future_experiments.png"><img alt="_images/bb0nu_future_experiments.png" class="align-center" src="_images/bb0nu_future_experiments.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>from [GG21-Guilliani]</p>
+<p><strong>Liquid Scintillator</strong> detectors:</p>
+<ul class="simple">
+<li><p>KamLAND-zen 800 kg (2019-), ton (2025?) <span class="math notranslate nohighlight">\(^{136}\)</span>Xe, at Kamioka, Japan</p></li>
+<li><p>SNO+ (2019-), 1330 kg <span class="math notranslate nohighlight">\(^{130}\)</span>Te at SNOLab, Canada</p></li>
+</ul>
+<p><strong>Time Proyection Chambers</strong> :</p>
+<ul class="simple">
+<li><p>nEXO (2025?), 5 tons, Liquid <span class="math notranslate nohighlight">\(^{136}\)</span>Xe</p></li>
+<li><p>NEXT-White (2018-2020), NEXT-100 (2022-), -ton (2026-?), 100 kg (ton) High Preasure <span class="math notranslate nohighlight">\(^{136}\)</span>Xe at Canfranc, Spain</p></li>
+</ul>
+<p><strong>Germanio</strong>:</p>
+<ul class="simple">
+<li><p>LEGEND-200, ton (GERDA and Majorana collaborations) <span class="math notranslate nohighlight">\(^{67}\)</span>Ge at LNGS</p></li>
+<li><p>LEGEND-100 <span class="math notranslate nohighlight">\(^{67}\)</span>Ge at SNOLab.</p></li>
+</ul>
+<p><strong>Bolometers</strong>:</p>
+<ul class="simple">
+<li><p>CUORE, 206 kg <span class="math notranslate nohighlight">\(^{130}\)</span>Te bolometers, <span class="math notranslate nohighlight">\(\Delta E = 7.7 \pm 0.5\)</span> keV FWHM [11] at LNGS, ITay</p></li>
+<li><p>CUPID (CUPID-0 wiht <span class="math notranslate nohighlight">\(^{82}\)</span>Se) with bolometers and scintillators [12]</p></li>
+<li><p>AMoRE (<span class="math notranslate nohighlight">\(^{100}\)</span>Mo, <span class="math notranslate nohighlight">\(^{60}\)</span>Ca) with bolometers and scintillators, at Yangyang, S. Korea [13].</p></li>
+</ul>
+<p>Tracking detectors:</p>
+<ul class="simple">
+<li><p>NEMO (different isotopes) [14].</p></li>
+</ul>
+<p>Note: The dates with <span class="math notranslate nohighlight">\(?\)</span> indicate proposed experiments not yet approved or funded.</p>
+<div class="section" id="kamland-zen">
+<h3>KamLAND-Zen<a class="headerlink" href="#kamland-zen" title="Permalink to this heading">#</a></h3>
+<p>KamLANZ-Zen 800:</p>
+<ul class="simple">
+<li><p>started 2019-</p></li>
+<li><p>745 kg <span class="math notranslate nohighlight">\(^{136}\)</span>Xe</p></li>
+<li><p>2 times large balloon and more radiopure</p></li>
+<li><p>reduction <span class="math notranslate nohighlight">\(^{12}\)</span>C, <span class="math notranslate nohighlight">\(^{136}\)</span>Xe spallation by analysis</p></li>
+<li><p>current exposure: 419 kg y</p></li>
+<li><p>Expected: Improve KamLand-Zeon 400 by a factor 4 in 5 y, (<span class="math notranslate nohighlight">\(m_{\beta\beta} &lt; 20-80\)</span> meV)</p></li>
+</ul>
+<p>KamLAND2-Zen</p>
+<ul class="simple">
+<li><p>Planned</p></li>
+<li><p>large source (&gt; ton of <span class="math notranslate nohighlight">\(^{136}\)</span>Xe), more ambitious in the future</p></li>
+<li><p>Reduce <span class="math notranslate nohighlight">\(^{214}\)</span>Bi (tagging events) and <span class="math notranslate nohighlight">\(\beta\beta2\nu\)</span> bkg (improve energy resolution),</p></li>
+<li><p>brighter (<span class="math notranslate nohighlight">\(\times\)</span>5), <span class="math notranslate nohighlight">\(\times\)</span>2 better energy resolution <span class="math notranslate nohighlight">\(\sigma_E = 2.5\)</span> % at <span class="math notranslate nohighlight">\(Q_{\beta\beta}\)</span>.</p>
+<ul>
+<li><p>Improvement in PMT QE (20%-&gt;30%)</p></li>
+</ul>
+</li>
+<li><p>5y Sensitivity: <span class="math notranslate nohighlight">\(3 \, 10^{27}\)</span> y, <span class="math notranslate nohighlight">\(m_{\beta\beta} &lt; 14-37\)</span> meV</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/KamLAND2_fig.png"><img alt="_images/KamLAND2_fig.png" class="align-center" src="_images/KamLAND2_fig.png" style="width: 200px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\Delta E\)</span> (keV)</p></th>
+<th class="text-align:center head"><p>— BI (c/(keV kg y)—</p></th>
+<th class="text-align:center head"><p>— Exposure (kg y) —</p></th>
+<th class="text-align:center head"><p>——- <span class="math notranslate nohighlight">\(T_{1/2}\)</span> y ——</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span> —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><strong>KamLAND-Zen 400</strong></p></td>
+<td class="text-align:center"><p>172 (7%)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.6 \times 10^{-4}\)</span></p></td>
+<td class="text-align:center"><p>350</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.07 \, 10^{26}\)</span></p></td>
+<td class="text-align:center"><p>60-160</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>KamLAND-Zen 800</p></td>
+<td class="text-align:center"><p>7%</p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(745 \times 5\)</span></p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>20-80</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>KamLAND2-Zen ton</p></td>
+<td class="text-align:center"><p>2.5 %</p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1000 \times 10\)</span></p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>14-37</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="legend-200">
+<h3>Legend-200<a class="headerlink" href="#legend-200" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In construction, expected start of data taking: 2022-</p></li>
+<li><p>Combination of GERDA and MJD collaborations</p></li>
+<li><p>Installed at LNGG, upgrade of Gerda, Germanio detectors</p></li>
+<li><p>Radiopurity parts from MJD selection</p></li>
+<li><p>Targer mass: 35 kg (Gerda), 30 kg (MJD), 140 kg (new detectors)</p></li>
+<li><p>New massive sensors 2 kg vs 0.7-0.9 kg previousy</p></li>
+<li><p>similar energy resoilution and PSD capability</p></li>
+</ul>
+</div>
+<div class="section" id="legend-1000">
+<h3>Legend-1000<a class="headerlink" href="#legend-1000" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Legend_sim_exp.png"><img alt="_images/Legend_sim_exp.png" class="align-center" src="_images/Legend_sim_exp.png" style="width: 450px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>A simulated experiments of Legend-1000 [GS21-Schönert]</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Legend_fig.png"><img alt="_images/Legend_fig.png" class="align-center" src="_images/Legend_fig.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\Delta E\)</span> (keV)</p></th>
+<th class="text-align:center head"><p>— BI (c/(keV kg y)—</p></th>
+<th class="text-align:center head"><p>— Exposure (kg y) —</p></th>
+<th class="text-align:center head"><p>——- <span class="math notranslate nohighlight">\(T_{1/2}\)</span> y ——</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span> —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><strong>Gerda</strong> <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.252502">[7b]</a>  (2020)</p></td>
+<td class="text-align:center"><p>3</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(5.2 \, 10^{-4}\)</span></p></td>
+<td class="text-align:center"><p>103.7</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.8 \, 10^{26}\)</span></p></td>
+<td class="text-align:center"><p>79-180</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Legend-200</p></td>
+<td class="text-align:center"><p>3</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(2 \, 10^{-4}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(200 \times 5\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(20^{27}\)</span></p></td>
+<td class="text-align:center"><p>34-78</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference external" href="https://arxiv.org/abs/2107.11462">Legend-1000</a></p></td>
+<td class="text-align:center"><p>3</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(10^{-5}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1000 \times 10\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.3 \, 20^{28}\)</span></p></td>
+<td class="text-align:center"><p>9-21</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nexo">
+<h3>nEXO<a class="headerlink" href="#nexo" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>planned, not date of start.</p></li>
+<li><p>Installation at SNOLab</p></li>
+<li><p>Based on EXO-200:</p>
+<ul>
+<li><p>Liquid Xe TPC, measurement of scintilation and charge</p></li>
+</ul>
+</li>
+<li><p>5 tons of <span class="math notranslate nohighlight">\(^{136}\)</span>Xe.</p>
+<ul>
+<li><p>cilindrical TPC <span class="math notranslate nohighlight">\(\phi = 1.3\)</span> m, in a cryostat and Vacuum.</p></li>
+</ul>
+</li>
+<li><p>Inprovement in ligh sensors (SiPMs) and light colection, <span class="math notranslate nohighlight">\(\sigma_E = 0.8\)</span> % at <span class="math notranslate nohighlight">\(Q_{\beta\beta}\)</span>.</p></li>
+<li><p>Improvement in radiopurity (electroformed Cu) and smaller fidutial internal region.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nEXO_fig.png"><img alt="_images/nEXO_fig.png" class="align-center" src="_images/nEXO_fig.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\sigma_E\)</span> (keV)</p></th>
+<th class="text-align:center head"><p>— BI (c/(keV kg y)—</p></th>
+<th class="text-align:center head"><p>— Exposure (kg y) —</p></th>
+<th class="text-align:center head"><p>——- <span class="math notranslate nohighlight">\(T_{1/2}\)</span> y ——</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span> —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><strong>EXO-200</strong> <a class="reference external" href="https://arxiv.org/abs/1906.02723">[5]</a></p></td>
+<td class="text-align:center"><p>29</p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>234.1</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(3.5 \, 10^{25}\)</span></p></td>
+<td class="text-align:center"><p>93-286</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>nEXO</p></td>
+<td class="text-align:center"><p>19</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(7.5 \, 10^{-5}\)</span> (eff)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(3281 \times 10\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.35 \, 20^{28}\)</span></p></td>
+<td class="text-align:center"><p>5-15</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="next-1ton">
+<h3>NEXT-1ton<a class="headerlink" href="#next-1ton" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT1ton_design.png"><img alt="_images/NEXT1ton_design.png" class="align-center" src="_images/NEXT1ton_design.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NEXT1ton_reach_vs_expon.png"><img alt="_images/NEXT1ton_reach_vs_expon.png" class="align-center" src="_images/NEXT1ton_reach_vs_expon.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>[NEXT-5]</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<p>[Majo] E. Majorana, Nuovo Cimento 14 (1937) 171-184</p>
+<p>[1] M. Goeppert-Mayer, Phys. Rev. 48 (1935) 512.</p>
+<p>[2] W. Furry, Phys. Rev. 56 (1939) 1184.</p>
+<p>[3]  Engel J, Menendez J. Rept. Prog. Phys. 80:046301 (2017)</p>
+<p>[4] “Phenomenology of neutrinoless double beta decay”, J.J. Gómez-Cademas, J. Martín-Albo, <a class="reference external" href="https://arxiv.org/abs/1502.00581">arXiv:1502.00581v2</a>.</p>
+<p>[5] G. Anton et al. (EXO-200 Collaboration), Phys. Rev. Lett. 123, 161802 (2019), <a class="reference external" href="https://arxiv.org/abs/1906.02723">arXiv:1906.02723</a>.</p>
+<p>[6] A. Gando et al. (KamLAND-Zen), Phys. Rev. Lett. 117, 8, 082503 (2016), [Addendum: Phys.
+Rev. Lett.117,no.10,109903(2016)], <a class="reference external" href="https://arxiv.org/abs/1605.02889">arXiv:1605.02889</a>.</p>
+<p>[7] M. Agostini et al. (GERDA), Science 365, 1445 (2019), <span class="xref myst">arXiv:1909.02726</span>.</p>
+<p>[7b] M. Agostini et al. (GERDA Collaboration), <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.252502">Phys. Rev. Lett. 125, 252502 (2020)</a></p>
+<p>[10] S. Andringa et al. (SNO+), Adv. High Energy Phys. 2016, 6194250 (2016),
+<a class="reference external" href="https://arxiv.org/abs/1508.05759">arXiv:1508.05759</a>.</p>
+<p>[11] C. Alduino et al. (CUORE), Phys. Rev. Lett. 120, 13, 132501 (2018), <a class="reference external" href="https://arxiv.org/abs/1710.07988">arXiv:1710.07988</a></p>
+<p>[12] O. Azzolini et al. (CUPID), Phys. Rev. Lett. 123, 3, 032501 (2019), <a class="reference external" href="https://arxiv.org/abs/1906.05001">arXiv:1906.05001</a></p>
+<p>[13] V. Alenkov et al., Eur. Phys. J. C79, 9, 791 (2019), <a class="reference external" href="https://arxiv.org/abs/1903.09483">arXiv:1903.09483</a></p>
+<p>[14] R. Arnold et al. (NEMO-3), Phys. Rev. D92, 7, 072011 (2015), <a class="reference external" href="https://arxiv.org/abs/1506.05825">arXiv:1506.05825</a>. R. Arnold et al. (NEMO-3), Phys. Rev. Lett. 119, 4, 041801 (2017), <a class="reference external" href="https://arxiv.org/abs/1906.05001">arXiv:1705.08847</a>.</p>
+<p>[15] S. I. Alvis et al. (Majorana) (2019), <a class="reference external" href="https://arxiv.org/abs/1902.02299">arXiv:1902.02299</a>.</p>
+<p>[16] J. Dolinski et al, (status and prospects) (2019) <a class="reference external" href="https://arxiv.org/abs/1902.04097">arXiv:1902.04097</a>.</p>
+<p>[NEXT-1] “Sensitivity of NEXT-100 to neutrinoless double beta decay”, J. Martín-Albo et al., NEXT collaboration, JHEP05 (2016) 159, <a class="reference external" href="https://arxiv.org/abs/1511.09246">arXiv:1411.09246</a>.</p>
+<p>[NEXT-2] “The Next White (NEW) detector”, F. Monrabal et al., NEXT collaboration, JHEP10 (2019) 230, <a class="reference external" href="https://arxiv.org/abs/1804.02409">arXiv:1804.02409</a></p>
+<p>[NEXT-3] “Energy calibration of the NEXT-White detector with 1% resolution near Qββ of 136Xe”, J. Renner et al. NEXT Collaboration, JINST 13, 10, P10020 (2018), <a class="reference external" href="https://arxiv.org/abs/1905.13110">arXiv:1905.13110</a>.</p>
+<p>[NEXT-4] “Boosting background suppression in the NEXT experiment through Richardson-Lucy deconvolution”, A. Simon, NEXT Collaboration, <a class="reference external" href="https://arxiv.org/abs/2102.11931">arXiv:2102.11931</a></p>
+<p>[NEXT-5] “Sensitivity of a tonne-scale NEXT detector for neutrinoless double beta decay searches.”, C. Adams, NEXT Collaboration, <a class="reference external" href="https://arxiv.org/abs/2005.06467">arXiv:2005.06467</a></p>
+<div class="section" id="conferences">
+<h3>Conferences<a class="headerlink" href="#conferences" title="Permalink to this heading">#</a></h3>
+<p>[Nu20-Detwiler] Neutrino 2020, J. Detwiler, <a class="reference external" href="https://indico.fnal.gov/event/43209/contributions/187827/attachments/130703/159511/20200701_Nu20_FutureNDBD_Detwiler.pdf">“<em>Future neutrinoless <span class="math notranslate nohighlight">\(\beta\beta\)</span> experiments</em>”</a></p>
+<p>[GS21-Guiliani] Gran Sasso 2021,  Workshop on Future of Double Beta Decay, A. Guiliani, <a class="reference external" href="https://agenda.infn.it/event/27143/contributions/142991/attachments/85091/112800/NA-EU-workshop-Giuliani.pdf">“<em>Survey on other next generation Double Beta experiments</em>”</a></p>
+<p>[GS21-Schönert] Gran Sasso 2021, Workshop on Future of Double Beta Decay, S. Schönert, <a class="reference external" href="https://agenda.infn.it/event/27143/contributions/142986/attachments/85142/112907/LEGEND-1000_for_upload.pdf">“<em>LEGEND-1000</em>”</a></p>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By José Ángel Hernando Morata<br/>
+  
+      &copy; Copyright USC - J.A. Hernando - 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

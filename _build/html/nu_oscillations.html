@@ -1,0 +1,2545 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neutrinos Oscillations &#8212; Neutrinos - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Are neutrinos Majorana particles?" href="nu_majorana.html" />
+    <link rel="prev" title="Neutrinos and the construction of the Standard Model" href="nu_sm.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Neutrinos - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_index.html">
+   The misteries of the neutrinos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_sm.html">
+   Neutrinos and the construction of the Standard Model
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Neutrinos Oscillations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_majorana.html">
+   Are neutrinos Majorana particles?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_oscillations.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_oscillations.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_oscillations.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/nu_oscillations.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-origin-of-neutrino-oscillations">
+   The origin of neutrino oscillations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solar-neutrinos">
+   Solar Neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solar-model">
+     Solar Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#super-kamiokande-experiment">
+     (Super)Kamiokande experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sno-experiment">
+     SNO experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrino-oscillations-in-matter">
+     Neutrino oscillations in matter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kamland-experiment">
+     KamLand Experiment
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#solution-of-solar-neutrino-problem">
+       Solution of Solar Neutrino Problem
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atmospheric-neutrinos">
+   Atmospheric neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#confirmation-of-atmospheric-oscillations">
+     Confirmation of Atmospheric oscillations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k">
+     T2K
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#minos">
+       MINOS
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oscillations-with-3-neutrinos">
+   Oscillations with 3 neutrinos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sbl-reactor-experiments-the-theta-13-angle">
+   SBL Reactor Experiments. The
+   <span class="math notranslate nohighlight">
+    \(\theta_{13}\)
+   </span>
+   angle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#daya-bay-experiment">
+     Daya Bay Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reno-experiment">
+     Reno Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#doublechooz">
+     DoubleCHOOZ
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#long-base-line-experiments-delta-cp-and-mass-hierarchy">
+   Long Base Line Experiments :
+   <span class="math notranslate nohighlight">
+    \(\delta\)
+   </span>
+   -CP and mass hierarchy
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-of-long-base-line-experiments">
+     List of Long Base Line Experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nova">
+     NOvA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     T2K
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k-and-nova-combination">
+     T2K and NOvA combination
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neutrino-mixing-matrix-parameters-global-fits">
+   Neutrino Mixing Matrix Parameters. Global fits
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-next-generation-of-neutrino-oscillation-experiments">
+     The Next Generation of Neutrino Oscillation Experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reach-of-t2k-nova">
+     Reach of T2K &amp; NOvA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sbl-juno-2025">
+     SBL: JUNO (2025  - )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lbs-dune-2027">
+     LBS: DUNE (2027 ? - )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hyperkamiokande-2028">
+     HyperKamiokande (2028 -)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-and-conclusions">
+   Summary and conclusions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Neutrinos Oscillations</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-origin-of-neutrino-oscillations">
+   The origin of neutrino oscillations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solar-neutrinos">
+   Solar Neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solar-model">
+     Solar Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#super-kamiokande-experiment">
+     (Super)Kamiokande experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sno-experiment">
+     SNO experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrino-oscillations-in-matter">
+     Neutrino oscillations in matter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kamland-experiment">
+     KamLand Experiment
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#solution-of-solar-neutrino-problem">
+       Solution of Solar Neutrino Problem
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atmospheric-neutrinos">
+   Atmospheric neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#confirmation-of-atmospheric-oscillations">
+     Confirmation of Atmospheric oscillations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k">
+     T2K
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#minos">
+       MINOS
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oscillations-with-3-neutrinos">
+   Oscillations with 3 neutrinos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sbl-reactor-experiments-the-theta-13-angle">
+   SBL Reactor Experiments. The
+   <span class="math notranslate nohighlight">
+    \(\theta_{13}\)
+   </span>
+   angle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#daya-bay-experiment">
+     Daya Bay Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reno-experiment">
+     Reno Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#doublechooz">
+     DoubleCHOOZ
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#long-base-line-experiments-delta-cp-and-mass-hierarchy">
+   Long Base Line Experiments :
+   <span class="math notranslate nohighlight">
+    \(\delta\)
+   </span>
+   -CP and mass hierarchy
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-of-long-base-line-experiments">
+     List of Long Base Line Experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nova">
+     NOvA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     T2K
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k-and-nova-combination">
+     T2K and NOvA combination
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neutrino-mixing-matrix-parameters-global-fits">
+   Neutrino Mixing Matrix Parameters. Global fits
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-next-generation-of-neutrino-oscillation-experiments">
+     The Next Generation of Neutrino Oscillation Experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reach-of-t2k-nova">
+     Reach of T2K &amp; NOvA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sbl-juno-2025">
+     SBL: JUNO (2025  - )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lbs-dune-2027">
+     LBS: DUNE (2027 ? - )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hyperkamiokande-2028">
+     HyperKamiokande (2028 -)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-and-conclusions">
+   Summary and conclusions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="neutrinos-oscillations">
+<h1>Neutrinos Oscillations<a class="headerlink" href="#neutrinos-oscillations" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Feb 11 17:15:59 2025
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+ 
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span>     <span class="k">as</span> <span class="nn">stats</span>
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="s1">&#39;seaborn-colorblind&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Objective:</em></p>
+<p>Show the evidences of neutrino oscillations.</p>
+<p>Indicate the open quenstions and the future.</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Neutrino mixing and oscillations were theoretically introduced in the 60 of XX century.</p>
+<p>Davis’ experiment persistently reported since 70’s less solar neutrino flux that prediced by Bahcall’s standard solar model SSM. That was know as the <strong>Solar Neutrino Problem</strong>.</p>
+<p>In 1997 <strong>Super-Kamiokande reported the firt evidence of atmospheric neutrino oscillations</strong>.</p>
+<p>Since them neutrino oscillation has been observed in acelerator and reactor neutrinos.</p>
+<p>The current picture of neutrino oscillation with three neutrino flavor and masses is solid, but some inconsistencies exist.</p>
+<p>Neutrino oscillations are <strong>the only evidence of Physics Beyond de SM</strong>.</p>
+</div>
+<div class="section" id="the-origin-of-neutrino-oscillations">
+<h2>The origin of neutrino oscillations<a class="headerlink" href="#the-origin-of-neutrino-oscillations" title="Permalink to this heading">#</a></h2>
+<p>Pontecorvo was the first to introduce the concept of oscillations [1] in 1952.</p>
+<p>Z. Maki, M. Nakagawa and S. Sakata introduced the concept of mixing between mass and flavour states [24] in 1962.</p>
+<p>And again Pontecorvo associated neutrino mixing and oscillations [25] in 1967.</p>
+<p>About the derivation of the probability formula:</p>
+<p>The basic ingredients:</p>
+<ul class="simple">
+<li><p>Uncertainty in momentum at production and detection</p></li>
+<li><p>Coherence of mass eigen-states over macroscopic distances</p></li>
+</ul>
+<p>Different derivations with the same result:</p>
+<ul class="simple">
+<li><p>quamtum mechanics with neutrinos as plane waves</p></li>
+<li><p>quantum mechanics with neutrinos as wave packets</p></li>
+<li><p>quantum field theory</p></li>
+</ul>
+<p>See P Hernandez’s <a class="reference external" href="https://arxiv.org/abs/1708.01046">lectures</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nu_oscilations_diagram.png"><img alt="_images/nu_oscilations_diagram.png" class="align-center" src="_images/nu_oscilations_diagram.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Neutrinos of a given flavour, <span class="math notranslate nohighlight">\(\nu_\alpha\)</span> are produced via CC interactions.</p>
+<p>They are a combination of neutrinos of given mass, related via a unitary matrix <span class="math notranslate nohighlight">\(U\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+| \nu_{\alpha} \rangle = \sum_{i} U_{\alpha i}^* \, | \nu_i \rangle 
+\]</div>
+<p>That propagate in time, <span class="math notranslate nohighlight">\(t\)</span>, as eigen-states of the free hamiltonian, <span class="math notranslate nohighlight">\(E_i = \sqrt{p^2 + m^2_i}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+| \nu  (t) \rangle = \sum_{i} U_{\alpha i}^* \, e^{-i E_i t} \, | \nu_i \rangle
+\]</div>
+<p>A neutrino, <span class="math notranslate nohighlight">\(\nu_\beta\)</span>, can now interact via CC with an amplitude:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta}(t) = \langle \nu_\beta \, | \, \nu(t)  \rangle
+\]</div>
+<p>And probability</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha \beta}(t) = \left| \mathcal{A}_{\alpha  \beta}(t) \right|^2 =
+\left| \sum_{i} U_{\beta i} U^*_{\alpha i} e^{-i E_i  t} \right |^2 
+\]</div>
+<p>Let’s consider a 2 families case:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \nu_\alpha \\ \nu_\beta \end{pmatrix}  = 
+\begin{pmatrix} \cos \theta &amp; \sin \theta \\ -\sin \theta &amp; \cos \theta \end{pmatrix}
+\begin{pmatrix} \nu_1 \\ \nu_2 \end{pmatrix}  
+\end{split}\]</div>
+<p>The neutrino time evolution is:</p>
+<div class="math notranslate nohighlight">
+\[
+| \nu (t) \rangle = \cos \theta e^{-iE_1 t}| \nu_1 \rangle + \sin \theta e^{-iE_2 t}| \nu_2 \rangle 
+\]</div>
+<p>The Amplitude to detector a <span class="math notranslate nohighlight">\(\nu_\beta\)</span> neutrino at time <span class="math notranslate nohighlight">\(t\)</span> is (except for a global phase):</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta} = \langle \nu_\beta | \nu(t) \rangle
+ = \cos \theta \sin \theta \, (e^{-i E_2 t} - e^{-i E_1 t}) = \sin 2 \theta \sin  \frac{E_2 - E_1}{2} t
+\]</div>
+<p>If we approximate <span class="math notranslate nohighlight">\(E_i \simeq p + \frac{m^2_i}{2 p}\)</span> and with <span class="math notranslate nohighlight">\(t \to L\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{E_2 - E_1}{2} t = \frac{m^2_2 - m^2_1}{4 E} t \to \frac{\Delta m^2_{21} L}{4 E}
+\]</div>
+<p>Manipulating:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta}(t) =
+\cos \theta \sin \theta \, e^{-i \frac{E_2 + E_1}{2}}(e^{-i \frac{E_2 - E_1}{2} t} - e^{-i \frac{E_1 - E_2}{2}t})
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta}(t) = - i e ^{-i \frac{E_2 + E_1}{2}}\sin 2 \theta \sin \frac{E_2 - E_1}{2} t
+\]</div>
+<p>The oscillation probability is:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\beta \alpha} = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21} L}{4 E} 
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(\Delta m^2_{21} = m^2_2 - m^2_1\)</span>.</p>
+<p>This probability depends on two nature parameters:</p>
+<ul class="simple">
+<li><p>mixing angle, <span class="math notranslate nohighlight">\(\theta\)</span>. If <span class="math notranslate nohighlight">\(\theta = 0\)</span> there is no oscillations. It controls the amplitude.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span>. If neutrinos are mass degenerated, there is no oscillation. It controls the phase.</p></li>
+</ul>
+<p>The oscillation dependes on the relation between <span class="math notranslate nohighlight">\(\Delta m^2\)</span> and <span class="math notranslate nohighlight">\(E/L\)</span>.</p>
+<p>The oscillation length.</p>
+<div class="math notranslate nohighlight">
+\[
+L_{osc} = \pi \frac{2 E}{\Delta m^2}
+\]</div>
+<p>As the observation if at fixed <span class="math notranslate nohighlight">\(L\)</span> the dependence of the probability with <span class="math notranslate nohighlight">\(E\)</span> of the initial <span class="math notranslate nohighlight">\(\nu\)</span> flux is relevant.</p>
+<p>We consider 3 cases:</p>
+<ul class="simple">
+<li><p>At the first maximum of the oscillation.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  \frac{\Delta m^2 L}{4E_{\mathrm{max}}} = \frac{\pi}{2} \to E_{\mathrm{max}} = \frac{\Delta m^2 L}{2\pi}
+  \]</div>
+<p>We observe de oscillation behavior as a function of <span class="math notranslate nohighlight">\(E\)</span>.</p>
+<p>We can write the phase and the probability in the relevant units:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\Delta m^2 L }{4 E} = 1.27 \frac{\Delta m^2}{\mathrm{eV^2}} \frac{L}{\mathrm{km}} \frac{\mathrm{GeV}}{E}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha\beta} = \sin^2(2 \theta) \, \sin^2 \left(1.27 \frac{\Delta m^2}{\mathrm{eV^2}} \frac{L}{\mathrm{km}} \frac{\mathrm{GeV}}{E} \right)
+\]</div>
+<p><em>question:</em> Draw the oscillation probability for <span class="math notranslate nohighlight">\(\Delta m^2 = 2.5 \times 10^{-3} \, \mathrm{eV}^{2}\)</span> and <span class="math notranslate nohighlight">\(\theta = \pi/4\)</span> as a function of <span class="math notranslate nohighlight">\(L/E\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta0</span><span class="p">,</span> <span class="n">dm2_32</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">4.</span><span class="p">,</span> <span class="mf">2.5e-3</span> <span class="c1">#  -, eV^2</span>
+<span class="k">def</span> <span class="nf">posc</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">E</span> <span class="o">=</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">dm2</span> <span class="o">=</span> <span class="n">dm2_32</span><span class="p">,</span> <span class="n">theta</span> <span class="o">=</span> <span class="n">theta0</span><span class="p">):</span>
+    <span class="n">amp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="mf">1.27</span> <span class="o">*</span> <span class="n">dm2</span> <span class="o">*</span> <span class="n">L</span> <span class="o">/</span> <span class="n">E</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">amp</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">ls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">posc</span><span class="p">(</span><span class="n">ls</span><span class="p">));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$L/E$ (km/GeV), L (km) with E = 1 GeV&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;probability&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">);</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/nu_oscillations_15_0.png" src="_images/nu_oscillations_15_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L</span>  <span class="o">=</span> <span class="mf">1000.</span> <span class="c1"># km</span>
+<span class="n">es</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">es</span><span class="p">,</span> <span class="n">posc</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">es</span><span class="p">));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$E$ (GeV), L = 1000 km&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;probability&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/nu_oscillations_16_0.png" src="_images/nu_oscillations_16_0.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E/L \ll \Delta m^2\)</span> the oscillation is fast. We observe the average.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  P_{\alpha \beta} \simeq \frac{1}{2} \sin^2 2\theta
+  \]</div>
+<p>In this case the probability does not depend on <span class="math notranslate nohighlight">\(\Delta m^2\)</span> only on <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p>It corresponds to the case where neutrinos are decoupled! It does not show the characteristical signature of neutrino oscillations.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E/L \gg \Delta m^2\)</span> Oscillation is two small in the detector.</p></li>
+</ul>
+<p>The probability is suppresed:</p>
+<div class="math notranslate nohighlight">
+\[
+  P_{\alpha \beta} = \left(\frac{\Delta m^2 L}{4E} \right)^2 \, \sin^2 2\theta 
+  \]</div>
+<p>And we can not separate the two phisical parameters <span class="math notranslate nohighlight">\(\Delta m^2\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/dm2_ranges.png"><img alt="_images/dm2_ranges.png" class="align-center" src="_images/dm2_ranges.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Table with the energy, distance and <span class="math notranslate nohighlight">\(\Delta m^2\)</span> ranges accesibles by experiments.</p>
+<p>Nature has been kind to us with solar and atmospheric neutrinos!</p>
+<p>With man-made neutrinos we can have Long and Short Base Line (LBL, SBL) experiments.</p>
+<p><em>question:</em> Discuss the implications that the probability is invariance respect: <span class="math notranslate nohighlight">\(\pm \Delta m^2_{21}\)</span> and <span class="math notranslate nohighlight">\(\theta \to \pi/2 - \theta\)</span>.</p>
+</div>
+<div class="section" id="solar-neutrinos">
+<h2>Solar Neutrinos<a class="headerlink" href="#solar-neutrinos" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/davis_experiment.png"><img alt="_images/davis_experiment.png" class="align-center" src="_images/davis_experiment.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>In 1946 Pontecorbo proposes the detecton of <span class="math notranslate nohighlight">\(\nu_e\)</span> via <span class="math notranslate nohighlight">\(\nu_e + ^{37}\mathrm{Cl} \to ^{37} \mathrm{Ar} + e\)</span>, with 814 keV threshold</p></li>
+<li><p>In 1962 J. Bahcall calculated the Solar Model [5]</p></li>
+<li><p>In 1964 R. Davis at Homestake experiment [6]</p>
+<ul>
+<li><p>615 tons of <span class="math notranslate nohighlight">\(\mathrm{Cl}_2\mathrm{CH}_{14}\)</span>, 1 <span class="math notranslate nohighlight">\(\nu_e\)</span> per day</p></li>
+<li><p>deep undegroung (1600 m Homestake mine)</p></li>
+<li><p>Filtered the tank and quemical processing, <span class="math notranslate nohighlight">\(\tau_{1/2} = 34.8\)</span> d</p></li>
+</ul>
+</li>
+<li><p>Solar Neutrino Problem</p></li>
+<li><p>Nobel prize Davis and Koshiba in 2002.</p></li>
+</ul>
+<div class="section" id="solar-model">
+<h3>Solar Model<a class="headerlink" href="#solar-model" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/solar_chains.png"><img alt="_images/solar_chains.png" class="align-center" src="_images/solar_chains.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>During 1964-2005 J. Bahcall et al ellaborated the Standard Solar Model, SSM.</p></li>
+<li><p>They predic a neutrino flux for different reactiond etections: <span class="math notranslate nohighlight">\(pp, \mathrm{Be}, \mathrm{B}\)</span></p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/solar_flux.png"><img alt="_images/solar_flux.png" class="align-center" src="_images/solar_flux.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>The detector technique are sensible to different energy ranges. Galium: <span class="math notranslate nohighlight">\(\nu_e + ^{71}\mathrm{Ga} \to ^{71}\mathrm{Ge} + e\)</span>, (thershold at 233 keV)</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/solar_experiments.png"><img alt="_images/solar_experiments.png" class="align-center" src="_images/solar_experiments.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/solar_deficit_results.png"><img alt="_images/solar_deficit_results.png" class="align-center" src="_images/solar_deficit_results.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Homestake reported (1979-1994) 1/3 of the solar flux (SNU, 1 capture in <span class="math notranslate nohighlight">\(10^{36}\)</span> atoms) [7], to be compared with SSM latest predictions [8]</p></li>
+<li><p>Different solar deficit depending on the energy range. [9, 10, 11, 12]</p></li>
+<li><p>These experiments have not directionality neither time information!</p></li>
+</ul>
+</div>
+<div class="section" id="super-kamiokande-experiment">
+<h3><a class="reference external" href="http://www-sk.icrr.u-tokyo.ac.jp/index-e.html">(Super)Kamiokande experiment</a><a class="headerlink" href="#super-kamiokande-experiment" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SK_drawing.png"><img alt="_images/SK_drawing.png" class="align-center" src="_images/SK_drawing.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/SK_photo.png"><img alt="_images/SK_photo.png" class="align-center" src="_images/SK_photo.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Kamiokande-I, II (1987-1995) was 3 kton water detector, in Kamioka mine.</p></li>
+<li><p>SuperKamiokande (1996-), 50 kton</p></li>
+<li><p>50 cm PMTs to detect Cherenkov light. SuperKamiokande 11000 PMTs</p></li>
+<li><p>Neutrino elastic scattering (ES), <span class="math notranslate nohighlight">\(\nu_x \, e^- \to \nu_x \, e\)</span> (CC and NC).</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SK_solar_flux.png"><img alt="_images/SK_solar_flux.png" class="align-center" src="_images/SK_solar_flux.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Correlation with the Solar direction. SK is a neutrino telescope!</p></li>
+<li><p>Less solar (B) flux than predicted: <span class="math notranslate nohighlight">\((2.34 \pm 0.04) \times 10^6 \, \mathrm{cm}^{-2}\mathrm{s}^{-1}\)</span> <a class="reference external" href="https://arxiv.org/abs/1606.07538">[13]</a>, with SSM <span class="math notranslate nohighlight">\((5.46 \pm 0.66) \times 10^6 \, \mathrm{cm}^{-2}\mathrm{s}^{-1}\)</span> [14]</p></li>
+</ul>
+</div>
+<div class="section" id="sno-experiment">
+<h3><a class="reference external" href="https://sno.phy.queensu.ca">SNO experiment</a><a class="headerlink" href="#sno-experiment" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SNO_photo.png"><img alt="_images/SNO_photo.png" class="align-center" src="_images/SNO_photo.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Sudbury Neutrino Observatory 1999-2006, Canada.</p></li>
+<li><p>1 kton ultra-pure heavy water <span class="math notranslate nohighlight">\(\mathrm{D}_2\mathrm{O}\)</span></p></li>
+<li><p>Spherical acrylic veseel 12 m diameter. 9500 PMTs</p></li>
+<li><p>Shield Water and 2000 m underground</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SNO_event.png"><img alt="_images/SNO_event.png" class="align-center" src="_images/SNO_event.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Measure Cherenkov light</p></li>
+<li><p>ES (NC + CC) <span class="math notranslate nohighlight">\(\nu_x \, e \to \nu_x\, e\)</span> (contributions: <span class="math notranslate nohighlight">\(\nu_\tau, \nu_\mu = 0.15 \nu_e\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_e\)</span> CC in <span class="math notranslate nohighlight">\(D_2O\)</span>: <span class="math notranslate nohighlight">\(\nu_e \, d \to e^- \, \, p \,\, p\)</span> (<span class="math notranslate nohighlight">\(E_{thr} &gt; 5\)</span> MeV)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_x\)</span> NC: <span class="math notranslate nohighlight">\(\nu_x \, d \to \nu_x \, p \, n\)</span>, then <span class="math notranslate nohighlight">\(n \, H^2 \to H^3 \, \gamma\)</span> (<span class="math notranslate nohighlight">\(E_{thr} &gt; 2.2\)</span> MeV)</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SNO_results.png"><img alt="_images/SNO_results.png" class="align-center" src="_images/SNO_results.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>SNO results <a class="reference external" href="https://arxiv.org/abs/nucl-ex/0502021">[16]</a></p>
+<ul class="simple">
+<li><p>In 2001, SNO reported the initial result of CC measurement [15], was an evidence of non-<span class="math notranslate nohighlight">\(\nu_e\)</span> flux. In 2004 solar neutrino NC [16]</p></li>
+<li><p>From a combined result of three phases of SNO [17], the total flux of 8B solar neutrino is
+<span class="math notranslate nohighlight">\((5.25 \pm 0.16^{+0.11}_{-0.14})\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\mathrm{s}^{-1}\)</span>, consistent with the SSM.</p></li>
+<li><p>Several solutions where possible combining all Solar experiment.</p></li>
+<li><p>The solution of solar neutrino problem was the so-called large mixing angle (LMA) with parameters <span class="math notranslate nohighlight">\(\Delta m^2_{21} = 7.5 \times 10^{-5} \, \mathrm{eV}^2\)</span> and <span class="math notranslate nohighlight">\(\sin^2 \theta \simeq 0.3\)</span>.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/solar_dm2_tan2theta.png"><img alt="_images/solar_dm2_tan2theta.png" class="align-center" src="_images/solar_dm2_tan2theta.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="neutrino-oscillations-in-matter">
+<h3>Neutrino oscillations in matter<a class="headerlink" href="#neutrino-oscillations-in-matter" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/matter_effects_diagram.png"><img alt="_images/matter_effects_diagram.png" class="align-center" src="_images/matter_effects_diagram.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Neutrinos can <em>coherence scatter</em> via NC in matter, but only <span class="math notranslate nohighlight">\(\nu_e\)</span> can CC! (Mikheyev, Smirnov effect [20])</p>
+<p>The interaction will be related with the <em>density of the electrons</em> in the media, <span class="math notranslate nohighlight">\(n_e\)</span>, and <span class="math notranslate nohighlight">\(G_F\)</span>.</p>
+<p>We model this interaction with a potencial <span class="math notranslate nohighlight">\(V_e = \sqrt{2} G_F N_e\)</span></p>
+<p>Where:</p>
+<div class="math notranslate nohighlight">
+\[
+V_e \simeq 8 \times 10^{-14} \, f_e \, \rho  \;\; \left(\mathrm{eV \, cm}^3/\mathrm{g}\right)
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(f_e\)</span> the fraction of electrons over nucleons</p>
+<div class="math notranslate nohighlight">
+\[
+f_e = \frac{n_e}{n_p + n_n}
+\]</div>
+<p>In the Sun, for <span class="math notranslate nohighlight">\(E_\nu \sim 1\)</span> MeV, <span class="math notranslate nohighlight">\(f_e \sim 1/2\)</span>, <span class="math notranslate nohighlight">\(\rho_{\mathrm{Sun}} \sim 100 \, \mathrm{g/cm}^3\)</span>. In the Earth,  <span class="math notranslate nohighlight">\(\rho_{\mathrm{Earth}} \sim 10 \, \mathrm{g/cm}^3\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+V^{\mathrm{Sun}}_e \sim 10 ^{-12} \; \mathrm{eV}, \;\;\;
+V^{\mathrm{Earth}}_e \sim 10^{-13} \, \mathrm{eV}
+\]</div>
+<p>In terms of the electron density, <span class="math notranslate nohighlight">\(n_e\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+V_e = 1.256 \times 10^{-37} n_e \, \left(\mathrm{eV} \, \mathrm{cm}^{3}\right)
+\]</div>
+<p>We can associate a typical <em>length</em> to this effect:</p>
+<div class="math notranslate nohighlight">
+\[
+L = \frac{2\pi}{V_e} = 9.8 \times 10^{32}  \left(\frac{\mathrm{cm}^{3}}{n_e}\right) \, \mathrm{cm}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">V0e</span> <span class="o">=</span> <span class="mf">1.256e-36</span> <span class="c1">#ev/cm3</span>
+<span class="n">ne</span>  <span class="o">=</span> <span class="mf">5e25</span> <span class="c1"># elec/cm3</span>
+<span class="n">VFe</span> <span class="o">=</span> <span class="n">V0e</span><span class="o">*</span><span class="n">ne</span>
+<span class="n">Lm</span>  <span class="o">=</span> <span class="mf">9.8e32</span><span class="o">/</span><span class="n">ne</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">VFe</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Lm</span><span class="o">/</span><span class="mf">1e3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.28e-11
+19600.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>The neutrinos propagation in matter can be discribed by quantum mechanics, via a modified Dirac equation or QFT, with the same result.</p>
+<p>We present here the propagation in quantum mechanics, using the Schödinger equation.</p>
+<p>The Hamiltonian of the neutrino propagation is:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{H} = U \mathcal{H_0}  U^T+ V_e
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(\mathcal{H_0}\)</span> is the hamiltonian and <span class="math notranslate nohighlight">\(U\)</span> is the mix matrix in vacuum, and <span class="math notranslate nohighlight">\(V_e\)</span> affects only to <span class="math notranslate nohighlight">\(\nu_e\)</span>.</p>
+<p>In two family and <span class="math notranslate nohighlight">\(H_0\)</span>, the free hamiltonian can be re-written removing terms which are proportional to the identity matrix, which retuls on a global phase.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{H}_0 = \begin{pmatrix} E_1 &amp; 0 \\ 0 &amp; E_2 \end{pmatrix} \to 
+ p + \frac{1}{2p}  \begin{pmatrix} m^2_1 &amp; 0 \\ 0 &amp; m^2_2 \end{pmatrix} \to
+ \frac{1}{2E}\begin{pmatrix} m^2_1 &amp; 0 \\ 0 &amp; m^2_2 \end{pmatrix} \to 
+ \frac{1}{4E} \begin{pmatrix}  - \Delta m^2_{21}&amp; 0 \\ 0 &amp; \Delta m^2_{21} \end{pmatrix} 
+\end{split}\]</div>
+<p>With <span class="math notranslate nohighlight">\(\Delta m^2_{21} = m^2_2 - m^2_1\)</span></p>
+<p>Introducing the mixing matrix:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U = \begin{pmatrix} \cos \theta_0 &amp; \sin \theta_0 \\ - \sin \theta_0 &amp; \cos \theta_0 \end{pmatrix}
+\end{split}\]</div>
+<p>It ends:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U  \mathcal{H}_0 U^T = \frac{\Delta m^2_{21}}{4E}\begin{pmatrix} 
+-\cos 2\theta_0 &amp; \sin 2 \theta_0 \\
+\sin 2\theta_0 &amp;   \cos 2 \theta_0 \\
+\end{pmatrix}
+\end{split}\]</div>
+<p>From here we obtain the time evolution:</p>
+<div class="math notranslate nohighlight">
+\[
+i \frac{\partial \mathcal{A}_{\alpha}}{\partial t} = U \mathcal{H} U^T \mathcal{A}_{\alpha} 
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> indicates neutrinos in flavour basis.</p>
+<p>And the oscillation probability formula:</p>
+<p>The effective propagation probability:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha\beta} = \sin^2 2 \theta_0 \, \sin^2 \frac{\Delta m^2_{21} L}{ 4 E}
+\]</div>
+<p>The part of the hamiltonian in matter, we can also re-write it as:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+V_e = \begin{pmatrix} V_e &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \to
+ \begin{pmatrix} V_e/2 &amp; 0 \\ 0 &amp; -V_e/2 \end{pmatrix} 
+\end{split}\]</div>
+<p>The total hamiltonian is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{H} = U \mathcal{H}_0 U^T + V_e  = \frac{\Delta m^2_{21}}{4E}
+\begin{pmatrix} 
+- (\cos 2\theta_0 - x) &amp;  \sin 2 \theta_0 \\
+ \sin 2\theta_0 &amp;   (\cos 2 \theta_0  - x)\\
+\end{pmatrix}
+\end{split}\]</div>
+<p>with:</p>
+<div class="math notranslate nohighlight">
+\[
+x = \frac{2 E V_e} {\Delta m^2_{21}}
+\]</div>
+<p>We can re-write <span class="math notranslate nohighlight">\(H\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U  \mathcal{H} U^T = \frac{\Delta m^2_m}{4E}\begin{pmatrix} 
+-\cos 2\theta_m &amp; \sin 2 \theta_m \\
+\sin 2\theta_m &amp;   \cos 2 \theta_m \\
+\end{pmatrix}
+\end{split}\]</div>
+<p>we encounter that neutrino propagation in matter has the same behavior, oscillates, but with the effective parameters:</p>
+<div class="math notranslate nohighlight">
+\[
+\tan 2 \theta_m = \frac{\sin 2 \theta_0}{\cos 2 \theta_0 - x}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Delta m^{2}_{m}= \Delta m^{2}_{21} \sqrt{(\cos 2 \theta_0 - x)^2 + \sin^2 2 \theta_0}
+\]</div>
+<p>The effective propagation probability:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha\beta} = \sin^2 2 \theta_m \, \sin^2 \frac{\Delta m^2_{m} L}{ 4 E}
+\]</div>
+<p><em>questions:</em> Check that they correspond to the eigen-values of <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> and the rotation angle between eigen and flavour states.</p>
+<p>Different scenarios:</p>
+<ul class="simple">
+<li><p>Vacuum limit,  <span class="math notranslate nohighlight">\(x \ll \cos 2 \theta_0, \; N_e = 0\)</span>, we recover: <span class="math notranslate nohighlight">\(\theta_0, \, \Delta m^2_{21}\)</span></p></li>
+<li><p>Matter domination. In the case <span class="math notranslate nohighlight">\(x &gt;&gt; \cos 2 \theta_0\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\tan 2 \theta_m \to 0^-, \; \theta_m = \pi/2
+\]</div>
+<p>With <span class="math notranslate nohighlight">\(\theta_m = \pi/2\)</span> we have:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U(\theta_m) = \begin{pmatrix} 0 &amp; 1  \\ -1 &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>Therefore <span class="math notranslate nohighlight">\(\nu_e \leftrightarrow \nu_2\)</span> and  <span class="math notranslate nohighlight">\(\nu_\mu \leftrightarrow \nu_1\)</span>.</p>
+<p>Neutrinos of a given flavour has a unique mass states and they do not oscille!</p>
+<ul class="simple">
+<li><p>Resonance condition. When increasing the density for a <span class="math notranslate nohighlight">\(E \sim 0.5\)</span> MeV, a resonance condition may happen:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\cos 2 \theta_0 = \frac{2 E}{\Delta m^2_{21}} V_e 
+\]</div>
+<p>In this case the effective:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta m^2_m = \Delta m^2_{21}  \sin 2 \theta_0, \; \tan 2 \theta_m  = \infty, \theta_m = \pi/4 
+\]</div>
+<p>That condition requires:
+$<span class="math notranslate nohighlight">\(
+\Delta m^2_{21} \cos 2 \theta_0 &gt; 0
+\)</span>$</p>
+<p>That is:</p>
+<div class="math notranslate nohighlight">
+\[
+|\theta_0| &lt; \pi/4 \Rightarrow \Delta m^2_{21} &gt; 0
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">V0e</span> <span class="o">=</span> <span class="mf">1.256e-36</span> <span class="c1"># eV/cm3</span>
+<span class="n">ne</span>  <span class="o">=</span> <span class="mf">5e25</span>      <span class="c1"># elec/cm3 [3-6]</span>
+<span class="n">Ve</span>  <span class="o">=</span> <span class="n">V0e</span><span class="o">*</span><span class="n">ne</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;coh. esc potential &quot;</span><span class="p">,</span> <span class="n">Ve</span><span class="p">,</span> <span class="s2">&quot;eV&quot;</span><span class="p">)</span>
+
+<span class="n">dm2_0</span>   <span class="o">=</span>  <span class="mf">7.5e-5</span> <span class="c1">## eV2 </span>
+<span class="n">theta0</span>  <span class="o">=</span>  <span class="mf">0.1845</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">E0</span> <span class="o">=</span> <span class="mf">1.e6</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;oscillation &quot;</span><span class="p">,</span> <span class="n">dm2_0</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">E0</span><span class="p">))</span>
+
+<span class="n">E</span>        <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.e6</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>  <span class="c1">#eV</span>
+<span class="n">x</span>        <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">Ve</span><span class="o">*</span><span class="n">E</span><span class="o">/</span><span class="n">dm2_0</span>
+<span class="n">s_2th0</span><span class="p">,</span> <span class="n">c_2th0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta0</span><span class="p">)</span>
+
+<span class="n">dm2_eff</span>  <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">dm2_0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">c_2th0</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">s_2th0</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">t_2theff</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">s_2th0</span><span class="o">/</span><span class="p">(</span><span class="n">c_2th0</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
+<span class="n">theff</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">t2</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>coh. esc potential  6.28e-11 eV
+oscillation  3.75e-11
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">dm2_eff</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;E (MeV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\Delta m^2$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="mf">1e6</span><span class="p">,</span> <span class="n">theff</span><span class="p">(</span><span class="n">t_2theff</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;E (MeV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\theta/\pi$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/nu_oscillations_46_0.png" src="_images/nu_oscillations_46_0.png" />
+</div>
+</div>
+<p>In matter density varies along propagation, the solutions are more complicated (numerical solutions).</p>
+<p>But if the variation of density is slow, and the initial scenarios if matter dominated, as for neutrinos in the core of the sun, <span class="math notranslate nohighlight">\(\nu_2\)</span>, they are in the same state.</p>
+<p>In the Sun:</p>
+<div class="math notranslate nohighlight">
+\[
+N_e(t) = N_e(0) e^{-r/R}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(r\)</span> is the radious respect the origin</p>
+<p>Above the resonance, neutrinos in the Sun, are <span class="math notranslate nohighlight">\(\nu_2\)</span>, scape as <span class="math notranslate nohighlight">\(\nu_2\)</span> and interacts in the Earth.</p>
+<p>Therefore the probability that a <span class="math notranslate nohighlight">\(\nu_2\)</span> interacts as <span class="math notranslate nohighlight">\(\nu_e\)</span>, when it is back in vacuum:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{ee} = \sin^2 \theta_0
+\]</div>
+<p>If the energy of the neutrino is bellow the resonance, in the vacuum dominated, and the detector size (Earth), large compared with the oscillations, the probability is averaged:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{ee} = 1 - \frac{1}{2}\sin^2 2 \theta_0
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/solar_matter.png"><img alt="_images/solar_matter.png" class="align-center" src="_images/solar_matter.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/borexino_results.png"><img alt="_images/borexino_results.png" class="align-center" src="_images/borexino_results.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><a class="reference external" href="http://borex.lngs.infn.it">Borexino</a> at Gran Sasso, Italy, is an ultra-pure 200 t LS detector, 0.18 MeV threshold and 5% energy resolution
+<a class="reference external" href="https://arxiv.org/abs/0808.2868">[29]</a></p></li>
+<li><p>Survival probability depends on the neutrino energy range</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span> <span class="o">=</span> <span class="mf">0.55</span> <span class="p">,</span> <span class="mf">0.3</span>
+<span class="n">theta0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">p1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;theta0 &#39;</span><span class="p">,</span> <span class="n">theta0</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="s1">&#39; pi&#39;</span><span class="p">)</span>
+<span class="n">s2t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">theta0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p0 = 1- 0.5* sin (2theta) =&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">s2t</span><span class="o">*</span><span class="n">s2t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta0  0.18450505978277268  pi
+p0 = 1- 0.5* sin (2theta) = 0.5800000000000001
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta0</span> <span class="o">=</span> <span class="mf">0.1845</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">st</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta0</span><span class="p">)</span>
+<span class="n">st</span><span class="o">*</span><span class="n">st</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.29998543138136763
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="kamland-experiment">
+<h3><a class="reference external" href="https://www.awa.tohoku.ac.jp/kamlande/">KamLand Experiment</a><a class="headerlink" href="#kamland-experiment" title="Permalink to this heading">#</a></h3>
+<p>If <span class="math notranslate nohighlight">\(\Delta m^2_{21} \simeq 7.5 \times 10^{-5}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span>, oscillation can be obserbed with reactors neutrinos at LBS, <span class="math notranslate nohighlight">\(\mathcal{O}(100)\)</span> km and E <span class="math notranslate nohighlight">\(\mathcal{O}(1)\)</span> MeV.</p>
+<a class="reference internal image-reference" href="_images/KamLAND_map.png"><img alt="_images/KamLAND_map.png" class="align-center" src="_images/KamLAND_map.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/KamLAND_drawing.png"><img alt="_images/KamLAND_drawing.png" class="align-center" src="_images/KamLAND_drawing.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/KamLAND_photo.png"><img alt="_images/KamLAND_photo.png" class="align-center" src="_images/KamLAND_photo.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li><p>1 k ton ultra-pure liquid-scintillator in 13 m spherical balloon.</p></li>
+<li><p>flux <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> from 55 reactors in Japan and South Korea, <span class="math notranslate nohighlight">\(L \sim 180\)</span> km</p></li>
+<li><p>Detection: e+ scintillation and annihilation, and <span class="math notranslate nohighlight">\(n\)</span> capture in H, 2.2 MeV <span class="math notranslate nohighlight">\(\gamma\)</span> delayed 210 <span class="math notranslate nohighlight">\(\mu\)</span>s</p></li>
+<li><p>In Kamioka mine. First results in 2002 confirming <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> disappearance <a class="reference external" href="https://arxiv.org/abs/hep-ex/0212021">[21]</a></p>
+<ul>
+<li><p>ratio observed/expected with no oscillations: <span class="math notranslate nohighlight">\(0.611 \pm 0.085 \pm 0.041\)</span></p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/KamLAND_oscillation.png"><img alt="_images/KamLAND_oscillation.png" class="align-center" src="_images/KamLAND_oscillation.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li><p>Confirmation of oscillation pattern in 2004 <a class="reference external" href="https://arxiv.org/abs/hep-ex/0406035">[22]</a> and <a class="reference external" href="https://arxiv.org/abs/1303.4667">[23]</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/KamLAND_dm2_tan2theta12.png"><img alt="_images/KamLAND_dm2_tan2theta12.png" class="align-center" src="_images/KamLAND_dm2_tan2theta12.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li><p>Confirmation of oscillation pattern in 2004 <a class="reference external" href="https://arxiv.org/abs/hep-ex/0406035">[22]</a> <a class="reference external" href="https://arxiv.org/abs/1303.4667">[23]</a></p></li>
+</ul>
+<div class="section" id="solution-of-solar-neutrino-problem">
+<h4>Solution of Solar Neutrino Problem<a class="headerlink" href="#solution-of-solar-neutrino-problem" title="Permalink to this heading">#</a></h4>
+<p>The MSW adiabatic flavour transitions in the solar matter, the so-called large mixing angle (LMA) with parameters:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta m^2_{21} = 7.5 \times 10^{-5} \;\, \mathrm{eV}^2,  \;\; \sin^2 \theta \simeq 0.3
+\]</div>
+<p>Confirmed total SSM <span class="math notranslate nohighlight">\(\nu\)</span> flux with SNO+ NC data.</p>
+<p>Confirmed oscillation with reactor neutrinos LBL KamLAND experiment.</p>
+</div>
+</div>
+</div>
+<div class="section" id="atmospheric-neutrinos">
+<h2>Atmospheric neutrinos<a class="headerlink" href="#atmospheric-neutrinos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Neutrinos are produced in the cascades generated by cosmic rays impringent the atmosphere</p></li>
+<li><p>For every <span class="math notranslate nohighlight">\(\pi\)</span> there is 2 <span class="math notranslate nohighlight">\(\nu_\mu\)</span> and 1 <span class="math notranslate nohighlight">\(\nu_e\)</span> (<span class="math notranslate nohighlight">\(\nu\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}\)</span>)</p></li>
+<li><p>Range of Energy is very large: 0.1-100 GeV</p></li>
+<li><p>Range of distance, L, is also large: 10 - 100 km</p></li>
+<li><p>Flux depends on Energy</p></li>
+<li><p>SuperKamiokande can detect <span class="math notranslate nohighlight">\(\nu_e, \nu_\mu\)</span> via inverse decay.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/SK_mue_atm_event.png"><img alt="_images/SK_mue_atm_event.png" class="align-center" src="_images/SK_mue_atm_event.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>Lepton direction indicates <span class="math notranslate nohighlight">\(\nu\)</span> direction</p></li>
+<li><p>There are fully contained, stopping, upward, throu-going muons different E ranges</p></li>
+<li><p>In 1998 SK observed a deficit of up-going muons <a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">[24]</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/SK_atm_first_result.png"><img alt="_images/SK_atm_first_result.png" class="align-center" src="_images/SK_atm_first_result.png" style="width: 500px;" /></a>
+<p>Up/Down assymmetry:
+$<span class="math notranslate nohighlight">\(
+\mathcal{A}_{UD}= 0.296 \pm 0.048 \pm 0.001,
+\)</span>$</p>
+<a class="reference internal image-reference" href="_images/SK_atm_LE_result.png"><img alt="_images/SK_atm_LE_result.png" class="align-center" src="_images/SK_atm_LE_result.png" style="width: 500px;" /></a>
+<p>Evidence of oscillation pattern <a class="reference external" href="https://arxiv.org/abs/hep-ex/0404034">[25]</a></p>
+<a class="reference internal image-reference" href="_images/SK_atm_LE_dm2theta.png"><img alt="_images/SK_atm_LE_dm2theta.png" class="align-center" src="_images/SK_atm_LE_dm2theta.png" style="width: 500px;" /></a>
+<p>Best parameters <a class="reference external" href="https://arxiv.org/abs/hep-ex/0404034">[25]</a></p>
+<div class="math notranslate nohighlight">
+\[
+\Delta m^2 \simeq 2.5 \times 10^{-3} \;\; \mathrm{eV}^2 , \;\; \theta \simeq \pi/4
+\]</div>
+<a class="reference internal image-reference" href="_images/SK_zenith_distributions.png"><img alt="_images/SK_zenith_distributions.png" class="align-center" src="_images/SK_zenith_distributions.png" style="width: 800px;" /></a>
+<div class="section" id="confirmation-of-atmospheric-oscillations">
+<h3>Confirmation of Atmospheric oscillations<a class="headerlink" href="#confirmation-of-atmospheric-oscillations" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="_images/LBS_experiments.png"><img alt="_images/LBS_experiments.png" class="align-center" src="_images/LBS_experiments.png" style="width: 800px;" /></a>
+<p>The atmospheric <span class="math notranslate nohighlight">\(\Delta m^2 \simeq 2.5 \times 10^{-3}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span> is accesible with accelerator <span class="math notranslate nohighlight">\(\nu_\mu\)</span> neutrinos of <span class="math notranslate nohighlight">\(\mathcal{O}(1)\)</span> GeV at <span class="math notranslate nohighlight">\(\mathcal{O}(1000)\)</span> km.</p>
+</div>
+<div class="section" id="t2k">
+<h3>T2K<a class="headerlink" href="#t2k" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://t2k-experiment.org">T2K</a> 0.6 GeV <span class="math notranslate nohighlight">\(\nu_\mu (\bar{\nu}_\mu)\)</span> from JPARC to SK at 290 km.</p></li>
+<li><p>T2K sploits the fact that the neutrino spectrum is narrower (but less intense) off-axis by 2.5<span class="math notranslate nohighlight">\(^o\)</span> degrees.</p></li>
+<li><p>A near and a fact detector to estimate flux and control systematics errors.</p></li>
+<li><p>Far Detector is SuperKamiokande</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/T2K_map.png"><img alt="_images/T2K_map.png" class="align-center" src="_images/T2K_map.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/T2K_beam_offaxis.png"><img alt="_images/T2K_beam_offaxis.png" class="align-center" src="_images/T2K_beam_offaxis.png" style="width: 300px;" /></a>
+<p>Neutrino flux for different off-axis angles.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2K_numu_dis.png"><img alt="_images/T2K_numu_dis.png" class="align-center" src="_images/T2K_numu_dis.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Measure <span class="math notranslate nohighlight">\(\nu_\mu\)</span> dissapperance (relevant for atmospheric oscillations)</p></li>
+<li><p>Measure <span class="math notranslate nohighlight">\(\nu_e\)</span> apperance (see later)</p></li>
+<li><p>Beam with <span class="math notranslate nohighlight">\(\bar{\nu}_\mu\)</span> and <span class="math notranslate nohighlight">\(\nu_\mu\)</span> (relevant for CP and matter effects, see later)</p></li>
+</ul>
+<div class="section" id="minos">
+<h4>MINOS<a class="headerlink" href="#minos" title="Permalink to this heading">#</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/minos_map.png"><img alt="_images/minos_map.png" class="align-center" src="_images/minos_map.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/minos_photo.png"><img alt="_images/minos_photo.png" class="align-center" src="_images/minos_photo.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/minos_event.png"><img alt="_images/minos_event.png" class="align-center" src="_images/minos_event.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www-numi.fnal.gov">MINOS</a> experiment at Soudan Mine, 730 km from FermiLab NuMI beam peak at 3 GeV</p></li>
+<li><p>5.4 ktons iron-scintillation tracking planes and calorimeter (486 planes, 30 m long, 8 m high)</p></li>
+<li><p>similar near detector 0.9 ton</p></li>
+<li><p>magnetized iron-tracking, separation <span class="math notranslate nohighlight">\(\mu^+/\mu^-\)</span></p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/MINOS_numu_atmconf.png"><img alt="_images/MINOS_numu_atmconf.png" class="align-center" src="_images/MINOS_numu_atmconf.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="math notranslate nohighlight">
+\[
+|\Delta m^2| = (2.41\pm 0.09 ) \times 10^{−3} \mathrm{eV}^2, \;\; \sin^2 2θ = 0.950 \pm 0.035
+\]</div>
+<p>MINOS (2013) <a class="reference external" href="https://arxiv.org/abs/1304.6335">[26]</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/MINOS_numu_atmconf2.png"><img alt="_images/MINOS_numu_atmconf2.png" class="align-center" src="_images/MINOS_numu_atmconf2.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>oscillation probability from MINOS+ (2014)</p>
+</div>
+</div>
+</div>
+<div class="section" id="oscillations-with-3-neutrinos">
+<h2>Oscillations with 3 neutrinos<a class="headerlink" href="#oscillations-with-3-neutrinos" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nuosc_3families_diagram.png"><img alt="_images/nuosc_3families_diagram.png" class="align-center" src="_images/nuosc_3families_diagram.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The neutrino oscillation with <span class="math notranslate nohighlight">\(n\)</span> families is rulled by a complex <em>unitary</em> matrix</p>
+<div class="math notranslate nohighlight">
+\[
+| \nu_{\alpha} \rangle = \sum_i U^*_{\alpha i} | \nu_i \rangle
+\]</div>
+<p>With <em>vacuum</em> plane wave propogation the oscillation amplitude:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta}  = \langle \nu_{\beta} | \nu_{\alpha} (t) \rangle 
+ = \sum_i U_{\beta i} U^*_{\alpha i} \, e^{-i E_i t} 
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/U_PMNS.png"><img alt="_images/U_PMNS.png" class="align-center" src="_images/U_PMNS.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Where <span class="math notranslate nohighlight">\(s_{13} = \sin \theta_{13}, \; c_{13} = \cos \theta_{13}\)</span>. The CP phase is <span class="math notranslate nohighlight">\(\delta\)</span>.</p>
+<p>Solar oscillations amplitude is ruled by <span class="math notranslate nohighlight">\(\theta_{12}\)</span> while atmospheric by <span class="math notranslate nohighlight">\(\theta_{23}\)</span>.</p>
+<p><em>Notice</em>: If neutrinos are Majorana there are two phases more (see next chapter)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/U_PMNS_alphai.png"><img alt="_images/U_PMNS_alphai.png" class="align-center" src="_images/U_PMNS_alphai.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>From the amplitude:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta}  = \delta_{\alpha \beta} -2i \sum_i U_{\beta i} U^*_{\alpha i} e^{-i \frac{\Delta E_{ip}}{2}} \sin \frac{\Delta E_{ip} t}{2}   
+\]</div>
+<p>We obtain the oscillation probability:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{P}(\nu_\alpha \to \nu_\beta)  = \delta_{\alpha \beta} - 4  \sum_i |U_{\alpha i}|^2   \delta_{\alpha \beta} \sin^2 \frac{\Delta E_{ip}t}{2} \\
+	 + 4 \sum_{i,j} \mathrm{Re}\left[ U_{\beta i} U^*_{\alpha i} U^*_{\beta j} U_{\alpha j} \right] \cos \frac{\Delta E_{ij}t}{2} \sin \frac{\Delta E_{ip}t}{2}
+	\sin \frac{\Delta E_{jp} t}{2} \\
+	 + 4 \sum_{i,j} \mathrm{Im}\left[ U_{\beta i} U^*_{\alpha i} U^*_{\beta j} U_{\alpha j} \right] \sin \frac{\Delta E_{ij}t}{2} \sin \frac{\Delta E_{ip}t}{2}
+	\sin \frac{\Delta E_{jp} t}{2}.
+\end{split}\]</div>
+<p>With:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta E_{ip} \equiv E_i - E_p \simeq \frac{m^2_i-m^2_p}{2E} = \frac{\Delta m^2_{ip}}{2E}
+\]</div>
+<p>and <span class="math notranslate nohighlight">\(p\)</span>-index arbitrary (i.e 1)</p>
+<p>Manipulating the amplitud:</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{A}_{\alpha \beta} = e^{-i E_p t}\sum_{i} U_{\beta i} U^*_{\alpha i} \, e^{-i (E_i-E_p)}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta} =  \sum_i U_{\beta i} U^*_{\alpha i} (e^{-i \Delta E_{ip} t} + 1 - 1)   
+= \sum_{i} U_{\beta i} U^*_{\alpha i} + \sum_i U_{\beta i} U^*_{\alpha i} e^{-i\frac{\Delta E_{ip t}}{2}}
+\left(e^{-i\frac{\Delta E_{ip t}}{2}} - e^{+i\frac{\Delta E_{ip t}}{2}}  \right)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{A}_{\alpha \beta}  = \delta_{\alpha \beta} -2i \sum_i U_{\beta i} U^*_{\alpha i} e^{-i \frac{\Delta E_{ip}}{2}} \sin \frac{\Delta E_{ip} t}{2}   
+\]</div>
+<p>Computing the probability:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\nu_\alpha \to \nu_ \beta) =  
+\left( \delta_{\alpha \beta} -2i \sum_i U_{\beta i} U^*_{\alpha i} e^{-i \frac{\Delta E_{ip}}{2}} \sin \frac{\Delta E_{ip} t}{2} \right)  
+\left( \delta_{\alpha \beta} +2i \sum_j U^*_{\beta j} U_{\alpha j} e^{i \frac{\Delta E_{jp}}{2}} \sin \frac{\Delta E_{jp} t}{2}   \right)
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(i &gt; j\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{P}(\nu_\alpha \to \nu_\beta)  = \delta_{\alpha \beta} - 4 \sum_i |U_{\alpha i}|^2 (\delta_{\alpha \beta} - |U_{\beta i}|^2 )   \sin^2 \frac{\Delta E_{ip}t}{2} \\
+	 + 8 \sum_{i&gt;j} \mathrm{Re}\left[ U_{\beta i} U^*_{\alpha i} U^*_{\beta j} U_{\alpha j} \right] \cos \frac{\Delta E_{ij}t}{2} \sin \frac{\Delta E_{ip}t}{2}
+	\sin \frac{\Delta E_{jp} t}{2} \\
+	 + 8 \sum_{i&gt;j} \mathrm{Im}\left[ U_{\beta i} U^*_{\alpha i} U^*_{\beta j} U_{\alpha j} \right] \sin \frac{\Delta E_{ij}t}{2} \sin \frac{\Delta E_{ip}t}{2}
+	\sin \frac{\Delta E_{jp} t}{2}.
+ \end{split}\]</div>
+<p>We can study CP, T, CP transformations:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathrm{CP} \; : \;  \mathcal{P}(\nu_\alpha \to \nu_\beta) \Rightarrow \mathcal{P}(\bar{\nu}_\alpha \to \bar{\nu}_\beta) \\ 
+ \mathrm{T} \; : \;  \mathcal{P}(\nu_\alpha \to \nu_\beta) \Rightarrow \mathcal{P}( \nu_\beta \to \nu_\alpha) \\ 
+ \mathrm{CPT} \; : \;  \mathcal{P}(\nu_\alpha \to \nu_\beta) \Rightarrow \mathcal{P}( \bar{\nu}_\beta \to \bar{\nu}_\alpha) \\ 
+ \end{split}\]</div>
+<p>In Nature, we have measured two mass squared differences:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+ \Delta m^2_A \simeq 2.5 \times 10^{-3} \; \mathrm{eV}^2 \\
+ \Delta m^2_\odot \simeq 7.5 \times 10^{-5} \; \mathrm{eV}^2 
+\end{split}\]</div>
+<p>There are at least three massive neutrinos, we define two mass squared differences:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+ \Delta m^2_{21} = \Delta m^2_\odot \\
+ \Delta m^2_{31} = \Delta m^2_{32}= \pm \Delta m^2_A 
+\end{split}\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/hierarchy.png"><img alt="_images/hierarchy.png" class="align-center" src="_images/hierarchy.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>That correspond to the <em>normal</em> (NH) and <em>inverted</em> (IH) mass hierarchies.</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{NH:} \; m_1 &lt; m_2 &lt; m_3, \;\; \mathrm{IH:} \; m_3 &lt; m_1 &lt; m_2
+\]</div>
+<p>The ratio:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\Delta m^2_\odot}{\Delta m^2_A} \simeq 3 \times 10^{-2}
+\]</div>
+<p>With:</p>
+<div class="math notranslate nohighlight">
+\[
+\phi_\odot  = \frac{ \Delta m^2_\odot L }{ 4E}, \;\; 
+\phi_A  = \frac{ \Delta m^2_A L }{ 4E}, \;\; 
+\]</div>
+<p>We have:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\phi_\odot \sim \mathcal{O}(\pi)  \;\; \Rightarrow \phi_{A} &gt;&gt; \phi_\odot \\
+ \phi_A \sim \mathcal{O}(\pi)  \;\; \Rightarrow \phi_\odot &lt;&lt; \phi_A .
+\end{split}\]</div>
+<p>The oscillation probability in terms of <span class="math notranslate nohighlight">\(\Delta m^2_\odot, \, \Delta m^2_A\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{P}(\nu_\alpha \to \nu_\beta) = \delta_{\alpha \beta} - 4 \, |U_{\alpha 3}|^2 (\delta_{\alpha \beta} - |U_{\beta 3}|^2 )   \sin^2 \frac{\Delta m^2_A L}{4 E} \\
+	 - 4 \, |U_{\alpha 2}|^2 (\delta_{\alpha \beta} - |U_{\beta 2}|^2 )   \sin^2 \frac{\Delta m^2_\odot L}{4 E} \\
+	 \pm 8 \, \mathrm{Re}\left[ U_{\beta 3} U^*_{\alpha 3} U^*_{\beta 2} U_{\alpha 2} \right] \cos \frac{\Delta m^2_A L}{4 E} \sin \frac{\Delta m^2_A L}{4 E}
+	\sin \frac{\Delta m^2_\odot L}{4 E}  \\
+	 + 8 \, \mathrm{Im}\left[ U_{\beta 3} U^*_{\alpha 3} U^*_{\beta 2} U_{\alpha 2} \right] \sin \frac{\Delta m^2_A L}{4 E} \sin \frac{\Delta m^2_A L}{4 E}
+	\sin \frac{\Delta m^2_\odot L}{4 E}.
+\end{split}\]</div>
+<p>Let’s consider the case of atmospheric neutrinos with accelerator.
+MINOS experiment with <span class="math notranslate nohighlight">\(L \sim 750\)</span> km and <span class="math notranslate nohighlight">\(E  \sim 1-5\)</span> GeV:</p>
+<div class="math notranslate nohighlight">
+\[
+\phi_A \sim \mathcal{O}(\pi) \;\; \Rightarrow \phi_\odot \sim 0
+\]</div>
+<p>For the survival probability <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_\mu\)</span>, using the standard U-PMNS parameterization, we get:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\nu_\mu \to \nu_\mu) \simeq 1 - 4 |U_{\mu 3}|^2 (1-|U_{\mu 3}|^2) \sin^2 \frac{\Delta m^2_A L}{4 E}
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(U_{\mu3} = s_{23}c_{13}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\nu_\mu \to \nu_\mu) = 1 - 4 s^2_{23} c^2_{13}(1-s^2_{23}c^2_{13}) \sin^2 \frac{\Delta m^2_A L}{4 E}
+\]</div>
+<p>Now consider the case <span class="math notranslate nohighlight">\(s_{13} \sim 0, \, c_{13} \sim 1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\nu_\mu \to \nu_\mu) \simeq 1 - \sin^2 2 \theta_{23} \sin^2 \frac{\Delta m^2_A L}{4 E}
+\]</div>
+<p>And we recuperate the two-families oscillation formula.</p>
+<p>We can compute now the probability to oscillate to other flavors at MINOS, with the previos approximations:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{P}(\nu_\mu \to \nu_e)  \simeq 4 s^2_{23} c^2_{13} s^2_{13} \sin^2 \frac{\Delta m^2_A L}{4 E} \sim 0 \\
+\mathcal{P}(\nu_\mu \to \nu_\tau)  \simeq 4 s^2_{23} c^2_{13} c^2_{23} c^2_{13} \sin^2 \frac{\Delta m^2_A L}{4 E} \simeq \sin^2 2 \theta_{23} \sin^2 \frac{\Delta m^2_A L}{4E} \\
+\end{split}\]</div>
+<p>Notice that as <span class="math notranslate nohighlight">\(\mathcal{P}(\nu_\mu \to \nu_e)\)</span> is suppressed, then it is sensible to second order effects,</p>
+<p>For the atmospheric case with reactor neutrinos.
+KamLAND experiment with <span class="math notranslate nohighlight">\(L=180\)</span> km and <span class="math notranslate nohighlight">\(E \sim 1-5\)</span> MeV.</p>
+<div class="math notranslate nohighlight">
+\[
+\phi_\odot \sim \mathcal{O}(\pi) \Rightarrow \phi_A &gt;&gt; \phi_\odot
+\]</div>
+<p>The atmospheric oscillation is then averaged <span class="math notranslate nohighlight">\(\sin^2 \phi_A = 1/2, \sin \phi_A =  \cos \phi_A = 0\)</span>, we have:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\bar{\nu}_e \to \bar{\nu}_e) \simeq 1 - 4 |U_{e2}|^2 (1-|U_{e2}|^2) \sin^2 \frac{\Delta m^2_\odot L}{4E} - 2 |U_{e3}|^2 (1-|U_{e3}|^2)
+\]</div>
+<p>With <span class="math notranslate nohighlight">\(U_{e2} = s_{12} c_{13}\)</span> and <span class="math notranslate nohighlight">\(U_{e3} = s_{13} e^{-i\delta}\)</span>, ans taking <span class="math notranslate nohighlight">\(s_{13} \sim 0, \, c_{13} \sim 1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\bar{\nu}_e \to \bar{\nu}_e) \simeq 1 - 4 s^2_{12} c^2_{12} \sin^2 \frac{\Delta m^2_\odot L}{4E} = 1 - \sin^2 2 \theta_{12} \sin^2 \frac{\Delta m^2_\odot L}{4E}
+\]</div>
+<p>Now consider the case of reactor neutrinos in the atmospheric regime:
+DayaBay experiment with <span class="math notranslate nohighlight">\(L=1\)</span> km and <span class="math notranslate nohighlight">\(E \sim 1-5\)</span> MeV.</p>
+<div class="math notranslate nohighlight">
+\[
+\phi_A \sim \mathcal{O}(\pi) \Rightarrow \phi_\odot \sim 0.
+\]</div>
+<p>Now:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\bar{\nu}_e \to \bar{\nu}_e) \simeq 1 - 4 |U_{e3}|^2 (1-|U_{e3}|^2) \sin^2 \frac{\Delta m^2_A L}{4 E}
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(U_{e3} = s_{13}\)</span>, we get:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\bar{\nu}_e \to \bar{\nu}_e) \simeq 1 - 4 s^2_{13} (1-s^2_{13}) \sin^2 \frac{\Delta m^2_A L}{4 E} = 1 - \sin^2 2 \theta_{13} \sin^2 \frac{\Delta m^2_A L}{4 E}
+\]</div>
+<p>The amplitude of the oscillation corresponds to <span class="math notranslate nohighlight">\(\sin^2 2 \theta_{13}\)</span>.</p>
+</div>
+<div class="section" id="sbl-reactor-experiments-the-theta-13-angle">
+<h2>SBL Reactor Experiments. The  <span class="math notranslate nohighlight">\(\theta_{13}\)</span> angle<a class="headerlink" href="#sbl-reactor-experiments-the-theta-13-angle" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SBL_experiments.png"><img alt="_images/SBL_experiments.png" class="align-center" src="_images/SBL_experiments.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Short Base Line experiments, searching for <span class="math notranslate nohighlight">\(\nu_e \to \nu_e\)</span> disappearance, with <span class="math notranslate nohighlight">\(E\)</span> in <span class="math notranslate nohighlight">\(1\)</span> MeV and distance <span class="math notranslate nohighlight">\(1\)</span> km, are sensible to <span class="math notranslate nohighlight">\(\theta_{13}\)</span> in the <span class="math notranslate nohighlight">\(\Delta m^2_A\)</span> range.</p>
+<div class="section" id="daya-bay-experiment">
+<h3>Daya Bay Experiment<a class="headerlink" href="#daya-bay-experiment" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_map.png"><img alt="_images/dayabay_map.png" class="align-center" src="_images/dayabay_map.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_detector.png"><img alt="_images/dayabay_detector.png" class="align-center" src="_images/dayabay_detector.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_photo.png"><img alt="_images/dayabay_photo.png" class="align-center" src="_images/dayabay_photo.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>6 reactors 2.9 GW, 6 detectors: 2 near (470 m, 576 m), one far (1648 km)</p></li>
+<li><p>layer detectors: LS with Gd, LS free of Gd, Veto (pure water), 160 tons</p></li>
+<li><p>calibrated with radioactive sources: <span class="math notranslate nohighlight">\(^{137}\)</span>Cs, <span class="math notranslate nohighlight">\(^{60}\)</span>CO,</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_first_result.png"><img alt="_images/dayabay_first_result.png" class="align-center" src="_images/dayabay_first_result.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Observation of oscillation with <span class="math notranslate nohighlight">\(\theta_{13}\)</span>, Daya Bay <a class="reference external" href="https://arxiv.org/abs/1203.1669">[26]</a>, in 2012.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_nue_osc.png"><img alt="_images/dayabay_nue_osc.png" class="align-center" src="_images/dayabay_nue_osc.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_dm2_s2theta13.png"><img alt="_images/dayabay_dm2_s2theta13.png" class="align-center" src="_images/dayabay_dm2_s2theta13.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Daya Bay  results 2018 <a class="reference external" href="https://arxiv.org/abs/1809.02261">[27]</a></p>
+</div>
+<div class="section" id="reno-experiment">
+<h3>Reno Experiment<a class="headerlink" href="#reno-experiment" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/reno_map.png"><img alt="_images/reno_map.png" class="align-center" src="_images/reno_map.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/reno_detector.png"><img alt="_images/reno_detector.png" class="align-center" src="_images/reno_detector.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>6 reactors (~2.8 GW), near (294 m) and far detector
+(1383m)</p></li>
+<li><p>layers: LS + Gd, LS + Veto (pure water), 15,2 ton</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/reno_nue_pee.png"><img alt="_images/reno_nue_pee.png" class="align-center" src="_images/reno_nue_pee.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/reno_dm2_s2theta13.png"><img alt="_images/reno_dm2_s2theta13.png" class="align-center" src="_images/reno_dm2_s2theta13.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Reno results 2018 <a class="reference external" href="https://arxiv.org/abs/1806.00248">[28]</a></p>
+</div>
+<div class="section" id="doublechooz">
+<h3>DoubleCHOOZ<a class="headerlink" href="#doublechooz" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_map.png"><img alt="_images/doublechooz_map.png" class="align-center" src="_images/doublechooz_map.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_detector.png"><img alt="_images/doublechooz_detector.png" class="align-center" src="_images/doublechooz_detector.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_photo.png"><img alt="_images/doublechooz_photo.png" class="align-center" src="_images/doublechooz_photo.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>6 reactors (~2.8 GW), a far detector (1050m)</p></li>
+<li><p>layers: LS + Gd, LS + Veto (pure water)</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_farnear_ratio.png"><img alt="_images/doublechooz_farnear_ratio.png" class="align-center" src="_images/doublechooz_farnear_ratio.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Double Chooz 2019 <a class="reference external" href="https://arxiv.org/abs/1901.09445">[29]</a></p>
+<p>Latest summary (Neutrino 2024)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/theta13_summary.png"><img alt="_images/theta13_summary.png" class="align-center" src="_images/theta13_summary.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="long-base-line-experiments-delta-cp-and-mass-hierarchy">
+<h2>Long Base Line Experiments : <span class="math notranslate nohighlight">\(\delta\)</span>-CP and mass hierarchy<a class="headerlink" href="#long-base-line-experiments-delta-cp-and-mass-hierarchy" title="Permalink to this heading">#</a></h2>
+<p>Long Base Line Experiments, searching for <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}_\mu \to \bar{\nu}_e\)</span> are sensible to <span class="math notranslate nohighlight">\(\theta_{13}, \; \delta\)</span> and the mass hierarchy.</p>
+<p>The propagation is affected by the matter effects in the mantle of the Earth.</p>
+<p>This oscillation is a second order oscillations and to be observed required larger massive detector and very intense neutrino fluxes.</p>
+<div class="section" id="list-of-long-base-line-experiments">
+<h3>List of Long Base Line Experiments<a class="headerlink" href="#list-of-long-base-line-experiments" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/LBL_experiments.png"><img alt="_images/LBL_experiments.png" class="align-center" src="_images/LBL_experiments.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The oscillation probability for LBL experiments [30]:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P(\nu_\mu \to \nu_e, \bar{\nu}_\mu \to \bar{\nu}_e)  \simeq s^2_{23} \sin^2 2 \theta_{13} \left( \frac{\Delta E_{31}}{\Delta E_{31} \mp V_e}\right)^2 \sin^2 \left( \frac{ (\Delta E_{31} \mp V_e) L}{2}  \right) \\ 
+ + J \frac{\Delta E_{21}}{V_e} \frac{\Delta E_{31}}{  |\Delta E_{31} \mp V_e| }  \sin  \frac{V_e \, L}{2} \sin \frac{  |\Delta E_{31} \pm V_e| \, L}{2}  \, \cos \left(\frac{\Delta E_{31}L}{2} \mp \delta\right)
+\end{split}\]</div>
+<p>Where:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta E_{ji} = \frac{\Delta m^2_{ji}}{2E}, \;\; V_e = \sqrt{2} G_F N_e, \;\; J = c_{13} \sin 2 \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{23} 
+\]</div>
+<p>The first term is sensible to mass hierarchy. <span class="math notranslate nohighlight">\(V_e\)</span> changes sign depending of <span class="math notranslate nohighlight">\(\nu(\bar{\nu})\)</span> oscillations.</p>
+<p>The second term is sensible to the mass hierarchy and the <span class="math notranslate nohighlight">\(\delta\)</span>-CP phase.</p>
+<p>But the second term is supressed by <span class="math notranslate nohighlight">\(J\)</span> with <span class="math notranslate nohighlight">\(\sin 2 \theta_{13}\)</span>.</p>
+<p>To observe both effects it is better to have several experiments with different ranges of energies and distances.</p>
+</div>
+<div class="section" id="nova">
+<h3>NOvA<a class="headerlink" href="#nova" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\nu_\mu\)</span> NuMI beat from FermiLAB to near Ash River, MN, 810 km. Near detector at 1 km.</p></li>
+<li><p>Detector is 14.5 mrad off-axis. The <span class="math notranslate nohighlight">\(\nu\)</span> E peaks at 2 GeV.</p></li>
+<li><p>14 k ton detector with planes of plastic PVC cells in vertical and horizontal orientation filled with liquid scintillator.</p></li>
+<li><p>NOvA started operation in 2014 with <span class="math notranslate nohighlight">\(\nu_\mu\)</span> bean and since 2016 with <span class="math notranslate nohighlight">\(\bar{\nu}\)</span>.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_map.png"><img alt="_images/NOvA_map.png" class="align-center" src="_images/NOvA_map.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_photo.png"><img alt="_images/NOvA_photo.png" class="align-center" src="_images/NOvA_photo.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_event.png"><img alt="_images/NOvA_event.png" class="align-center" src="_images/NOvA_event.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA construction timelapse <a class="reference external" href="https://www.youtube.com/watch?v=zbLeZ61_rcw">movie</a></p>
+<p>NOvA results on <span class="math notranslate nohighlight">\(\nu_\mu (\bar{\nu}_\mu)\)</span> disapperance</p>
+<p>NOva is sensible to the <em>atmospheric oscillations</em> regime, with the <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_\mu\)</span> (and anti-nuetrinos) disappearance channels</p>
+<p>¡Notice that there is an indetermination in wich obtant <span class="math notranslate nohighlight">\(\theta_{23}\)</span> is!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_numu_Edist_neutrino2024.png"><img alt="_images/NOvA_numu_Edist_neutrino2024.png" class="align-center" src="_images/NOvA_numu_Edist_neutrino2024.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_nuosc_atmos_2021.png"><img alt="_images/NOvA_nuosc_atmos_2021.png" class="align-center" src="_images/NOvA_nuosc_atmos_2021.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Energy distribution (Neutrino 2024)</p></td>
+<td class="text-align:center"><p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The main goal of NOvA is CP violation and the hierchy problem in the <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> (and anti-neutrinos) appearance channes.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_matter.png"><img alt="_images/NOvA_pnue_pbarnue_matter.png" class="align-center" src="_images/NOvA_pnue_pbarnue_matter.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue.png"><img alt="_images/NOvA_pnue_pbarnue.png" class="align-center" src="_images/NOvA_pnue_pbarnue.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_numu_nue_2021.png"><img alt="_images/NOvA_numu_nue_2021.png" class="align-center" src="_images/NOvA_numu_nue_2021.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_delta_limits_2021.png"><img alt="_images/NOvA_delta_limits_2021.png" class="align-center" src="_images/NOvA_delta_limits_2021.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_2019.png"><img alt="_images/NOvA_pnue_pbarnue_2019.png" class="align-center" src="_images/NOvA_pnue_pbarnue_2019.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_plot_ichep2022.png"><img alt="_images/NOvA_pnue_pbarnue_plot_ichep2022.png" class="align-center" src="_images/NOvA_pnue_pbarnue_plot_ichep2022.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>TAUP 2019 conference</p></td>
+<td class="text-align:center"><p>ICHEP 2021</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA conference results: TAUP 2019, ICHEP 2022 |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pre_neutrino24_v2.png"><img alt="_images/NOvA_pre_neutrino24_v2.png" class="align-center" src="_images/NOvA_pre_neutrino24_v2.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_CPbayes_neutrino24.png"><img alt="_images/NOvA_CPbayes_neutrino24.png" class="align-center" src="_images/NOvA_CPbayes_neutrino24.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>NOvA neutrino 2024</p></td>
+<td class="text-align:center"><p>Bayes posterior probability</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA conference results: Nuetrino 2024</p>
+</div>
+<div class="section" id="id1">
+<h3>T2K<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="_images/T2K_pnue_pbarnue_vsE.png"><img alt="_images/T2K_pnue_pbarnue_vsE.png" class="align-center" src="_images/T2K_pnue_pbarnue_vsE.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>T2K is less sensible to matter effects but have some sensibility to <span class="math notranslate nohighlight">\(\delta\)</span>-CP in <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}_\mu \to \bar{\nu}_e\)</span> oscillations.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2K_PID.png"><img alt="_images/T2K_PID.png" class="align-center" src="_images/T2K_PID.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>T2K PID (2019) [32]</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2K_nue_barnue_2019.png"><img alt="_images/T2K_nue_barnue_2019.png" class="align-center" src="_images/T2K_nue_barnue_2019.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/T2K_thetas_delta_2019.png"><img alt="_images/T2K_thetas_delta_2019.png" class="align-center" src="_images/T2K_thetas_delta_2019.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>T2K <span class="math notranslate nohighlight">\(\nu_e, \bar{\nu}_e\)</span> appareance, (2020) <a class="reference external" href="https://arxiv.org/abs/1910.03887">[32]</a></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sin^2 \theta_{23}\)</span> vs <span class="math notranslate nohighlight">\(\delta\)</span> CP</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2K_CPbayes_neutrino2024.png"><img alt="_images/T2K_CPbayes_neutrino2024.png" class="align-center" src="_images/T2K_CPbayes_neutrino2024.png" style="width: 700px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>T2K ‘elipses’ and CP posterior probability</p></td>
+</tr>
+</tbody>
+</table>
+<p>Results from Neutrino 2024</p>
+</div>
+<div class="section" id="t2k-and-nova-combination">
+<h3>T2K and NOvA combination<a class="headerlink" href="#t2k-and-nova-combination" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>T2K has sensitivity to CP violation</p></li>
+<li><p>NOvA can constraint on mass ordering</p></li>
+<li><p>T2K + NOvA breaks the degenerancies and allow better sensitivity to CP</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2KNOvA_pe_pebar_comp.png"><img alt="_images/T2KNOvA_pe_pebar_comp.png" class="align-center" src="_images/T2KNOvA_pe_pebar_comp.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>appearance probabilities T2K and NOvA</p></td>
+</tr>
+</tbody>
+</table>
+<p>Results from Neutrino 2024</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2KNOvA_CPbayes_neutrino2024.png"><img alt="_images/T2KNOvA_CPbayes_neutrino2024.png" class="align-center" src="_images/T2KNOvA_CPbayes_neutrino2024.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>CP posterior probability (NOvA and T2K)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Results from Neutrino 2024</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2KNOvA_CPvsTheta13_neutrino2024.png"><img alt="_images/T2KNOvA_CPvsTheta13_neutrino2024.png" class="align-center" src="_images/T2KNOvA_CPvsTheta13_neutrino2024.png" style="width: 800px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>CP posterior probability (NOvA and T2K)</p></td>
+</tr>
+</tbody>
+</table>
+<p>In NO both experiments shows differences, but in IO, the combination improves the result!</p>
+<p>Results from Neutrino 2024</p>
+</div>
+</div>
+<div class="section" id="neutrino-mixing-matrix-parameters-global-fits">
+<h2>Neutrino Mixing Matrix Parameters. Global fits<a class="headerlink" href="#neutrino-mixing-matrix-parameters-global-fits" title="Permalink to this heading">#</a></h2>
+<p>There is an international effort to combine the experimental results in the framework of different neutrino scenarios.</p>
+<p>This is the web page of <a class="reference external" href="http://www.nu-fit.org">NuFit</a> group</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NuFit_2019.png"><img alt="_images/NuFit_2019.png" class="align-center" src="_images/NuFit_2019.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>NuFit 2019 [33]</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NuFit_regions_2019.jpg"><img alt="_images/NuFit_regions_2019.jpg" class="align-center" src="_images/NuFit_regions_2019.jpg" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="the-next-generation-of-neutrino-oscillation-experiments">
+<h3>The Next Generation of Neutrino Oscillation Experiments<a class="headerlink" href="#the-next-generation-of-neutrino-oscillation-experiments" title="Permalink to this heading">#</a></h3>
+<p>The current experimetns: T2K and NOVA may provide hits of <span class="math notranslate nohighlight">\(\delta\)</span>-CP and mass hierarchy.</p>
+<p>The future experiments, JUNO, DUNE and HK, will cover both CP and the mass hierchy determination.</p>
+</div>
+<div class="section" id="reach-of-t2k-nova">
+<h3>Reach of T2K &amp; NOvA<a class="headerlink" href="#reach-of-t2k-nova" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="sbl-juno-2025">
+<h3>SBL: JUNO (2025  - )<a class="headerlink" href="#sbl-juno-2025" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The Jiangmen Underground Neutrino Observatory (JUNO), China, a 20 kton multi-purpose underground liquid scintillator detector. In construction, (2024-)</p></li>
+<li><p>Excelent energy resolution 3% and scale precision. Radio pure material</p></li>
+<li><p>detection of <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> for neutrino reactors, but terrestial and extra-terrestial neutrinos.</p></li>
+<li><p>determination of the neutrino mass hierarchy.</p></li>
+<li><p>measurement of <span class="math notranslate nohighlight">\(\Delta m^2_{21}, \;\, \sin^2 \theta_{12}\)</span> to an accuracy of better than 1%.</p></li>
+</ul>
+<p>Status: Early process: detector with LS</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_map.png"><img alt="_images/JUNO_map.png" class="align-center" src="_images/JUNO_map.png" style="width: 200px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_detector.png"><img alt="_images/JUNO_detector.png" class="align-center" src="_images/JUNO_detector.png" style="width: 200px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_image.png"><img alt="_images/JUNO_image.png" class="align-center" src="_images/JUNO_image.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>location</p></td>
+<td class="text-align:center"><p>detector scheme</p></td>
+<td class="text-align:center"><p>dectector image</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_nue_spectrum_6years.png"><img alt="_images/JUNO_nue_spectrum_6years.png" class="align-center" src="_images/JUNO_nue_spectrum_6years.png" style="width: 450px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_pnue_vsLE.png"><img alt="_images/JUNO_pnue_vsLE.png" class="align-center" src="_images/JUNO_pnue_vsLE.png" style="width: 450px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>JUNO <a class="reference external" href="https://arxiv.org/abs/1507.05613">[34]</a></p>
+<p>Prospects for JUNO</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_prospects_neutrino2022.png"><img alt="_images/JUNO_prospects_neutrino2022.png" class="align-center" src="_images/JUNO_prospects_neutrino2022.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Neutrino 2022 Conference</p>
+</div>
+<div class="section" id="lbs-dune-2027">
+<h3>LBS: DUNE (2027 ? - )<a class="headerlink" href="#lbs-dune-2027" title="Permalink to this heading">#</a></h3>
+<p>40 kton LArTPC detector ad Sanford. Using the to be upgraded MuI FNLAB nu beam</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/DUNE_map.png"><img alt="_images/DUNE_map.png" class="align-center" src="_images/DUNE_map.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/DUNE_PnuePbarnue.png"><img alt="_images/DUNE_PnuePbarnue.png" class="align-center" src="_images/DUNE_PnuePbarnue.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>DUNE experiment scheme</p></td>
+<td class="text-align:center"><p>Appearance probibility</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Measures disappearance of <span class="math notranslate nohighlight">\(\nu_\mu (\bar{\nu}_\mu)\)</span> and appearance of <span class="math notranslate nohighlight">\(\nu_e(\bar{\nu}_e)\)</span> at E <span class="math notranslate nohighlight">\(\sim 3\)</span> GeV.</p>
+<ul>
+<li><p>Collect <span class="math notranslate nohighlight">\(10^{3}\)</span> <span class="math notranslate nohighlight">\(\nu_e(\bar{\nu}_e)\)</span>, and <span class="math notranslate nohighlight">\(10^{4}\)</span> <span class="math notranslate nohighlight">\(\nu_\mu(\bar{\nu}_\mu)\)</span></p></li>
+</ul>
+</li>
+<li><p>Large Physis program: Supernova neutrinos, proton-decay, …</p></li>
+<li><p>DUNE will use the upgraded MuI beam line in 2 steps:</p>
+<ul>
+<li><p>0.9 MW -&gt; 1.2 MW -&gt; 2.4 MW in the future</p></li>
+</ul>
+</li>
+<li><p>The Far detector is at 1300 km under the Sanford (SURF) at 1.5 km underground.</p></li>
+<li><p>The Far detector has 4 modules of 10 kt each.</p></li>
+<li><p>Each DUNE module is a LArTPC inside in a cryostar of size <span class="math notranslate nohighlight">\(14 \times 14 \times 62\)</span> m.</p></li>
+<li><p>LArTPC provides excellent tranging and calorimeter capabilities.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Two prototypes constructed at CERN:</p>
+<ul>
+<li><p>Single-phase (SP): similar to ICARUS <a class="reference external" href="https://arxiv.org/abs/1106.0975">[35]</a>. ionization charges are drifted horizontally in LAr and read out on wires in the liquid. Drift length 3.5 m and drift-field 500 V/cm, that is cathode voltage of 180 kV</p></li>
+<li><p>Dual-phase (DP): This technology is less established. Ionization charges are drifted vertically in LAr
+and transferred into the gas above the liquid. The signal charges are then amplified. Drift length is 12m and, drift field is 500 V/cm, that is cathode high voltage of 600 kV.</p></li>
+</ul>
+</li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/DUNE_detectors.png"><img alt="_images/DUNE_detectors.png" class="align-center" src="_images/DUNE_detectors.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Previous experience with ICARUS at LNGS</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/ICARUS_event.png"><img alt="_images/ICARUS_event.png" class="align-center" src="_images/ICARUS_event.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>ICARUS event [35] (2011) of a <span class="math notranslate nohighlight">\(\nu_\mu\)</span> CC interaction (CERN CGNS beam to LNGS)</p>
+<p>Currently two large LArTPC prototypes (ProtoDUNE) operating at CERN (2018-)</p>
+<p>The DUNE detector will consists in 3 (4) Forward Detector Modules:</p>
+<ul class="simple">
+<li><p>2 FD will vertical drift, 1 with horizontal drift, another to be decided!</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/DUNE_FDscheme.png"><img alt="_images/DUNE_FDscheme.png" class="align-center" src="_images/DUNE_FDscheme.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/DUNE_MH_sensitivity.png"><img alt="_images/DUNE_MH_sensitivity.png" class="align-center" src="_images/DUNE_MH_sensitivity.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/DUNE_deltaCP_sensitivity.png"><img alt="_images/DUNE_deltaCP_sensitivity.png" class="align-center" src="_images/DUNE_deltaCP_sensitivity.png" style="width: 600px;" /></a>
+<p>DUNE report <a class="reference external" href="https://arxiv.org/abs/1807.10334">[36]</a></p>
+<p>As a function of the Modules</p>
+<a class="reference internal image-reference" href="_images/DUNE_sensitivity_vs_time.png"><img alt="_images/DUNE_sensitivity_vs_time.png" class="align-center" src="_images/DUNE_sensitivity_vs_time.png" style="width: 600px;" /></a>
+<p>DUNE report <a class="reference external" href="https://arxiv.org/abs/1807.10334">[36]</a></p>
+<a class="reference internal image-reference" href="_images/DUNE_reach_exposure.png"><img alt="_images/DUNE_reach_exposure.png" class="align-center" src="_images/DUNE_reach_exposure.png" style="width: 400px;" /></a>
+<p>DUNE report <a class="reference external" href="https://arxiv.org/abs/1807.10334">[36]</a></p>
+</div>
+<div class="section" id="hyperkamiokande-2028">
+<h3>HyperKamiokande (2028 -)<a class="headerlink" href="#hyperkamiokande-2028" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/HK_detector.png"><img alt="_images/HK_detector.png" class="align-center" src="_images/HK_detector.png" style="width: 350px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/HK_Dome.png"><img alt="_images/HK_Dome.png" class="align-center" src="_images/HK_Dome.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Detector scheme</p></td>
+<td class="text-align:center"><p>Dome excavation</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Beam upgrade: 0.5 MW -&gt; 1.3 MW</p></li>
+<li><p>HK is a 78 m high, 74 m diameter large 180 kton water tank at 280 km and <span class="math notranslate nohighlight">\(2.5^o\)</span> off-axis from the <span class="math notranslate nohighlight">\(\nu_\mu (\bar{\nu}_\mu)\)</span> of E <span class="math notranslate nohighlight">\(\sim0.5\)</span> GeV from JPARC (upgraded to 1.3 MW)</p></li>
+<li><p>HP = <span class="math notranslate nohighlight">\(8.5  \, \times\)</span> SK</p></li>
+<li><p>40 k PMTs with improved QE (<span class="math notranslate nohighlight">\(\times 2\)</span> SK)</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/HK_pnue_pbarnue_vsE.png"><img alt="_images/HK_pnue_pbarnue_vsE.png" class="align-center" src="_images/HK_pnue_pbarnue_vsE.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/HK_nue_nuebar_exp.png"><img alt="_images/HK_nue_nuebar_exp.png" class="align-center" src="_images/HK_nue_nuebar_exp.png" style="width: 400px;" /></a>
+<p>HK Neutrino 2024 conference</p>
+<a class="reference internal image-reference" href="_images/HK_nue_barnue_spectrum.png"><img alt="_images/HK_nue_barnue_spectrum.png" class="align-center" src="_images/HK_nue_barnue_spectrum.png" style="width: 800px;" /></a>
+<p>HK report (2018) <a class="reference external" href="https://arxiv.org/abs/1805.04163">[37]</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/HK_deltaCP_sensitivity.png"><img alt="_images/HK_deltaCP_sensitivity.png" class="align-center" src="_images/HK_deltaCP_sensitivity.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/HK_deltaCP_fraction_coverage.png"><img alt="_images/HK_deltaCP_fraction_coverage.png" class="align-center" src="_images/HK_deltaCP_fraction_coverage.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>HK report (2018) <a class="reference external" href="https://arxiv.org/abs/1805.04163">[37]</a></p>
+<a class="reference internal image-reference" href="_images/HK_CP_errors.png"><img alt="_images/HK_CP_errors.png" class="align-center" src="_images/HK_CP_errors.png" style="width: 500px;" /></a>
+<p>Draft preliminary</p>
+</div>
+</div>
+<div class="section" id="summary-and-conclusions">
+<h2>Summary and conclusions<a class="headerlink" href="#summary-and-conclusions" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Neutrino oscillations have been well established in the atmospheric and solar oscillation ranges.</p>
+<ul>
+<li><p>2015 Nobel Price to T. Kajita (SK) and A. B. McDonald (SNO)</p></li>
+</ul>
+</li>
+<li><p>T2K and NOvA first indications about mass hierarchy and CP violation</p></li>
+<li><p>Large collaborations (JUNO, DUNE, HK) will cover mass hierarchy and CP violation in a decade.</p></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<p>[1] B. Pontecorvo, Sov. Phys. JETP 6 (1957) 429; B. Pontecorvo, Sov. Phys. JETP 7 (1958) 172.</p>
+<p>[2] B. Pontecorvo, Sov. Phys. JETP 26 (1968) 984.</p>
+<p>[2] Z. Maki, M. Nakagawa and S. Sakata, Prog. Theor. Phys. 28 (1962) 870.</p>
+<p>[3] B. Pontecorvo, Sov. Phys. JETP 26 (1968) 984.</p>
+<p>[4] V. N. Gribov and B. Pontecorvo, Phys. Lett. B28 (1969) 493.</p>
+<p>[5] J. N. Bahcall et al., Rev. Mod. Phys. 54, 767 (1982); N. Bahcall, A. M. Serenelli and S. Basu, Astrophys. J. 621, L85 (2005), arXiv:astroph/0412440.</p>
+<p>[6] R. Davis, Jr., D. S. Harmer and K. C. Hoffman, Phys. Rev. Lett. 20, 1205 (1968).</p>
+<p>[7] B. T. Cleveland et al., Astrophys. J. 496, 505 (1998).</p>
+<p>[8] C. Pena-Garay and A. Serenelli (2008), [arXiv:0811.2424].</p>
+<p>[9] J. N. Abdurashitov et al. (SAGE), J. Exp. Theor. Phys. 95, 181 (2002), [Zh. Eksp. Teor.
+Fiz.122,211(2002)], [arXiv:astro-ph/0204245].</p>
+<p>[10] W. Hampel et al. (GALLEX), Phys. Lett. B447, 127 (1999).</p>
+<p>[11] M. Altmann et al. (GNO), Phys. Lett. B616, 174 (2005), [hep-ex/0504037].</p>
+<p>[12] J. N. Abdurashitov et al. (SAGE), Phys. Rev. C80, 015807 (2009), [arXiv:0901.2200].</p>
+<p>[13] K. Abe et al. (Super-Kamiokande), Phys. Rev. D94, 5, 052010 (2016), [arXiv:1606.07538]</p>
+<p>[14] N. Vinyoles et al., Astrophys. J. 835, 2, 202 (2017), [arXiv:1611.09867].</p>
+<p>[15] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 87, 071301 (2001), [arXiv:nucl-ex/0106015].</p>
+<p>[16] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 89, 011301 (2002), [arXiv:nucl-ex/0204008].</p>
+<p>[17] B. Aharmim et al. (SNO), Phys. Rev. C88, 025501 (2013), [arXiv:1109.0763].</p>
+<p>[18] B. Aharmim et al. (SNO), Phys. Rev. C72, 055502 (2005), [arXiv:nucl-ex/0502021].</p>
+<p>[19] S. P. Mikheev and A. Yu. Smirnov, Sov. J. Nucl. Phys. 42 (1985) 913, Yad. Fiz. 42 (1985) 1441.S</p>
+<p>[20] G. Bellini et al., Borexino Collaboration, Phys. Rev. D 82 (2010) 033006; G. Bellini et al., Phys.
+Rev. Lett. 107 (2011) 141302; M. Agostini et al., BOREXINO Collaboration, Nature 562 (2018)
+505.</p>
+<p>[21] K. Eguchi et al. (KamLAND), Phys. Rev. Lett. 90, 021802 (2003), [hep-ex/0212021].</p>
+<p>[22] T. Araki et al. (KamLAND), Phys. Rev. Lett. 94, 081801 (2005), [hep-ex/0406035];</p>
+<p>[23] A. Gando et al. (KamLAND), Phys. Rev. D88, 3, 033001 (2013), [arXiv:1303.4667];</p>
+<p>[24] Y. Fukuda et al. (Super-Kamiokande), Phys. Rev. Lett. 81, 1562 (1998), [hep-ex/9807003].</p>
+<p>[25] Y. Ashie et al. (Super-Kamiokande), Phys. Rev. Lett. 93, 101801 (2004), [hep-ex/0404034].</p>
+<p>[26] P. Adamson et al. (MINOS), Phys. Rev. Lett. 110, 25, 251801 (2013), [arXiv:1304.6335].</p>
+<p>[26] F. P. An et al. (Daya Bay), Phys. Rev. Lett. 108, 171803 (2012), [arXiv:1203.1669].</p>
+<p>[27] D. Adey et al. (Daya Bay), Phys. Rev. Lett. 121, 24, 241805 (2018), [arXiv:1809.02261].
+6th February, 2020</p>
+<p>[28] G. Bak et al. (RENO), Phys. Rev. Lett. 121, 20, 201801 (2018), [arXiv:1806.00248].</p>
+<p>[29] H. de Kerret et al. (Double Chooz) (2019), [arXiv:1901.09445].</p>
+<p>[30] A. Cervera et al., Nucl. Phys. B 579 (2000) 17 [Erratum: Nucl. Phys. B 593 (2001) 731]; M. Freund,
+Phys. Rev. D 64 (2001) 053003; E. K. Akhmedov et al., JHEP 0404 (2004) 078.</p>
+<p>[31] M. A. Acero et al. (NOvA), Phys. Rev. Lett. 123, 151803 (2019), <a class="reference external" href="https://arxiv.org/abs/1906.04907">[arXiv:1906.04907]</a>. M. Baird et al. (NOvA), Phys. Rev. D. 106 032004 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[arXiv:2208.08219]</a></p>
+<p>[32] Abe et al. (T2K)  Nature volume 580, pages339–344 (2020), <a class="reference external" href="https://arxiv.org/abs/1910.03887">arXiv:1910.03887</a>.</p>
+<p>[33] I. Esteban et al., JHEP 01 (2019) 106, NuFIT 4.1 (2019), <a class="reference external" href="https://arxiv.org/abs/1811.05487">arXiv:1811.05487</a>, <a class="reference external" href="http://www.nu-fit.org">www.nu-fit.org</a></p>
+<p>[34] F. An et al. (JUNO), J. Phys. G43, 3, 030401 (2016), [arXiv:1507.05613].</p>
+<p>[35] C. Rubbia et al., JINST 6, P07011 (2011), [arXiv:1106.0975].</p>
+<p>[36] B. Abi et al. (DUNE) (2018), [arXiv:1807.10334]. DUNE Physics report <a class="reference external" href="https://arxiv.org/abs/2002.03005">arXiv:2002.03005</a>, DUNE Far Detector Technical Design Repport, JINST 19 (2014) <a class="reference external" href="https://arxiv.org/abs/2312.03130">arXiv:2312.03130</a></p>
+<p>[37] K. Abe et al. (Hyper-Kamiokande) (2018), [arXiv:1805.04163].</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="nu_sm.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Neutrinos and the construction of the Standard Model</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="nu_majorana.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Are neutrinos Majorana particles?</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By José Ángel Hernando Morata<br/>
+  
+      &copy; Copyright USC - J.A. Hernando - 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
