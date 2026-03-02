@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Neutrinos Oscillations" href="nu_oscillations.html" />
+    <link rel="prev" title="Neutrino Oscillations" href="nu_oscillations.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -117,7 +117,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="nu_index.html">
-   The misteries of the neutrinos
+   The mysteries of the neutrinos
   </a>
  </li>
  <li class="toctree-l1">
@@ -127,7 +127,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="nu_oscillations.html">
-   Neutrinos Oscillations
+   Neutrino Oscillations
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -360,6 +360,16 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-dirac-neutrinos">
+   About Dirac neutrinos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-majorana-neutrinos">
+   About Majorana neutrinos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-fermions">
    Dirac, Weyl and Mayorana fermions
   </a>
@@ -559,6 +569,16 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-dirac-neutrinos">
+   About Dirac neutrinos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-majorana-neutrinos">
+   About Majorana neutrinos
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-fermions">
    Dirac, Weyl and Mayorana fermions
@@ -760,7 +780,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Feb 24 15:31:37 2025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Feb 24 17:08:06 2025
 </pre></div>
 </div>
 </div>
@@ -790,6 +810,144 @@ title="Print to PDF"
 <li><p>How to give masses to the neutrinos? Dirac and Majorana cases. The <span class="math notranslate nohighlight">\(U_{PMNS}\)</span> neutrino mixing matrix.</p></li>
 <li><p>How to detect Majorana neutrinos? The <span class="math notranslate nohighlight">\(\beta\beta0\nu\)</span> experiments, status and future.</p></li>
 </ul>
+<div class="section" id="about-dirac-neutrinos">
+<h2>About Dirac neutrinos<a class="headerlink" href="#about-dirac-neutrinos" title="Permalink to this heading">#</a></h2>
+<p>A Dirac spinor fulfills the Dirac equation and it can be decomposed into left and right chirality parts:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi =\Psi_L + \Psi_R 
+\]</div>
+<p>And the parity transformation swaps them:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{P}: \;\; \Psi_L \leftrightarrow \Psi_R
+\]</div>
+<p>In the chiral representation, a Dirac spinor is composed of two Weyl spinors <span class="math notranslate nohighlight">\(\psi_L, \psi_R\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}
+\end{split}\]</div>
+<p>They admit a phase redefinition, without physical consequences</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi' = e^{i\theta} \Psi
+\]</div>
+<p>This global symmetry is associated with a conserved charge, electric charge, lepton number, etc.</p>
+<p>A mass term in the lagrangian has the form:</p>
+<div class="math notranslate nohighlight">
+\[
+ - m \bar{\Psi} \Psi  =  - m \left(\bar{\Psi}_L \Psi_R + \bar{\Psi}_R \Psi_L \right)
+\]</div>
+<p>It couples the left and the right chirality components of the spinor.</p>
+<p>As the left-chiral fields are in a doublet of <span class="math notranslate nohighlight">\(SU(2)_L\)</span>, in order to preserve the original gauge invariance, we introduce an interaction with the Higgs doublet via a Yukawa coupling.</p>
+<p>Let’s consider first one family, for charged leptons, the mass term</p>
+<div class="math notranslate nohighlight">
+\[
+- \mathcal{L}_{\mathrm{mass}, e} = \lambda_e \bar{L}_e \Phi \, e_R + \mathrm{h.c.}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\lambda_e\)</span> is a dimensionless constant, the electron Yukawa coupling.</p>
+<p>And</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+L_e = \begin{pmatrix} \nu_{eL} \\ e_L \end{pmatrix}, \; 
+\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}
+\end{split}\]</div>
+<p>After spontaneous symmetry breaking (SSB), in the unitary gauge:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\langle \Phi \rangle = \begin{pmatrix} 0 \\ \frac{v}{\sqrt{2}}\end{pmatrix}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v\)</span> is the Higgs expectation value.</p>
+<p>We get:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\lambda_e v}{\sqrt{2}} ( \bar{e}_L e_R + \bar{e}_R e_L ) = m_e \, \bar{e} e
+\]</div>
+<p>where:</p>
+<div class="math notranslate nohighlight">
+\[
+m_e = \lambda_e \frac{v}{\sqrt{2}}
+\]</div>
+<p>We can generate a mass for a Dirac neutrino, using the Higgs charge conjugate, in the unitary gauge:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\tilde{\Phi} = i \sigma^2 \Phi^* \rightarrow
+\langle \tilde{\Phi} \rangle = \begin{pmatrix} \frac{v}{\sqrt{2}}  \\ 0 
+\end{pmatrix}
+\end{split}\]</div>
+<p>The possible mass terms of the lagrangian are:</p>
+<div class="math notranslate nohighlight">
+\[
+-\mathcal{L}_{\mathrm{mass}, \nu} = \lambda_{\nu} \bar{L}_e \tilde{\Phi} \, \nu_{eR} + h.c.
+\]</div>
+<p>that will result in a mass term:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_\nu \frac{v}{\sqrt{2}} (\bar{\nu_L} \nu_R + \bar{\nu_R} \nu_L) = m_\nu \, \bar{\nu} \nu
+\]</div>
+</div>
+<div class="section" id="about-majorana-neutrinos">
+<h2>About Majorana neutrinos<a class="headerlink" href="#about-majorana-neutrinos" title="Permalink to this heading">#</a></h2>
+<p>A Majorana spinor is a solution of the Dirac equation.</p>
+<p>A Majorana spinor is its own charge conjugate:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_M = \Psi + \Psi^c
+\]</div>
+<p>Where, the charge conjugation operation <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^c = -i \gamma^2 \Psi^*
+\]</div>
+<p>If <span class="math notranslate nohighlight">\(\Psi\)</span> is a left (right) chiral spinor <span class="math notranslate nohighlight">\(\Psi_L\)</span>, the charge conjugate, <span class="math notranslate nohighlight">\(\Psi_L^c\)</span> is a right (left) chiral one:</p>
+<p>In nature all charged fermions are Dirac. The only one that can be Majorana is the neutrino.</p>
+<p>A Majorana spinor can be constructed from a single left (right) Weyl spinor <span class="math notranslate nohighlight">\(\psi_L\)</span>, using its charge conjugate:</p>
+<div class="math notranslate nohighlight">
+\[
+\psi^c_L \to i \sigma^2 \psi^*_L
+\]</div>
+<p>That transforms as a right-handed Weyl spinor. The Majorana spinor is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi_M = \begin{pmatrix} \psi_L  \\ i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>That fulfills the condition:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^c_M = \Psi_M
+\]</div>
+<p>And it is its own antiparticle</p>
+<p>There is no global phase symmetry for a Majorana spinor.</p>
+<div class="math notranslate nohighlight">
+\[
+\psi'_L = e^{i\theta} \psi_L, \;\;\; (\psi'_L)^c = e^{-i \theta} i \sigma^2 \psi^*_L = e^{-i\theta} \psi^c_L
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi'_M = \begin{pmatrix} e^{i\theta }\; \psi_L  \\ e^{-i \theta} \; i \sigma^2 \psi^*_L \end{pmatrix}
+\end{split}\]</div>
+<p>And therefore there is no conserved charge. The Majorana spinor is a truly neutral particle!</p>
+<p>The mass term for left-chiral neutrinos will be:</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{m}{2} \left( \overline{\nu_L }\nu^c_L + \overline{\nu^c_L} \nu_L \right)
+\]</div>
+<p>As <span class="math notranslate nohighlight">\(\nu_L\)</span> are part of a doublet of <span class="math notranslate nohighlight">\(SU(2)_L\)</span> in the SM, in order to preserve the gauge symmetry, the simplest term to generate the mass is to include a <em>double</em> interaction with a scalar Higgs.</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_W = - \frac{\alpha}{\Lambda} \,  \bar{L} \tilde{\Phi} \, \tilde{\Phi}^T L^c + \mathrm{h.c.} 
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is a dimensionless coupling and <span class="math notranslate nohighlight">\(\Lambda\)</span> an energy scale.</p>
+<p>This is known as the Weinberg operator. It is the only 5-dim operation that extends the SM.</p>
+<p>After SSB, it translates to:</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{L}_W = - \frac{\alpha v^2}{2\Lambda} (\overline{\nu_L} \nu^c_L + \overline{\nu^c_L} \nu_L)
+\]</div>
+<p>Now the smallness of the neutrino mass can be explained via the energy scale <span class="math notranslate nohighlight">\(\Lambda\)</span>, the coupling <span class="math notranslate nohighlight">\(\alpha\)</span> or both.</p>
+<hr class="docutils" />
+<p><em>The following sections develop these concepts in full detail.</em></p>
+</div>
 <div class="section" id="dirac-weyl-and-mayorana-fermions">
 <h2>Dirac, Weyl and Mayorana fermions<a class="headerlink" href="#dirac-weyl-and-mayorana-fermions" title="Permalink to this heading">#</a></h2>
 <div class="section" id="dirac-fermions">
@@ -2574,7 +2732,7 @@ Rev. Lett.117,no.10,109903(2016)], <a class="reference external" href="https://a
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Neutrinos Oscillations</p>
+            <p class="prev-next-title">Neutrino Oscillations</p>
         </div>
     </a>
 </div>
