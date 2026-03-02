@@ -901,6 +901,33 @@ def exercise_juno_smearing(bf=None):
     plt.tight_layout(); plt.show()
 
 
+def exercise_solar_lma_check():
+    """
+    Verificación numérica de los límites adiabático y promediado para neutrinos solares.
+
+    Calcula el ángulo solar θ₁₂ a partir de los valores de supervivencia medidos
+    y comprueba que la predicción adiabática (P_ee = sin²θ) es consistente con
+    los datos de Borexino y SNO para neutrinos de ⁸B.
+
+    Valores de referencia:
+      p1 = sin²θ₁₂ ≈ 0.30  → θ₁₂ ≈ 0.58 rad ≈ 0.185 π
+      p0 = 1 - ½ sin²(2θ) ≈ 0.55  (régimen promediado, E < E_res)
+    """
+    p0_meas, p1_meas = 0.55, 0.30
+    theta0 = np.arcsin(np.sqrt(p1_meas))
+    s2t    = np.sin(2 * theta0)
+    p0_pred = 1 - 0.5 * s2t**2
+
+    print(f"Del valor adiabático  p1 = sin²θ₁₂ = {p1_meas}:")
+    print(f"  θ₁₂  = {theta0/np.pi:.4f} π  = {np.degrees(theta0):.2f}°")
+    print(f"  Predicción promediada  p0 = 1 − ½ sin²(2θ) = {p0_pred:.3f}  (medido ≈ {p0_meas})")
+
+    theta0b = 0.1845 * np.pi
+    st = np.sin(theta0b)
+    print(f"\nVerificación directa con θ₁₂ = 0.1845π:")
+    print(f"  sin²θ₁₂ = {st**2:.4f}  ≈ {p1_meas}")
+
+
 def exercise_neutrino_mass_scale(bf=None):
     """
     Ejercicio: Escala absoluta de masas y ordenación de masas.
