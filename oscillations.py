@@ -18,17 +18,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 from ipywidgets import interact, widgets
 
-# ── Mejores valores ajustados: NuFIT 5.3 (2023), Ordenación Normal (NH) ───────
-# Referencia: https://nufit.org
-BF_NUFIT53_NH = dict(
-    th12   = 33.45,      # ángulo solar        (grados)
-    th13   =  8.62,      # ángulo reactor      (grados)
-    th23   = 49.00,      # ángulo atmosférico  (grados)
-    delta  = 197.0,      # fase CP             (grados)
-    dm2_21 = 7.42e-5,    # Δm²₂₁  (eV²)
-    dm2_31 = 2.517e-3,   # Δm²₃₁  (eV²) — NH: positivo
+# ── Mejores valores ajustados: NuFit 6.0 (2024), Ordenación Normal (NH) ───────
+# Referencia: I. Esteban et al., JHEP 12 (2024) 216, arXiv:2410.05380
+# Δm²₂₁ y θ₁₂ actualizados con primeros resultados JUNO (arXiv:2511.21650)
+BF_NUFIT60_NH = dict(
+    th12   = 33.68,      # ángulo solar        (grados)  sin²θ₁₂ = 0.3083
+    th13   =  8.55,      # ángulo reactor      (grados)  sin²θ₁₃ = 0.02215
+    th23   = 48.30,      # ángulo atmosférico  (grados)  sin²θ₂₃ = 0.558
+    delta  = 212.0,      # fase CP             (grados)
+    dm2_21 = 7.48e-5,    # Δm²₂₁  (eV²)  — actualizado con JUNO 2025
+    dm2_31 = 2.524e-3,   # Δm²₃₁  (eV²) — NH: positivo
 )
 
+# Alias para compatibilidad con código anterior
+BF_NUFIT53_NH = BF_NUFIT60_NH
 _FLABELS = [r'$\nu_e$', r'$\nu_\mu$', r'$\nu_\tau$']
 _FCOLORS = ['C0', 'C1', 'C2']
 
@@ -290,4 +293,129 @@ def plot_3fam_interactive(bf=None):
             value=np.log10(bf['dm2_31']), min=-4.0, max=-1.0, step=0.05,
             description='log₁₀(|Δm²₃₁|/eV²)', style={'description_width': 'initial'},
             continuous_update=False),
+    )
+
+# ── Efectos de materia (MSW) ──────────────────────────────────────────────────
+
+def posc_matter_2fam(E_MeV, L_km, theta_deg, dm2_eV2, rho_gcc=0.0, Ye=0.5):
+    """
+    Probabilidad de oscilación P(νe→νe) en materia de densidad constante,
+    caso de 2 familias (fórmula analítica MSW).
+
+    Parámetros
+    ----------
+    E_MeV    : array-like — energía del neutrino (MeV)
+    L_km     : float      — distancia de propagación (km)
+    theta_deg: float      — ángulo de mezcla en vacío (grados)
+    dm2_eV2  : float      — Δm² en vacío (eV²), positivo
+    rho_gcc  : float      — densidad del medio (g/cm³), 0 = vacío
+    Ye       : float      — fracción de electrones (≈0.5 corteza, ≈0.46 manto)
+
+    Devuelve
+    --------
+    ndarray — P(E) = sin²(2θ_m) sin²(Δm²_m L / 4E)
+    """
+    E     = np.asarray(E_MeV, dtype=float) * 1e-3   # → GeV
+    th0   = np.radians(theta_deg)
+    cos2  = np.cos(2.0 * th0)
+    sin2  = np.sin(2.0 * th0)
+    # Potencial de CC en eV: Ve = √2 G_F Ne ≃ 7.63e-14 * Ye * rho  (eV)
+    Ve    = 7.63e-14 * Ye * rho_gcc        # eV
+    Ve_GeV = Ve * 1e-9                     # GeV
+    # Δm²/2E en GeV (factor 1/2)
+    Delta = dm2_eV2 * 1e-18 / (2.0 * E)   # GeV  (dm2 en eV², E en GeV)
+    A     = Ve_GeV                         # GeV
+    # Δm²_m / 2E
+    Delta_m = np.sqrt((Delta * cos2 - A)**2 + (Delta * sin2)**2)
+    # sin²(2θ_m)
+    sin2_2thm = (Delta * sin2)**2 / Delta_m**2
+    # fase en materia: Δm²_m * L / 4E = Delta_m * L_km * 1e3 / 2  (en nat. units)
+    phi_m  = 1.267 * 2.0 * Delta_m * 1e18 * L_km / (np.asarray(E_MeV, float))
+    return sin2_2thm * np.sin(phi_m)**2
+
+
+# ── Espectro de antineutrinos de reactor (análogo JUNO) ───────────────────────
+
+def _reactor_spectrum(E_MeV):
+    """Espectro aproximado de ν̄_e de reactor (flujo × sección eficaz IBD)."""
+    # Aproximación analítica: exponencial × umbral IBD
+    E = np.asarray(E_MeV, dtype=float)
+    flux = np.where(E > 1.806, np.exp(0.87 - 0.16 * E - 0.091 * E**2), 0.0)
+    sigma_ibd = np.where(E > 1.806, 9.52e-44 * (E - 1.293)**2, 0.0)  # cm²
+    return flux * sigma_ibd
+
+
+def plot_juno_spectrum(bf=None):
+    """
+    Widget interactivo: espectro de ν̄_e de reactor a L = 52.5 km (JUNO).
+
+    Muestra el espectro visible con oscilación (3 familias), resaltando el
+    patrón de interferencia entre Δm²₂₁ y Δm²₃₁ que JUNO usa para la
+    ordenación de masas.  Deslizadores: θ₁₂, θ₁₃, Δm²₂₁, Δm²₃₁,
+    y selector de ordenación (NH / IH).
+    """
+    if bf is None:
+        bf = BF_NUFIT60_NH
+
+    def _plot(th12_deg=bf['th12'], th13_deg=bf['th13'],
+              log_dm2_21=np.log10(bf['dm2_21']),
+              log_dm2_31=np.log10(bf['dm2_31']),
+              ordering='NH'):
+        L     = 52.5   # km — distancia media JUNO
+        dm21  = 10**log_dm2_21
+        dm31  = 10**log_dm2_31 if ordering == 'NH' else -10**log_dm2_31
+        U     = pmns_matrix(np.radians(th12_deg), np.radians(th13_deg),
+                            np.radians(bf['th23']),  np.radians(bf['delta']))
+        E_MeV = np.linspace(1.9, 8.5, 2000)
+        E_GeV = E_MeV * 1e-3
+
+        P_ee  = osc_prob_3fam(0, 0, L, E_GeV, U, dm21, dm31)
+        spec0 = _reactor_spectrum(E_MeV)
+        spec  = spec0 * P_ee
+
+        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 7), sharex=True)
+
+        ax1.fill_between(E_MeV, spec0 / spec0.max(), alpha=0.25,
+                         color='gray', label='Sin oscilación')
+        ax1.plot(E_MeV, spec / spec.max(), lw=1.5, color='C0',
+                 label='Con oscilación (3ν)')
+        ax1.set_ylabel('Espectro (u.a.)', fontsize=11)
+        ax1.set_ylim(0, 1.15)
+        ax1.legend(fontsize=10)
+        ax1.grid(True, alpha=0.3)
+        ax1.set_title(
+            fr'Espectro reactor en JUNO  ($L={L}$ km, ordenación {ordering})',
+            fontsize=12)
+
+        ax2.plot(E_MeV, P_ee, lw=1.5, color='C1')
+        ax2.set_xlabel(r'$E_{\bar\nu}$ (MeV)', fontsize=12)
+        ax2.set_ylabel(r'$P(\bar\nu_e \to \bar\nu_e)$', fontsize=11)
+        ax2.set_ylim(0, 1.05)
+        ax2.grid(True, alpha=0.3)
+        ax2.axhline(1, ls='--', color='gray', alpha=0.5)
+
+        plt.tight_layout()
+        plt.show()
+
+    interact(
+        _plot,
+        th12_deg   = widgets.FloatSlider(
+            value=bf['th12'], min=25.0, max=42.0, step=0.5,
+            description='θ₁₂ (°)', style={'description_width': 'initial'},
+            continuous_update=False),
+        th13_deg   = widgets.FloatSlider(
+            value=bf['th13'], min=4.0, max=14.0, step=0.1,
+            description='θ₁₃ (°)', style={'description_width': 'initial'},
+            continuous_update=False),
+        log_dm2_21 = widgets.FloatSlider(
+            value=np.log10(bf['dm2_21']), min=-5.5, max=-4.0, step=0.02,
+            description='log₁₀(Δm²₂₁/eV²)', style={'description_width': 'initial'},
+            continuous_update=False),
+        log_dm2_31 = widgets.FloatSlider(
+            value=np.log10(bf['dm2_31']), min=-3.5, max=-2.5, step=0.02,
+            description='log₁₀(|Δm²₃₁|/eV²)', style={'description_width': 'initial'},
+            continuous_update=False),
+        ordering   = widgets.RadioButtons(
+            options=['NH', 'IH'], value='NH',
+            description='Ordenación:', style={'description_width': 'initial'}),
     )
