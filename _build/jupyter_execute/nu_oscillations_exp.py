@@ -585,6 +585,74 @@ oscillations.exercise_juno_smearing()
 # 
 # Draft preliminary 
 
+# ### KM3NeT: ORCA and ARCA
+# 
+# [KM3NeT](https://www.km3net.org) is a deep-sea Cherenkov neutrino telescope in the Mediterranean Sea, with two physics programmes sharing common technology (multi-PMT digital optical modules, DU strings):
+# 
+# | Detector | Location | Depth | Volume | Energy range | Physics goal |
+# |---|---|---|---|---|---|
+# | **ORCA** | Toulon, France | 2450 m | ~7 Mt | 3–100 GeV | Atmospheric oscillations, mass ordering |
+# | **ARCA** | Sicily, Italy | 3500 m | ~1 km³ | 1 TeV – 1 PeV | Astrophysical ν, point sources |
+# 
+
+# #### KM3NeT/ORCA — Atmospheric Oscillations and Mass Ordering
+# 
+# ORCA detects **atmospheric neutrinos** in the 3–100 GeV range, where Earth-crossing neutrinos experience significant **MSW matter effects**. This creates an asymmetry between $\nu_\mu$ and $\bar{\nu}_\mu$ survival probabilities that depends on the **mass ordering**:
+# 
+# - **Normal ordering (NH)**: resonant enhancement of $\nu_\mu$ disappearance for upgoing neutrinos at $E \sim 5\text{--}10$ GeV
+# - **Inverted ordering (IH)**: resonant enhancement of $\bar{\nu}_\mu$ instead
+# 
+# ORCA therefore provides a **matter-effect-based measurement** of the mass ordering, complementary to DUNE (beam, 1300 km) and JUNO (reactor, interference pattern).
+# 
+# **Detector status and first results:**
+# 
+#  * Full configuration: 115 detection units (DU) × 18 DOMs = 2070 optical modules
+#  * Physics run with partial detector (6 DU → 21 DU) since 2020
+#  * First oscillation measurement (2024, 6 DU, 433 days): $\sin^2\theta_{23} = 0.51^{+0.12}_{-0.09}$, $|\Delta m^2_{32}| = 2.35^{+0.71}_{-0.40}\times10^{-3}$ eV² — consistent with global fits [[KM3NeT-ORCA]](https://arxiv.org/abs/2406.08588)
+#  * **Ordering sensitivity** with full ORCA (6 years): $> 3\sigma$
+#  * Also sensitive to **tau neutrino appearance** ($\nu_\mu \to \nu_\tau$) and non-standard interactions
+# 
+
+# #### KM3NeT/ARCA — High-Energy Neutrino Astronomy
+# 
+# ARCA targets astrophysical neutrinos at 1 TeV–1 PeV. Its key advantage over IceCube is **sky coverage**: being in the Northern Hemisphere, ARCA looks downward at the **Galactic Centre** and the Southern Sky, where IceCube has reduced sensitivity.
+# 
+#  * First detection of the **Galactic diffuse emission** component (2023) consistent with IceCube's measurement
+#  * Point-source sensitivity improving with exposure; targets include blazars, starburst galaxies, SNRs
+#  * Combined ARCA + IceCube analyses provide full-sky coverage
+# 
+
+# ### IceCube: DeepCore, Upgrade and Atmospheric Oscillations
+# 
+# [IceCube](https://icecube.wisc.edu) at the South Pole (1 km³, 5160 DOMs, 1450–2450 m depth) includes dedicated sub-arrays for oscillation physics:
+# 
+# #### DeepCore
+# 
+# 8 denser strings at the centre of IceCube, with **threshold $\sim 5$ GeV**. DeepCore measures $\nu_\mu$ disappearance and $\nu_\tau$ appearance in the 5–100 GeV atmospheric range:
+# 
+#  * $\sin^2\theta_{23}$, $|\Delta m^2_{32}|$ at precision comparable to MINOS/NOvA
+#  * Tau neutrino appearance: first astrophysical $\nu_\tau$ detection (2020)
+#  * Sensitive to mass ordering via Earth-matter effects above 10 GeV
+# 
+# #### IceCube-Upgrade (~2026–2027)
+# 
+# 7 new strings with next-generation multi-PMT optical modules (mDOM, D-Egg) deployed in the DeepCore volume, lowering the threshold to **$\sim 1\text{--}2$ GeV**:
+# 
+#  * Improved calibration of the full IceCube array
+#  * Precision $\theta_{23}$ and $\Delta m^2_{32}$ measurement competitive with T2K/NOvA
+#  * Enhanced sensitivity to $\nu_\tau$ appearance and NC ratios
+#  * Pathfinder for IceCube-Gen2 (10 km³ target)
+# 
+# #### Astrophysical neutrino flux
+# 
+# | Result | Value | Reference |
+# |---|---|---|
+# | Diffuse astrophysical flux (2013) | $E^{-2.5}$ power law, 60 TeV–10 PeV | Science 342 (2013) |
+# | First point source: NGC 1068 | $4.2\sigma$ | [arXiv:2209.04519](https://arxiv.org/abs/2209.04519) |
+# | Galactic plane emission | $4.5\sigma$ | [arXiv:2307.04427](https://arxiv.org/abs/2307.04427) |
+# 
+# IceCube and KM3NeT together provide **all-sky coverage** for multi-messenger astrophysics, connecting neutrino sources with gamma-ray and gravitational-wave observations.
+
 # ## Summary and conclusions
 # 
 # - Las oscilaciones de neutrinos están establecidas con gran precisión en los regímenes solar y atmosférico.
@@ -602,31 +670,6 @@ oscillations.exercise_juno_smearing()
 # - **DUNE** (~2031): experimento LArTPC de 35 kt a 1300 km; primera detección de neutrinos con el prototipo 2×2 en ago. 2024.
 # 
 # - **Preguntas abiertas:** escala absoluta de masas, naturaleza Dirac o Majorana, violación de CP en el sector leptónico, y la tensión solar en $\Delta m^2_{21}$.
-
-# ## High-Energy Neutrino Astronomy: IceCube and KM3NeT
-# 
-# Beyond accelerator and reactor experiments, neutrinos are also detected from astrophysical sources at TeV–PeV energies, opening **neutrino astronomy**.
-# 
-# ### IceCube
-# 
-# [IceCube](https://icecube.wisc.edu) is a 1 km³ Cherenkov detector at the South Pole (2 km deep in Antarctic ice), instrumented with 5160 digital optical modules.
-# 
-# **Key results:**
-#   * First detection of a **diffuse astrophysical neutrino flux** (2013), with $E^{-2.5}$ power-law spectrum between 60 TeV and 10 PeV
-#   * **First point source**: NGC 1068 (Seyfert II galaxy) at 4.2σ significance (2022), [arXiv:2209.04519](https://arxiv.org/abs/2209.04519)
-#   * **Galactic plane emission** detected at 4.5σ (2023), [arXiv:2307.04427](https://arxiv.org/abs/2307.04427)
-#   * Oscillation studies: $\nu_\mu$ disappearance in 20–50 GeV atmospheric ν
-# 
-# ### KM3NeT
-# 
-# [KM3NeT](https://www.km3net.org) is a deep-sea Cherenkov telescope in the Mediterranean, with two detectors: **ARCA** (Astroparticle Research with Cosmics in the Abyss, Sicily) for astrophysical ν, and **ORCA** (Oscillation Research with Cosmics in the Abyss, France) for atmospheric ν and mass ordering.
-# 
-# **ORCA highlights:**
-#   * Measurement of $\theta_{23}$ and $|\Delta m^2_{31}|$ with atmospheric neutrinos
-#   * Sensitivity to mass ordering with 3 years of data
-#   * First ORCA results (2024): consistent with NuFit values
-# 
-# **Connection to oscillations**: at these energies, matter effects in the Earth modulate the oscillation pattern — ORCA is particularly sensitive to the mass ordering via Earth-crossing neutrinos at $E \sim 5\text{--}20$ GeV.
 
 # ## References
 # 
