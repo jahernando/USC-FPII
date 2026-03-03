@@ -1,0 +1,1788 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neutrino Oscillations: Experimental Evidence &#8212; Neutrinos - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Neutrino Mass: Scale and Absolute Measurements" href="nu_mass.html" />
+    <link rel="prev" title="Neutrino Oscillations: Theory and Foundations" href="nu_oscillations.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Neutrinos - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_index.html">
+   The mysteries of the neutrinos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_sm.html">
+   Neutrinos and the construction of the Standard Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_oscillations.html">
+   Neutrino Oscillations: Theory and Foundations
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Neutrino Oscillations: Experimental Evidence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_mass.html">
+   Neutrino Mass: Scale and Absolute Measurements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nu_majorana.html">
+   Are neutrinos Majorana particles?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_oscillations_exp.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_oscillations_exp.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_oscillations_exp.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/nu_oscillations_exp.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sbl-reactor-experiments-the-theta-13-angle">
+   SBL Reactor Experiments. The
+   <span class="math notranslate nohighlight">
+    \(\theta_{13}\)
+   </span>
+   angle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#daya-bay-experiment">
+     Daya Bay Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reno-experiment">
+     Reno Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#doublechooz">
+     DoubleCHOOZ
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#long-base-line-experiments-delta-cp-and-mass-hierarchy">
+   Long Base Line Experiments :
+   <span class="math notranslate nohighlight">
+    \(\delta\)
+   </span>
+   -CP and mass hierarchy
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-of-long-base-line-experiments">
+     List of Long Base Line Experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nova">
+     NOvA
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nova-10-year-complete-analysis-september-2025">
+       NOvA: 10-year complete analysis (September 2025)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k">
+     T2K
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#t2k-super-kamiokande-joint-analysis-may-2024">
+       T2K + Super-Kamiokande: joint analysis (May 2024)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k-nova-first-joint-analysis-october-2025">
+     T2K + NOvA: first joint analysis (October 2025)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neutrino-mixing-matrix-parameters-global-fits">
+   Neutrino Mixing Matrix Parameters. Global fits
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-generation-oscillation-experiments">
+     Next-generation oscillation experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sbl-juno-2025">
+     SBL: JUNO (2025 – )
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#juno-first-results-november-2025">
+       JUNO first results (November 2025)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-solar-tension">
+       The solar tension
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lbl-dune-2031">
+     LBL: DUNE (~2031 – )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hyperkamiokande-2028">
+     HyperKamiokande (2028 – )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#km3net-orca-and-arca">
+     KM3NeT: ORCA and ARCA
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#km3net-orca-atmospheric-oscillations-and-mass-ordering">
+       KM3NeT/ORCA — Atmospheric Oscillations and Mass Ordering
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#km3net-arca-high-energy-neutrino-astronomy">
+       KM3NeT/ARCA — High-Energy Neutrino Astronomy
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#icecube-deepcore-upgrade-and-atmospheric-oscillations">
+     IceCube: DeepCore, Upgrade and Atmospheric Oscillations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#deepcore">
+       DeepCore
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#icecube-upgrade-20262027">
+       IceCube-Upgrade (~2026–2027)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#astrophysical-neutrino-flux">
+       Astrophysical neutrino flux
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-and-conclusions">
+   Summary and conclusions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Neutrino Oscillations: Experimental Evidence</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sbl-reactor-experiments-the-theta-13-angle">
+   SBL Reactor Experiments. The
+   <span class="math notranslate nohighlight">
+    \(\theta_{13}\)
+   </span>
+   angle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#daya-bay-experiment">
+     Daya Bay Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reno-experiment">
+     Reno Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#doublechooz">
+     DoubleCHOOZ
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#long-base-line-experiments-delta-cp-and-mass-hierarchy">
+   Long Base Line Experiments :
+   <span class="math notranslate nohighlight">
+    \(\delta\)
+   </span>
+   -CP and mass hierarchy
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-of-long-base-line-experiments">
+     List of Long Base Line Experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nova">
+     NOvA
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nova-10-year-complete-analysis-september-2025">
+       NOvA: 10-year complete analysis (September 2025)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k">
+     T2K
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#t2k-super-kamiokande-joint-analysis-may-2024">
+       T2K + Super-Kamiokande: joint analysis (May 2024)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#t2k-nova-first-joint-analysis-october-2025">
+     T2K + NOvA: first joint analysis (October 2025)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neutrino-mixing-matrix-parameters-global-fits">
+   Neutrino Mixing Matrix Parameters. Global fits
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-generation-oscillation-experiments">
+     Next-generation oscillation experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sbl-juno-2025">
+     SBL: JUNO (2025 – )
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#juno-first-results-november-2025">
+       JUNO first results (November 2025)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-solar-tension">
+       The solar tension
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lbl-dune-2031">
+     LBL: DUNE (~2031 – )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hyperkamiokande-2028">
+     HyperKamiokande (2028 – )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#km3net-orca-and-arca">
+     KM3NeT: ORCA and ARCA
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#km3net-orca-atmospheric-oscillations-and-mass-ordering">
+       KM3NeT/ORCA — Atmospheric Oscillations and Mass Ordering
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#km3net-arca-high-energy-neutrino-astronomy">
+       KM3NeT/ARCA — High-Energy Neutrino Astronomy
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#icecube-deepcore-upgrade-and-atmospheric-oscillations">
+     IceCube: DeepCore, Upgrade and Atmospheric Oscillations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#deepcore">
+       DeepCore
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#icecube-upgrade-20262027">
+       IceCube-Upgrade (~2026–2027)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#astrophysical-neutrino-flux">
+       Astrophysical neutrino flux
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-and-conclusions">
+   Summary and conclusions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="neutrino-oscillations-experimental-evidence">
+<h1>Neutrino Oscillations: Experimental Evidence<a class="headerlink" href="#neutrino-oscillations-experimental-evidence" title="Permalink to this heading">#</a></h1>
+<p>Theory foundations (two-family oscillations, MSW matter effects, PMNS matrix) are covered in <strong><a class="reference internal" href="nu_oscillations.html"><span class="doc std std-doc">Neutrino Oscillations: Theory and Foundations</span></a></strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Mar  2 18:29:36 2026
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+ 
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span>     <span class="k">as</span> <span class="nn">stats</span>
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="s1">&#39;seaborn-colorblind&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sbl-reactor-experiments-the-theta-13-angle">
+<h2>SBL Reactor Experiments. The  <span class="math notranslate nohighlight">\(\theta_{13}\)</span> angle<a class="headerlink" href="#sbl-reactor-experiments-the-theta-13-angle" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SBL_experiments.png"><img alt="_images/SBL_experiments.png" class="align-center" src="_images/SBL_experiments.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Short Base Line experiments, searching for <span class="math notranslate nohighlight">\(\nu_e \to \nu_e\)</span> disappearance, with <span class="math notranslate nohighlight">\(E\)</span> in <span class="math notranslate nohighlight">\(1\)</span> MeV and distance <span class="math notranslate nohighlight">\(1\)</span> km, are sensitive to <span class="math notranslate nohighlight">\(\theta_{13}\)</span> in the <span class="math notranslate nohighlight">\(\Delta m^2_A\)</span> range.</p>
+<div class="section" id="daya-bay-experiment">
+<h3>Daya Bay Experiment<a class="headerlink" href="#daya-bay-experiment" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_map.png"><img alt="_images/dayabay_map.png" class="align-center" src="_images/dayabay_map.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_detector.png"><img alt="_images/dayabay_detector.png" class="align-center" src="_images/dayabay_detector.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_photo.png"><img alt="_images/dayabay_photo.png" class="align-center" src="_images/dayabay_photo.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>6 reactors 2.9 GW, 6 detectors: 2 near (470 m, 576 m), one far (1648 km)</p></li>
+<li><p>layer detectors: LS with Gd, LS free of Gd, Veto (pure water), 160 tons</p></li>
+<li><p>calibrated with radioactive sources: <span class="math notranslate nohighlight">\(^{137}\)</span>Cs, <span class="math notranslate nohighlight">\(^{60}\)</span>CO,</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_first_result.png"><img alt="_images/dayabay_first_result.png" class="align-center" src="_images/dayabay_first_result.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Observation of oscillation with <span class="math notranslate nohighlight">\(\theta_{13}\)</span>, Daya Bay <a class="reference external" href="https://arxiv.org/abs/1203.1669">[26]</a>, in 2012.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_nue_osc.png"><img alt="_images/dayabay_nue_osc.png" class="align-center" src="_images/dayabay_nue_osc.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/dayabay_dm2_s2theta13.png"><img alt="_images/dayabay_dm2_s2theta13.png" class="align-center" src="_images/dayabay_dm2_s2theta13.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Daya Bay  results 2018 <a class="reference external" href="https://arxiv.org/abs/1809.02261">[27]</a></p>
+</div>
+<div class="section" id="reno-experiment">
+<h3>Reno Experiment<a class="headerlink" href="#reno-experiment" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/reno_map.png"><img alt="_images/reno_map.png" class="align-center" src="_images/reno_map.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/reno_detector.png"><img alt="_images/reno_detector.png" class="align-center" src="_images/reno_detector.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>6 reactors (~2.8 GW), near (294 m) and far detector
+(1383m)</p></li>
+<li><p>layers: LS + Gd, LS + Veto (pure water), 15,2 ton</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/reno_nue_pee.png"><img alt="_images/reno_nue_pee.png" class="align-center" src="_images/reno_nue_pee.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/reno_dm2_s2theta13.png"><img alt="_images/reno_dm2_s2theta13.png" class="align-center" src="_images/reno_dm2_s2theta13.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Reno results 2018 <a class="reference external" href="https://arxiv.org/abs/1806.00248">[28]</a></p>
+</div>
+<div class="section" id="doublechooz">
+<h3>DoubleCHOOZ<a class="headerlink" href="#doublechooz" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_map.png"><img alt="_images/doublechooz_map.png" class="align-center" src="_images/doublechooz_map.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_detector.png"><img alt="_images/doublechooz_detector.png" class="align-center" src="_images/doublechooz_detector.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_photo.png"><img alt="_images/doublechooz_photo.png" class="align-center" src="_images/doublechooz_photo.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>6 reactors (~2.8 GW), a far detector (1050m)</p></li>
+<li><p>layers: LS + Gd, LS + Veto (pure water)</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/doublechooz_farnear_ratio.png"><img alt="_images/doublechooz_farnear_ratio.png" class="align-center" src="_images/doublechooz_farnear_ratio.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Double Chooz 2019 <a class="reference external" href="https://arxiv.org/abs/1901.09445">[29]</a></p>
+<p>Latest summary (Neutrino 2024)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/theta13_summary.png"><img alt="_images/theta13_summary.png" class="align-center" src="_images/theta13_summary.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exercise: Daya Bay and the reactor determination of <span class="math notranslate nohighlight">\(\theta_{13}\)</span></strong></p>
+<p>At short baselines (<span class="math notranslate nohighlight">\(L\sim 1\)</span>–2 km, <span class="math notranslate nohighlight">\(E\sim 3\)</span> MeV), only the fast atmospheric oscillation contributes. The <span class="math notranslate nohighlight">\(\bar\nu_e\)</span> survival probability reduces to:
+$<span class="math notranslate nohighlight">\(
+P(\bar\nu_e \to \bar\nu_e) \simeq 1 - \sin^2 2\theta_{13}\,\sin^2\!\left(1.267\,\frac{\Delta m^2_{31}\,L}{E}\right)
+\)</span>$</p>
+<p><strong>Questions:</strong></p>
+<ol class="simple">
+<li><p>At Daya Bay’s far detector (<span class="math notranslate nohighlight">\(L = 1.648\)</span> km) and <span class="math notranslate nohighlight">\(E = 4\)</span> MeV, compute <span class="math notranslate nohighlight">\(\phi_{31}\)</span>. Is the experiment near the first oscillation maximum (<span class="math notranslate nohighlight">\(\phi_{31} = \pi/2\)</span>)? At what energy would <span class="math notranslate nohighlight">\(\phi_{31} = \pi/2\)</span> exactly?</p></li>
+<li><p>Daya Bay measured <span class="math notranslate nohighlight">\(R_{\rm far/near} = 0.944\pm0.007\)</span>. Approximating <span class="math notranslate nohighlight">\(\sin^2\phi_{\rm far} \approx \sin^2(1.267\,\Delta m^2_{31}\,L_{\rm far}/\langle E\rangle)\)</span>, extract <span class="math notranslate nohighlight">\(\sin^2 2\theta_{13}\)</span> and compare with NuFit-6.0.</p></li>
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">oscillations.osc_prob_3fam</span></code> with NuFit-6.0 parameters, plot <span class="math notranslate nohighlight">\(P(\bar\nu_e\to\bar\nu_e)\)</span> vs <span class="math notranslate nohighlight">\(E\in[1,10]\)</span> MeV at <span class="math notranslate nohighlight">\(L = 1.648\)</span> km. Superimpose the two-family approximation <span class="math notranslate nohighlight">\(P\simeq 1 - \sin^2 2\theta_{13}\sin^2\phi_{31}\)</span>. How large is the solar correction at this baseline?</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">oscillations</span>
+
+<span class="n">oscillations</span><span class="o">.</span><span class="n">exercise_dayabay</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q1 — phi31 at E = 4.0 MeV: 1.318 rad (0.419 pi)
+     First maximum at E = 3.4 MeV
+
+Q2 — Extracted sin^2(2θ₁₃) = 0.0598,  θ₁₃ = 7.07°
+     NuFit-6.0: sin^2(2θ₁₃) = 0.0865,  θ₁₃ = 8.55°
+</pre></div>
+</div>
+<img alt="_images/nu_oscillations_exp_15_1.png" src="_images/nu_oscillations_exp_15_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="long-base-line-experiments-delta-cp-and-mass-hierarchy">
+<h2>Long Base Line Experiments : <span class="math notranslate nohighlight">\(\delta\)</span>-CP and mass hierarchy<a class="headerlink" href="#long-base-line-experiments-delta-cp-and-mass-hierarchy" title="Permalink to this heading">#</a></h2>
+<p>Long Base Line Experiments, searching for <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}_\mu \to \bar{\nu}_e\)</span> are sensitive to <span class="math notranslate nohighlight">\(\theta_{13}, \; \delta\)</span> and the mass hierarchy.</p>
+<p>The propagation is affected by the matter effects in the mantle of the Earth.</p>
+<p>This oscillation is a second order oscillations and to be observed required larger massive detector and very intense neutrino fluxes.</p>
+<div class="section" id="list-of-long-base-line-experiments">
+<h3>List of Long Base Line Experiments<a class="headerlink" href="#list-of-long-base-line-experiments" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/LBL_experiments.png"><img alt="_images/LBL_experiments.png" class="align-center" src="_images/LBL_experiments.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The oscillation probability for LBL experiments [30]:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{P}(\nu_\mu \to \nu_e, \bar{\nu}_\mu \to \bar{\nu}_e)  \simeq s^2_{23} \sin^2 2 \theta_{13} \left( \frac{\Delta E_{31}}{\Delta E_{31} \mp V_e}\right)^2 \sin^2 \left( \frac{ (\Delta E_{31} \mp V_e) L}{2}  \right) \\ 
+ + J \frac{\Delta E_{21}}{V_e} \frac{\Delta E_{31}}{  |\Delta E_{31} \mp V_e| }  \sin  \frac{V_e \, L}{2} \sin \frac{  |\Delta E_{31} \pm V_e| \, L}{2}  \, \cos \left(\frac{\Delta E_{31}L}{2} \mp \delta\right)
+\end{split}\]</div>
+<p>Where:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta E_{ji} = \frac{\Delta m^2_{ji}}{2E}, \;\; V_e = \sqrt{2} G_F N_e, \;\; J = c_{13} \sin 2 \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{23} 
+\]</div>
+<p>The first term is sensitive to mass hierarchy. <span class="math notranslate nohighlight">\(V_e\)</span> changes sign depending of <span class="math notranslate nohighlight">\(\nu(\bar{\nu})\)</span> oscillations.</p>
+<p>The second term is sensitive to the mass hierarchy and the <span class="math notranslate nohighlight">\(\delta\)</span>-CP phase.</p>
+<p>But the second term is suppressed by <span class="math notranslate nohighlight">\(J\)</span> with <span class="math notranslate nohighlight">\(\sin 2 \theta_{13}\)</span>.</p>
+<p>To observe both effects it is better to have several experiments with different ranges of energies and distances.</p>
+</div>
+<div class="section" id="nova">
+<h3>NOvA<a class="headerlink" href="#nova" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\nu_\mu\)</span> NuMI beam from Fermilab to near Ash River, MN, 810 km. Near detector at 1 km.</p></li>
+<li><p>Detector is 14.5 mrad off-axis. The <span class="math notranslate nohighlight">\(\nu\)</span> E peaks at 2 GeV.</p></li>
+<li><p>14 k ton detector with planes of plastic PVC cells in vertical and horizontal orientation filled with liquid scintillator.</p></li>
+<li><p>NOvA started operation in 2014 with <span class="math notranslate nohighlight">\(\nu_\mu\)</span> beam and since 2016 with <span class="math notranslate nohighlight">\(\bar{\nu}\)</span>.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_map.png"><img alt="_images/NOvA_map.png" class="align-center" src="_images/NOvA_map.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_photo.png"><img alt="_images/NOvA_photo.png" class="align-center" src="_images/NOvA_photo.png" style="width: 500px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_event.png"><img alt="_images/NOvA_event.png" class="align-center" src="_images/NOvA_event.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA construction timelapse <a class="reference external" href="https://www.youtube.com/watch?v=zbLeZ61_rcw">movie</a></p>
+<p>NOvA results on <span class="math notranslate nohighlight">\(\nu_\mu (\bar{\nu}_\mu)\)</span> disappearance</p>
+<p>NOvA is sensitive to the <em>atmospheric oscillations</em> regime, with the <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_\mu\)</span> (and anti-neutrinos) disappearance channels</p>
+<p>¡Notice that there is an indetermination in which octant <span class="math notranslate nohighlight">\(\theta_{23}\)</span> is!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_numu_Edist_neutrino2024.png"><img alt="_images/NOvA_numu_Edist_neutrino2024.png" class="align-center" src="_images/NOvA_numu_Edist_neutrino2024.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_nuosc_atmos_2021.png"><img alt="_images/NOvA_nuosc_atmos_2021.png" class="align-center" src="_images/NOvA_nuosc_atmos_2021.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Energy distribution (Neutrino 2024)</p></td>
+<td class="text-align:center"><p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The main goal of NOvA is CP violation and the hierarchy problem in the <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> (and anti-neutrinos) appearance channels.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_matter.png"><img alt="_images/NOvA_pnue_pbarnue_matter.png" class="align-center" src="_images/NOvA_pnue_pbarnue_matter.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue.png"><img alt="_images/NOvA_pnue_pbarnue.png" class="align-center" src="_images/NOvA_pnue_pbarnue.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_numu_nue_2021.png"><img alt="_images/NOvA_numu_nue_2021.png" class="align-center" src="_images/NOvA_numu_nue_2021.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_delta_limits_2021.png"><img alt="_images/NOvA_delta_limits_2021.png" class="align-center" src="_images/NOvA_delta_limits_2021.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA results 2021 <a class="reference external" href="https://arxiv.org/abs/2108.08219">[31]</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_2019.png"><img alt="_images/NOvA_pnue_pbarnue_2019.png" class="align-center" src="_images/NOvA_pnue_pbarnue_2019.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pnue_pbarnue_plot_ichep2022.png"><img alt="_images/NOvA_pnue_pbarnue_plot_ichep2022.png" class="align-center" src="_images/NOvA_pnue_pbarnue_plot_ichep2022.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>TAUP 2019 conference</p></td>
+<td class="text-align:center"><p>ICHEP 2021</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA conference results: TAUP 2019, ICHEP 2022 |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_pre_neutrino24_v2.png"><img alt="_images/NOvA_pre_neutrino24_v2.png" class="align-center" src="_images/NOvA_pre_neutrino24_v2.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/NOvA_CPbayes_neutrino24.png"><img alt="_images/NOvA_CPbayes_neutrino24.png" class="align-center" src="_images/NOvA_CPbayes_neutrino24.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>NOvA neutrino 2024</p></td>
+<td class="text-align:center"><p>Bayes posterior probability</p></td>
+</tr>
+</tbody>
+</table>
+<p>NOvA conference results: Neutrino 2024</p>
+<div class="section" id="nova-10-year-complete-analysis-september-2025">
+<h4>NOvA: 10-year complete analysis (September 2025)<a class="headerlink" href="#nova-10-year-complete-analysis-september-2025" title="Permalink to this heading">#</a></h4>
+<p>Con el doble de exposición en modo neutrino respecto al análisis previo, NOvA publicó la medición de parámetros de oscilación más precisa de un único experimento LBL <a class="reference external" href="https://arxiv.org/abs/2509.04361">[42]</a>:</p>
+<div class="math notranslate nohighlight">
+\[
+|\Delta m^2_{32}|\, (\mathrm{NH}) = \left(2.431^{+0.036}_{-0.034}\right) \times 10^{-3} \; \mathrm{eV}^2
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sin^2\theta_{23} = 0.55^{+0.06}_{-0.02} \quad \text{(octante superior preferido, pero compatible con maximal)}
+\]</div>
+<ul class="simple">
+<li><p><strong>Ordenación de masas:</strong> preferencia suave por NH (Bayes factor 2.4, probabilidad posterior NH <span class="math notranslate nohighlight">\(\sim 70\%\)</span>).</p></li>
+<li><p><span class="math notranslate nohighlight">\(\delta_{\rm CP}\)</span>: resultados compatibles con los análisis previos; no se puede excluir la conservación de CP aún.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="t2k">
+<h3>T2K<a class="headerlink" href="#t2k" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="_images/T2K_pnue_pbarnue_vsE.png"><img alt="_images/T2K_pnue_pbarnue_vsE.png" class="align-center" src="_images/T2K_pnue_pbarnue_vsE.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>T2K is less sensible to matter effects but have some sensibility to <span class="math notranslate nohighlight">\(\delta\)</span>-CP in <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}_\mu \to \bar{\nu}_e\)</span> oscillations.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2K_PID.png"><img alt="_images/T2K_PID.png" class="align-center" src="_images/T2K_PID.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>T2K PID (2019) [32]</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2K_nue_barnue_2019.png"><img alt="_images/T2K_nue_barnue_2019.png" class="align-center" src="_images/T2K_nue_barnue_2019.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/T2K_thetas_delta_2019.png"><img alt="_images/T2K_thetas_delta_2019.png" class="align-center" src="_images/T2K_thetas_delta_2019.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>T2K <span class="math notranslate nohighlight">\(\nu_e, \bar{\nu}_e\)</span> appareance, (2020) <a class="reference external" href="https://arxiv.org/abs/1910.03887">[32]</a></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sin^2 \theta_{23}\)</span> vs <span class="math notranslate nohighlight">\(\delta\)</span> CP</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2K_CPbayes_neutrino2024.png"><img alt="_images/T2K_CPbayes_neutrino2024.png" class="align-center" src="_images/T2K_CPbayes_neutrino2024.png" style="width: 700px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>T2K ‘elipses’ and CP posterior probability</p></td>
+</tr>
+</tbody>
+</table>
+<p>Results from Neutrino 2024</p>
+<div class="section" id="t2k-super-kamiokande-joint-analysis-may-2024">
+<h4>T2K + Super-Kamiokande: joint analysis (May 2024)<a class="headerlink" href="#t2k-super-kamiokande-joint-analysis-may-2024" title="Permalink to this heading">#</a></h4>
+<p>Primera combinación de los datos atmosféricos de SK (3244 días) con los datos de acelerador de T2K (<span class="math notranslate nohighlight">\(19.7 \times 10^{20}\)</span> POT en modo <span class="math notranslate nohighlight">\(\nu\)</span>) <a class="reference external" href="https://arxiv.org/abs/2405.12488">[43]</a>:</p>
+<ul class="simple">
+<li><p><strong>Exclusión de conservación de CP</strong> (<span class="math notranslate nohighlight">\(J_{\rm CP} = 0\)</span>) a <strong>1.9<span class="math notranslate nohighlight">\(\sigma\)</span></strong> en el análisis combinado (vs. 1.5σ con T2K solo).</p></li>
+<li><p>Preferencia por ordenación normal.</p></li>
+<li><p>Ligera tensión de octante: SK prefiere octante inferior, T2K el superior → la combinación debilita la sensibilidad al octante.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="t2k-nova-first-joint-analysis-october-2025">
+<h3>T2K + NOvA: first joint analysis (October 2025)<a class="headerlink" href="#t2k-nova-first-joint-analysis-october-2025" title="Permalink to this heading">#</a></h3>
+<p>La combinación de los dos grandes experimentos LBL, publicada en <strong>Nature</strong> en octubre 2025 <a class="reference external" href="https://arxiv.org/abs/2510.19888">[44]</a>, es el análisis LBL más completo hasta la fecha:</p>
+<ul class="simple">
+<li><p><strong>10 años de T2K</strong> + <strong>6 años de NOvA</strong> de datos de neutrinos y antineutrinos.</p></li>
+<li><p>La incertidumbre en <span class="math notranslate nohighlight">\(|\Delta m^2_{32}|\)</span> cae <strong>por debajo del 2%</strong> (mejor precisión mundial):</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+|\Delta m^2_{32}| \, (\mathrm{NH}) = \left(2.43^{+0.04}_{-0.03}\right) \times 10^{-3} \; \mathrm{eV}^2
+\]</div>
+<ul class="simple">
+<li><p><strong>Intervalo a 3<span class="math notranslate nohighlight">\(\sigma\)</span> en <span class="math notranslate nohighlight">\(\delta_{\rm CP}\)</span>:</strong></p>
+<ul>
+<li><p>Ordenación Normal: <span class="math notranslate nohighlight">\(\delta_{\rm CP} \in [-1.38\pi,\; 0.30\pi]\)</span></p></li>
+<li><p>Ordenación Invertida: <span class="math notranslate nohighlight">\(\delta_{\rm CP} \in [-0.92\pi,\; -0.04\pi]\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>Violación de CP:</strong> si la ordenación fuese invertida (IO), los datos proporcionan <strong>evidencia de violación de CP</strong> en el sector leptónico.</p></li>
+<li><p><strong>Ordenación de masas:</strong> no hay preferencia fuerte por ninguna de las dos ordenaciones.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2KNOvA_CPbayes_neutrino2024.png"><img alt="_images/T2KNOvA_CPbayes_neutrino2024.png" class="align-center" src="_images/T2KNOvA_CPbayes_neutrino2024.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>CP posterior probability (NOvA and T2K)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Results from Neutrino 2024</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/T2KNOvA_CPvsTheta13_neutrino2024.png"><img alt="_images/T2KNOvA_CPvsTheta13_neutrino2024.png" class="align-center" src="_images/T2KNOvA_CPvsTheta13_neutrino2024.png" style="width: 800px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>CP posterior probability (NOvA and T2K)</p></td>
+</tr>
+</tbody>
+</table>
+<p>In NO both experiments shows differences, but in IO, the combination improves the result!</p>
+<p>Results from Neutrino 2024</p>
+<p><strong>Exercise: LBL appearance probability and the CP asymmetry</strong></p>
+<p>The CP asymmetry in the <span class="math notranslate nohighlight">\(\nu_\mu\to\nu_e\)</span> appearance channel is:
+$<span class="math notranslate nohighlight">\(
+\mathcal{A}_{\rm CP} = \frac{P(\nu_\mu\to\nu_e) - P(\bar\nu_\mu\to\bar\nu_e)}{P(\nu_\mu\to\nu_e) + P(\bar\nu_\mu\to\bar\nu_e)}
+\)</span><span class="math notranslate nohighlight">\(
+It is proportional to \)</span>\sin\delta_{\rm CP}<span class="math notranslate nohighlight">\( and to the Jarlskog-like factor \)</span>J \propto \sin 2\theta_{12}\sin 2\theta_{13}\sin 2\theta_{23}<span class="math notranslate nohighlight">\(. It is also modified by matter effects, which mimic a non-zero \)</span>\delta_{\rm CP}$.</p>
+<p><strong>Questions:</strong></p>
+<ol class="simple">
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">oscillations.osc_prob_3fam</span></code>, compute <span class="math notranslate nohighlight">\(P(\nu_\mu\to\nu_e)\)</span> and <span class="math notranslate nohighlight">\(P(\bar\nu_\mu\to\bar\nu_e)\)</span> at T2K kinematics (<span class="math notranslate nohighlight">\(L = 295\)</span> km, <span class="math notranslate nohighlight">\(E = 0.6\)</span> GeV) for <span class="math notranslate nohighlight">\(\delta_{\rm CP} = -90°\)</span> and <span class="math notranslate nohighlight">\(\delta_{\rm CP} = +90°\)</span>. Which value gives the larger neutrino appearance probability? Compute <span class="math notranslate nohighlight">\(\mathcal{A}_{\rm CP}\)</span> in each case.</p></li>
+<li><p>Compute <span class="math notranslate nohighlight">\(\mathcal{A}_{\rm CP}(\delta_{\rm CP})\)</span> for <span class="math notranslate nohighlight">\(\delta_{\rm CP}\in[0°,360°]\)</span> at T2K (<span class="math notranslate nohighlight">\(L=295\)</span> km, <span class="math notranslate nohighlight">\(E=0.6\)</span> GeV) and NOvA (<span class="math notranslate nohighlight">\(L=810\)</span> km, <span class="math notranslate nohighlight">\(E=2\)</span> GeV). Plot both curves and explain why <span class="math notranslate nohighlight">\(|\mathcal{A}_{\rm CP}|\)</span> is larger at NOvA despite the smaller Jarlskog factor (hint: matter effects at longer baseline).</p></li>
+<li><p>Plot the <strong>bi-probability diagram</strong> — the parametric curve <span class="math notranslate nohighlight">\((P(\nu_\mu\to\nu_e),\,P(\bar\nu_\mu\to\bar\nu_e))\)</span> as <span class="math notranslate nohighlight">\(\delta_{\rm CP}\)</span> varies from <span class="math notranslate nohighlight">\(0°\)</span> to <span class="math notranslate nohighlight">\(360°\)</span> — for T2K and NOvA, for both NH (solid) and IH (dashed). Mark the point <span class="math notranslate nohighlight">\(\delta_{\rm CP} = -90°\)</span>. This “Cabibbo ellipse” visualises how the two experiments break the hierarchy–<span class="math notranslate nohighlight">\(\delta_{\rm CP}\)</span> degeneracy.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">oscillations</span>
+
+<span class="n">oscillations</span><span class="o">.</span><span class="n">exercise_lbl_biprobability</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q1 — T2K (L = 295 km, E = 0.6 GeV):
+  delta =  -90°: P(ν) = 0.0365  P(ν̄) = 0.0614  A_CP = -0.253
+  delta =  +90°: P(ν) = 0.0614  P(ν̄) = 0.0365  A_CP = +0.253
+</pre></div>
+</div>
+<img alt="_images/nu_oscillations_exp_39_1.png" src="_images/nu_oscillations_exp_39_1.png" />
+<img alt="_images/nu_oscillations_exp_39_2.png" src="_images/nu_oscillations_exp_39_2.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="neutrino-mixing-matrix-parameters-global-fits">
+<h2>Neutrino Mixing Matrix Parameters. Global fits<a class="headerlink" href="#neutrino-mixing-matrix-parameters-global-fits" title="Permalink to this heading">#</a></h2>
+<p>There is an international effort to combine the experimental results in the framework of different neutrino scenarios.</p>
+<p>This is the web page of <a class="reference external" href="http://www.nu-fit.org">NuFit</a> group</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NuFit_2019.png"><img alt="_images/NuFit_2019.png" class="align-center" src="_images/NuFit_2019.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>NuFit-6.0</strong> (2024) — ajuste global de tres sabores <a class="reference external" href="https://arxiv.org/abs/2410.05380">[33]</a>, actualizado con los datos de T2K, NOvA, Daya Bay, RENO, SK-atm, IceCube y los primeros resultados de JUNO. Los valores NuFit-6.0 (NH) son los valores por defecto en los widgets de oscilación de este notebook.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/NuFit_regions_2019.jpg"><img alt="_images/NuFit_regions_2019.jpg" class="align-center" src="_images/NuFit_regions_2019.jpg" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="next-generation-oscillation-experiments">
+<h3>Next-generation oscillation experiments<a class="headerlink" href="#next-generation-oscillation-experiments" title="Permalink to this heading">#</a></h3>
+<p>Los experimentos actuales <strong>T2K</strong> y <strong>NOvA</strong> han producido resultados pioneros sobre <span class="math notranslate nohighlight">\(\delta_{\rm CP}\)</span> y la ordenación de masas. Su análisis conjunto (Nature 2025) es el estado del arte actual.</p>
+<p>Los futuros experimentos <strong>JUNO</strong> (ya en marcha), <strong>DUNE</strong> (~2031) y <strong>HyperKamiokande</strong> (~2028) cubrirán la determinación precisa de la ordenación de masas y la violación de CP.</p>
+</div>
+<div class="section" id="sbl-juno-2025">
+<h3>SBL: JUNO (2025 – )<a class="headerlink" href="#sbl-juno-2025" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>El <strong>Jiangmen Underground Neutrino Observatory</strong> (JUNO), China, es un detector de centelleo líquido de 20 któn multipropósito, situado a <strong>52.5 km</strong> de las centrales nucleares de Taishan y Yangjiang (17.4 GW<span class="math notranslate nohighlight">\(_{\rm th}\)</span> combinados).</p></li>
+<li><p>Excelente resolución energética: <span class="math notranslate nohighlight">\(\sigma_E/E \simeq 3\%/\sqrt{E/{\rm MeV}}\)</span> gracias a los <span class="math notranslate nohighlight">\(&gt;\)</span>45.000 PMTs.</p></li>
+<li><p>Detecta <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> de reactores via IBD (<span class="math notranslate nohighlight">\(\bar{\nu}_e + p \to e^+ + n\)</span>), además de neutrinos solares, geo-neutrinos y de supernovas.</p></li>
+</ul>
+<p><strong>Objetivos principales:</strong></p>
+<ol class="simple">
+<li><p>Determinación de la <strong>ordenación de masas</strong> con <span class="math notranslate nohighlight">\(\geq 3\sigma\)</span> (tras ~6.5 años de datos).</p></li>
+<li><p>Medición de <span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span> y <span class="math notranslate nohighlight">\(\sin^2 \theta_{12}\)</span> con precisión <span class="math notranslate nohighlight">\(&lt;1\%\)</span>.</p></li>
+</ol>
+<p><strong>Estado actual:</strong></p>
+<ul class="simple">
+<li><p>Relleno del centellador líquido completado en 2025.</p></li>
+<li><p><strong>Inicio oficial de toma de datos: 26 agosto 2025.</strong></p></li>
+<li><p><strong>Primeros resultados publicados: noviembre 2025</strong> (sólo 59.1 días efectivos) <a class="reference external" href="https://arxiv.org/abs/2511.14593">[38]</a>.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_map.png"><img alt="_images/JUNO_map.png" class="align-center" src="_images/JUNO_map.png" style="width: 200px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_detector.png"><img alt="_images/JUNO_detector.png" class="align-center" src="_images/JUNO_detector.png" style="width: 200px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_image.png"><img alt="_images/JUNO_image.png" class="align-center" src="_images/JUNO_image.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>location</p></td>
+<td class="text-align:center"><p>detector scheme</p></td>
+<td class="text-align:center"><p>detector image</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_nue_spectrum_6years.png"><img alt="_images/JUNO_nue_spectrum_6years.png" class="align-center" src="_images/JUNO_nue_spectrum_6years.png" style="width: 450px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_pnue_vsLE.png"><img alt="_images/JUNO_pnue_vsLE.png" class="align-center" src="_images/JUNO_pnue_vsLE.png" style="width: 450px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>JUNO <a class="reference external" href="https://arxiv.org/abs/1507.05613">[34]</a></p>
+<div class="section" id="juno-first-results-november-2025">
+<h4>JUNO first results (November 2025)<a class="headerlink" href="#juno-first-results-november-2025" title="Permalink to this heading">#</a></h4>
+<p>Con solo <strong>59.1 días efectivos</strong> de datos, JUNO publicó la primera medición de los parámetros de oscilación solar con un único detector de gran masa a línea base media <a class="reference external" href="https://arxiv.org/abs/2511.14593">[38]</a>:</p>
+<div class="math notranslate nohighlight">
+\[
+\sin^2 \theta_{12} = 0.3092 \pm 0.0087 \qquad \Delta m^2_{21} = (7.50 \pm 0.12) \times 10^{-5} \; {\rm eV}^2
+\]</div>
+<p><strong>Mejora de factor <span class="math notranslate nohighlight">\(\sim 1.6\)</span> en precisión</strong> respecto a toda la física previa combinada. Ajuste global post-JUNO <a class="reference external" href="https://arxiv.org/abs/2511.21650">[39]</a>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta m^2_{21} = (7.48 \pm 0.10) \times 10^{-5} \; {\rm eV}^2 \qquad \sin^2 \theta_{12} = 0.3085 \pm 0.0073
+\]</div>
+<p><strong>Perspectiva para la ordenación de masas:</strong><br />
+JUNO necesita del orden de 6-7 años de datos para alcanzar <span class="math notranslate nohighlight">\(3\sigma\)</span> de sensibilidad a la ordenación. La clave es resolver el patrón de interferencia entre <span class="math notranslate nohighlight">\(\Delta m^2_{31}\)</span> y <span class="math notranslate nohighlight">\(\Delta m^2_{32}\)</span> en el espectro de <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/JUNO_nue_spectrum_6years.png"><img alt="_images/JUNO_nue_spectrum_6years.png" class="align-center" src="_images/JUNO_nue_spectrum_6years.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Espectro esperado con 6 años de datos <a class="reference external" href="https://arxiv.org/abs/1507.05613">[34]</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">oscillations</span>
+
+<span class="n">oscillations</span><span class="o">.</span><span class="n">plot_juno_spectrum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ed3981c0052d41d884298755299acae4", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="the-solar-tension">
+<h4>The solar tension<a class="headerlink" href="#the-solar-tension" title="Permalink to this heading">#</a></h4>
+<p>Los experimentos de reactor (KamLAND, JUNO) y los experimentos de neutrinos solares (SNO, SK) miden <span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span> de maneras distintas:</p>
+<ul class="simple">
+<li><p><strong>Reactor:</strong> miden la frecuencia de oscilación <span class="math notranslate nohighlight">\(\bar{\nu}_e \to \bar{\nu}_e\)</span> directamente.</p></li>
+<li><p><strong>Solar:</strong> miden la transición adiabática MSW <span class="math notranslate nohighlight">\(\nu_e \to \nu_2\)</span> y la supervivencia en la zona de transición vacío-materia (resonancia de Mikheyev-Smirnov-Wolfenstein).</p></li>
+</ul>
+<p>Valores actuales (2026):</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fuente</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span> [<span class="math notranslate nohighlight">\(10^{-5}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span>]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>KamLAND (reactor)</p></td>
+<td><p><span class="math notranslate nohighlight">\(7.49 \pm 0.20\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>JUNO (reactor, 2025)</p></td>
+<td><p><span class="math notranslate nohighlight">\(7.50 \pm 0.12\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Solar (SNO + SK)</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sim 6.9\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Global post-JUNO</p></td>
+<td><p><span class="math notranslate nohighlight">\(7.48 \pm 0.10\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La discrepancia es de <strong><span class="math notranslate nohighlight">\(\sim 1.5\sigma\)</span></strong>. Si persiste con más estadística JUNO podría ser indicio de nueva física (interacciones no estándar, NSI, o variación de la densidad solar). JUNO también medirá directamente neutrinos solares, permitiendo comparar ambas medidas con el mismo detector.</p>
+<p><strong>Exercise: JUNO and the reactor spectrum interference pattern</strong></p>
+<p>At <span class="math notranslate nohighlight">\(L = 52.5\)</span> km, the <span class="math notranslate nohighlight">\(\bar\nu_e\)</span> spectrum carries two oscillation frequencies. The survival probability at leading order in <span class="math notranslate nohighlight">\(\theta_{13}\)</span> is:
+$<span class="math notranslate nohighlight">\(
+P_{ee} \approx 1 - \cos^4\theta_{13}\sin^2 2\theta_{12}\sin^2\!\frac{\Delta m^2_{21} L}{4E}
+            - \sin^2 2\theta_{13}\!\left(\cos^2\theta_{12}\sin^2\phi_{31} + \sin^2\theta_{12}\sin^2\phi_{32}\right)
+\)</span><span class="math notranslate nohighlight">\(
+NH and IH differ in the sign of \)</span>\Delta m^2_{31}$, which shifts the relative phase of the two fast oscillations — the key to JUNO’s mass ordering determination.</p>
+<p><strong>Questions:</strong></p>
+<ol class="simple">
+<li><p>At <span class="math notranslate nohighlight">\(E = 5\)</span> MeV and <span class="math notranslate nohighlight">\(L = 52.5\)</span> km, compute <span class="math notranslate nohighlight">\(\phi_{21}\)</span>, <span class="math notranslate nohighlight">\(\phi_{31}\)</span> and <span class="math notranslate nohighlight">\(\phi_{32}\)</span> with NuFit-6.0 parameters for NH and IH. How many complete fast-oscillation cycles fit in the energy window <span class="math notranslate nohighlight">\(E\in[2,8]\)</span> MeV?</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">oscillations.plot_juno_spectrum</span></code> to switch between NH and IH. In which region of the spectrum (<span class="math notranslate nohighlight">\(E \lesssim 4\)</span> MeV or <span class="math notranslate nohighlight">\(E\gtrsim 4\)</span> MeV) do the two orderings show the largest difference? Explain qualitatively in terms of the interference condition <span class="math notranslate nohighlight">\(\phi_{31} \approx \phi_{32} + n\pi\)</span>.</p></li>
+<li><p>JUNO’s energy resolution is <span class="math notranslate nohighlight">\(\sigma_E/E \simeq 3\%/\sqrt{E/\mathrm{MeV}}\)</span>. Using <code class="docutils literal notranslate"><span class="pre">oscillations.osc_prob_3fam</span></code>, compute <span class="math notranslate nohighlight">\(P_{ee}(E)\)</span> over <span class="math notranslate nohighlight">\(E\in[2,8]\)</span> MeV and convolve it with a Gaussian of width <span class="math notranslate nohighlight">\(\sigma_E(E)\)</span>. Plot both the ideal and smeared spectra. Verify that the fast oscillations survive the smearing.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">oscillations</span>
+
+<span class="n">oscillations</span><span class="o">.</span><span class="n">exercise_juno_smearing</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q1 — Phases at E = 5 MeV, L = 52.5 km:
+  NH: phi21 = 1.0  phi31 = 33.6  phi32 = 32.6  (rad)
+  IH: phi21 = 1.0  phi31 = 33.6  phi32 = 32.6  (rad)
+  Fast oscillation cycles in [2, 8] MeV: 10.0
+</pre></div>
+</div>
+<img alt="_images/nu_oscillations_exp_51_1.png" src="_images/nu_oscillations_exp_51_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lbl-dune-2031">
+<h3>LBL: DUNE (~2031 – )<a class="headerlink" href="#lbl-dune-2031" title="Permalink to this heading">#</a></h3>
+<p>Detector LArTPC de <strong>35 kt activos</strong> (Fase I) en Sanford Underground Research Facility (SURF), South Dakota, a <strong>1300 km</strong> del haz de neutrinos LBNF/PIP-II de Fermilab.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/DUNE_map.png"><img alt="_images/DUNE_map.png" class="align-center" src="_images/DUNE_map.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/DUNE_PnuePbarnue.png"><img alt="_images/DUNE_PnuePbarnue.png" class="align-center" src="_images/DUNE_PnuePbarnue.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema del experimento</p></td>
+<td class="text-align:center"><p>Probabilidad de aparición</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Mide desaparición de <span class="math notranslate nohighlight">\(\nu_\mu (\bar{\nu}_\mu)\)</span> y aparición de <span class="math notranslate nohighlight">\(\nu_e(\bar{\nu}_e)\)</span> a <span class="math notranslate nohighlight">\(E \sim 3\)</span> GeV.</p></li>
+<li><p>Espera recoger <span class="math notranslate nohighlight">\(\sim 10^{3}\)</span> <span class="math notranslate nohighlight">\(\nu_e(\bar{\nu}_e)\)</span> y <span class="math notranslate nohighlight">\(\sim 10^{4}\)</span> <span class="math notranslate nohighlight">\(\nu_\mu(\bar{\nu}_\mu)\)</span> por año en plena potencia.</p></li>
+<li><p>Gran programa de física: neutrinos de supernovas, decaimiento del protón…</p></li>
+<li><p><strong>Haz LBNF</strong> a 1.2 MW (Fase I) → 2.4 MW (Fase II), gracias al nuevo linac superconductor <strong>PIP-II</strong>.</p></li>
+<li><p>Detector Far a 1.5 km de profundidad bajo SURF (South Dakota).</p></li>
+<li><p><strong>Fase I: 2 módulos LArTPC</strong> de 17 kt cada uno (35 kt activos / 70 kt total):</p>
+<ul>
+<li><p>FD1: Horizontal Drift TPC (HD-TPC), basado en ProtoDUNE-HD.</p></li>
+<li><p>FD2: Vertical Drift TPC (VD-TPC).</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Estado actual (2025-2026):</strong></p>
+<ul class="simple">
+<li><p>Excavación de las cavernas en SURF completada en 2024.</p></li>
+<li><p>Acero del criostato enviado desde CERN; instalación subterránea a partir de <strong>principios de 2026</strong>.</p></li>
+<li><p><strong>2×2 prototipo ND-LAr</strong>: primeros neutrinos del acelerador detectados en <strong>agosto 2024</strong> en Fermilab (tecnología LArPix 3D) <a class="reference external" href="https://arxiv.org/abs/2412.14941">[41]</a>.</p></li>
+<li><p>ProtoDUNE-HD (CERN) completó toma de datos de haz de pruebas en 2024; ProtoDUNE-VD en 2025.</p></li>
+<li><p>Inicio de física de alta potencia esperado: <strong>~2030-2031</strong> <a class="reference external" href="https://arxiv.org/abs/2002.03005">[36]</a>.</p></li>
+</ul>
+<p>Dos prototipos a escala 1:20 operados en CERN:</p>
+<ul class="simple">
+<li><p><strong>ProtoDUNE-HD</strong> (Single-phase): carga de ionización derivada horizontalmente en LAr y leída en cables. Deriva de 3.5 m, campo 500 V/cm. Tomó datos de haz de pruebas en 2022 y 2024 <a class="reference external" href="https://arxiv.org/abs/1106.0975">[35]</a>.</p></li>
+<li><p><strong>ProtoDUNE-VD</strong> (Vertical Drift): carga de ionización derivada verticalmente con amplificación en fase gaseosa. Longitud de deriva 12 m. Tomó datos de haz en 2025.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/DUNE_FDscheme.png"><img alt="_images/DUNE_FDscheme.png" class="align-center" src="_images/DUNE_FDscheme.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Previous experience with ICARUS at LNGS</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/ICARUS_event.png"><img alt="_images/ICARUS_event.png" class="align-center" src="_images/ICARUS_event.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>ICARUS event [35] (2011) of a <span class="math notranslate nohighlight">\(\nu_\mu\)</span> CC interaction (CERN CGNS beam to LNGS)</p>
+<p>Currently two large LArTPC prototypes (ProtoDUNE) operating at CERN (2018-)</p>
+<p>La Fase I del detector DUNE consistirá en <strong>2 módulos LArTPC</strong>:</p>
+<ul class="simple">
+<li><p><strong>FD1 (Horizontal Drift):</strong> ionización derivada horizontalmente, basado en ProtoDUNE-HD (CERN). Toma de datos de haz de pruebas completada en 2024.</p></li>
+<li><p><strong>FD2 (Vertical Drift):</strong> ionización derivada verticalmente. ProtoDUNE-VD completó datos en 2025.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/DUNE_FDscheme.png"><img alt="_images/DUNE_FDscheme.png" class="align-center" src="_images/DUNE_FDscheme.png" style="width: 600px;" /></a>
+<p>Las sensibilidades de DUNE a la ordenación de masas y a <span class="math notranslate nohighlight">\(\delta_{\rm CP}\)</span> <a class="reference external" href="https://arxiv.org/abs/2002.03005">[36]</a>:</p>
+<a class="reference internal image-reference" href="_images/DUNE_MH_sensitivity.png"><img alt="_images/DUNE_MH_sensitivity.png" class="align-center" src="_images/DUNE_MH_sensitivity.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/DUNE_deltaCP_sensitivity.png"><img alt="_images/DUNE_deltaCP_sensitivity.png" class="align-center" src="_images/DUNE_deltaCP_sensitivity.png" style="width: 600px;" /></a>
+<p>DUNE report <a class="reference external" href="https://arxiv.org/abs/1807.10334">[36]</a></p>
+<p>As a function of the Modules</p>
+<a class="reference internal image-reference" href="_images/DUNE_sensitivity_vs_time.png"><img alt="_images/DUNE_sensitivity_vs_time.png" class="align-center" src="_images/DUNE_sensitivity_vs_time.png" style="width: 600px;" /></a>
+<p>DUNE report <a class="reference external" href="https://arxiv.org/abs/1807.10334">[36]</a></p>
+<a class="reference internal image-reference" href="_images/DUNE_reach_exposure.png"><img alt="_images/DUNE_reach_exposure.png" class="align-center" src="_images/DUNE_reach_exposure.png" style="width: 400px;" /></a>
+<p>DUNE report <a class="reference external" href="https://arxiv.org/abs/1807.10334">[36]</a></p>
+</div>
+<div class="section" id="hyperkamiokande-2028">
+<h3>HyperKamiokande (2028 – )<a class="headerlink" href="#hyperkamiokande-2028" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/HK_detector.png"><img alt="_images/HK_detector.png" class="align-center" src="_images/HK_detector.png" style="width: 350px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/HK_Dome.png"><img alt="_images/HK_Dome.png" class="align-center" src="_images/HK_Dome.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema del detector</p></td>
+<td class="text-align:center"><p>Caverna excavada</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Estado de construcción (2025-2026):</strong></p>
+<ul class="simple">
+<li><p>Excavación de la caverna principal (330.000 m³ de roca) <strong>completada el 31 de julio de 2025</strong> — una de las mayores excavaciones artificiales en roca.</p></li>
+<li><p>Construcción del tanque de agua (260.000 m³) e instalación de los detectores prevista para 2025-2027.</p></li>
+<li><p><strong>Inicio de toma de datos: 2028</strong> (sin datos de física aún).</p></li>
+</ul>
+<p><strong>Características del detector:</strong></p>
+<ul class="simple">
+<li><p>78 m de alto, 74 m de diámetro → <strong>260 kt de agua</strong> (50 kt activos T2K, 186 kt activos HK).</p></li>
+<li><p>Más de 40.000 nuevos PMTs de alta eficiencia cuántica (<span class="math notranslate nohighlight">\(\times 2\)</span> respecto a SK) <a class="reference external" href="https://arxiv.org/abs/1805.04163">[37]</a>.</p></li>
+<li><p>Factor <span class="math notranslate nohighlight">\(8.5\times\)</span> SuperKamiokande.</p></li>
+</ul>
+<p><strong>Haz de J-PARC:</strong></p>
+<ul class="simple">
+<li><p>T2K opera desde <strong>diciembre 2023</strong> con haz mejorado a <strong>710–760 kW</strong> (+40% respecto a la operación anterior), aumentando la corriente de la bocina de 250 kA a 320 kA <a class="reference external" href="https://j-parc.jp/c/en/press-release/2024/01/17001274.html">[40]</a>.</p></li>
+<li><p>Objetivo para HK: <strong>1.3 MW</strong> (previsto ~2028), reduciendo el período de repetición de 2.48 s a 1.16 s.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/HK_pnue_pbarnue_vsE.png"><img alt="_images/HK_pnue_pbarnue_vsE.png" class="align-center" src="_images/HK_pnue_pbarnue_vsE.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/HK_nue_nuebar_exp.png"><img alt="_images/HK_nue_nuebar_exp.png" class="align-center" src="_images/HK_nue_nuebar_exp.png" style="width: 400px;" /></a>
+<p>HK Neutrino 2024 conference</p>
+<a class="reference internal image-reference" href="_images/HK_nue_barnue_spectrum.png"><img alt="_images/HK_nue_barnue_spectrum.png" class="align-center" src="_images/HK_nue_barnue_spectrum.png" style="width: 800px;" /></a>
+<p>HK report (2018) <a class="reference external" href="https://arxiv.org/abs/1805.04163">[37]</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/HK_deltaCP_sensitivity.png"><img alt="_images/HK_deltaCP_sensitivity.png" class="align-center" src="_images/HK_deltaCP_sensitivity.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="_images/HK_deltaCP_fraction_coverage.png"><img alt="_images/HK_deltaCP_fraction_coverage.png" class="align-center" src="_images/HK_deltaCP_fraction_coverage.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>HK report (2018) <a class="reference external" href="https://arxiv.org/abs/1805.04163">[37]</a></p>
+<a class="reference internal image-reference" href="_images/HK_CP_errors.png"><img alt="_images/HK_CP_errors.png" class="align-center" src="_images/HK_CP_errors.png" style="width: 500px;" /></a>
+<p>Draft preliminary</p>
+</div>
+<div class="section" id="km3net-orca-and-arca">
+<h3>KM3NeT: ORCA and ARCA<a class="headerlink" href="#km3net-orca-and-arca" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.km3net.org">KM3NeT</a> is a deep-sea Cherenkov neutrino telescope in the Mediterranean Sea, with two physics programmes sharing common technology (multi-PMT digital optical modules, DU strings):</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Detector</p></th>
+<th class="head"><p>Location</p></th>
+<th class="head"><p>Depth</p></th>
+<th class="head"><p>Volume</p></th>
+<th class="head"><p>Energy range</p></th>
+<th class="head"><p>Physics goal</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>ORCA</strong></p></td>
+<td><p>Toulon, France</p></td>
+<td><p>2450 m</p></td>
+<td><p>~7 Mt</p></td>
+<td><p>3–100 GeV</p></td>
+<td><p>Atmospheric oscillations, mass ordering</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ARCA</strong></p></td>
+<td><p>Sicily, Italy</p></td>
+<td><p>3500 m</p></td>
+<td><p>~1 km³</p></td>
+<td><p>1 TeV – 1 PeV</p></td>
+<td><p>Astrophysical ν, point sources</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="km3net-orca-atmospheric-oscillations-and-mass-ordering">
+<h4>KM3NeT/ORCA — Atmospheric Oscillations and Mass Ordering<a class="headerlink" href="#km3net-orca-atmospheric-oscillations-and-mass-ordering" title="Permalink to this heading">#</a></h4>
+<p>ORCA detects <strong>atmospheric neutrinos</strong> in the 3–100 GeV range, where Earth-crossing neutrinos experience significant <strong>MSW matter effects</strong>. This creates an asymmetry between <span class="math notranslate nohighlight">\(\nu_\mu\)</span> and <span class="math notranslate nohighlight">\(\bar{\nu}_\mu\)</span> survival probabilities that depends on the <strong>mass ordering</strong>:</p>
+<ul class="simple">
+<li><p><strong>Normal ordering (NH)</strong>: resonant enhancement of <span class="math notranslate nohighlight">\(\nu_\mu\)</span> disappearance for upgoing neutrinos at <span class="math notranslate nohighlight">\(E \sim 5\text{--}10\)</span> GeV</p></li>
+<li><p><strong>Inverted ordering (IH)</strong>: resonant enhancement of <span class="math notranslate nohighlight">\(\bar{\nu}_\mu\)</span> instead</p></li>
+</ul>
+<p>ORCA therefore provides a <strong>matter-effect-based measurement</strong> of the mass ordering, complementary to DUNE (beam, 1300 km) and JUNO (reactor, interference pattern).</p>
+<p><strong>Detector status and first results:</strong></p>
+<ul class="simple">
+<li><p>Full configuration: 115 detection units (DU) × 18 DOMs = 2070 optical modules</p></li>
+<li><p>Physics run with partial detector (6 DU → 21 DU) since 2020</p></li>
+<li><p>First oscillation measurement (2024, 6 DU, 433 days): <span class="math notranslate nohighlight">\(\sin^2\theta_{23} = 0.51^{+0.12}_{-0.09}\)</span>, <span class="math notranslate nohighlight">\(|\Delta m^2_{32}| = 2.35^{+0.71}_{-0.40}\times10^{-3}\)</span> eV² — consistent with global fits <a class="reference external" href="https://arxiv.org/abs/2406.08588">[KM3NeT-ORCA]</a></p></li>
+<li><p><strong>Ordering sensitivity</strong> with full ORCA (6 years): <span class="math notranslate nohighlight">\(&gt; 3\sigma\)</span></p></li>
+<li><p>Also sensitive to <strong>tau neutrino appearance</strong> (<span class="math notranslate nohighlight">\(\nu_\mu \to \nu_\tau\)</span>) and non-standard interactions</p></li>
+</ul>
+</div>
+<div class="section" id="km3net-arca-high-energy-neutrino-astronomy">
+<h4>KM3NeT/ARCA — High-Energy Neutrino Astronomy<a class="headerlink" href="#km3net-arca-high-energy-neutrino-astronomy" title="Permalink to this heading">#</a></h4>
+<p>ARCA targets astrophysical neutrinos at 1 TeV–1 PeV. Its key advantage over IceCube is <strong>sky coverage</strong>: being in the Northern Hemisphere, ARCA looks downward at the <strong>Galactic Centre</strong> and the Southern Sky, where IceCube has reduced sensitivity.</p>
+<ul class="simple">
+<li><p>First detection of the <strong>Galactic diffuse emission</strong> component (2023) consistent with IceCube’s measurement</p></li>
+<li><p>Point-source sensitivity improving with exposure; targets include blazars, starburst galaxies, SNRs</p></li>
+<li><p>Combined ARCA + IceCube analyses provide full-sky coverage</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="icecube-deepcore-upgrade-and-atmospheric-oscillations">
+<h3>IceCube: DeepCore, Upgrade and Atmospheric Oscillations<a class="headerlink" href="#icecube-deepcore-upgrade-and-atmospheric-oscillations" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://icecube.wisc.edu">IceCube</a> at the South Pole (1 km³, 5160 DOMs, 1450–2450 m depth) includes dedicated sub-arrays for oscillation physics:</p>
+<div class="section" id="deepcore">
+<h4>DeepCore<a class="headerlink" href="#deepcore" title="Permalink to this heading">#</a></h4>
+<p>8 denser strings at the centre of IceCube, with <strong>threshold <span class="math notranslate nohighlight">\(\sim 5\)</span> GeV</strong>. DeepCore measures <span class="math notranslate nohighlight">\(\nu_\mu\)</span> disappearance and <span class="math notranslate nohighlight">\(\nu_\tau\)</span> appearance in the 5–100 GeV atmospheric range:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sin^2\theta_{23}\)</span>, <span class="math notranslate nohighlight">\(|\Delta m^2_{32}|\)</span> at precision comparable to MINOS/NOvA</p></li>
+<li><p>Tau neutrino appearance: first astrophysical <span class="math notranslate nohighlight">\(\nu_\tau\)</span> detection (2020)</p></li>
+<li><p>Sensitive to mass ordering via Earth-matter effects above 10 GeV</p></li>
+</ul>
+</div>
+<div class="section" id="icecube-upgrade-20262027">
+<h4>IceCube-Upgrade (~2026–2027)<a class="headerlink" href="#icecube-upgrade-20262027" title="Permalink to this heading">#</a></h4>
+<p>7 new strings with next-generation multi-PMT optical modules (mDOM, D-Egg) deployed in the DeepCore volume, lowering the threshold to <strong><span class="math notranslate nohighlight">\(\sim 1\text{--}2\)</span> GeV</strong>:</p>
+<ul class="simple">
+<li><p>Improved calibration of the full IceCube array</p></li>
+<li><p>Precision <span class="math notranslate nohighlight">\(\theta_{23}\)</span> and <span class="math notranslate nohighlight">\(\Delta m^2_{32}\)</span> measurement competitive with T2K/NOvA</p></li>
+<li><p>Enhanced sensitivity to <span class="math notranslate nohighlight">\(\nu_\tau\)</span> appearance and NC ratios</p></li>
+<li><p>Pathfinder for IceCube-Gen2 (10 km³ target)</p></li>
+</ul>
+</div>
+<div class="section" id="astrophysical-neutrino-flux">
+<h4>Astrophysical neutrino flux<a class="headerlink" href="#astrophysical-neutrino-flux" title="Permalink to this heading">#</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Result</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Reference</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Diffuse astrophysical flux (2013)</p></td>
+<td><p><span class="math notranslate nohighlight">\(E^{-2.5}\)</span> power law, 60 TeV–10 PeV</p></td>
+<td><p>Science 342 (2013)</p></td>
+</tr>
+<tr class="row-odd"><td><p>First point source: NGC 1068</p></td>
+<td><p><span class="math notranslate nohighlight">\(4.2\sigma\)</span></p></td>
+<td><p><a class="reference external" href="https://arxiv.org/abs/2209.04519">arXiv:2209.04519</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Galactic plane emission</p></td>
+<td><p><span class="math notranslate nohighlight">\(4.5\sigma\)</span></p></td>
+<td><p><a class="reference external" href="https://arxiv.org/abs/2307.04427">arXiv:2307.04427</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>IceCube and KM3NeT together provide <strong>all-sky coverage</strong> for multi-messenger astrophysics, connecting neutrino sources with gamma-ray and gravitational-wave observations.</p>
+</div>
+</div>
+</div>
+<div class="section" id="summary-and-conclusions">
+<h2>Summary and conclusions<a class="headerlink" href="#summary-and-conclusions" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Las oscilaciones de neutrinos están establecidas con gran precisión en los regímenes solar y atmosférico.</p>
+<ul>
+<li><p>Premio Nobel 2015 a T. Kajita (SK) y A. B. McDonald (SNO).</p></li>
+</ul>
+</li>
+<li><p><strong>JUNO</strong> (en marcha desde agosto 2025): primeros resultados (nov. 2025) con 59 días de datos ya son los más precisos del mundo en <span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span> y <span class="math notranslate nohighlight">\(\sin^2\theta_{12}\)</span>. Se espera la determinación de la <strong>ordenación de masas</strong> en ~6 años.</p></li>
+<li><p><strong>T2K y NOvA</strong> (en marcha):</p>
+<ul>
+<li><p>Análisis individual NOvA con 10 años de datos (sep. 2025): medición más precisa de <span class="math notranslate nohighlight">\(|\Delta m^2_{32}|\)</span> en un único experimento.</p></li>
+<li><p><strong>Primer análisis conjunto T2K + NOvA</strong> publicado en <em>Nature</em> (oct. 2025): <span class="math notranslate nohighlight">\(|\Delta m^2_{32}|\)</span> con precisión &lt; 2%; evidencia de violación de CP si la ordenación es invertida.</p></li>
+</ul>
+</li>
+<li><p><strong>HyperKamiokande</strong> (excavación completada jul. 2025, datos desde 2028): cubrirá violación de CP y ordenación con la mayor estadística.</p></li>
+<li><p><strong>DUNE</strong> (~2031): experimento LArTPC de 35 kt a 1300 km; primera detección de neutrinos con el prototipo 2×2 en ago. 2024.</p></li>
+<li><p><strong>Preguntas abiertas:</strong> escala absoluta de masas, naturaleza Dirac o Majorana, violación de CP en el sector leptónico, y la tensión solar en <span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span>.</p></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<p>[1] <a class="reference external" href="https://inspirehep.net/literature/2884">B. Pontecorvo, Sov. Phys. JETP 6 (1957) 429</a>; <a class="reference external" href="http://jetp.ras.ru/cgi-bin/e/index/e/7/1/p172?a=list">B. Pontecorvo, Sov. Phys. JETP 7 (1958) 172</a>.</p>
+<p>[2] B. Pontecorvo, Sov. Phys. JETP 26 (1968) 984.</p>
+<p>[2] Z. Maki, M. Nakagawa and S. Sakata, <a class="reference external" href="https://inspirehep.net/literature/3540">Prog. Theor. Phys. 28 (1962) 870</a>.</p>
+<p>[3] B. Pontecorvo, Sov. Phys. JETP 26 (1968) 984.</p>
+<p>[4] V. N. Gribov and B. Pontecorvo, <a class="reference external" href="https://inspirehep.net/literature/53150">Phys. Lett. B28 (1969) 493</a>.</p>
+<p>[5] J. N. Bahcall et al., <a class="reference external" href="https://link.aps.org/doi/10.1103/RevModPhys.54.767">Rev. Mod. Phys. 54, 767 (1982)</a>; N. Bahcall, A. M. Serenelli and S. Basu, Astrophys. J. 621, L85 (2005), <a class="reference external" href="https://arxiv.org/abs/astro-ph/0412440">arXiv:astro-ph/0412440</a>.</p>
+<p>[6] R. Davis, Jr., D. S. Harmer and K. C. Hoffman, <a class="reference external" href="https://link.aps.org/doi/10.1103/PhysRevLett.20.1205">Phys. Rev. Lett. 20, 1205 (1968)</a>.</p>
+<p>[7] B. T. Cleveland et al., <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1998ApJ...496..505C/abstract">Astrophys. J. 496, 505 (1998)</a>.</p>
+<p>[8] C. Pena-Garay and A. Serenelli (2008), <a class="reference external" href="https://arxiv.org/abs/0811.2424">[arXiv:0811.2424]</a>.</p>
+<p>[9] J. N. Abdurashitov et al. (SAGE), J. Exp. Theor. Phys. 95, 181 (2002), [Zh. Eksp. Teor.
+Fiz.122,211(2002)], <a class="reference external" href="https://arxiv.org/abs/astro-ph/0204245">[arXiv:astro-ph/0204245]</a>.</p>
+<p>[10] W. Hampel et al. (GALLEX), <a class="reference external" href="https://doi.org/10.1016/S0370-2693(98)01579-2">Phys. Lett. B447, 127 (1999)</a>.</p>
+<p>[11] M. Altmann et al. (GNO), Phys. Lett. B616, 174 (2005), <a class="reference external" href="https://arxiv.org/abs/hep-ex/0504037">[hep-ex/0504037]</a>.</p>
+<p>[12] J. N. Abdurashitov et al. (SAGE), Phys. Rev. C80, 015807 (2009), <a class="reference external" href="https://arxiv.org/abs/0901.2200">[arXiv:0901.2200]</a>.</p>
+<p>[13] K. Abe et al. (Super-Kamiokande), Phys. Rev. D94, 5, 052010 (2016), <a class="reference external" href="https://arxiv.org/abs/1606.07538">[arXiv:1606.07538]</a></p>
+<p>[14] N. Vinyoles et al., Astrophys. J. 835, 2, 202 (2017), <a class="reference external" href="https://arxiv.org/abs/1611.09867">[arXiv:1611.09867]</a>.</p>
+<p>[15] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 87, 071301 (2001), <a class="reference external" href="https://arxiv.org/abs/nucl-ex/0106015">[arXiv:nucl-ex/0106015]</a>.</p>
+<p>[16] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 89, 011301 (2002), <a class="reference external" href="https://arxiv.org/abs/nucl-ex/0204008">[arXiv:nucl-ex/0204008]</a>.</p>
+<p>[17] B. Aharmim et al. (SNO), Phys. Rev. C88, 025501 (2013), <a class="reference external" href="https://arxiv.org/abs/1109.0763">[arXiv:1109.0763]</a>.</p>
+<p>[18] B. Aharmim et al. (SNO), Phys. Rev. C72, 055502 (2005), <a class="reference external" href="https://arxiv.org/abs/nucl-ex/0502021">[arXiv:nucl-ex/0502021]</a>.</p>
+<p>[19] S. P. Mikheev and A. Yu. Smirnov, <a class="reference external" href="https://link.springer.com/article/10.1007/BF02508049">Sov. J. Nucl. Phys. 42 (1985) 913</a>, Yad. Fiz. 42 (1985) 1441.</p>
+<p>[20] G. Bellini et al., Borexino Collaboration, <a class="reference external" href="https://doi.org/10.1103/PhysRevD.82.033006">Phys. Rev. D 82 (2010) 033006</a>; G. Bellini et al., <a class="reference external" href="https://doi.org/10.1103/PhysRevLett.107.141302">Phys. Rev. Lett. 107 (2011) 141302</a>; M. Agostini et al., BOREXINO Collaboration, <a class="reference external" href="https://doi.org/10.1038/s41586-018-0624-y">Nature 562 (2018) 505</a>.</p>
+<p>[21] K. Eguchi et al. (KamLAND), Phys. Rev. Lett. 90, 021802 (2003), <a class="reference external" href="https://arxiv.org/abs/hep-ex/0212021">[hep-ex/0212021]</a>.</p>
+<p>[22] T. Araki et al. (KamLAND), Phys. Rev. Lett. 94, 081801 (2005), <a class="reference external" href="https://arxiv.org/abs/hep-ex/0406035">[hep-ex/0406035]</a>;</p>
+<p>[23] A. Gando et al. (KamLAND), Phys. Rev. D88, 3, 033001 (2013), <a class="reference external" href="https://arxiv.org/abs/1303.4667">[arXiv:1303.4667]</a>;</p>
+<p>[24] Y. Fukuda et al. (Super-Kamiokande), Phys. Rev. Lett. 81, 1562 (1998), <a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">[hep-ex/9807003]</a>.</p>
+<p>[25] Y. Ashie et al. (Super-Kamiokande), Phys. Rev. Lett. 93, 101801 (2004), <a class="reference external" href="https://arxiv.org/abs/hep-ex/0404034">[hep-ex/0404034]</a>.</p>
+<p>[26] P. Adamson et al. (MINOS), Phys. Rev. Lett. 110, 25, 251801 (2013), <a class="reference external" href="https://arxiv.org/abs/1304.6335">[arXiv:1304.6335]</a>.</p>
+<p>[26] F. P. An et al. (Daya Bay), Phys. Rev. Lett. 108, 171803 (2012), <a class="reference external" href="https://arxiv.org/abs/1203.1669">[arXiv:1203.1669]</a>.</p>
+<p>[27] D. Adey et al. (Daya Bay), Phys. Rev. Lett. 121, 24, 241805 (2018), <a class="reference external" href="https://arxiv.org/abs/1809.02261">[arXiv:1809.02261]</a>.
+6th February, 2020</p>
+<p>[28] G. Bak et al. (RENO), Phys. Rev. Lett. 121, 20, 201801 (2018), <a class="reference external" href="https://arxiv.org/abs/1806.00248">[arXiv:1806.00248]</a>.</p>
+<p>[29] H. de Kerret et al. (Double Chooz) (2019), <a class="reference external" href="https://arxiv.org/abs/1901.09445">[arXiv:1901.09445]</a>.</p>
+<p>[30] A. Cervera et al., Nucl. Phys. B 579 (2000) 17 [Erratum: Nucl. Phys. B 593 (2001) 731], <a class="reference external" href="https://arxiv.org/abs/hep-ph/0002108">[arXiv:hep-ph/0002108]</a>; M. Freund, Phys. Rev. D 64 (2001) 053003, <a class="reference external" href="https://arxiv.org/abs/hep-ph/0103300">[arXiv:hep-ph/0103300]</a>; E. K. Akhmedov et al., JHEP 0404 (2004) 078, <a class="reference external" href="https://arxiv.org/abs/hep-ph/0402175">[arXiv:hep-ph/0402175]</a>.</p>
+<p>[31] M. A. Acero et al. (NOvA), Phys. Rev. Lett. 123, 151803 (2019), <a class="reference external" href="https://arxiv.org/abs/1906.04907">[arXiv:1906.04907]</a>; M. A. Acero et al. (NOvA), Phys. Rev. D 106, 032004 (2022), <a class="reference external" href="https://arxiv.org/abs/2108.08219">[arXiv:2108.08219]</a>.</p>
+<p>[32] K. Abe et al. (T2K), Nature 580, 339 (2020), <a class="reference external" href="https://arxiv.org/abs/1910.03887">[arXiv:1910.03887]</a>; K. Abe et al. (T2K), Eur. Phys. J. C 83, 782 (2023), <a class="reference external" href="https://arxiv.org/abs/2303.03222">[arXiv:2303.03222]</a>.</p>
+<p>[33] I. Esteban et al. (NuFit-6.0), JHEP 12 (2024) 216, <a class="reference external" href="https://arxiv.org/abs/2410.05380">[arXiv:2410.05380]</a>, <a class="reference external" href="http://www.nu-fit.org">www.nu-fit.org</a>.</p>
+<p>[34] F. An et al. (JUNO), J. Phys. G43, 030401 (2016), <a class="reference external" href="https://arxiv.org/abs/1507.05613">[arXiv:1507.05613]</a>.</p>
+<p>[35] C. Rubbia et al., JINST 6, P07011 (2011), <a class="reference external" href="https://arxiv.org/abs/1106.0975">[arXiv:1106.0975]</a>.</p>
+<p>[36] B. Abi et al. (DUNE), JINST 19 (2024), <a class="reference external" href="https://arxiv.org/abs/2312.03130">[arXiv:2312.03130]</a>; DUNE Physics Report, <a class="reference external" href="https://arxiv.org/abs/2002.03005">[arXiv:2002.03005]</a>.</p>
+<p>[37] K. Abe et al. (Hyper-Kamiokande), <a class="reference external" href="https://arxiv.org/abs/1805.04163">[arXiv:1805.04163]</a>; K. Abe et al. (HK), Frontiers in Physics 12 (2024), <a class="reference external" href="https://arxiv.org/abs/2309.03009">[arXiv:2309.03009]</a>.</p>
+<p>[38] A. Abusleme et al. (JUNO), First measurement of reactor antineutrino oscillations at JUNO (Nov. 2025), <a class="reference external" href="https://arxiv.org/abs/2511.14593">[arXiv:2511.14593]</a>.</p>
+<p>[39] M. C. Gonzalez-Garcia et al., Updated bounds on (1,2) neutrino oscillation parameters after first JUNO results (Nov. 2025), <a class="reference external" href="https://arxiv.org/abs/2511.21650">[arXiv:2511.21650]</a>.</p>
+<p>[40] T2K Collaboration, T2K enters a new phase (Jan. 2024), <a class="reference external" href="https://j-parc.jp/c/en/press-release/2024/01/17001274.html">J-PARC press release</a>.</p>
+<p>[41] DUNE Collaboration, DUNE Phase II Detectors (2025), <a class="reference external" href="https://arxiv.org/abs/2412.14941">[arXiv:2412.14941]</a>.</p>
+<p>[42] M. A. Acero et al. (NOvA), Precision measurement with 10 years of data (Sep. 2025), <a class="reference external" href="https://arxiv.org/abs/2509.04361">[arXiv:2509.04361]</a>.</p>
+<p>[43] K. Abe et al. (T2K + SK), First joint oscillation analysis of SK atmospheric and T2K accelerator neutrino data (May 2024), <a class="reference external" href="https://arxiv.org/abs/2405.12488">[arXiv:2405.12488]</a>.</p>
+<p>[44] T2K and NOvA Collaborations, Joint neutrino oscillation analysis from T2K and NOvA, <em>Nature</em> (Oct. 2025), <a class="reference external" href="https://arxiv.org/abs/2510.19888">[arXiv:2510.19888]</a>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="nu_oscillations.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Neutrino Oscillations: Theory and Foundations</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="nu_mass.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Neutrino Mass: Scale and Absolute Measurements</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By José Ángel Hernando Morata<br/>
+  
+      &copy; Copyright USC - J.A. Hernando - 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
