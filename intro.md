@@ -30,9 +30,9 @@ C. Giunti and C. W. Kim, *Fundamentals of Neutrino Physics and Astrophysics*, [O
 
 ### Reviews
 
-C. Gonzalez-García, M. Yokoyama, *Neutrino Masses, Mixing, and Oscillations*, 2019, [PDG review 2019](http://pdg.lbl.gov/2019/reviews/rpp2019-rev-neutrino-mixing.pdf)
+M.C. Gonzalez-García, M. Yokoyama, *Neutrino Masses, Mixing, and Oscillations*, 2024, [PDG review 2024](https://pdg.lbl.gov/2024/reviews/rpp2024-rev-neutrino-mixing.pdf)
 
-S. Pascoli, *Neutrino physics*, CERN Yellow Rep. School Proc. 6 (2019) 213-259 [CERN-2019-006](http://cds.cern.ch/record/2702845)
+S. Pascoli, *Neutrino physics*, CERN Yellow Rep. School Proc. 6 (2019) 213-259 [CERN-2019-006](https://cds.cern.ch/record/2702845)
 
 P. Hernández, *Neutrino Physics*, CERN Yellow Report CERN 2015-005, 2017, [arXiv:1708.01046](https://arxiv.org/abs/1708.01046)
 
