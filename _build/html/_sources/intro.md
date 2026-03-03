@@ -6,7 +6,9 @@ Autor: José Ángel Hernando Morata
 
 Correo electrónico: jose.hernando@usc.es
 
-Vesión: Enero 2023
+Versión: Enero 2023
+
+These lecture notes have been edited, corrected, and improved with the assistance of [Claude](https://claude.ai), Anthropic's AI assistant.
 
 
 ## Table of Contents
@@ -28,12 +30,12 @@ C. Giunti and C. W. Kim, *Fundamentals of Neutrino Physics and Astrophysics*, [O
 
 ### Reviews
 
-C. Gonzalez-García, M. Yokoyama, *Neutrino Masses, Mixing, and Oscillations*, 2019, [PDG review 2019](http://pdg.lbl.gov/2019/reviews/rpp2019-rev-neutrino-mixing.pdf)
+M.C. Gonzalez-García, M. Yokoyama, *Neutrino Masses, Mixing, and Oscillations*, 2024, [PDG review 2024](https://pdg.lbl.gov/2024/reviews/rpp2024-rev-neutrino-mixing.pdf)
 
-S. Pascolli, *Neutrino physics*, CERN Yellow Rep. School Proc. 6 (2019) 213-259 [CERN-2019-006](http://cds.cern.ch/record/2702845)
+S. Pascoli, *Neutrino physics*, CERN Yellow Rep. School Proc. 6 (2019) 213-259 [CERN-2019-006](https://cds.cern.ch/record/2702845)
 
-P. Hernandez, *Neutrino Physics*, CERN Yellow Report CERN 2015-005, 2027, [arXiv:1708.01046](https://arxiv.org/abs/1708.01046)
+P. Hernández, *Neutrino Physics*, CERN Yellow Report CERN 2015-005, 2017, [arXiv:1708.01046](https://arxiv.org/abs/1708.01046)
 
 S. Bilenky, *Neutrino oscillations: brief history and present status*, 2014, [arXiv:1408.2864](https://arxiv.org/abs/1408.2864)
 
-J.J. Gomez Cadenas, J. Martín, *Phenomenology of neutrinoless double beta decay*, 2015, [arXiv:1502.00581](https://arxiv.org/abs/1502.00581)
+J.J. Gómez-Cadenas, J. Martín, *Phenomenology of neutrinoless double beta decay*, 2015, [arXiv:1502.00581](https://arxiv.org/abs/1502.00581)

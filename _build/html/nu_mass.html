@@ -116,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="nu_index.html">
-   The misteries of the neutrinos
+   The mysteries of the neutrinos
   </a>
  </li>
  <li class="toctree-l1">
@@ -126,7 +126,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="nu_oscillations.html">
-   Neutrinos Oscillations
+   Neutrino Oscillations
   </a>
  </li>
  <li class="toctree-l1">
@@ -359,6 +359,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-neutrino-masses">
+   The neutrino masses
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-katrin-experiment">
+     The Katrin experiment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-spinors">
    Dirac, Weyl and Mayorana spinors
   </a>
@@ -534,6 +546,18 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-neutrino-masses">
+   The neutrino masses
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-katrin-experiment">
+     The Katrin experiment
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dirac-weyl-and-mayorana-spinors">
    Dirac, Weyl and Mayorana spinors
@@ -742,6 +766,95 @@ title="Print to PDF"
 <p>About Majorana masses.</p>
 <p>The See-Saw Mechanisme and the Weinberg operator</p>
 <p>Search for the N Majorana neutrinos</p>
+<div class="section" id="the-neutrino-masses">
+<h2>The neutrino masses<a class="headerlink" href="#the-neutrino-masses" title="Permalink to this heading">#</a></h2>
+<p>Fermi [8] and Perrin [9] suggested in 1933 that the mass of the neutrino can be meaured at the end point of the <span class="math notranslate nohighlight">\(\beta\)</span> spectrum in <span class="math notranslate nohighlight">\(\mathrm{^3H} \to \mathrm{^3H} + e + \bar{\nu}_e\)</span> due its small <span class="math notranslate nohighlight">\(Q\)</span>-value, 18.6 keV.</p>
+<p>The decay is super-allowed and depends on the phase space:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}N_e}{\mathrm{d}E} \propto p^2_e E_\nu p_\nu F(E) 
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(F(E)\)</span> is the Fermi function (we can approximate as constant at the end point), <span class="math notranslate nohighlight">\(p_e, p_\nu\)</span>, the momentum of the electron and neutrino, and <span class="math notranslate nohighlight">\(E_\nu\)</span>, the energy of the neutrino.</p>
+<p>If we sustitute, <span class="math notranslate nohighlight">\(E_\nu = (Q-E_e), \; p_\nu = \sqrt{(Q-E_e)^2 - m^2_{\nu_e}}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}N_e}{\mathrm{d}E} \propto p^2_e  F(E) (Q- E_e) \sqrt{(Q-E_e)^2 - m^2_{\nu_e}}
+\]</div>
+<p>The Kurie plot is linear in <span class="math notranslate nohighlight">\(E_e\)</span> and the end point is lowered due to <span class="math notranslate nohighlight">\(m_{\nu_e}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+K(E_e) = \frac{1}{p_e}\sqrt{\frac{\mathrm{d}N_e}{\mathrm{d} E}}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tritium_spectrum</span><span class="p">(</span><span class="n">Q0</span> <span class="o">=</span> <span class="mf">18.6e3</span><span class="p">,</span> <span class="n">m_nu</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">E_e</span><span class="p">,</span> <span class="n">FE</span> <span class="o">=</span> <span class="mf">1.</span><span class="p">):</span>
+        <span class="n">Enu</span>  <span class="o">=</span> <span class="n">Q0</span> <span class="o">-</span> <span class="n">E_e</span>
+        <span class="n">pnu2</span> <span class="o">=</span> <span class="n">Enu</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m_nu</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">Enu</span><span class="p">[</span><span class="n">Enu</span>   <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="n">pnu2</span><span class="p">[</span><span class="n">pnu2</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="n">dNdE</span> <span class="o">=</span> <span class="n">FE</span> <span class="o">*</span> <span class="n">Enu</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">pnu2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">dNdE</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">fun</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Q0</span><span class="p">,</span> <span class="n">m_nu</span> <span class="o">=</span> <span class="mf">18.6e3</span><span class="p">,</span> <span class="mf">2.</span> <span class="c1"># eV</span>
+<span class="n">fe</span>       <span class="o">=</span> <span class="n">tritium_spectrum</span><span class="p">(</span><span class="n">Q0</span><span class="p">,</span> <span class="n">m_nu</span><span class="p">)</span>
+<span class="n">fe0</span>      <span class="o">=</span> <span class="n">tritium_spectrum</span><span class="p">(</span><span class="n">Q0</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
+<span class="n">enes</span>     <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="n">Q0</span> <span class="o">-</span> <span class="mi">10</span><span class="p">,</span> <span class="n">Q0</span> <span class="o">+</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">enes</span><span class="p">,</span> <span class="n">fe</span><span class="p">(</span><span class="n">enes</span><span class="p">)</span> <span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;$m_\nu$&#39;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">enes</span><span class="p">,</span> <span class="n">fe0</span><span class="p">(</span><span class="n">enes</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;$m_\nu = 0$&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$E_e$ (eV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;a.u.&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/nu_mass_7_0.png" src="_images/nu_mass_7_0.png" />
+</div>
+</div>
+<p><em>Question</em>: Show that in the current paradigm of 3 neutrinos <span class="math notranslate nohighlight">\(m_{\nu_e} \to m^{eff}_{\nu_e}\)</span> with:</p>
+<div class="math notranslate nohighlight">
+\[
+(m^{eff}_{\nu_e})^2 = \sum_{i=1,3} |U_{ei}|^2 m^2_i
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(U_{ei}\)</span> are the elements of the <span class="math notranslate nohighlight">\(U_{PMNS}\)</span> matrix related with the electron flavour.</p>
+<div class="section" id="the-katrin-experiment">
+<h3>The Katrin experiment<a class="headerlink" href="#the-katrin-experiment" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Katrin_spectrum.png"><img alt="_images/Katrin_spectrum.png" class="align-center" src="_images/Katrin_spectrum.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The best limit has been obtained by <a class="reference external" href="http://www.katrin.kit.edu">KATRIN experiment</a> in 2019 <a class="reference external" href="https://arxiv.org/abs/1909.06048">[9]</a> with best estimated of <span class="math notranslate nohighlight">\(\hat{m}_\nu = −1.0^{+0.9}_{−1.1}\)</span> eV and <span class="math notranslate nohighlight">\(m^{eff}_\nu &lt; 0.8\)</span> eV at 90% C.L. with F.C. method.</p>
+<ul class="simple">
+<li><p>A large spectrometer currently taken data.</p></li>
+<li><p>The experiment has an estimated sensitivity 0.2 eV.</p></li>
+</ul>
+<p>Other neutrino mass limits:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(m^{eff}_{\nu_\mu} \le 190\)</span> keV at 90% CL, using pion decay, <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ \, \bar{\nu}_{\mu}\)</span> <a class="reference external" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.53.6065">[10]</a></p></li>
+<li><p><span class="math notranslate nohighlight">\(m^{eff}_{\nu_\tau} \le 18.2\)</span> MeV at 95% CL, using tau decays, <span class="math notranslate nohighlight">\(\tau \to 5 \pi \, \bar{\nu}_\tau\)</span> <a class="reference external" href="http://cds.cern.ch/record/337738">[11]</a></p></li>
+</ul>
+<p>The current limits from Cosmology are more stringent:</p>
+<ul class="simple">
+<li><p>From Cosmic Microwave Background and Large Scale Structures formation, the bound obtained by Planck <a class="reference external" href="https://arxiv.org/abs/1807.06209">[12]</a> at 95 % C.L. is:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1, 3} m_i \le 0.12 \; \mathrm{eV}
+\]</div>
+<p>but it may depend on model assumptions.</p>
+</div>
+</div>
 <div class="section" id="dirac-weyl-and-mayorana-spinors">
 <h2>Dirac, Weyl and Mayorana spinors<a class="headerlink" href="#dirac-weyl-and-mayorana-spinors" title="Permalink to this heading">#</a></h2>
 <p>The objetice of Dirac when introducing his equation was to describe free electrons.</p>

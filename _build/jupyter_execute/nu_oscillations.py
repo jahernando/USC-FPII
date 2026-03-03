@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Neutrinos Oscillations
+# # Neutrino Oscillations
 
 # In[1]:
 
@@ -28,21 +28,21 @@ import scipy.constants as units
 plt.style.context('seaborn-colorblind');
 
 
-# *Objective:*
+# **Objective:**
 # 
 # Show the evidences of neutrino oscillations.
 # 
-# Indicate the open quenstions and the future.
+# Indicate the open questions and the future.
 
 # ## Introduction
 # 
 # Neutrino mixing and oscillations were theoretically introduced in the 60 of XX century.
 # 
-# Davis' experiment persistently reported since 70's less solar neutrino flux that prediced by Bahcall's standard solar model SSM. That was know as the **Solar Neutrino Problem**.
+# Davis' experiment persistently reported since 70's less solar neutrino flux that predicted by Bahcall's standard solar model SSM. That was known as the **Solar Neutrino Problem**.
 # 
-# In 1997 **Super-Kamiokande reported the firt evidence of atmospheric neutrino oscillations**.
+# In 1997 **Super-Kamiokande reported the first evidence of atmospheric neutrino oscillations**.
 # 
-# Since them neutrino oscillation has been observed in acelerator and reactor neutrinos.
+# Since then neutrino oscillation has been observed in accelerator and reactor neutrinos.
 # 
 # The current picture of neutrino oscillation with three neutrino flavor and masses is solid, but some inconsistencies exist.
 # 
@@ -57,6 +57,8 @@ plt.style.context('seaborn-colorblind');
 # And again Pontecorvo associated neutrino mixing and oscillations [25] in 1967.
 # 
 
+# ### Oscillation probability: two-family case
+
 # About the derivation of the probability formula:
 # 
 # The basic ingredients:
@@ -67,7 +69,7 @@ plt.style.context('seaborn-colorblind');
 # 
 # Different derivations with the same result:
 # 
-# - quamtum mechanics with neutrinos as plane waves
+# - quantum mechanics with neutrinos as plane waves
 # 
 # - quantum mechanics with neutrinos as wave packets
 # 
@@ -107,7 +109,7 @@ plt.style.context('seaborn-colorblind');
 # And probability
 # 
 # $$
-# P_{\alpha \beta}(t) = \left| \mathcal{A}_{\alpha  \beta}(t) \right|^2 =
+# \mathcal{P}(\nu_\alpha \to \nu_\beta, t) = \left| \mathcal{A}_{\alpha  \beta}(t) \right|^2 =
 # \left| \sum_{i} U_{\beta i} U^*_{\alpha i} e^{-i E_i  t} \right |^2 
 # $$
 # 
@@ -129,7 +131,7 @@ plt.style.context('seaborn-colorblind');
 # | \nu (t) \rangle = \cos \theta e^{-iE_1 t}| \nu_1 \rangle + \sin \theta e^{-iE_2 t}| \nu_2 \rangle 
 # $$
 # 
-# The Amplitude to detector a $\nu_\beta$ neutrino at time $t$ is (except for a global phase):
+# The Amplitude to detect a $\nu_\beta$ neutrino at time $t$ is (except for a global phase):
 # 
 # $$
 # \mathcal{A}_{\alpha \beta} = \langle \nu_\beta | \nu(t) \rangle
@@ -163,7 +165,7 @@ plt.style.context('seaborn-colorblind');
 # The oscillation probability is:
 # 
 # $$
-# P_{\beta \alpha} = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21} L}{4 E} 
+# \mathcal{P}(\nu_\alpha \to \nu_\beta) = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21} L}{4 E} 
 # $$
 # 
 # Where $\Delta m^2_{21} = m^2_2 - m^2_1$.
@@ -176,7 +178,7 @@ plt.style.context('seaborn-colorblind');
 #  
 # 
 
-# The oscillation dependes on the relation between $\Delta m^2$ and $E/L$.
+# The oscillation depends on the relation between $\Delta m^2$ and $E/L$.
 # 
 # The oscillation length.
 # 
@@ -185,7 +187,7 @@ plt.style.context('seaborn-colorblind');
 # $$
 # 
 
-# As the observation if at fixed $L$ the dependence of the probability with $E$ of the initial $\nu$ flux is relevant.
+# As the observation is at fixed $L$ the dependence of the probability with $E$ of the initial $\nu$ flux is relevant.
 # 
 # We consider 3 cases:
 # 
@@ -195,7 +197,7 @@ plt.style.context('seaborn-colorblind');
 #   \frac{\Delta m^2 L}{4E_{\mathrm{max}}} = \frac{\pi}{2} \to E_{\mathrm{max}} = \frac{\Delta m^2 L}{2\pi}
 #   $$
 # 
-#   We observe de oscillation behavior as a function of $E$. 
+#   We observe the oscillation behavior as a function of $E$. 
 
 # We can write the phase and the probability in the relevant units:
 # 
@@ -204,50 +206,36 @@ plt.style.context('seaborn-colorblind');
 # $$
 # 
 # $$
-# P_{\alpha\beta} = \sin^2(2 \theta) \, \sin^2 \left(1.27 \frac{\Delta m^2}{\mathrm{eV^2}} \frac{L}{\mathrm{km}} \frac{\mathrm{GeV}}{E} \right)
+# \mathcal{P}(\nu_\alpha \to \nu_\beta) = \sin^2(2 \theta) \, \sin^2 \left(1.27 \frac{\Delta m^2}{\mathrm{eV^2}} \frac{L}{\mathrm{km}} \frac{\mathrm{GeV}}{E} \right)
 # $$
 # 
-# *question:* Draw the oscillation probability for $\Delta m^2 = 2.5 \times 10^{-3} \, \mathrm{eV}^{2}$ and $\theta = \pi/4$ as a function of $L/E$
+# **Question:** Draw the oscillation probability for $\Delta m^2 = 2.5 \times 10^{-3} \, \mathrm{eV}^{2}$ and $\theta = \pi/4$ as a function of $L/E$
 
 # In[3]:
 
 
-theta0, dm2_32 = np.pi/4., 2.5e-3 #  -, eV^2
-def posc(L, E = 1., dm2 = dm2_32, theta = theta0):
-    amp = np.sin(2 * theta) * np.sin( 1.27 * dm2 * L / E)
-    return amp**2
-ls = np.logspace(1, 4, 1000)
-plt.plot(ls, posc(ls));
-plt.xlabel(r'$L/E$ (km/GeV), L (km) with E = 1 GeV'); plt.ylabel('probability');
-plt.xscale('log');  
+import oscillations
 
-
-# In[4]:
-
-
-L  = 1000. # km
-es = np.logspace(-1, 2, 1000)
-plt.plot(es, posc(L, es));
-plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probability');
+oscillations.plot_posc_intro()
 
 
 #   - $E/L \ll \Delta m^2$ the oscillation is fast. We observe the average. 
 #   
 #   $$
-#   P_{\alpha \beta} \simeq \frac{1}{2} \sin^2 2\theta
+#   \mathcal{P}(\nu_\alpha \to \nu_\beta) \simeq \frac{1}{2} \sin^2 2\theta
 #   $$  
 # 
 #   In this case the probability does not depend on $\Delta m^2$ only on $\theta$. 
 # 
-#   It corresponds to the case where neutrinos are decoupled! It does not show the characteristical signature of neutrino oscillations.
+#   It corresponds to the case where neutrinos are decoupled! It does not show the characteristic signature of neutrino oscillations.
 # 
 # 
-#   - $E/L \gg \Delta m^2$ Oscillation is two small in the detector. 
+#   - $E/L \gg \Delta m^2$ Oscillation is too small in the detector. 
 #   
-#   The probability is suppresed:
+#   The probability is suppressed:
 # 
 #   $$
-#   P_{\alpha \beta} = \left(\frac{\Delta m^2 L}{4E} \right)^2 \, \sin^2 2\theta 
+#   \mathcal{P}(\nu_\alpha \to \nu_\beta) = \left(\frac{\Delta m^2 L}{4E} \right)^2 \, \sin^2 2\theta 
 #   $$
 # 
 #   And we can not separate the two phisical parameters $\Delta m^2$ and $\theta$.
@@ -258,13 +246,82 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 # | :--: |
 # | <img src="./imgs/dm2_ranges.png" width=600 align="center">|
 # 
-# Table with the energy, distance and $\Delta m^2$ ranges accesibles by experiments.
+# Table with the energy, distance and $\Delta m^2$ ranges accessible by experiments.
 # 
 # Nature has been kind to us with solar and atmospheric neutrinos!
 # 
 # With man-made neutrinos we can have Long and Short Base Line (LBL, SBL) experiments.
 # 
-# *question:* Discuss the implications that the probability is invariance respect: $\pm \Delta m^2_{21}$ and $\theta \to \pi/2 - \theta$.
+# **Question:** Discuss the implications that the probability is invariance respect: $\pm \Delta m^2_{21}$ and $\theta \to \pi/2 - \theta$.
+
+# ### Oscilación interactiva: dos familias
+# 
+# Desliza los controles para explorar cómo cambia
+# $\mathcal{P}(\nu_\alpha \to \nu_\beta)$ con el ángulo de mezcla $\theta$, la diferencia de masas $\Delta m^2$
+# y la distancia de propagación $L$.
+# La gráfica izquierda fija $L$ y varía $E$; la derecha muestra $P$ vs $L/E$.
+
+# In[4]:
+
+
+import oscillations
+
+oscillations.plot_2fam_interactive()
+
+
+# **Exercise: Oscillation length and experimental regimes**
+# 
+# The two-family oscillation probability depends only on the ratio $\Delta m^2 L/E$ through the phase:
+# $$
+# \phi = 1.267\,\frac{\Delta m^2\,[\mathrm{eV}^2]\; L\,[\mathrm{km}]}{E\,[\mathrm{GeV}]}
+# $$
+# The oscillation length $L_{\rm osc} = (\pi/1.267)\, E/\Delta m^2$ sets the natural scale.
+# 
+# **Questions:**
+# 
+# 1. Compute $L_{\rm osc}$ for the atmospheric ($\Delta m^2_{31} = 2.5\times10^{-3}$ eV$^2$) and solar ($\Delta m^2_{21} = 7.5\times10^{-5}$ eV$^2$) scales at $E = 1$ GeV and at $E = 3$ MeV. Which scale is probed by SuperKamiokande ($L\sim 10$--$10\,000$ km, $E\sim 1$ GeV) and which by KamLAND ($L = 180$ km, $E\sim 3$ MeV)?
+# 
+# 2. Three detection regimes exist depending on $L$ relative to $L_{\rm osc}$:
+#    (a) $L \ll L_{\rm osc}$: no visible oscillation, $P \approx 1$;
+#    (b) $L \sim L_{\rm osc}$: oscillation resolved;
+#    (c) $L \gg L_{\rm osc}$: rapid oscillations average to $\langle P \rangle = 1 - \frac{1}{2}\sin^2 2\theta$.
+#    Using `oscillations.posc_2fam`, plot $P$ vs $L/E$ over $10^0$--$10^6$ km/GeV for solar parameters ($\Delta m^2_{21}$, $\theta_{12}$) and identify each regime.
+# 
+# 3. The table in the notebook lists energy, distance and target $\Delta m^2$ for each experiment. Verify numerically that SK-atm, KamLAND and Daya Bay are each designed so that $\phi \simeq \pi/2$ (first oscillation maximum) at their respective peak energies.
+
+# In[5]:
+
+
+import oscillations
+
+oscillations.exercise_osc_regimes()
+
+
+# **Exercise: Exclusion region in the ($\Delta m^2$,  $\sin^2 2\theta$) plane**
+# 
+# Consider an academic $\bar\nu_e$ disappearance experiment: reactor source at $L = 250$ m, effective detection energy $E_{\rm eff} = 3$ MeV. No oscillation signal is observed. The result is an upper limit on the disappearance probability:
+# $$
+# P_{\rm osc}(\theta,\Delta m^2) = \sin^2 2\theta \;\sin^2\!\left(1.267\,\frac{\Delta m^2\,[\mathrm{eV}^2]\; L\,[\mathrm{km}]}{E\,[\mathrm{GeV}]}\right) \;\leq\; P_{\rm lim} = 0.05 \quad (90\%\ \mathrm{CL})
+# $$
+# The **excluded region** is the set $\{(\Delta m^2,\theta)\,:\, P_{\rm osc} > P_{\rm lim}\}$.
+# 
+# **Questions:**
+# 
+# 1. **Two asymptotic regimes.** Analyze the shape of the exclusion boundary $P_{\rm osc} = P_{\rm lim}$:
+#    (a) *Large $\Delta m^2$* ($\phi \gg 1$): using $\langle\sin^2\phi\rangle = 1/2$, show the boundary is a **vertical line** at $\sin^2 2\theta = 2\,P_{\rm lim}$. What is the minimum mixing angle excluded for any $\Delta m^2$?
+#    (b) *Small $\Delta m^2$* ($\phi \ll 1$): using $\sin\phi \approx \phi$, show the boundary satisfies $\sin^2 2\theta \propto (\Delta m^2)^{-2}$, i.e. **slope $-2$** in the log--log plane. Derive the minimum $\Delta m^2$ detectable at $\sin^2 2\theta = 1$.
+# 
+# 2. **Sensitivity reach as a function of $L/E$.** The minimum detectable $\Delta m^2$ at maximum mixing scales as $\Delta m^2_{\rm min} \approx \sqrt{P_{\rm lim}}/(1.267\,L/E)$. Compute $\Delta m^2_{\rm min}$ for Bugey ($L=15$ m, $E=3$ MeV), CHOOZ ($L=1$ km, $E=3$ MeV) and KamLAND ($L=180$ km, $E=3$ MeV). Identify which $\Delta m^2$ scale each experiment targeted.
+# 
+# 3. **Numerical exclusion contour.** Write a function `exclusion_contour(L_km, E_GeV, P_lim)` that returns the boundary curve $\sin^2 2\theta_{\rm max}(\Delta m^2)$ using `oscillations.posc_2fam`. Plot the excluded region (shaded) in the $(\sin^2 2\theta, \Delta m^2)$ plane on a log--log scale for the academic experiment, CHOOZ and KamLAND. Identify the asymptotic regimes and verify the theoretical slopes.
+
+# In[6]:
+
+
+import oscillations
+
+oscillations.exercise_exclusion_contour()
+
 
 # ## Solar Neutrinos
 # 
@@ -273,7 +330,7 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 # | <img src="./imgs/davis_experiment.png" width=300 align="center">|
 
 # 
-#  - In 1946 Pontecorbo proposes the detecton of $\nu_e$ via $\nu_e + ^{37}\mathrm{Cl} \to ^{37} \mathrm{Ar} + e$, with 814 keV threshold
+#  - In 1946 Pontecorvo proposed the detection of $\nu_e$ via $\nu_e + ^{37}\mathrm{Cl} \to ^{37} \mathrm{Ar} + e$, with 814 keV threshold
 #  
 #  - In 1962 J. Bahcall calculated the Solar Model [5]
 #  
@@ -281,9 +338,9 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 #  
 #     - 615 tons of $\mathrm{Cl}_2\mathrm{CH}_{14}$, 1 $\nu_e$ per day
 #     
-#     - deep undegroung (1600 m Homestake mine)
+#     - deep underground (1600 m Homestake mine)
 #     
-#     - Filtered the tank and quemical processing, $\tau_{1/2} = 34.8$ d
+#     - Filtered the tank and chemical processing, $\tau_{1/2} = 34.8$ d
 #     
 #  - Solar Neutrino Problem 
 #  
@@ -297,9 +354,9 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 # | :--: |
 # | <img src="./imgs/solar_chains.png" width=600 align="center">|
 # 
-# - During 1964-2005 J. Bahcall et al ellaborated the Standard Solar Model, SSM.
+# - During 1964-2005 J. Bahcall et al elaborated the Standard Solar Model, SSM.
 # 
-# - They predic a neutrino flux for different reactiond etections: $pp, \mathrm{Be}, \mathrm{B}$
+# - They predict a neutrino flux for different reaction detections: $pp, \mathrm{Be}, \mathrm{B}$
 # 
 
 # 
@@ -307,7 +364,7 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 # | :--: |
 # | <img src="./imgs/solar_flux.png" width=600 align="center">|
 # 
-# - The detector technique are sensible to different energy ranges. Galium: $\nu_e + ^{71}\mathrm{Ga} \to ^{71}\mathrm{Ge} + e$, (thershold at 233 keV)
+# - The detector techniques are sensitive to different energy ranges. Galium: $\nu_e + ^{71}\mathrm{Ga} \to ^{71}\mathrm{Ge} + e$, (threshold at 233 keV)
 # 
 
 # | |
@@ -362,7 +419,7 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 # 
 #  - Sudbury Neutrino Observatory 1999-2006, Canada.
 #  - 1 kton ultra-pure heavy water $\mathrm{D}_2\mathrm{O}$
-#  - Spherical acrylic veseel 12 m diameter. 9500 PMTs
+#  - Spherical acrylic vessel 12 m diameter. 9500 PMTs
 #  - Shield Water and 2000 m underground 
 #  
 
@@ -406,11 +463,11 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 # | :--: |
 # | <img src="./imgs/matter_effects_diagram.png" width=500 align="center">|
 # 
-# Neutrinos can *coherence scatter* via NC in matter, but only $\nu_e$ can CC! (Mikheyev, Smirnov effect [20])
+# Neutrinos can *coherently scatter* via NC in matter, but only $\nu_e$ can CC! (Mikheyev, Smirnov effect [20])
 # 
 # The interaction will be related with the *density of the electrons* in the media, $n_e$, and $G_F$.
 # 
-# We model this interaction with a potencial $V_e = \sqrt{2} G_F N_e$ 
+# We model this interaction with a potential $V_e = \sqrt{2} G_F N_e$ 
 # 
 # 
 
@@ -448,20 +505,9 @@ plt.xscale('log'); plt.xlabel(r'$E$ (GeV), L = 1000 km'); plt.ylabel('probabilit
 # L = \frac{2\pi}{V_e} = 9.8 \times 10^{32}  \left(\frac{\mathrm{cm}^{3}}{n_e}\right) \, \mathrm{cm}
 # $$
 
-# In[5]:
-
-
-V0e = 1.256e-36 #ev/cm3
-ne  = 5e25 # elec/cm3
-VFe = V0e*ne
-Lm  = 9.8e32/ne
-print(VFe)
-print(Lm/1e3)
-
-
-# The neutrinos propagation in matter can be discribed by quantum mechanics, via a modified Dirac equation or QFT, with the same result. 
+# The neutrinos propagation in matter can be described by quantum mechanics, via a modified Dirac equation or QFT, with the same result. 
 # 
-# We present here the propagation in quantum mechanics, using the Schödinger equation.
+# We present here the propagation in quantum mechanics, using the Schrödinger equation.
 # 
 # 
 # The Hamiltonian of the neutrino propagation is:
@@ -474,7 +520,7 @@ print(Lm/1e3)
 # Where $\mathcal{H_0}$ is the hamiltonian and $U$ is the mix matrix in vacuum, and $V_e$ affects only to $\nu_e$.
 # 
 
-# In two family and $H_0$, the free hamiltonian can be re-written removing terms which are proportional to the identity matrix, which retuls on a global phase.
+# In two family and $H_0$, the free hamiltonian can be re-written removing terms which are proportional to the identity matrix, which results in a global phase.
 # 
 # $$
 # \mathcal{H}_0 = \begin{pmatrix} E_1 & 0 \\ 0 & E_2 \end{pmatrix} \to 
@@ -517,7 +563,7 @@ print(Lm/1e3)
 # The effective propagation probability:
 # 
 # $$
-# P_{\alpha\beta} = \sin^2 2 \theta_0 \, \sin^2 \frac{\Delta m^2_{21} L}{ 4 E}
+# \mathcal{P}(\nu_\alpha \to \nu_\beta) = \sin^2 2 \theta_0 \, \sin^2 \frac{\Delta m^2_{21} L}{ 4 E}
 # $$
 # 
 # 
@@ -570,10 +616,10 @@ print(Lm/1e3)
 # The effective propagation probability:
 # 
 # $$
-# P_{\alpha\beta} = \sin^2 2 \theta_m \, \sin^2 \frac{\Delta m^2_{m} L}{ 4 E}
+# \mathcal{P}(\nu_\alpha \to \nu_\beta) = \sin^2 2 \theta_m \, \sin^2 \frac{\Delta m^2_{m} L}{ 4 E}
 # $$
 # 
-# *questions:* Check that they correspond to the eigen-values of $\mathcal{H}$ and the rotation angle between eigen and flavour states.
+# **Questions:** Check that they correspond to the eigen-values of $\mathcal{H}$ and the rotation angle between eigen and flavour states.
 # 
 
 # Different scenarios:
@@ -595,7 +641,7 @@ print(Lm/1e3)
 # 
 # Therefore $\nu_e \leftrightarrow \nu_2$ and  $\nu_\mu \leftrightarrow \nu_1$. 
 # 
-# Neutrinos of a given flavour has a unique mass states and they do not oscille!
+# Neutrinos of a given flavour has a unique mass states and they do not oscillate!
 # 
 
 # 
@@ -624,43 +670,17 @@ print(Lm/1e3)
 # $$
 # 
 
-# In[6]:
+# In[7]:
 
 
-V0e = 1.256e-36 # eV/cm3
-ne  = 5e25      # elec/cm3 [3-6]
-Ve  = V0e*ne
-print("coh. esc potential ", Ve, "eV")
+import oscillations
 
-dm2_0   =  7.5e-5 ## eV2 
-theta0  =  0.1845*np.pi
-E0 = 1.e6
-print("oscillation ", dm2_0/(2*E0))
-
-E        = np.linspace(0, 2.e6, 500)  #eV
-x        = 2*Ve*E/dm2_0
-s_2th0, c_2th0 = np.sin(2*theta0), np.cos(2*theta0)
-
-dm2_eff  = lambda x: dm2_0 * np.sqrt((c_2th0 - x)**2 + s_2th0**2)
-t_2theff = lambda x: s_2th0/(c_2th0-x)
-theff    = lambda t2 : np.arctan(t2)/2
+oscillations.plot_msw_parameters()
 
 
-# In[8]:
-
-
-plt.subplot(1, 2, 1)
-plt.plot(E/1e6, dm2_eff(x))
-plt.xlabel("E (MeV)"); plt.ylabel(r"$\Delta m^2$");
-plt.subplot(1, 2, 2)
-plt.plot(E/1e6, theff(t_2theff(x))/np.pi)
-plt.xlabel("E (MeV)"); plt.ylabel(r"$\theta/\pi$");
-plt.tight_layout()
-
-
-# In matter density varies along propagation, the solutions are more complicated (numerical solutions).
+# When the matter density varies along propagation, the solutions are more complicated (numerical solutions).
 # 
-# But if the variation of density is slow, and the initial scenarios if matter dominated, as for neutrinos in the core of the sun, $\nu_2$, they are in the same state.
+# But if the variation of density is slow, and the initial scenario is matter dominated, as for neutrinos in the core of the sun, $\nu_2$, they are in the same state.
 # 
 # In the Sun:
 # 
@@ -668,22 +688,22 @@ plt.tight_layout()
 # N_e(t) = N_e(0) e^{-r/R}
 # $$
 # 
-# where $r$ is the radious respect the origin
+# where $r$ is the radius respect the origin
 
 # 
-# Above the resonance, neutrinos in the Sun, are $\nu_2$, scape as $\nu_2$ and interacts in the Earth.
+# Above the resonance, neutrinos in the Sun, are $\nu_2$, escape as $\nu_2$ and interacts in the Earth.
 # 
 # 
 # Therefore the probability that a $\nu_2$ interacts as $\nu_e$, when it is back in vacuum:
 # 
 # $$
-# P_{ee} = \sin^2 \theta_0
+# \mathcal{P}(\nu_e \to \nu_e) = \sin^2 \theta_0
 # $$
 # 
 # If the energy of the neutrino is bellow the resonance, in the vacuum dominated, and the detector size (Earth), large compared with the oscillations, the probability is averaged:
 # 
 # $$
-# P_{ee} = 1 - \frac{1}{2}\sin^2 2 \theta_0
+# \mathcal{P}(\nu_e \to \nu_e) = 1 - \frac{1}{2}\sin^2 2 \theta_0
 # $$
 # 
 # 
@@ -704,27 +724,41 @@ plt.tight_layout()
 # - Survival probability depends on the neutrino energy range
 # 
 
-# In[3]:
+# In[8]:
 
 
-p0, p1 = 0.55 , 0.3
-theta0 = np.arcsin(np.sqrt(p1))
-print('theta0 ', theta0/np.pi, ' pi')
-s2t = np.sin(2 * theta0)
-print('p0 = 1- 0.5* sin (2theta) =', 1-0.5*s2t*s2t)
+import oscillations
+
+oscillations.exercise_solar_lma_check()
 
 
-# In[10]:
+# **Exercise: The MSW resonance in the Sun**
+# 
+# The effective mixing angle in matter is enhanced at the resonance energy:
+# $$
+# E_{\rm res} = \frac{\Delta m^2 \cos 2\theta_0}{2\,V_e}, \qquad V_e \simeq 7.63\times10^{-14}\,Y_e\,\rho\;[\mathrm{g/cm}^3]\;\mathrm{eV}
+# $$
+# At resonance ($E = E_{\rm res}$), $\theta_m = 45°$ regardless of the vacuum angle. For neutrinos produced above the resonance and propagating adiabatically, the exit state is $|\nu_2\rangle$ and the survival probability simplifies to $P(\nu_e\to\nu_e) \simeq \sin^2\theta_{12}$.
+# 
+# **Questions:**
+# 
+# 1. Using the solar core density $\rho \simeq 150$ g/cm$^3$ and $Y_e \simeq 0.5$, compute $V_e$ in eV and the resonance energy $E_{\rm res}$ for the solar parameters ($\Delta m^2_{21}$, $\theta_{12}$). Do the $^8$B solar neutrinos ($E\sim 5$--15 MeV) sit above or below the resonance?
+# 
+# 2. The adiabatic MSW prediction for $^8$B neutrinos is $P_{ee} \simeq \sin^2\theta_{12} \approx 0.31$. Compare with the SNO CC/NC ratio ($P_{ee} \simeq 0.34\pm0.04$) and the Borexino measurement at $\sim 7$ MeV. Is the agreement consistent with the adiabatic limit?
+# 
+# 3. Using `oscillations.posc_matter_2fam`, plot $P(\nu_e\to\nu_e)$ vs $E$ from 0.1 to 20 MeV at $L = 1.496\times10^8$ km (Sun--Earth distance) for $\rho = 0$ (vacuum) and $\rho = 100$ g/cm$^3$ (average solar density). Identify the resonance transition and the approach to the adiabatic limit at high energy.
+
+# In[9]:
 
 
-theta0 = 0.1845*np.pi
-st = np.sin(theta0)
-st*st
+import oscillations
+
+oscillations.exercise_msw_resonance()
 
 
 # ### [KamLand Experiment](https://www.awa.tohoku.ac.jp/kamlande/)
 # 
-# If $\Delta m^2_{21} \simeq 7.5 \times 10^{-5}$ eV$^2$, oscillation can be obserbed with reactors neutrinos at LBS, $\mathcal{O}(100)$ km and E $\mathcal{O}(1)$ MeV.
+# If $\Delta m^2_{21} \simeq 7.5 \times 10^{-5}$ eV$^2$, oscillation can be observed with reactors neutrinos at LBS, $\mathcal{O}(100)$ km and E $\mathcal{O}(1)$ MeV.
 # 
 # <img src="./imgs/KamLAND_map.png" width=400 align="center">
 # 
@@ -758,7 +792,30 @@ st*st
 # 
 # - Confirmation of oscillation pattern in 2004 [[22]](https://arxiv.org/abs/hep-ex/0406035) [[23]](https://arxiv.org/abs/1303.4667)
 
-# #### Solution of Solar Neutrino Problem 
+# **Exercise: KamLAND and the measurement of $\theta_{12}$**
+# 
+# KamLAND measures $\bar\nu_e$ disappearance from Japanese reactors at $\langle L\rangle \simeq 180$ km with $E_{\bar\nu}\sim 1$--8 MeV. In the two-family approximation (atmospheric phases averaged out), the survival probability is:
+# $$
+# P(\bar\nu_e \to \bar\nu_e) \approx 1 - \sin^2 2\theta_{12} \sin^2\!\left(1.267\,\frac{\Delta m^2_{21} L}{E}\right) - \frac{1}{2}\sin^2 2\theta_{13}
+# $$
+# 
+# **Questions:**
+# 
+# 1. Compute the oscillation phase $\phi_{21} = 1.267\,\Delta m^2_{21} L/E$ at $L = 180$ km for $E = 3$, 5 and 7 MeV. At which energy is $\phi_{21} = \pi/2$ (first oscillation minimum)? Compare with the KamLAND oscillation figure above.
+# 
+# 2. The KamLAND measured ratio (corrected for $\theta_{13}$) is $R \approx 0.498\pm0.044$. Using $\langle\sin^2\phi_{21}\rangle = 1/2$ (energy-averaged), extract $\sin^2 2\theta_{12}$ and compare with NuFit-6.0.
+# 
+# 3. Using `oscillations.posc_2fam`, plot $P$ vs $L/E$ for KamLAND parameters ($\Delta m^2_{21}$, $\theta_{12}$) over $L/E \in [10^1, 10^4]$ km/GeV. Mark the KamLAND operating point ($L/E \approx 180\,\mathrm{km}/3\,\mathrm{MeV} = 6\times10^4$ km/GeV). Is the experiment in the resolved-oscillation or averaged regime?
+
+# In[10]:
+
+
+import oscillations
+
+oscillations.exercise_kamland()
+
+
+# ### Solution of Solar Neutrino Problem 
 # 
 # The MSW adiabatic flavour transitions in the solar matter, the so-called large mixing angle (LMA) with parameters:
 # 
@@ -772,9 +829,9 @@ st*st
 
 # ## Atmospheric neutrinos
 # 
-# - Neutrinos are produced in the cascades generated by cosmic rays impringent the atmosphere
+# - Neutrinos are produced in the cascades generated by cosmic rays impinging on the atmosphere
 # 
-# - For every $\pi$ there is 2 $\nu_\mu$ and 1 $\nu_e$ ($\nu$ and $\bar{\nu}$)
+# - For every $\pi$ there are 2 $\nu_\mu$ and 1 $\nu_e$ ($\nu$ and $\bar{\nu}$)
 # 
 # - Range of Energy is very large: 0.1-100 GeV
 # 
@@ -784,11 +841,13 @@ st*st
 # 
 # - SuperKamiokande can detect $\nu_e, \nu_\mu$ via inverse decay.
 
+# ### SuperKamiokande
+
 # <img src="./imgs/SK_mue_atm_event.png" width=800 align="center">
 
 # - Lepton direction indicates $\nu$ direction
 # 
-# - There are fully contained, stopping, upward, throu-going muons different E ranges
+# - There are fully contained, stopping, upward, through-going muons different E ranges
 # 
 # - In 1998 SK observed a deficit of up-going muons [[24]](https://arxiv.org/abs/hep-ex/9807003)
 
@@ -819,18 +878,42 @@ st*st
 
 # <img src="./imgs/SK_zenith_distributions.png" width=800 align="center">
 
+# **Exercise: SuperKamiokande and the Up/Down asymmetry**
+# 
+# Atmospheric neutrinos from cosmic-ray showers are produced at height $h \simeq 20$ km. The path length to SK depends on the zenith angle $\theta_z$:
+# $$
+# L(\theta_z) = \sqrt{(R_E\cos\theta_z)^2 + 2R_E h} \;-\; R_E\cos\theta_z
+# $$
+# with $R_E = 6371$ km. Downward ($\theta_z = 0°$): $L \sim h$. Upward ($\theta_z = 180°$): $L \sim 2R_E \approx 12\,756$ km.
+# 
+# **Questions:**
+# 
+# 1. Compute $L$ for $\theta_z = 0°$, $90°$ and $180°$. For $E_\nu = 1$ GeV and $\Delta m^2_{32} = 2.5\times10^{-3}$ eV$^2$, compute $\phi_{32}$ for each direction. Which zenith range has $\phi_{32}\sim\pi/2$?
+# 
+# 2. The SK Up/Down asymmetry for multi-GeV $\mu$-like events is $\mathcal{A}_{UD} = (U-D)/(U+D) = -0.296\pm0.048$. In the two-family approximation, $\mathcal{A}_{UD} \approx -\sin^2(2\theta_{23})\,\langle\sin^2\phi\rangle$ with $\langle\sin^2\phi\rangle \approx 0.5$ for the upward sample. Extract $\sin^2(2\theta_{23})$ and compare with NuFit-6.0.
+# 
+# 3. Plot $L(\theta_z)$ and $P(\nu_\mu\to\nu_\mu)$ vs $\cos\theta_z\in[-1,+1]$ for $E = 1$ GeV using `oscillations.posc_2fam` with atmospheric parameters. Overlay the no-oscillation line and identify the zenith region of maximum sensitivity.
+
+# In[11]:
+
+
+import oscillations
+
+oscillations.exercise_sk_asymmetry()
+
+
 # ### Confirmation of Atmospheric oscillations
 # 
 # <img src="./imgs/LBS_experiments.png" width=800 align="center">
 # 
 # 
-# The atmospheric $\Delta m^2 \simeq 2.5 \times 10^{-3}$ eV$^2$ is accesible with accelerator $\nu_\mu$ neutrinos of $\mathcal{O}(1)$ GeV at $\mathcal{O}(1000)$ km.
+# The atmospheric $\Delta m^2 \simeq 2.5 \times 10^{-3}$ eV$^2$ is accessible with accelerator $\nu_\mu$ neutrinos of $\mathcal{O}(1)$ GeV at $\mathcal{O}(1000)$ km.
 
 # ### T2K
 # 
 # - [T2K](https://t2k-experiment.org) 0.6 GeV $\nu_\mu (\bar{\nu}_\mu)$ from JPARC to SK at 290 km.
-# - T2K sploits the fact that the neutrino spectrum is narrower (but less intense) off-axis by 2.5$^o$ degrees.
-# - A near and a fact detector to estimate flux and control systematics errors.
+# - T2K exploits the fact that the neutrino spectrum is narrower (but less intense) off-axis by 2.5$^o$ degrees.
+# - A near and a far detector to estimate flux and control systematic errors.
 # - Far Detector is SuperKamiokande
 
 # 
@@ -845,11 +928,11 @@ st*st
 # | :--: |
 # | <img src="./imgs/T2K_numu_dis.png" width=800 align="center">|
 # 
-# - Measure $\nu_\mu$ dissapperance (relevant for atmospheric oscillations)
-# - Measure $\nu_e$ apperance (see later)
+# - Measure $\nu_\mu$ disappearance (relevant for atmospheric oscillations)
+# - Measure $\nu_e$ appearance (see later)
 # - Beam with $\bar{\nu}_\mu$ and $\nu_\mu$ (relevant for CP and matter effects, see later)
 
-# #### MINOS
+# ### MINOS
 # 
 # | | | |
 # | :--: | :--: | :--: |
@@ -893,13 +976,13 @@ st*st
 # 
 # 
 # 
-# The neutrino oscillation with $n$ families is rulled by a complex *unitary* matrix 
+# The neutrino oscillation with $n$ families is ruled by a complex *unitary* matrix 
 # 
 # $$
 # | \nu_{\alpha} \rangle = \sum_i U^*_{\alpha i} | \nu_i \rangle
 # $$
 # 
-# With *vacuum* plane wave propogation the oscillation amplitude:
+# With *vacuum* plane wave propagation the oscillation amplitude:
 # 
 # $$
 # \mathcal{A}_{\alpha \beta}  = \langle \nu_{\beta} | \nu_{\alpha} (t) \rangle 
@@ -946,7 +1029,7 @@ st*st
 # and $p$-index arbitrary (i.e 1)
 # 
 
-# Manipulating the amplitud:
+# Manipulating the amplitude:
 # 
 # $$
 #  \mathcal{A}_{\alpha \beta} = e^{-i E_p t}\sum_{i} U_{\beta i} U^*_{\alpha i} \, e^{-i (E_i-E_p)}
@@ -984,6 +1067,8 @@ st*st
 # 	\sin \frac{\Delta E_{jp} t}{2}.
 #  $$
 
+# ### CP, T and CPT symmetry
+
 # We can study CP, T, CP transformations:
 # 
 # $$
@@ -991,6 +1076,8 @@ st*st
 #  \mathrm{T} \; : \;  \mathcal{P}(\nu_\alpha \to \nu_\beta) \Rightarrow \mathcal{P}( \nu_\beta \to \nu_\alpha) \\ 
 #  \mathrm{CPT} \; : \;  \mathcal{P}(\nu_\alpha \to \nu_\beta) \Rightarrow \mathcal{P}( \bar{\nu}_\beta \to \bar{\nu}_\alpha) \\ 
 #  $$
+
+# ### Mass ordering
 
 # In Nature, we have measured two mass squared differences:
 # 
@@ -1051,6 +1138,8 @@ st*st
 # 	\sin \frac{\Delta m^2_\odot L}{4 E}.
 # $$
 
+# ### Oscillation probability in experimental scenarios
+
 # Let's consider the case of atmospheric neutrinos with accelerator. 
 # MINOS experiment with $L \sim 750$ km and $E  \sim 1-5$ GeV:
 # 
@@ -1076,14 +1165,14 @@ st*st
 # And we recuperate the two-families oscillation formula.
 
 # 
-# We can compute now the probability to oscillate to other flavors at MINOS, with the previos approximations:
+# We can compute now the probability to oscillate to other flavors at MINOS, with the previous approximations:
 # 
 # $$
 # \mathcal{P}(\nu_\mu \to \nu_e)  \simeq 4 s^2_{23} c^2_{13} s^2_{13} \sin^2 \frac{\Delta m^2_A L}{4 E} \sim 0 \\
 # \mathcal{P}(\nu_\mu \to \nu_\tau)  \simeq 4 s^2_{23} c^2_{13} c^2_{23} c^2_{13} \sin^2 \frac{\Delta m^2_A L}{4 E} \simeq \sin^2 2 \theta_{23} \sin^2 \frac{\Delta m^2_A L}{4E} \\
 # $$
 # 
-# Notice that as $\mathcal{P}(\nu_\mu \to \nu_e)$ is suppressed, then it is sensible to second order effects, 
+# Notice that as $\mathcal{P}(\nu_\mu \to \nu_e)$ is suppressed, then it is sensitive to second-order effects, 
 # 
 # 
 
@@ -1100,7 +1189,7 @@ st*st
 # \mathcal{P}(\bar{\nu}_e \to \bar{\nu}_e) \simeq 1 - 4 |U_{e2}|^2 (1-|U_{e2}|^2) \sin^2 \frac{\Delta m^2_\odot L}{4E} - 2 |U_{e3}|^2 (1-|U_{e3}|^2)
 # $$
 # 
-# With $U_{e2} = s_{12} c_{13}$ and $U_{e3} = s_{13} e^{-i\delta}$, ans taking $s_{13} \sim 0, \, c_{13} \sim 1$:
+# With $U_{e2} = s_{12} c_{13}$ and $U_{e3} = s_{13} e^{-i\delta}$, and taking $s_{13} \sim 0, \, c_{13} \sim 1$:
 # 
 # $$
 # \mathcal{P}(\bar{\nu}_e \to \bar{\nu}_e) \simeq 1 - 4 s^2_{12} c^2_{12} \sin^2 \frac{\Delta m^2_\odot L}{4E} = 1 - \sin^2 2 \theta_{12} \sin^2 \frac{\Delta m^2_\odot L}{4E}
@@ -1127,13 +1216,34 @@ st*st
 # 
 # The amplitude of the oscillation corresponds to $\sin^2 2 \theta_{13}$.
 
+# ### Oscilación interactiva: tres familias
+# 
+# Los parámetros por defecto corresponden al ajuste global **NuFit-6.0** (2024) [[33]](https://arxiv.org/abs/2410.05380), Ordenación Normal (NH), con $\Delta m^2_{21}$ y $\sin^2\theta_{12}$ actualizados con los primeros resultados de JUNO [[38]](https://arxiv.org/abs/2511.14593):
+# 
+# $$
+# \theta_{12} = 33.7°, \quad \theta_{13} = 8.6°, \quad \theta_{23} = 48.3°, \quad \delta_{\rm CP} = 212°
+# $$
+# $$
+# \Delta m^2_{21} = 7.48 \times 10^{-5}\;{\rm eV}^2, \quad \Delta m^2_{31} = 2.52 \times 10^{-3}\;{\rm eV}^2
+# $$
+# 
+# Desliza los controles para explorar la dependencia en energía y distancia, o para comparar diferentes valores de los parámetros.
+
+# In[12]:
+
+
+import oscillations
+
+oscillations.plot_3fam_interactive()
+
+
 # ## SBL Reactor Experiments. The  $\theta_{13}$ angle
 # 
 # | |
 # | :--: |
 # | <img src="./imgs/SBL_experiments.png" width=800 align="center">|
 # 
-# Short Base Line experiments, searching for $\nu_e \to \nu_e$ disappearance, with $E$ in $1$ MeV and distance $1$ km, are sensible to $\theta_{13}$ in the $\Delta m^2_A$ range.
+# Short Base Line experiments, searching for $\nu_e \to \nu_e$ disappearance, with $E$ in $1$ MeV and distance $1$ km, are sensitive to $\theta_{13}$ in the $\Delta m^2_A$ range.
 
 # ### Daya Bay Experiment
 # 
@@ -1206,15 +1316,38 @@ st*st
 # 
 # 
 
+# **Exercise: Daya Bay and the reactor determination of $\theta_{13}$**
+# 
+# At short baselines ($L\sim 1$--2 km, $E\sim 3$ MeV), only the fast atmospheric oscillation contributes. The $\bar\nu_e$ survival probability reduces to:
+# $$
+# P(\bar\nu_e \to \bar\nu_e) \simeq 1 - \sin^2 2\theta_{13}\,\sin^2\!\left(1.267\,\frac{\Delta m^2_{31}\,L}{E}\right)
+# $$
+# 
+# **Questions:**
+# 
+# 1. At Daya Bay's far detector ($L = 1.648$ km) and $E = 4$ MeV, compute $\phi_{31}$. Is the experiment near the first oscillation maximum ($\phi_{31} = \pi/2$)? At what energy would $\phi_{31} = \pi/2$ exactly?
+# 
+# 2. Daya Bay measured $R_{\rm far/near} = 0.944\pm0.007$. Approximating $\sin^2\phi_{\rm far} \approx \sin^2(1.267\,\Delta m^2_{31}\,L_{\rm far}/\langle E\rangle)$, extract $\sin^2 2\theta_{13}$ and compare with NuFit-6.0.
+# 
+# 3. Using `oscillations.osc_prob_3fam` with NuFit-6.0 parameters, plot $P(\bar\nu_e\to\bar\nu_e)$ vs $E\in[1,10]$ MeV at $L = 1.648$ km. Superimpose the two-family approximation $P\simeq 1 - \sin^2 2\theta_{13}\sin^2\phi_{31}$. How large is the solar correction at this baseline?
+
+# In[13]:
+
+
+import oscillations
+
+oscillations.exercise_dayabay()
+
+
 # ## Long Base Line Experiments : $\delta$-CP and mass hierarchy
 # 
-# Long Base Line Experiments, searching for $\nu_\mu \to \nu_e$ and $\bar{\nu}_\mu \to \bar{\nu}_e$ are sensible to $\theta_{13}, \; \delta$ and the mass hierarchy. 
+# Long Base Line Experiments, searching for $\nu_\mu \to \nu_e$ and $\bar{\nu}_\mu \to \bar{\nu}_e$ are sensitive to $\theta_{13}, \; \delta$ and the mass hierarchy. 
 # 
 # The propagation is affected by the matter effects in the mantle of the Earth.
 # 
 # This oscillation is a second order oscillations and to be observed required larger massive detector and very intense neutrino fluxes.
 
-# #### List of Long Base Line Experiments
+# ### List of Long Base Line Experiments
 # 
 # | |
 # | :--: |
@@ -1223,7 +1356,7 @@ st*st
 # The oscillation probability for LBL experiments [30]:
 # 
 # $$
-# P(\nu_\mu \to \nu_e, \bar{\nu}_\mu \to \bar{\nu}_e)  \simeq s^2_{23} \sin^2 2 \theta_{13} \left( \frac{\Delta E_{31}}{\Delta E_{31} \mp V_e}\right)^2 \sin^2 \left( \frac{ (\Delta E_{31} \mp V_e) L}{2}  \right) \\ 
+# \mathcal{P}(\nu_\mu \to \nu_e, \bar{\nu}_\mu \to \bar{\nu}_e)  \simeq s^2_{23} \sin^2 2 \theta_{13} \left( \frac{\Delta E_{31}}{\Delta E_{31} \mp V_e}\right)^2 \sin^2 \left( \frac{ (\Delta E_{31} \mp V_e) L}{2}  \right) \\ 
 #  + J \frac{\Delta E_{21}}{V_e} \frac{\Delta E_{31}}{  |\Delta E_{31} \mp V_e| }  \sin  \frac{V_e \, L}{2} \sin \frac{  |\Delta E_{31} \pm V_e| \, L}{2}  \, \cos \left(\frac{\Delta E_{31}L}{2} \mp \delta\right)
 # $$
 # 
@@ -1233,23 +1366,23 @@ st*st
 # \Delta E_{ji} = \frac{\Delta m^2_{ji}}{2E}, \;\; V_e = \sqrt{2} G_F N_e, \;\; J = c_{13} \sin 2 \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{23} 
 # $$ 
 
-# The first term is sensible to mass hierarchy. $V_e$ changes sign depending of $\nu(\bar{\nu})$ oscillations.
+# The first term is sensitive to mass hierarchy. $V_e$ changes sign depending of $\nu(\bar{\nu})$ oscillations.
 # 
-# The second term is sensible to the mass hierarchy and the $\delta$-CP phase.
+# The second term is sensitive to the mass hierarchy and the $\delta$-CP phase.
 # 
-# But the second term is supressed by $J$ with $\sin 2 \theta_{13}$.
+# But the second term is suppressed by $J$ with $\sin 2 \theta_{13}$.
 # 
 # To observe both effects it is better to have several experiments with different ranges of energies and distances.
 
 # ### NOvA
 # 
-# - $\nu_\mu$ NuMI beat from FermiLAB to near Ash River, MN, 810 km. Near detector at 1 km.
+# - $\nu_\mu$ NuMI beam from Fermilab to near Ash River, MN, 810 km. Near detector at 1 km.
 # 
 # - Detector is 14.5 mrad off-axis. The $\nu$ E peaks at 2 GeV.
 # 
 # - 14 k ton detector with planes of plastic PVC cells in vertical and horizontal orientation filled with liquid scintillator.
 # 
-# - NOvA started operation in 2014 with $\nu_\mu$ bean and since 2016 with $\bar{\nu}$.
+# - NOvA started operation in 2014 with $\nu_\mu$ beam and since 2016 with $\bar{\nu}$.
 #  
 
 # 
@@ -1260,18 +1393,18 @@ st*st
 # NOvA construction timelapse [movie](https://www.youtube.com/watch?v=zbLeZ61_rcw)
 
 # 
-# NOvA results on $\nu_\mu (\bar{\nu}_\mu)$ disapperance
+# NOvA results on $\nu_\mu (\bar{\nu}_\mu)$ disappearance
 # 
-# NOva is sensible to the *atmospheric oscillations* regime, with the $\nu_\mu \to \nu_\mu$ (and anti-nuetrinos) disappearance channels
+# NOvA is sensitive to the *atmospheric oscillations* regime, with the $\nu_\mu \to \nu_\mu$ (and anti-neutrinos) disappearance channels
 # 
-# ¡Notice that there is an indetermination in wich obtant $\theta_{23}$ is!
+# ¡Notice that there is an indetermination in which octant $\theta_{23}$ is!
 # 
 # | | |
 # | :--: | :--: |
 # | <img src="./imgs/NOvA_numu_Edist_neutrino2024.png" width=400 align="center">| <img src="./imgs/NOvA_nuosc_atmos_2021.png" width=300 align="center">| 
 # | Energy distribution (Neutrino 2024)|  NOvA results 2021 [[31]](https://arxiv.org/abs/2108.08219)|
 
-# The main goal of NOvA is CP violation and the hierchy problem in the $\nu_\mu \to \nu_e$ (and anti-neutrinos) appearance channes.
+# The main goal of NOvA is CP violation and the hierarchy problem in the $\nu_\mu \to \nu_e$ (and anti-neutrinos) appearance channels.
 # 
 # | | 
 # | :--: |
@@ -1307,7 +1440,21 @@ st*st
 # | NOvA neutrino 2024| Bayes posterior probability | 
 # 
 # 
-# NOvA conference results: Nuetrino 2024
+# NOvA conference results: Neutrino 2024
+
+# #### NOvA: análisis completo de 10 años (septiembre 2025)
+# 
+# Con el doble de exposición en modo neutrino respecto al análisis previo, NOvA publicó la medición de parámetros de oscilación más precisa de un único experimento LBL [[42]](https://arxiv.org/abs/2509.04361):
+# 
+# $$
+# |\Delta m^2_{32}|\, (\mathrm{NH}) = \left(2.431^{+0.036}_{-0.034}\right) \times 10^{-3} \; \mathrm{eV}^2
+# $$
+# $$
+# \sin^2\theta_{23} = 0.55^{+0.06}_{-0.02} \quad \text{(octante superior preferido, pero compatible con maximal)}
+# $$
+# 
+# - **Ordenación de masas:** preferencia suave por NH (Bayes factor 2.4, probabilidad posterior NH $\sim 70\%$).
+# - $\delta_{\rm CP}$: resultados compatibles con los análisis previos; no se puede excluir la conservación de CP aún.
 
 # ### T2K  
 # 
@@ -1335,18 +1482,31 @@ st*st
 # Results from Neutrino 2024
 # 
 
-# ### T2K and NOvA combination
+# #### T2K + Super-Kamiokande: análisis conjunto (mayo 2024)
 # 
-# * T2K has sensitivity to CP violation
-# * NOvA can constraint on mass ordering
-# * T2K + NOvA breaks the degenerancies and allow better sensitivity to CP
+# Primera combinación de los datos atmosféricos de SK (3244 días) con los datos de acelerador de T2K ($19.7 \times 10^{20}$ POT en modo $\nu$) [[43]](https://arxiv.org/abs/2405.12488):
 # 
-# | |
-# | :--: |
-# |<img src="./imgs/T2KNOvA_pe_pebar_comp.png" width=500 align="center">|
-# | appearance probabilities T2K and NOvA|
+# - **Exclusión de conservación de CP** ($J_{\rm CP} = 0$) a **1.9$\sigma$** en el análisis combinado (vs. 1.5σ con T2K solo).
+# - Preferencia por ordenación normal.
+# - Ligera tensión de octante: SK prefiere octante inferior, T2K el superior → la combinación debilita la sensibilidad al octante.
+
+# ### T2K + NOvA: primer análisis conjunto (octubre 2025)
 # 
-# Results from Neutrino 2024
+# La combinación de los dos grandes experimentos LBL, publicada en **Nature** en octubre 2025 [[44]](https://arxiv.org/abs/2510.19888), es el análisis LBL más completo hasta la fecha:
+# 
+# - **10 años de T2K** + **6 años de NOvA** de datos de neutrinos y antineutrinos.
+# - La incertidumbre en $|\Delta m^2_{32}|$ cae **por debajo del 2%** (mejor precisión mundial):
+# 
+# $$
+# |\Delta m^2_{32}| \, (\mathrm{NH}) = \left(2.43^{+0.04}_{-0.03}\right) \times 10^{-3} \; \mathrm{eV}^2
+# $$
+# 
+# - **Intervalo a 3$\sigma$ en $\delta_{\rm CP}$:**
+#   - Ordenación Normal: $\delta_{\rm CP} \in [-1.38\pi,\; 0.30\pi]$
+#   - Ordenación Invertida: $\delta_{\rm CP} \in [-0.92\pi,\; -0.04\pi]$
+# 
+# - **Violación de CP:** si la ordenación fuese invertida (IO), los datos proporcionan **evidencia de violación de CP** en el sector leptónico.
+# - **Ordenación de masas:** no hay preferencia fuerte por ninguna de las dos ordenaciones.
 
 # | |
 # | :--: |
@@ -1364,6 +1524,30 @@ st*st
 # 
 # Results from Neutrino 2024
 
+# **Exercise: LBL appearance probability and the CP asymmetry**
+# 
+# The CP asymmetry in the $\nu_\mu\to\nu_e$ appearance channel is:
+# $$
+# \mathcal{A}_{\rm CP} = \frac{P(\nu_\mu\to\nu_e) - P(\bar\nu_\mu\to\bar\nu_e)}{P(\nu_\mu\to\nu_e) + P(\bar\nu_\mu\to\bar\nu_e)}
+# $$
+# It is proportional to $\sin\delta_{\rm CP}$ and to the Jarlskog-like factor $J \propto \sin 2\theta_{12}\sin 2\theta_{13}\sin 2\theta_{23}$. It is also modified by matter effects, which mimic a non-zero $\delta_{\rm CP}$.
+# 
+# **Questions:**
+# 
+# 1. Using `oscillations.osc_prob_3fam`, compute $P(\nu_\mu\to\nu_e)$ and $P(\bar\nu_\mu\to\bar\nu_e)$ at T2K kinematics ($L = 295$ km, $E = 0.6$ GeV) for $\delta_{\rm CP} = -90°$ and $\delta_{\rm CP} = +90°$. Which value gives the larger neutrino appearance probability? Compute $\mathcal{A}_{\rm CP}$ in each case.
+# 
+# 2. Compute $\mathcal{A}_{\rm CP}(\delta_{\rm CP})$ for $\delta_{\rm CP}\in[0°,360°]$ at T2K ($L=295$ km, $E=0.6$ GeV) and NOvA ($L=810$ km, $E=2$ GeV). Plot both curves and explain why $|\mathcal{A}_{\rm CP}|$ is larger at NOvA despite the smaller Jarlskog factor (hint: matter effects at longer baseline).
+# 
+# 3. Plot the **bi-probability diagram** — the parametric curve $(P(\nu_\mu\to\nu_e),\,P(\bar\nu_\mu\to\bar\nu_e))$ as $\delta_{\rm CP}$ varies from $0°$ to $360°$ — for T2K and NOvA, for both NH (solid) and IH (dashed). Mark the point $\delta_{\rm CP} = -90°$. This "Cabibbo ellipse" visualises how the two experiments break the hierarchy--$\delta_{\rm CP}$ degeneracy.
+
+# In[14]:
+
+
+import oscillations
+
+oscillations.exercise_lbl_biprobability()
+
+
 # ## Neutrino Mixing Matrix Parameters. Global fits
 # 
 # There is an international effort to combine the experimental results in the framework of different neutrino scenarios.
@@ -1374,36 +1558,38 @@ st*st
 # | :--: |
 # | <img src="./imgs/NuFit_2019.png" width=600 align="center">|
 # 
-# NuFit 2019 [33]
+# **NuFit-6.0** (2024) — ajuste global de tres sabores [[33]](https://arxiv.org/abs/2410.05380), actualizado con los datos de T2K, NOvA, Daya Bay, RENO, SK-atm, IceCube y los primeros resultados de JUNO. Los valores NuFit-6.0 (NH) son los valores por defecto en los widgets de oscilación de este notebook.
 
 # | |
 # | :--: |
 # | <img src="./imgs/NuFit_regions_2019.jpg" width=500 align="center">|
 
-# ### The Next Generation of Neutrino Oscillation Experiments
+# ### La nueva generación de experimentos de oscilación de neutrinos
 # 
-# The current experimetns: T2K and NOVA may provide hits of $\delta$-CP and mass hierarchy. 
+# Los experimentos actuales **T2K** y **NOvA** han producido resultados pioneros sobre $\delta_{\rm CP}$ y la ordenación de masas. Su análisis conjunto (Nature 2025) es el estado del arte actual.
 # 
-# The future experiments, JUNO, DUNE and HK, will cover both CP and the mass hierchy determination.
+# Los futuros experimentos **JUNO** (ya en marcha), **DUNE** (~2031) y **HyperKamiokande** (~2028) cubrirán la determinación precisa de la ordenación de masas y la violación de CP.
 
-# ### Reach of T2K & NOvA
-
-# ### SBL: JUNO (2025  - )
+# ### SBL: JUNO (2025 – )
 # 
-# - The Jiangmen Underground Neutrino Observatory (JUNO), China, a 20 kton multi-purpose underground liquid scintillator detector. In construction, (2024-)
-# - Excelent energy resolution 3% and scale precision. Radio pure material
-# - detection of $\bar{\nu}_e$ for neutrino reactors, but terrestial and extra-terrestial neutrinos.
-# - determination of the neutrino mass hierarchy.
-# - measurement of $\Delta m^2_{21}, \;\, \sin^2 \theta_{12}$ to an accuracy of better than 1%. 
+# - El **Jiangmen Underground Neutrino Observatory** (JUNO), China, es un detector de centelleo líquido de 20 któn multipropósito, situado a **52.5 km** de las centrales nucleares de Taishan y Yangjiang (17.4 GW$_{\rm th}$ combinados).
+# - Excelente resolución energética: $\sigma_E/E \simeq 3\%/\sqrt{E/{\rm MeV}}$ gracias a los $>$45.000 PMTs.
+# - Detecta $\bar{\nu}_e$ de reactores via IBD ($\bar{\nu}_e + p \to e^+ + n$), además de neutrinos solares, geo-neutrinos y de supernovas.
 # 
+# **Objetivos principales:**
+# 1. Determinación de la **ordenación de masas** con $\geq 3\sigma$ (tras ~6.5 años de datos).
+# 2. Medición de $\Delta m^2_{21}$ y $\sin^2 \theta_{12}$ con precisión $<1\%$.
 # 
-# Status: Early process: detector with LS
+# **Estado actual:**
+# - Relleno del centellador líquido completado en 2025.
+# - **Inicio oficial de toma de datos: 26 agosto 2025.**
+# - **Primeros resultados publicados: noviembre 2025** (sólo 59.1 días efectivos) [[38]](https://arxiv.org/abs/2511.14593).
 
 # 
 # | | | |
 # | :--: | :--: | :--: |
 # | <img src="./imgs/JUNO_map.png" width=200 align="center"> | <img src="./imgs/JUNO_detector.png" width=200 align="center"> | <img src="./imgs/JUNO_image.png" width=400 align="center"> |
-# | location | detector scheme | dectector image|
+# | location | detector scheme | detector image|
 
 # | | |
 # | :--: | :--: |
@@ -1411,57 +1597,118 @@ st*st
 # 
 # JUNO [[34]](https://arxiv.org/abs/1507.05613)
 
-# Prospects for JUNO
+# #### Primeros resultados de JUNO (noviembre 2025)
 # 
+# Con solo **59.1 días efectivos** de datos, JUNO publicó la primera medición de los parámetros de oscilación solar con un único detector de gran masa a línea base media [[38]](https://arxiv.org/abs/2511.14593):
+# 
+# $$
+# \sin^2 \theta_{12} = 0.3092 \pm 0.0087 \qquad \Delta m^2_{21} = (7.50 \pm 0.12) \times 10^{-5} \; {\rm eV}^2
+# $$
+# 
+# **Mejora de factor $\sim 1.6$ en precisión** respecto a toda la física previa combinada. Ajuste global post-JUNO [[39]](https://arxiv.org/abs/2511.21650):
+# 
+# $$
+# \Delta m^2_{21} = (7.48 \pm 0.10) \times 10^{-5} \; {\rm eV}^2 \qquad \sin^2 \theta_{12} = 0.3085 \pm 0.0073
+# $$
+# 
+# **Perspectiva para la ordenación de masas:**  
+# JUNO necesita del orden de 6-7 años de datos para alcanzar $3\sigma$ de sensibilidad a la ordenación. La clave es resolver el patrón de interferencia entre $\Delta m^2_{31}$ y $\Delta m^2_{32}$ en el espectro de $\bar{\nu}_e$.
 # 
 # | | 
 # | :--: | 
-# | <img src="./imgs/JUNO_prospects_neutrino2022.png" width=500 align="center"> | 
-# 
-# Neutrino 2022 Conference
+# | <img src="./imgs/JUNO_nue_spectrum_6years.png" width=450 align="center"> |
+# | Espectro esperado con 6 años de datos [[34]](https://arxiv.org/abs/1507.05613) |
 
-# ### LBS: DUNE (2027 ? - )
+# In[15]:
+
+
+import oscillations
+
+oscillations.plot_juno_spectrum()
+
+
+# #### La tensión solar
 # 
-# 40 kton LArTPC detector ad Sanford. Using the to be upgraded MuI FNLAB nu beam
+# Los experimentos de reactor (KamLAND, JUNO) y los experimentos de neutrinos solares (SNO, SK) miden $\Delta m^2_{21}$ de maneras distintas:
+# 
+# - **Reactor:** miden la frecuencia de oscilación $\bar{\nu}_e \to \bar{\nu}_e$ directamente.
+# - **Solar:** miden la transición adiabática MSW $\nu_e \to \nu_2$ y la supervivencia en la zona de transición vacío-materia (resonancia de Mikheyev-Smirnov-Wolfenstein).
+# 
+# Valores actuales (2026):
+# 
+# | Fuente | $\Delta m^2_{21}$ [$10^{-5}$ eV$^2$] |
+# |---|---|
+# | KamLAND (reactor) | $7.49 \pm 0.20$ |
+# | JUNO (reactor, 2025) | $7.50 \pm 0.12$ |
+# | Solar (SNO + SK) | $\sim 6.9$ |
+# | Global post-JUNO | $7.48 \pm 0.10$ |
+# 
+# La discrepancia es de **$\sim 1.5\sigma$**. Si persiste con más estadística JUNO podría ser indicio de nueva física (interacciones no estándar, NSI, o variación de la densidad solar). JUNO también medirá directamente neutrinos solares, permitiendo comparar ambas medidas con el mismo detector.
+
+# **Exercise: JUNO and the reactor spectrum interference pattern**
+# 
+# At $L = 52.5$ km, the $\bar\nu_e$ spectrum carries two oscillation frequencies. The survival probability at leading order in $\theta_{13}$ is:
+# $$
+# P_{ee} \approx 1 - \cos^4\theta_{13}\sin^2 2\theta_{12}\sin^2\!\frac{\Delta m^2_{21} L}{4E}
+#             - \sin^2 2\theta_{13}\!\left(\cos^2\theta_{12}\sin^2\phi_{31} + \sin^2\theta_{12}\sin^2\phi_{32}\right)
+# $$
+# NH and IH differ in the sign of $\Delta m^2_{31}$, which shifts the relative phase of the two fast oscillations — the key to JUNO's mass ordering determination.
+# 
+# **Questions:**
+# 
+# 1. At $E = 5$ MeV and $L = 52.5$ km, compute $\phi_{21}$, $\phi_{31}$ and $\phi_{32}$ with NuFit-6.0 parameters for NH and IH. How many complete fast-oscillation cycles fit in the energy window $E\in[2,8]$ MeV?
+# 
+# 2. Use `oscillations.plot_juno_spectrum` to switch between NH and IH. In which region of the spectrum ($E \lesssim 4$ MeV or $E\gtrsim 4$ MeV) do the two orderings show the largest difference? Explain qualitatively in terms of the interference condition $\phi_{31} \approx \phi_{32} + n\pi$.
+# 
+# 3. JUNO's energy resolution is $\sigma_E/E \simeq 3\%/\sqrt{E/\mathrm{MeV}}$. Using `oscillations.osc_prob_3fam`, compute $P_{ee}(E)$ over $E\in[2,8]$ MeV and convolve it with a Gaussian of width $\sigma_E(E)$. Plot both the ideal and smeared spectra. Verify that the fast oscillations survive the smearing.
+
+# In[16]:
+
+
+import oscillations
+
+oscillations.exercise_juno_smearing()
+
+
+# ### LBL: DUNE (~2031 – )
+# 
+# Detector LArTPC de **35 kt activos** (Fase I) en Sanford Underground Research Facility (SURF), South Dakota, a **1300 km** del haz de neutrinos LBNF/PIP-II de Fermilab.
 # 
 # | | |
 # | :--: | :--: |
 # | <img src="./imgs/DUNE_map.png" width=400 align="center"> | <img src="./imgs/DUNE_PnuePbarnue.png" width=400 align="center"> |
-# | DUNE experiment scheme | Appearance probibility |
-# 
-# 
+# | Esquema del experimento | Probabilidad de aparición |
 
+# - Mide desaparición de $\nu_\mu (\bar{\nu}_\mu)$ y aparición de $\nu_e(\bar{\nu}_e)$ a $E \sim 3$ GeV.
 # 
-# - Measures disappearance of $\nu_\mu (\bar{\nu}_\mu)$ and appearance of $\nu_e(\bar{\nu}_e)$ at E $\sim 3$ GeV.
+# - Espera recoger $\sim 10^{3}$ $\nu_e(\bar{\nu}_e)$ y $\sim 10^{4}$ $\nu_\mu(\bar{\nu}_\mu)$ por año en plena potencia.
 # 
-#     - Collect $10^{3}$ $\nu_e(\bar{\nu}_e)$, and $10^{4}$ $\nu_\mu(\bar{\nu}_\mu)$
+# - Gran programa de física: neutrinos de supernovas, decaimiento del protón...
 # 
-# - Large Physis program: Supernova neutrinos, proton-decay, ...
+# - **Haz LBNF** a 1.2 MW (Fase I) → 2.4 MW (Fase II), gracias al nuevo linac superconductor **PIP-II**.
 # 
-# - DUNE will use the upgraded MuI beam line in 2 steps:
+# - Detector Far a 1.5 km de profundidad bajo SURF (South Dakota).
 # 
-#     + 0.9 MW -> 1.2 MW -> 2.4 MW in the future
+# - **Fase I: 2 módulos LArTPC** de 17 kt cada uno (35 kt activos / 70 kt total):
+#   - FD1: Horizontal Drift TPC (HD-TPC), basado en ProtoDUNE-HD.
+#   - FD2: Vertical Drift TPC (VD-TPC).
 # 
-# - The Far detector is at 1300 km under the Sanford (SURF) at 1.5 km underground.
-# 
-# - The Far detector has 4 modules of 10 kt each.
-# 
-# - Each DUNE module is a LArTPC inside in a cryostar of size $14 \times 14 \times 62$ m.
-# 
-# - LArTPC provides excellent tranging and calorimeter capabilities.
-# 
-# 
+# **Estado actual (2025-2026):**
+# - Excavación de las cavernas en SURF completada en 2024.
+# - Acero del criostato enviado desde CERN; instalación subterránea a partir de **principios de 2026**.
+# - **2×2 prototipo ND-LAr**: primeros neutrinos del acelerador detectados en **agosto 2024** en Fermilab (tecnología LArPix 3D) [[41]](https://arxiv.org/abs/2412.14941).
+# - ProtoDUNE-HD (CERN) completó toma de datos de haz de pruebas en 2024; ProtoDUNE-VD en 2025.
+# - Inicio de física de alta potencia esperado: **~2030-2031** [[36]](https://arxiv.org/abs/2002.03005).
 
-# - Two prototypes constructed at CERN:
+# Dos prototipos a escala 1:20 operados en CERN:
 # 
-#   - Single-phase (SP): similar to ICARUS [[35]](https://arxiv.org/abs/1106.0975). ionization charges are drifted horizontally in LAr and read out on wires in the liquid. Drift length 3.5 m and drift-field 500 V/cm, that is cathode voltage of 180 kV
+#   - **ProtoDUNE-HD** (Single-phase): carga de ionización derivada horizontalmente en LAr y leída en cables. Deriva de 3.5 m, campo 500 V/cm. Tomó datos de haz de pruebas en 2022 y 2024 [[35]](https://arxiv.org/abs/1106.0975).
 #   
-#   - Dual-phase (DP): This technology is less established. Ionization charges are drifted vertically in LAr
-# and transferred into the gas above the liquid. The signal charges are then amplified. Drift length is 12m and, drift field is 500 V/cm, that is cathode high voltage of 600 kV.
+#   - **ProtoDUNE-VD** (Vertical Drift): carga de ionización derivada verticalmente con amplificación en fase gaseosa. Longitud de deriva 12 m. Tomó datos de haz en 2025.
 # 
 # | |
 # | :--: |
-# | <img src="./imgs/DUNE_detectors.png" width=500 align="center"> |
+# | <img src="./imgs/DUNE_FDscheme.png" width=500 align="center">|
 
 # Previous experience with ICARUS at LNGS
 # 
@@ -1473,13 +1720,14 @@ st*st
 # 
 # Currently two large LArTPC prototypes (ProtoDUNE) operating at CERN (2018-)
 
-# The DUNE detector will consists in 3 (4) Forward Detector Modules:
+# La Fase I del detector DUNE consistirá en **2 módulos LArTPC**:
 # 
-# - 2 FD will vertical drift, 1 with horizontal drift, another to be decided! 
-# 
+# - **FD1 (Horizontal Drift):** ionización derivada horizontalmente, basado en ProtoDUNE-HD (CERN). Toma de datos de haz de pruebas completada en 2024.
+# - **FD2 (Vertical Drift):** ionización derivada verticalmente. ProtoDUNE-VD completó datos en 2025.
 # 
 # <img src="./imgs/DUNE_FDscheme.png" width=600 align="center">
 # 
+# Las sensibilidades de DUNE a la ordenación de masas y a $\delta_{\rm CP}$ [[36]](https://arxiv.org/abs/2002.03005):
 
 # 
 # <img src="./imgs/DUNE_MH_sensitivity.png" width=600 align="center">
@@ -1500,21 +1748,27 @@ st*st
 # 
 # DUNE report [[36]](https://arxiv.org/abs/1807.10334)
 
-# ### HyperKamiokande (2028 -)
+# ### HyperKamiokande (2028 – )
 # 
 # | | |
 # | :--: | :--: |
 # | <img src="./imgs/HK_detector.png" width=350 align="center"> | <img src="./imgs/HK_Dome.png" width=400 align="center"> |
-# | Detector scheme | Dome excavation |
+# | Esquema del detector | Caverna excavada |
 
+# **Estado de construcción (2025-2026):**
 # 
-# - Beam upgrade: 0.5 MW -> 1.3 MW
+# - Excavación de la caverna principal (330.000 m³ de roca) **completada el 31 de julio de 2025** — una de las mayores excavaciones artificiales en roca.
+# - Construcción del tanque de agua (260.000 m³) e instalación de los detectores prevista para 2025-2027.
+# - **Inicio de toma de datos: 2028** (sin datos de física aún).
 # 
-# -  HK is a 78 m high, 74 m diameter large 180 kton water tank at 280 km and $2.5^o$ off-axis from the $\nu_\mu (\bar{\nu}_\mu)$ of E $\sim0.5$ GeV from JPARC (upgraded to 1.3 MW)
+# **Características del detector:**
+# - 78 m de alto, 74 m de diámetro → **260 kt de agua** (50 kt activos T2K, 186 kt activos HK).
+# - Más de 40.000 nuevos PMTs de alta eficiencia cuántica ($\times 2$ respecto a SK) [[37]](https://arxiv.org/abs/1805.04163).
+# - Factor $8.5\times$ SuperKamiokande.
 # 
-# - HP = $8.5  \, \times$ SK
-# 
-# - 40 k PMTs with improved QE ($\times 2$ SK)
+# **Haz de J-PARC:**
+# - T2K opera desde **diciembre 2023** con haz mejorado a **710–760 kW** (+40% respecto a la operación anterior), aumentando la corriente de la bocina de 250 kA a 320 kA [[40]](https://j-parc.jp/c/en/press-release/2024/01/17001274.html).
+# - Objetivo para HK: **1.3 MW** (previsto ~2028), reduciendo el período de repetición de 2.48 s a 1.16 s.
 
 # <img src="./imgs/HK_pnue_pbarnue_vsE.png" width=800 align="center">
 
@@ -1538,109 +1792,181 @@ st*st
 # 
 # Draft preliminary 
 
+# ## Más allá de las oscilaciones: escala de masas y naturaleza del neutrino
+# 
+# ### Escala absoluta de masas
+# 
+# Las oscilaciones solo miden **diferencias** de masas cuadradas; no fijan la escala absoluta. Tres enfoques complementarios:
+# 
+# | Técnica | Experimento | Límite actual |
+# |---|---|---|
+# | Cinemática (espectro $\beta$) | KATRIN | $m_\nu < 0.45$ eV (90% CL, 2022) |
+# | Desintegración $\beta\beta_{0\nu}$ | KamLAND-Zen, CUORE... | $\langle m_{\beta\beta}\rangle < 36$–156 meV |
+# | Cosmología (suma de masas) | Planck+BAO | $\Sigma m_i < 0.12$ eV (95% CL) |
+# 
+# Las oscilaciones fijan los valores mínimos:
+# $$
+# m_{\rm min}(\text{NH}) \gtrsim 0, \quad \Sigma m_i^{\rm NH} \gtrsim 59 \text{ meV}
+# $$
+# $$
+# m_{\rm min}(\text{IH}) \gtrsim 50 \text{ meV}, \quad \Sigma m_i^{\rm IH} \gtrsim 101 \text{ meV}
+# $$
+# 
+# La combinación de cosmología + oscilaciones + $\beta\beta_{0\nu}$ permite discriminar entre NH e IH incluso con los límites actuales.
+# 
+# ### Naturaleza Dirac o Majorana
+# 
+# La matriz PMNS completa incluye **dos fases de Majorana** ($\alpha_1, \alpha_2$) que no afectan a las oscilaciones pero sí a la desintegración $\beta\beta_{0\nu}$:
+# 
+# $$
+# U_{\rm PMNS} \to U_{\rm PMNS} \times {\rm diag}\!\left(e^{i\alpha_1/2},\, e^{i\alpha_2/2},\, 1\right)
+# $$
+# 
+# La masa efectiva de Majorana relevante para $\beta\beta_{0\nu}$ es:
+# $$
+# \langle m_{\beta\beta} \rangle = \left|\sum_i U_{ei}^2 m_i \right|
+# $$
+# 
+# La detección de $\beta\beta_{0\nu}$ confirmaría que el neutrino es su propio antipartícula (partícula de Majorana), con implicaciones profundas para la asimetría bariónica del universo (leptogénesis).
+
+# **Exercise: Absolute neutrino mass scale and mass ordering**
+# 
+# Oscillations measure only mass-squared differences. The three masses satisfy:
+# $$
+# m_2^2 = m_1^2 + \Delta m^2_{21}, \qquad m_3^2 = m_1^2 + \Delta m^2_{31}
+# $$
+# Normal ordering (NH): $\Delta m^2_{31}>0$; Inverted (IH): $\Delta m^2_{31}<0$. The absolute scale is fixed by the lightest mass $m_{\rm min}$.
+# 
+# **Questions:**
+# 
+# 1. Compute the **minimum sum of masses** $\Sigma m_i = m_1+m_2+m_3$ for NH (take $m_1\to 0$) and IH (take $m_3\to 0$) using NuFit-6.0 parameters. Compare with the cosmological bound $\Sigma m_i < 0.12$ eV (Planck+BAO). Which ordering is more constrained by cosmology?
+# 
+# 2. The effective Majorana mass probed by neutrinoless double-beta decay is $|\langle m_{\beta\beta}\rangle| = |\sum_i U_{ei}^2 m_i|$. For CP-conserving Majorana phases, each $U_{ei}^2 m_i$ term can add constructively or destructively. Plot the allowed band of $|\langle m_{\beta\beta}\rangle|$ vs $m_{\rm min}\in[0, 0.3]$ eV for NH and IH, and mark the KamLAND-Zen bound $|\langle m_{\beta\beta}\rangle| < 36$ meV.
+# 
+# 3. The KATRIN kinematic mass is $m_\beta = \sqrt{\sum_i |U_{ei}|^2 m_i^2}$. Plot $m_\beta$ vs $m_{\rm min}$ for both orderings and compare with the KATRIN limit $m_\beta < 0.45$ eV. At what $m_{\rm min}$ does each ordering become distinguishable in a future experiment with sensitivity $m_\beta \sim 0.2$ eV?
+
+# In[17]:
+
+
+import oscillations
+
+oscillations.exercise_neutrino_mass_scale()
+
+
 # ## Summary and conclusions
 # 
-# - Neutrino oscillations have been well established in the atmospheric and solar oscillation ranges.
+# - Las oscilaciones de neutrinos están establecidas con gran precisión en los regímenes solar y atmosférico.
 # 
-#     - 2015 Nobel Price to T. Kajita (SK) and A. B. McDonald (SNO)
+#     - Premio Nobel 2015 a T. Kajita (SK) y A. B. McDonald (SNO).
 # 
-# - T2K and NOvA first indications about mass hierarchy and CP violation
+# - **JUNO** (en marcha desde agosto 2025): primeros resultados (nov. 2025) con 59 días de datos ya son los más precisos del mundo en $\Delta m^2_{21}$ y $\sin^2\theta_{12}$. Se espera la determinación de la **ordenación de masas** en ~6 años.
 # 
-# - Large collaborations (JUNO, DUNE, HK) will cover mass hierarchy and CP violation in a decade.
+# - **T2K y NOvA** (en marcha):
+#     - Análisis individual NOvA con 10 años de datos (sep. 2025): medición más precisa de $|\Delta m^2_{32}|$ en un único experimento.
+#     - **Primer análisis conjunto T2K + NOvA** publicado en *Nature* (oct. 2025): $|\Delta m^2_{32}|$ con precisión < 2%; evidencia de violación de CP si la ordenación es invertida.
+# 
+# - **HyperKamiokande** (excavación completada jul. 2025, datos desde 2028): cubrirá violación de CP y ordenación con la mayor estadística.
+# 
+# - **DUNE** (~2031): experimento LArTPC de 35 kt a 1300 km; primera detección de neutrinos con el prototipo 2×2 en ago. 2024.
+# 
+# - **Preguntas abiertas:** escala absoluta de masas, naturaleza Dirac o Majorana, violación de CP en el sector leptónico, y la tensión solar en $\Delta m^2_{21}$.
 
 # ## References
 # 
-# [1] B. Pontecorvo, Sov. Phys. JETP 6 (1957) 429; B. Pontecorvo, Sov. Phys. JETP 7 (1958) 172.
+# [1] [B. Pontecorvo, Sov. Phys. JETP 6 (1957) 429](https://inspirehep.net/literature/2884); [B. Pontecorvo, Sov. Phys. JETP 7 (1958) 172](http://jetp.ras.ru/cgi-bin/e/index/e/7/1/p172?a=list).
 # 
 # [2] B. Pontecorvo, Sov. Phys. JETP 26 (1968) 984.
 # 
-# [2] Z. Maki, M. Nakagawa and S. Sakata, Prog. Theor. Phys. 28 (1962) 870.
+# [2] Z. Maki, M. Nakagawa and S. Sakata, [Prog. Theor. Phys. 28 (1962) 870](https://inspirehep.net/literature/3540).
 # 
 # [3] B. Pontecorvo, Sov. Phys. JETP 26 (1968) 984.
 # 
-# [4] V. N. Gribov and B. Pontecorvo, Phys. Lett. B28 (1969) 493.
+# [4] V. N. Gribov and B. Pontecorvo, [Phys. Lett. B28 (1969) 493](https://inspirehep.net/literature/53150).
 # 
-# [5] J. N. Bahcall et al., Rev. Mod. Phys. 54, 767 (1982); N. Bahcall, A. M. Serenelli and S. Basu, Astrophys. J. 621, L85 (2005), arXiv:astroph/0412440.
+# [5] J. N. Bahcall et al., [Rev. Mod. Phys. 54, 767 (1982)](https://link.aps.org/doi/10.1103/RevModPhys.54.767); N. Bahcall, A. M. Serenelli and S. Basu, Astrophys. J. 621, L85 (2005), [arXiv:astro-ph/0412440](https://arxiv.org/abs/astro-ph/0412440).
 # 
-# [6] R. Davis, Jr., D. S. Harmer and K. C. Hoffman, Phys. Rev. Lett. 20, 1205 (1968).
+# [6] R. Davis, Jr., D. S. Harmer and K. C. Hoffman, [Phys. Rev. Lett. 20, 1205 (1968)](https://link.aps.org/doi/10.1103/PhysRevLett.20.1205).
 # 
-# [7] B. T. Cleveland et al., Astrophys. J. 496, 505 (1998).
+# [7] B. T. Cleveland et al., [Astrophys. J. 496, 505 (1998)](https://ui.adsabs.harvard.edu/abs/1998ApJ...496..505C/abstract).
 # 
-# [8] C. Pena-Garay and A. Serenelli (2008), [arXiv:0811.2424].
+# [8] C. Pena-Garay and A. Serenelli (2008), [[arXiv:0811.2424]](https://arxiv.org/abs/0811.2424).
 # 
 # [9] J. N. Abdurashitov et al. (SAGE), J. Exp. Theor. Phys. 95, 181 (2002), [Zh. Eksp. Teor.
-# Fiz.122,211(2002)], [arXiv:astro-ph/0204245].
+# Fiz.122,211(2002)], [[arXiv:astro-ph/0204245]](https://arxiv.org/abs/astro-ph/0204245).
 # 
 
 # 
-# [10] W. Hampel et al. (GALLEX), Phys. Lett. B447, 127 (1999).
+# [10] W. Hampel et al. (GALLEX), [Phys. Lett. B447, 127 (1999)](https://doi.org/10.1016/S0370-2693(98)01579-2).
 # 
-# [11] M. Altmann et al. (GNO), Phys. Lett. B616, 174 (2005), [hep-ex/0504037].
+# [11] M. Altmann et al. (GNO), Phys. Lett. B616, 174 (2005), [[hep-ex/0504037]](https://arxiv.org/abs/hep-ex/0504037).
 # 
-# [12] J. N. Abdurashitov et al. (SAGE), Phys. Rev. C80, 015807 (2009), [arXiv:0901.2200].
+# [12] J. N. Abdurashitov et al. (SAGE), Phys. Rev. C80, 015807 (2009), [[arXiv:0901.2200]](https://arxiv.org/abs/0901.2200).
 # 
-# [13] K. Abe et al. (Super-Kamiokande), Phys. Rev. D94, 5, 052010 (2016), [arXiv:1606.07538]
+# [13] K. Abe et al. (Super-Kamiokande), Phys. Rev. D94, 5, 052010 (2016), [[arXiv:1606.07538]](https://arxiv.org/abs/1606.07538)
 # 
-# [14] N. Vinyoles et al., Astrophys. J. 835, 2, 202 (2017), [arXiv:1611.09867].
+# [14] N. Vinyoles et al., Astrophys. J. 835, 2, 202 (2017), [[arXiv:1611.09867]](https://arxiv.org/abs/1611.09867).
 # 
-# [15] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 87, 071301 (2001), [arXiv:nucl-ex/0106015].
+# [15] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 87, 071301 (2001), [[arXiv:nucl-ex/0106015]](https://arxiv.org/abs/nucl-ex/0106015).
 # 
-# [16] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 89, 011301 (2002), [arXiv:nucl-ex/0204008].
+# [16] Q. R. Ahmad et al. (SNO), Phys. Rev. Lett. 89, 011301 (2002), [[arXiv:nucl-ex/0204008]](https://arxiv.org/abs/nucl-ex/0204008).
 # 
-# [17] B. Aharmim et al. (SNO), Phys. Rev. C88, 025501 (2013), [arXiv:1109.0763].
+# [17] B. Aharmim et al. (SNO), Phys. Rev. C88, 025501 (2013), [[arXiv:1109.0763]](https://arxiv.org/abs/1109.0763).
 # 
-# [18] B. Aharmim et al. (SNO), Phys. Rev. C72, 055502 (2005), [arXiv:nucl-ex/0502021].
+# [18] B. Aharmim et al. (SNO), Phys. Rev. C72, 055502 (2005), [[arXiv:nucl-ex/0502021]](https://arxiv.org/abs/nucl-ex/0502021).
 # 
-# [19] S. P. Mikheev and A. Yu. Smirnov, Sov. J. Nucl. Phys. 42 (1985) 913, Yad. Fiz. 42 (1985) 1441.S
+# [19] S. P. Mikheev and A. Yu. Smirnov, [Sov. J. Nucl. Phys. 42 (1985) 913](https://link.springer.com/article/10.1007/BF02508049), Yad. Fiz. 42 (1985) 1441.
 
 # 
-# [20] G. Bellini et al., Borexino Collaboration, Phys. Rev. D 82 (2010) 033006; G. Bellini et al., Phys.
-# Rev. Lett. 107 (2011) 141302; M. Agostini et al., BOREXINO Collaboration, Nature 562 (2018)
-# 505.
+# [20] G. Bellini et al., Borexino Collaboration, [Phys. Rev. D 82 (2010) 033006](https://doi.org/10.1103/PhysRevD.82.033006); G. Bellini et al., [Phys. Rev. Lett. 107 (2011) 141302](https://doi.org/10.1103/PhysRevLett.107.141302); M. Agostini et al., BOREXINO Collaboration, [Nature 562 (2018) 505](https://doi.org/10.1038/s41586-018-0624-y).
 # 
-# [21] K. Eguchi et al. (KamLAND), Phys. Rev. Lett. 90, 021802 (2003), [hep-ex/0212021].
+# [21] K. Eguchi et al. (KamLAND), Phys. Rev. Lett. 90, 021802 (2003), [[hep-ex/0212021]](https://arxiv.org/abs/hep-ex/0212021).
 # 
-# [22] T. Araki et al. (KamLAND), Phys. Rev. Lett. 94, 081801 (2005), [hep-ex/0406035]; 
+# [22] T. Araki et al. (KamLAND), Phys. Rev. Lett. 94, 081801 (2005), [[hep-ex/0406035]](https://arxiv.org/abs/hep-ex/0406035); 
 # 
-# [23] A. Gando et al. (KamLAND), Phys. Rev. D88, 3, 033001 (2013), [arXiv:1303.4667];
+# [23] A. Gando et al. (KamLAND), Phys. Rev. D88, 3, 033001 (2013), [[arXiv:1303.4667]](https://arxiv.org/abs/1303.4667);
 # 
-# [24] Y. Fukuda et al. (Super-Kamiokande), Phys. Rev. Lett. 81, 1562 (1998), [hep-ex/9807003].
+# [24] Y. Fukuda et al. (Super-Kamiokande), Phys. Rev. Lett. 81, 1562 (1998), [[hep-ex/9807003]](https://arxiv.org/abs/hep-ex/9807003).
 # 
-# [25] Y. Ashie et al. (Super-Kamiokande), Phys. Rev. Lett. 93, 101801 (2004), [hep-ex/0404034].
+# [25] Y. Ashie et al. (Super-Kamiokande), Phys. Rev. Lett. 93, 101801 (2004), [[hep-ex/0404034]](https://arxiv.org/abs/hep-ex/0404034).
 # 
-# [26] P. Adamson et al. (MINOS), Phys. Rev. Lett. 110, 25, 251801 (2013), [arXiv:1304.6335].
+# [26] P. Adamson et al. (MINOS), Phys. Rev. Lett. 110, 25, 251801 (2013), [[arXiv:1304.6335]](https://arxiv.org/abs/1304.6335).
 # 
 # 
-# [26] F. P. An et al. (Daya Bay), Phys. Rev. Lett. 108, 171803 (2012), [arXiv:1203.1669].
+# [26] F. P. An et al. (Daya Bay), Phys. Rev. Lett. 108, 171803 (2012), [[arXiv:1203.1669]](https://arxiv.org/abs/1203.1669).
 # 
-# [27] D. Adey et al. (Daya Bay), Phys. Rev. Lett. 121, 24, 241805 (2018), [arXiv:1809.02261].
+# [27] D. Adey et al. (Daya Bay), Phys. Rev. Lett. 121, 24, 241805 (2018), [[arXiv:1809.02261]](https://arxiv.org/abs/1809.02261).
 # 6th February, 2020
 # 
-# [28] G. Bak et al. (RENO), Phys. Rev. Lett. 121, 20, 201801 (2018), [arXiv:1806.00248].
+# [28] G. Bak et al. (RENO), Phys. Rev. Lett. 121, 20, 201801 (2018), [[arXiv:1806.00248]](https://arxiv.org/abs/1806.00248).
 # 
-# [29] H. de Kerret et al. (Double Chooz) (2019), [arXiv:1901.09445].
+# [29] H. de Kerret et al. (Double Chooz) (2019), [[arXiv:1901.09445]](https://arxiv.org/abs/1901.09445).
 
-# [30] A. Cervera et al., Nucl. Phys. B 579 (2000) 17 [Erratum: Nucl. Phys. B 593 (2001) 731]; M. Freund,
-# Phys. Rev. D 64 (2001) 053003; E. K. Akhmedov et al., JHEP 0404 (2004) 078.
+# [30] A. Cervera et al., Nucl. Phys. B 579 (2000) 17 [Erratum: Nucl. Phys. B 593 (2001) 731], [[arXiv:hep-ph/0002108]](https://arxiv.org/abs/hep-ph/0002108); M. Freund, Phys. Rev. D 64 (2001) 053003, [[arXiv:hep-ph/0103300]](https://arxiv.org/abs/hep-ph/0103300); E. K. Akhmedov et al., JHEP 0404 (2004) 078, [[arXiv:hep-ph/0402175]](https://arxiv.org/abs/hep-ph/0402175).
 # 
-# [31] M. A. Acero et al. (NOvA), Phys. Rev. Lett. 123, 151803 (2019), [[arXiv:1906.04907]](https://arxiv.org/abs/1906.04907). M. Baird et al. (NOvA), Phys. Rev. D. 106 032004 [[arXiv:2208.08219]](https://arxiv.org/abs/2108.08219) 
+# [31] M. A. Acero et al. (NOvA), Phys. Rev. Lett. 123, 151803 (2019), [[arXiv:1906.04907]](https://arxiv.org/abs/1906.04907); M. A. Acero et al. (NOvA), Phys. Rev. D 106, 032004 (2022), [[arXiv:2108.08219]](https://arxiv.org/abs/2108.08219).
 # 
+# [32] K. Abe et al. (T2K), Nature 580, 339 (2020), [[arXiv:1910.03887]](https://arxiv.org/abs/1910.03887); K. Abe et al. (T2K), Eur. Phys. J. C 83, 782 (2023), [[arXiv:2303.03222]](https://arxiv.org/abs/2303.03222).
 # 
-# [32] Abe et al. (T2K)  Nature volume 580, pages339–344 (2020), [arXiv:1910.03887](https://arxiv.org/abs/1910.03887).
+# [33] I. Esteban et al. (NuFit-6.0), JHEP 12 (2024) 216, [[arXiv:2410.05380]](https://arxiv.org/abs/2410.05380), [www.nu-fit.org](http://www.nu-fit.org).
 # 
-# [33] I. Esteban et al., JHEP 01 (2019) 106, NuFIT 4.1 (2019), [arXiv:1811.05487](https://arxiv.org/abs/1811.05487), www.nu-fit.org
+# [34] F. An et al. (JUNO), J. Phys. G43, 030401 (2016), [[arXiv:1507.05613]](https://arxiv.org/abs/1507.05613).
 # 
-# [34] F. An et al. (JUNO), J. Phys. G43, 3, 030401 (2016), [arXiv:1507.05613].
+# [35] C. Rubbia et al., JINST 6, P07011 (2011), [[arXiv:1106.0975]](https://arxiv.org/abs/1106.0975).
 # 
-# [35] C. Rubbia et al., JINST 6, P07011 (2011), [arXiv:1106.0975].
+# [36] B. Abi et al. (DUNE), JINST 19 (2024), [[arXiv:2312.03130]](https://arxiv.org/abs/2312.03130); DUNE Physics Report, [[arXiv:2002.03005]](https://arxiv.org/abs/2002.03005).
 # 
-# [36] B. Abi et al. (DUNE) (2018), [arXiv:1807.10334]. DUNE Physics report [arXiv:2002.03005](https://arxiv.org/abs/2002.03005), DUNE Far Detector Technical Design Repport, JINST 19 (2014) [arXiv:2312.03130](https://arxiv.org/abs/2312.03130)
+# [37] K. Abe et al. (Hyper-Kamiokande), [[arXiv:1805.04163]](https://arxiv.org/abs/1805.04163); K. Abe et al. (HK), Frontiers in Physics 12 (2024), [[arXiv:2309.03009]](https://arxiv.org/abs/2309.03009).
 # 
-# [37] K. Abe et al. (Hyper-Kamiokande) (2018), [arXiv:1805.04163].
+# [38] A. Abusleme et al. (JUNO), First measurement of reactor antineutrino oscillations at JUNO (Nov. 2025), [[arXiv:2511.14593]](https://arxiv.org/abs/2511.14593).
 # 
-
-# In[ ]:
-
-
-
-
+# [39] M. C. Gonzalez-Garcia et al., Updated bounds on (1,2) neutrino oscillation parameters after first JUNO results (Nov. 2025), [[arXiv:2511.21650]](https://arxiv.org/abs/2511.21650).
+# 
+# [40] T2K Collaboration, T2K enters a new phase (Jan. 2024), [J-PARC press release](https://j-parc.jp/c/en/press-release/2024/01/17001274.html).
+# 
+# [41] DUNE Collaboration, DUNE Phase II Detectors (2025), [[arXiv:2412.14941]](https://arxiv.org/abs/2412.14941).
+# 
+# [42] M. A. Acero et al. (NOvA), Precision measurement with 10 years of data (Sep. 2025), [[arXiv:2509.04361]](https://arxiv.org/abs/2509.04361).
+# 
+# [43] K. Abe et al. (T2K + SK), First joint oscillation analysis of SK atmospheric and T2K accelerator neutrino data (May 2024), [[arXiv:2405.12488]](https://arxiv.org/abs/2405.12488).
+# 
+# [44] T2K and NOvA Collaborations, Joint neutrino oscillation analysis from T2K and NOvA, *Nature* (Oct. 2025), [[arXiv:2510.19888]](https://arxiv.org/abs/2510.19888).
