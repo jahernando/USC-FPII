@@ -139,16 +139,44 @@ print(' Last version ', time.asctime() )
 
 # ## Course Structure
 # 
-# These lectures are organised in four notebooks:
+# These lectures are organised in **five notebooks**, following the logical development of neutrino physics:
 # 
-# | # | Notebook | Title | Topics |
-# | :-: | :-- | :-- | :-- |
-# | 1 | *this notebook* | **The mysteries of the neutrinos** | Neutrinos in the SM, Dirac and Majorana nature, open questions |
-# | 2 | [nu_sm](nu_sm.ipynb) | **Neutrinos and the construction of the SM** | Historical path from Pauli to LEP: β decay, Cowan-Reines detection, helicity, three families, neutral currents |
-# | 3 | [nu_oscillations](nu_oscillations.ipynb) | **Neutrino Oscillations** | PMNS matrix, oscillation probability, atmospheric and solar neutrino experiments, mass hierarchy |
-# | 4 | [nu_majorana](nu_majorana.ipynb) | **Are neutrinos Majorana particles?** | Dirac vs Majorana mass terms, seesaw mechanism, neutrinoless double beta decay |
+# | Notebook | Topic | Key concepts |
+# |---|---|---|
+# | [Neutrinos & the SM](nu_sm.ipynb) | History and Standard Model | Pauli, Cowan-Reines, V-A, helicity, 3 families, LEP |
+# | [Oscillations: Theory](nu_oscillations.ipynb) | Mixing and oscillation theory | 2-family formula, MSW, PMNS, solar, atmospheric |
+# | [Oscillations: Experiments](nu_oscillations_exp.ipynb) | Precision & new generation | θ₁₃ (Daya Bay), δ_CP (T2K+NOvA), JUNO, DUNE, HyperK |
+# | [Neutrino Mass](nu_mass.ipynb) | Absolute mass scale | KATRIN, Project 8, Planck, DESI, mass ordering |
+# | [Majorana Neutrinos](nu_majorana.ipynb) | Dirac vs Majorana | Seesaw, leptogenesis, ββ0ν, LEGEND, KamLAND-Zen, NEXT |
 # 
-# The central question running through all notebooks:
+# ### Conceptual map
 # 
-# > **Are neutrinos their own antiparticle — Dirac or Majorana?**
+# ```
+# Standard Model (massless ν)
+#         │
+#         ▼
+#    Neutrino oscillations  ──►  Mass-squared differences  ──►  Mixing angles (θ₁₂, θ₂₃, θ₁₃)
+#         │                                                              │
+#         │                                                         CP phase δ
+#         │                                                              │
+#         ▼                                                              ▼
+#    Absolute mass scale                                        Matter-antimatter asymmetry?
+#    (KATRIN, cosmology)                                        (leptogenesis)
+#         │
+#         ▼
+#    Majorana or Dirac?
+#    (ββ0ν experiments)
+#         │
+#         ▼
+#    Seesaw mechanism  ──►  Heavy right-handed ν  ──►  GUT-scale physics
+# ```
+# 
+# ### Open questions
+# 
+# 1. **Mass ordering**: is $m_3 > m_2 > m_1$ (NH) or $m_3 < m_1 < m_2$ (IH)?
+# 2. **CP violation**: does $\delta_{CP}\neq 0$? Is it related to baryogenesis?
+# 3. **Absolute mass**: what is $m_1$? Is the spectrum quasi-degenerate?
+# 4. **Majorana nature**: are neutrinos their own antiparticle?
+# 5. **Sterile neutrinos**: do light or heavy sterile states exist?
+# 6. **New physics**: non-standard interactions, extra dimensions, ...
 # 

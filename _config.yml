@@ -10,6 +10,8 @@ copyright: USC - J.A. Hernando - 2023
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: off # auto # force
+  exclude_patterns:
+    - 'store/**'
 
 # Define the name of the latex output file for PDF builds
 # LaTeX-specific settings

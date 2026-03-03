@@ -905,6 +905,64 @@ plt.style.context('seaborn-colorblind');
 # 
 # *Question*: Show that the Majorana phases $\eta_{1,2}$ have no effect in neutrino oscillations.
 
+# ### The Seesaw Mechanism
+# 
+# The Weinberg operator $\frac{\alpha}{\Lambda}(\bar{L}\tilde{\Phi})^2$ is a low-energy effective description. At high energies it is *UV-completed* by the **seesaw mechanism**, which naturally explains the smallness of neutrino masses via the introduction of heavy new physics at scale $\Lambda$.
+# 
+# Three main realisations:
+# 
+# | Type | New particle | Mass scale | Key feature |
+# |---|---|---|---|
+# | **Type I** | Heavy right-handed neutrino $N_R$ | $M_R \sim 10^{14}$ GeV | Minimal, most studied |
+# | **Type II** | Scalar triplet $\Delta$ | $M_\Delta \sim 10^{13}$ GeV | Predicts $\Delta^{++}$ at LHC |
+# | **Type III** | Fermion triplet $\Sigma$ | $M_\Sigma \sim 10^{13}$ GeV | Produces charged leptons |
+# 
+
+# #### Type I Seesaw
+# 
+# Extend the SM with $n$ heavy right-handed (sterile) neutrinos $N_{Ri}$, singlets under the SM gauge group.
+# 
+# The mass Lagrangian (one generation) is:
+# 
+# $$-\mathcal{L} = y_\nu\,\bar{L}\,\tilde{\Phi}\,N_R + \frac{1}{2}M_R\,\overline{N^c_R}\,N_R + \text{h.c.}$$
+# 
+# After electroweak symmetry breaking ($\langle\Phi\rangle = v/\sqrt{2}$), the Dirac mass $m_D = y_\nu v/\sqrt{2}$ and the Majorana mass $M_R \gg m_D$ give the mass matrix:
+# 
+# $$\mathcal{M} = \begin{pmatrix} 0 & m_D \\ m_D & M_R \end{pmatrix}$$
+# 
+# Diagonalising for $m_D \ll M_R$ yields two eigenvalues:
+# 
+# $$m_\nu \approx -\frac{m_D^2}{M_R} \qquad (\text{light, Majorana}), \qquad M_N \approx M_R \qquad (\text{heavy})$$
+# 
+# For $m_D \sim m_t \sim 175$ GeV and $m_\nu \sim 0.05$ eV: $M_R \sim 6\times10^{14}$ GeV — close to the GUT scale. This is the **seesaw relation**:
+# 
+# $$\boxed{m_\nu \sim \frac{m_D^2}{M_R}}$$
+# 
+# The *lightness* of neutrino masses is explained by the *heaviness* of the right-handed partner.
+
+# ### Leptogenesis
+# 
+# The seesaw mechanism provides not only a mass origin but also a mechanism for the **matter-antimatter asymmetry** of the Universe via **leptogenesis**.
+# 
+# **The idea (Fukugita & Yanagida, 1986):**
+# 
+# 1. In the early Universe ($T \sim M_R$), the heavy right-handed neutrinos $N_R$ are produced thermally.
+# 2. They decay out-of-equilibrium (Sakharov condition) into leptons and Higgs:
+# 
+#    $$N_R \to \ell^- H^+ \quad \text{and} \quad N_R \to \ell^+ H^-$$
+# 
+# 3. **CP violation** in the decay (from complex Yukawa couplings $y_\nu$) generates a net **lepton asymmetry** $\eta_L$.
+# 4. Sphaleron processes (baryon+lepton number violating, in thermal equilibrium above the EW phase transition) convert part of $\eta_L$ into a **baryon asymmetry** $\eta_B$:
+# 
+#    $$\eta_B \approx -\frac{28}{79}\,\eta_L$$
+# 
+# 5. The resulting $\eta_B \sim 6\times10^{-10}$ agrees with the observed baryon-to-photon ratio.
+# 
+# **Why it matters:**
+# Leptogenesis connects three fundamental puzzles — neutrino mass, Majorana nature, and the matter-antimatter asymmetry — in a single framework. If neutrinos are Dirac, leptogenesis via the seesaw does not work.
+# 
+# **Observational connection**: the low-energy CP phase $\delta_{CP}$ (measured in oscillation experiments) is in general *not* the same as the CP violation driving leptogenesis (which involves the high-energy Yukawa phases). However, in minimal scenarios they can be related.
+
 # ## Are Neutrinos Majorana?
 # 
 # 
@@ -1812,20 +1870,13 @@ print('Nbb = {:6.2f} events'.format(nbb))
 
 # ### nEXO
 # 
-#   * Most likely it will not see the light!
-#   
-#   * Installation at SNOLab
-#   * Based on EXO-200:
-#       * Liquid Xe TPC, measurement of scintilation and charge
+# nEXO is a proposed 5-tonne liquid $^{136}$Xe TPC at SNOLAB, the successor to EXO-200.
 # 
-#   * 5 tons of $^{136}\mathrm{Xe}$. 
-# 
-#       * cylindrical TPC $\phi = 1.3$ m, in a cryostat and Vacuum. 
-# 
-#   * Improvement in light sensors (SiPMs) and light collection, $\sigma_E = 0.8$ % at $Q_{\beta\beta}$.
-#   
-#   * Improvement in radiopurity (electroformed Cu) and smaller fiducial internal region.
-#   
+#   * **Mass**: 5 tonnes of enriched $^{136}$Xe in a cylindrical liquid TPC ($\phi = 1.3$ m)
+#   * **Improvements over EXO-200**: SiPM light sensors, improved radiopurity (electroformed Cu), $\sigma_E = 0.8\%$ at $Q_{\beta\beta}$
+#   * **CDR approved** (2021); funding review in progress
+#   * **Sensitivity (10 yr)**: $T^{0\nu}_{1/2} > 1.35\times10^{28}$ yr → $m_{\beta\beta} < 5\text{--}15$ meV
+#   * **Timeline**: construction decision ~2027; physics run ~2032+
 
 # | |
 # | :--: |
@@ -1894,87 +1945,6 @@ import majorana
 majorana.exercise_sensitivity()
 
 
-# ## Complementary Constraint: Absolute Neutrino Mass
-# 
-# Neutrinoless double beta decay probes the *effective Majorana mass* $m_{\beta\beta}$,
-# which depends on neutrino masses and Majorana CP phases.
-# A complementary and direct measurement of the absolute scale comes from tritium
-# beta-decay endpoint spectroscopy, which constrains the *effective electron-neutrino mass*:
-# 
-# $$
-# m^{eff}_{\nu_e} = \sqrt{\sum_{i} |U_{ei}|^2 \, m^2_i}
-# $$
-# 
-# This quantity is independent of the Majorana/Dirac nature of the neutrino.
-
-# ### KATRIN Experiment
-# 
-# | | |
-# | :--: | :--: |
-# | <img src="./imgs/Katrin_spectrum.png" width=400 align="center"> | <img src="./imgs/Katrin_E0m2plot.png" width=370 align="center"> |
-# | Tritium $\beta$-decay spectrum near endpoint | $m^2_{\nu_e}$ fit result |
-# 
-# The [KATRIN experiment](http://www.katrin.kit.edu) at KIT (Karlsruhe, Germany) measures the tritium $\beta$-decay spectrum with a large
-# magnetic-adiabatic collimation and electrostatic (MAC-E) filter spectrometer.
-# 
-# **Design sensitivity**: $m^{eff}_{\nu_e} < 0.2$ eV (90% CL) after full $10^3$ day run.
-# 
-# **Published results**:
-#  * 2019 [arXiv:1909.06048](https://arxiv.org/abs/1909.06048): $m^{eff}_{\nu_e} < 1.1$ eV (90% CL)
-#  * 2021 [arXiv:2105.08533](https://arxiv.org/abs/2105.08533): $m^{eff}_{\nu_e} < 0.8$ eV (90% CL)
-#  * 2024 [arXiv:2406.13516](https://arxiv.org/abs/2406.13516): $m^{eff}_{\nu_e} < \mathbf{0.45}$ **eV** (90% CL) — *Science 2025*
-# 
-# The 2024 result uses a combined analysis of all data runs (KNM1–KNM5, ~300 days of data)
-# with improved systematic treatment, giving:
-# 
-# $$
-# m^2_{\nu_e} = (0.14 \pm 0.15)\;\mathrm{eV}^2 \quad \Rightarrow \quad m^{eff}_{\nu_e} < 0.45\;\mathrm{eV} \;\text{at } 90\%\;\text{CL}
-# $$
-
-# ### Interplay with $\beta\beta0\nu$ Searches
-# 
-# KATRIN constrains $m^{eff}_{\nu_e}$, while $\beta\beta0\nu$ experiments constrain $m_{\beta\beta}$.
-# They are related but different:
-# 
-# | Quantity | Formula | Probes |
-# | :-- | :-- | :-- |
-# | $m^{eff}_{\nu_e}$ | $\sqrt{\sum_i \|U_{ei}\|^2 m_i^2}$ | absolute mass scale (Dirac or Majorana) |
-# | $m_{\beta\beta}$ | $\|\sum_i U^2_{ei} m_i\|$ | Majorana nature + CP phases |
-# 
-# The KATRIN limit $m^{eff}_{\nu_e} < 0.45$ eV constrains the parameter space of $m_{\beta\beta}$:
-# 
-#  * In the **quasi-degenerate regime** ($m_0 \gg \Delta m_{ij}$): $m_{\beta\beta} \lesssim m^{eff}_{\nu_e} < 0.45$ eV
-#  * For **IH**, the minimum $m_{\beta\beta} \sim 15\text{--}50$ meV is well below the KATRIN reach,
-#    so $\beta\beta0\nu$ experiments are the decisive probe.
-#  * Future KATRIN sensitivity ($< 0.2$ eV) will further constrain the degenerate region.
-
-# **Exercise: KATRIN — endpoint spectrum and kinematic neutrino mass**
-# 
-# KATRIN measures the tritium $\beta$-decay spectrum near the endpoint $Q_\beta = 18\,574$ eV.
-# Near the endpoint, the differential rate behaves as:
-# 
-# $$
-# \frac{dN}{dT} \propto (Q_\beta - T) \sqrt{(Q_\beta - T)^2 - m^2_{\nu_e}} \;\Theta(Q_\beta - T - m_{\nu_e})
-# $$
-# 
-# The effective mass $m^{eff}_{\nu_e} = \sqrt{\sum_i |U_{ei}|^2 m_i^2}$ sets the kinematic endpoint.
-# 
-# **Questions:**
-# 
-# 1. Visualise the spectrum and Kurie plot for $m_\nu = 0$, 0.2, 0.45, 1 eV.
-#    Where does the difference become visible?
-# 2. Why is measuring a sub-eV neutrino mass so challenging?
-#    Estimate the fraction of the spectrum affected for $m_\nu = 0.45$ eV.
-# 3. KATRIN gives $m^{eff}_{\nu_e} < 0.45$ eV. Can we directly compare this with
-#    $m_{\beta\beta}$ from KamLAND-Zen? What are the key differences?
-
-# In[ ]:
-
-
-import majorana
-majorana.exercise_katrin_endpoint()
-
-
 # ## Conclusions
 # 
 # The question of whether neutrinos are their own antiparticle is one of the crucial open questions in Particle Physics.
@@ -1988,8 +1958,6 @@ majorana.exercise_katrin_endpoint()
 # Next-generation experiments under construction or commissioning (CUPID, NEXT-100, KamLAND2-Zen, LEGEND-1000) aim to cover the IH $m_{\beta\beta}$ allowed region in the coming decades.
 
 # ## References
-# 
-# ---
 # 
 # [Majo] E. Majorana, [Nuovo Cimento 14 (1937) 171](https://doi.org/10.1007/BF02961314). English translation: [arXiv:1404.4943](https://arxiv.org/abs/1404.4943).
 # 
