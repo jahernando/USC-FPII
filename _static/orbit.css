@@ -1,6 +1,6 @@
 /* ------------------------------------------------ */
 /* Orbit theme for Jupyter Book                     */
-/* Palatino serif + academic style                  */
+/* Palatino serif + academic style, 12px body       */
 /* ------------------------------------------------ */
 
 :root {
@@ -13,94 +13,136 @@
   --orbit-muted: #555;
 }
 
-/* Body text */
-.bd-article-container .bd-article {
-  font-family: var(--orbit-font);
-  font-size: 17px;
+/* ========== Global body ========== */
+
+body {
+  font-family: var(--orbit-font) !important;
+  font-size: 12px !important;
+  line-height: 1.65;
+  color: var(--orbit-text);
+}
+
+/* ========== Article content ========== */
+
+article.bd-article,
+article.bd-article p,
+article.bd-article li,
+article.bd-article td,
+article.bd-article th,
+article.bd-article dd,
+article.bd-article dt,
+.bd-content p,
+.bd-content li,
+section p,
+section li {
+  font-family: var(--orbit-font) !important;
+  font-size: 12px !important;
   line-height: 1.65;
   color: var(--orbit-text);
 }
 
 /* Paragraphs */
-.bd-article p {
+article.bd-article p,
+section p {
   text-align: justify;
   margin-bottom: 0.9em;
 }
 
-/* Headings */
-.bd-article h1, .bd-article h2, .bd-article h3, .bd-article h4 {
-  font-family: var(--orbit-font);
+/* ========== Headings ========== */
+
+h1, h2, h3, h4,
+article.bd-article h1,
+article.bd-article h2,
+article.bd-article h3,
+article.bd-article h4 {
+  font-family: var(--orbit-font) !important;
   font-weight: 600;
   letter-spacing: 0.02em;
+  color: var(--orbit-text);
 }
 
-/* Links */
-.bd-article a {
+/* ========== Links ========== */
+
+article.bd-article a,
+section a {
   color: var(--orbit-link);
 }
 
-.bd-article a:hover {
+article.bd-article a:hover,
+section a:hover {
   text-decoration: underline;
 }
 
-/* Inline code */
-.bd-article code {
-  font-family: var(--orbit-code-font);
+/* ========== Code ========== */
+
+code {
+  font-family: var(--orbit-code-font) !important;
   font-size: 0.88em;
   background: var(--orbit-code-bg);
   padding: 0.15em 0.35em;
   border-radius: 3px;
 }
 
-/* Code blocks */
-.bd-article pre {
-  font-family: var(--orbit-code-font);
+pre, pre code {
+  font-family: var(--orbit-code-font) !important;
   background: var(--orbit-code-bg);
+}
+
+pre {
   border: 1px solid var(--orbit-border);
   border-radius: 6px;
   padding: 0.8rem 1rem;
   line-height: 1.5;
 }
 
-/* Tables */
-.bd-article table {
+/* ========== Tables ========== */
+
+table {
   border-collapse: collapse;
   margin: 1.2em auto;
 }
 
-.bd-article th, .bd-article td {
+th, td {
   border: 1px solid var(--orbit-border);
   padding: 6px 12px;
 }
 
-.bd-article th {
+th {
   background: #f2f2f2;
   font-weight: 600;
 }
 
-.bd-article tr:nth-child(even) {
+tr:nth-child(even) {
   background: #fafafa;
 }
 
-/* Blockquotes */
-.bd-article blockquote {
+/* ========== Blockquotes ========== */
+
+blockquote {
   border-left: 4px solid var(--orbit-border);
   padding-left: 12px;
   color: var(--orbit-muted);
   margin: 1em 0;
 }
 
-/* MathJax */
-.bd-article .MathJax_Display {
+/* ========== Math ========== */
+
+.MathJax_Display {
   margin: 1.4em 0;
 }
 
-/* Images */
-.bd-article img {
+/* ========== Images ========== */
+
+article.bd-article img,
+section img {
   max-width: 95%;
 }
 
-/* Sidebar / TOC font */
-.bd-sidebar-primary, .bd-sidebar-secondary {
-  font-family: var(--orbit-font);
+/* ========== Sidebar / TOC ========== */
+
+.bd-sidebar-primary,
+.bd-sidebar-secondary,
+.bd-toc-item,
+nav {
+  font-family: var(--orbit-font) !important;
 }
