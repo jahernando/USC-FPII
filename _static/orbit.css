@@ -1,6 +1,6 @@
 /* ------------------------------------------------ */
 /* Orbit theme for Jupyter Book                     */
-/* Palatino serif + academic style, 12px body       */
+/* Palatino serif + academic style, 14px body       */
 /* ------------------------------------------------ */
 
 :root {
@@ -17,7 +17,7 @@
 
 body {
   font-family: var(--orbit-font) !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 1.65;
   color: var(--orbit-text);
 }
@@ -36,7 +36,7 @@ article.bd-article dt,
 section p,
 section li {
   font-family: var(--orbit-font) !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 1.65;
   color: var(--orbit-text);
 }
