@@ -80,25 +80,32 @@ _CSS = """
 
 /* ── RISE / Reveal.js slides ── */
 
-.reveal .slides {
+.reveal, .reveal .slides, .reveal .slides section,
+.reveal .slides section .fragment {
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif !important;
-    font-size: 180% !important;
-    line-height: 1.5;
-    color: #222;
+    font-size: 28px !important;
+    line-height: 1.5 !important;
+    color: #222 !important;
 }
-.reveal .slides h1 { font-size: 2.0em !important; font-weight: 600; }
-.reveal .slides h2 { font-size: 1.6em !important; font-weight: 600; }
-.reveal .slides h3 { font-size: 1.3em !important; font-weight: 600; }
-.reveal .slides p  { text-align: left; margin-bottom: 0.6em; }
+.reveal .slides h1 { font-size: 48px !important; font-weight: 600; }
+.reveal .slides h2 { font-size: 40px !important; font-weight: 600; }
+.reveal .slides h3 { font-size: 34px !important; font-weight: 600; }
+.reveal .slides h4 { font-size: 30px !important; font-weight: 600; }
+.reveal .slides p,
+.reveal .slides li,
+.reveal .slides td,
+.reveal .slides th { font-size: 28px !important; text-align: left; }
+.reveal .slides p  { margin-bottom: 0.6em; }
 .reveal .slides code {
     font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace !important;
-    font-size: 0.75em;
+    font-size: 22px !important;
 }
-.reveal .slides table { font-size: 0.85em; }
+.reveal .slides table { font-size: 24px !important; }
 .reveal .slides img { max-width: 90%; max-height: 70vh; }
-.reveal .slides .MathJax { font-size: 110%; }
+.reveal .slides .MathJax,
+.reveal .slides .MathJax_Display { font-size: 28px !important; }
 
-/* Sepia background in slides too */
+/* Sepia background in slides */
 .reveal .slides section {
     background-color: #f5f0e8 !important;
 }
