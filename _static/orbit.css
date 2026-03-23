@@ -1,0 +1,106 @@
+/* ------------------------------------------------ */
+/* Orbit theme for Jupyter Book                     */
+/* Palatino serif + academic style                  */
+/* ------------------------------------------------ */
+
+:root {
+  --orbit-font: "Palatino Linotype", "Book Antiqua", Palatino, "TeX Gyre Pagella", serif;
+  --orbit-code-font: "JetBrains Mono", "Fira Code", "Courier New", Courier, monospace;
+  --orbit-text: #222;
+  --orbit-link: #1a4ed8;
+  --orbit-code-bg: #f6f8fa;
+  --orbit-border: #d4d4d4;
+  --orbit-muted: #555;
+}
+
+/* Body text */
+.bd-article-container .bd-article {
+  font-family: var(--orbit-font);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--orbit-text);
+}
+
+/* Paragraphs */
+.bd-article p {
+  text-align: justify;
+  margin-bottom: 0.9em;
+}
+
+/* Headings */
+.bd-article h1, .bd-article h2, .bd-article h3, .bd-article h4 {
+  font-family: var(--orbit-font);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Links */
+.bd-article a {
+  color: var(--orbit-link);
+}
+
+.bd-article a:hover {
+  text-decoration: underline;
+}
+
+/* Inline code */
+.bd-article code {
+  font-family: var(--orbit-code-font);
+  font-size: 0.88em;
+  background: var(--orbit-code-bg);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+/* Code blocks */
+.bd-article pre {
+  font-family: var(--orbit-code-font);
+  background: var(--orbit-code-bg);
+  border: 1px solid var(--orbit-border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  line-height: 1.5;
+}
+
+/* Tables */
+.bd-article table {
+  border-collapse: collapse;
+  margin: 1.2em auto;
+}
+
+.bd-article th, .bd-article td {
+  border: 1px solid var(--orbit-border);
+  padding: 6px 12px;
+}
+
+.bd-article th {
+  background: #f2f2f2;
+  font-weight: 600;
+}
+
+.bd-article tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Blockquotes */
+.bd-article blockquote {
+  border-left: 4px solid var(--orbit-border);
+  padding-left: 12px;
+  color: var(--orbit-muted);
+  margin: 1em 0;
+}
+
+/* MathJax */
+.bd-article .MathJax_Display {
+  margin: 1.4em 0;
+}
+
+/* Images */
+.bd-article img {
+  max-width: 95%;
+}
+
+/* Sidebar / TOC font */
+.bd-sidebar-primary, .bd-sidebar-secondary {
+  font-family: var(--orbit-font);
+}
