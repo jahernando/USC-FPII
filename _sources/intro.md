@@ -2,11 +2,11 @@
 
 Lectures about neutrinos, Physics Master, **Universidade de Santiago de Compostela**
 
-Autor: José Ángel Hernando Morata
+Author: José Ángel Hernando Morata
 
-Correo electrónico: jose.hernando@usc.es
+Contact: jose.hernando@usc.es
 
-Versión: Enero 2023 — actualización continua 2025.
+Version: 2026 (continuously updated).
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Versión: Enero 2023 — actualización continua 2025.
 
 ## Bibliography
 
-### books
+### Books
 
 A. Bettini, *Introduction to Elementary Particle Physics*, [Cambridge (2008)](https://www.cambridge.org/core/books/introduction-to-elementary-particle-physics/FB7841E74DFEE051D81AD953E81E10DE)
 
@@ -41,13 +41,12 @@ J.J. Gómez-Cadenas, J. Martín, *Phenomenology of neutrinoless double beta deca
 
 The following international conferences are the main venues for neutrino physics results (2024–2025):
 
-*Neutrino 2024*, 31st International Conference on Neutrino Physics and Astrophysics, Milan, Italy, June 16–22, 2024. [(website)](https://neutrino2024.io)
+*Neutrino 2024*, 31st International Conference on Neutrino Physics and Astrophysics, Milan, Italy, June 16–22, 2024. [(website)](https://agenda.infn.it/event/37867/contributions/)
 
 *ICHEP 2024*, 42nd International Conference on High Energy Physics, Prague, Czech Republic, July 18–27, 2024. Proceedings: [PoS(ICHEP2024)](https://pos.sissa.it/476/)
 
-*NuPhys 2024*, Prospects in Neutrino Physics, London, UK, December 18–20, 2024. [(IoP)](https://www.iop.org/events/nuphys-2024)
 
-*Moriond 2025*, Rencontres de Moriond — Electroweak Interactions and Unified Theories, Les Arcs, France, March 2025.
+*Moriond 2025*, Rencontres de Moriond — Electroweak Interactions and Unified Theories, Les Arcs, France, March 2025. [(website)](https://indico.in2p3.fr/event/35965/contributions/)
 
 *EPS-HEP 2025*, European Physical Society Conference on High Energy Physics, Marseille, France, July 2025.
 

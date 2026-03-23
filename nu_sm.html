@@ -1,34 +1,46 @@
 
+
 <!DOCTYPE html>
 
-<html lang="en">
+
+<html lang="en" data-content_root="" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neutrinos and the construction of the Standard Model &#8212; Neutrinos - USC</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>Neutrinos and the construction of the Standard Model &#8212; Neutrinos - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -37,12 +49,12 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -52,61 +64,109 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'nu_sm';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Neutrino Oscillations: Theory and Foundations" href="nu_oscillations.html" />
-    <link rel="prev" title="The mysteries of the neutrinos" href="nu_index.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
         
       
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Neutrinos - USC</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Neutrinos - USC - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Neutrinos - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -115,561 +175,306 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_index.html">
-   The mysteries of the neutrinos
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Neutrinos and the construction of the Standard Model
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_oscillations.html">
-   Neutrino Oscillations: Theory and Foundations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_oscillations_exp.html">
-   Neutrino Oscillations: Experimental Evidence
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_mass.html">
-   Neutrino Mass: Scale and Absolute Measurements
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_majorana.html">
-   Are neutrinos Majorana particles?
-  </a>
- </li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="nu_index.html">The mysteries of the neutrinos</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_sm.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_sm.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="_static/images/logo_binder.svg">
   </span>
-<span class="headerbtn__text-container">Binder</span>
+<span class="btn__text-container">Binder</span>
 </a>
-
-      </li>
+</li>
       
-      <li>
-        <a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_sm.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_sm.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_sm.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/nu_sm.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/jahernando/USC-FPII"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_sm.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/nu_sm.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pauli-postulated-the-existence-of-the-neutrino">
-   Pauli postulated the existence of the neutrino
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#unitarity-violation-in-fermi-theory-and-the-need-for-the-w-boson">
-     Unitarity violation in Fermi theory and the need for the
-     <span class="math notranslate nohighlight">
-      \(W\)
-     </span>
-     boson
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-discovery-of-the-neutrino-the-experiment-of-cowan-and-reines">
-   The discovery of the neutrino. The experiment of Cowan and Reines
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#parity-violation-the-wu-experiment-1957">
-     Parity violation: the Wu experiment (1957)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-va-structure-of-the-weak-current">
-     The V−A structure of the weak current
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-neutrino-in-the-electroweak-standard-model">
-     The neutrino in the electroweak Standard Model
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-helicity-of-the-neutrino">
-   The helicity of the neutrino.
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#neutrinos-maximally-violate-c-and-p-in-the-sm">
-     Neutrinos maximally violate C and P in the SM
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-three-neutrino-families">
-   The three neutrino families
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-discovery-of-the-muon-and-the-muon-neutrino">
-     The discovery of the muon and the muon neutrino
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-discovery-of-the-nu-mu">
-     The discovery of the
-     <span class="math notranslate nohighlight">
-      \(\nu_\mu\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-third-family-the-tau-and-the-tau-neutrino">
-     The third family: the tau and the tau neutrino
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lepton-universality">
-     Lepton Universality
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lepton-number-conservation-violation">
-     Lepton Number Conservation (Violation)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#neutral-currents">
-   Neutral currents
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gargamelle">
-     Gargamelle
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-first-nc-event-a-recoil-electron">
-     The first NC event: a recoil electron
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#only-three-neutrino-families">
-     Only three neutrino families
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#invisible-width-and-model-independent-extraction-of-n-nu">
-     Invisible width and model-independent extraction of
-     <span class="math notranslate nohighlight">
-      \(N_\nu\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#nc-couplings-of-sm-fermions">
-     NC couplings of SM fermions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summary">
-   Summary
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Neutrinos and the construction of the Standard Model</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pauli-postulated-the-existence-of-the-neutrino">
-   Pauli postulated the existence of the neutrino
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#unitarity-violation-in-fermi-theory-and-the-need-for-the-w-boson">
-     Unitarity violation in Fermi theory and the need for the
-     <span class="math notranslate nohighlight">
-      \(W\)
-     </span>
-     boson
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-discovery-of-the-neutrino-the-experiment-of-cowan-and-reines">
-   The discovery of the neutrino. The experiment of Cowan and Reines
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#parity-violation-the-wu-experiment-1957">
-     Parity violation: the Wu experiment (1957)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-va-structure-of-the-weak-current">
-     The V−A structure of the weak current
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-neutrino-in-the-electroweak-standard-model">
-     The neutrino in the electroweak Standard Model
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-helicity-of-the-neutrino">
-   The helicity of the neutrino.
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#neutrinos-maximally-violate-c-and-p-in-the-sm">
-     Neutrinos maximally violate C and P in the SM
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-three-neutrino-families">
-   The three neutrino families
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-discovery-of-the-muon-and-the-muon-neutrino">
-     The discovery of the muon and the muon neutrino
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-discovery-of-the-nu-mu">
-     The discovery of the
-     <span class="math notranslate nohighlight">
-      \(\nu_\mu\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-third-family-the-tau-and-the-tau-neutrino">
-     The third family: the tau and the tau neutrino
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lepton-universality">
-     Lepton Universality
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lepton-number-conservation-violation">
-     Lepton Number Conservation (Violation)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#neutral-currents">
-   Neutral currents
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gargamelle">
-     Gargamelle
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-first-nc-event-a-recoil-electron">
-     The first NC event: a recoil electron
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#only-three-neutrino-families">
-     Only three neutrino families
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#invisible-width-and-model-independent-extraction-of-n-nu">
-     Invisible width and model-independent extraction of
-     <span class="math notranslate nohighlight">
-      \(N_\nu\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#nc-couplings-of-sm-fermions">
-     NC couplings of SM fermions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summary">
-   Summary
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Neutrinos and the construction of the Standard Model</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-postulated-the-existence-of-the-neutrino">Pauli postulated the existence of the neutrino</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unitarity-violation-in-fermi-theory-and-the-need-for-the-w-boson">Unitarity violation in Fermi theory and the need for the <span class="math notranslate nohighlight">\(W\)</span> boson</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discovery-of-the-neutrino-the-experiment-of-cowan-and-reines">The discovery of the neutrino. The experiment of Cowan and Reines</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parity-violation-the-wu-experiment-1957">Parity violation: the Wu experiment (1957)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-helicity-of-the-neutrino">The helicity of the neutrino.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-va-structure-of-the-weak-current">The V−A structure of the weak current</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutrino-in-the-electroweak-standard-model">The neutrino in the electroweak Standard Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrinos-maximally-violate-c-and-p-in-the-sm">Neutrinos maximally violate C and P in the SM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-three-neutrino-families">The three neutrino families</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discovery-of-the-muon-and-the-muon-neutrino">The discovery of the muon and the muon neutrino</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discovery-of-the-nu-mu">The discovery of the <span class="math notranslate nohighlight">\(\nu_\mu\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-third-family-the-tau-and-the-tau-neutrino">The third family: the tau and the tau neutrino</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lepton-universality">Lepton Universality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lepton-number-conservation-violation">Lepton Number Conservation (Violation)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutral-currents">Neutral currents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gargamelle">Gargamelle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-first-nc-event-a-recoil-electron">The first NC event: a recoil electron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-three-neutrino-families">Only three neutrino families</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invisible-width-and-model-independent-extraction-of-n-nu">Invisible width and model-independent extraction of <span class="math notranslate nohighlight">\(N_\nu\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nc-couplings-of-sm-fermions">NC couplings of SM fermions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="neutrinos-and-the-construction-of-the-standard-model">
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="neutrinos-and-the-construction-of-the-standard-model">
 <h1>Neutrinos and the construction of the Standard Model<a class="headerlink" href="#neutrinos-and-the-construction-of-the-standard-model" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Feb  3 17:13:35 2025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Sun Mar 22 20:35:40 2026
 </pre></div>
 </div>
 </div>
@@ -682,11 +487,11 @@ title="Print to PDF"
 <span class="o">%</span><span class="k">autoreload</span> 2
  
 <span class="c1"># numpy and matplotlib</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">scipy.stats</span>     <span class="k">as</span> <span class="nn">stats</span>
-<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w">     </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">units</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="s1">&#39;seaborn-colorblind&#39;</span><span class="p">);</span>
 </pre></div>
@@ -694,27 +499,28 @@ title="Print to PDF"
 </div>
 </div>
 <p><em>Objective:</em></p>
-<p>Show how the neutrinos experiments defined the SM construction.</p>
+<p>Show how the neutrino experiments defined the SM construction.</p>
 <p>How parity violation and Neutral Current were fundamental to the acceptance of the SM.</p>
-<div class="section" id="pauli-postulated-the-existence-of-the-neutrino">
+<section id="pauli-postulated-the-existence-of-the-neutrino">
 <h2>Pauli postulated the existence of the neutrino<a class="headerlink" href="#pauli-postulated-the-existence-of-the-neutrino" title="Permalink to this heading">#</a></h2>
 <p>The <span class="math notranslate nohighlight">\(\beta\)</span> decay in nuclei was a mystery in the 1920s.</p>
 <div class="math notranslate nohighlight">
 \[
 ^A_Z X \to ^A_{Z+1}X' + e \;\; (?)
 \]</div>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/bspectrum_1935.png"><img alt="_images/bspectrum_1935.png" class="align-center" src="_images/bspectrum_1935.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/bspectrum_1935.png"><img alt="_images/bspectrum_1935.png" class="align-center" src="_images/bspectrum_1935.png" style="width: 500px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>The spectrum was continuous.</p>
 <p>If only an electron, <span class="math notranslate nohighlight">\(\beta\)</span>, was emitted, the released energy would be monochromatic.</p>
 <p>N. Bohr: <em>“At the present stage of atomic theory, however, we may say that we have no argument… for upholding the energy principle in the case of <span class="math notranslate nohighlight">\(\beta\)</span>-ray disintegrations.”</em></p>
@@ -729,58 +535,52 @@ where \)</span>F(Z, T_e)<span class="math notranslate nohighlight">\( is the Fer
 (Q - T_e)^2 \;\to\; (Q - T_e)\sqrt{(Q - T_e)^2 - m_\nu^2}
 \)</span>$</p>
 <p><strong>Questions:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Simulate both spectra for <span class="math notranslate nohighlight">\(^{210}\)</span>Bi (<span class="math notranslate nohighlight">\(Q = 1.161\)</span> MeV) and compare with the historical figure above.</p></li>
 <li><p>How does the endpoint shape change for <span class="math notranslate nohighlight">\(m_\nu = 50\)</span> keV? Is it detectable?</p></li>
 <li><p>KATRIN uses tritium (<span class="math notranslate nohighlight">\(Q = 18.6\)</span> keV): why is tritium better suited than bismuth for a neutrino mass search?</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sm</span> <span class="kn">import</span> <span class="n">beta_spectrum</span>
-<span class="n">beta_spectrum</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Wolfgang_Pauli">Pauli</a> postulated the existence of a light neutral particle that escapes undetected in <span class="math notranslate nohighlight">\(\beta\)</span> decays!</p>
 <p>This is his famous letter, sent to the Gauverein meeting in Tubingen.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/Pauli_letter_neutrino.jpg"><img alt="_images/Pauli_letter_neutrino.jpg" class="align-center" src="_images/Pauli_letter_neutrino.jpg" style="width: 800px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/Pauli_letter_neutrino.jpg"><img alt="_images/Pauli_letter_neutrino.jpg" class="align-center" src="_images/Pauli_letter_neutrino.jpg" style="width: 800px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><em>I have hit upon a desperate remedy to save… the law of conservation of energy. Namely, the possibility that there could exist in the nuclei electrically neutral particles, that I wish to call neutrons, which have spin 1/2</em></p>
 <p><em>The continuous beta spectrum would then become understandable by the assumption that in beta decay a neutron is emitted in addition to the electron such that the sum of the energies of the neutron and the electron is constant.</em></p>
 <p>Later Pauli will comment: <em>“I have done a terrible thing. I postulated a particle that can not be detected!”</em></p>
 <p>The neutron was discovered by Chadwick (1932) <a class="reference external" href="https://www.nature.com/articles/129312a0">[1]</a></p>
 <p>Later <a class="reference external" href="https://en.wikipedia.org/wiki/Enrico_Fermi">Fermi</a> named Pauli’s particle “neutrino” at the Solvay Conference in Brussels in 1933.</p>
 <p>Fermi constructed the theory of  <span class="math notranslate nohighlight">\(\beta\)</span>-decay [2] in 1934, explaining it in terms of a 4-fermion interaction <span class="math notranslate nohighlight">\(n \to p + e + \bar{\nu}_e\)</span> with strength <span class="math notranslate nohighlight">\(G_F\)</span> .</p>
-<p><em>Theory of β rays emission of radioactive substances, built on the hypothesis that the electron emitted by the nuclei do not exist before the decay. On the contrary they are created together with a neutrino.</em></p>
-<table class="colwidths-auto table">
+<p><em>Theory of β rays emission of radioactive substances, built on the hypothesis that the electrons emitted by the nuclei do not exist before the decay. On the contrary they are created together with a neutrino.</em></p>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/fermi_currents_SM.png"><img alt="_images/fermi_currents_SM.png" class="align-center" src="_images/fermi_currents_SM.png" style="width: 300px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/fermi_currents_SM.png"><img alt="_images/fermi_currents_SM.png" class="align-center" src="_images/fermi_currents_SM.png" style="width: 300px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="math notranslate nohighlight">
 \[
 \frac{G_F}{\sqrt{2}} \, (\bar{\Psi}_n \gamma_\mu \Psi_p) \, (\bar{\Psi}_\nu \gamma^\mu \Psi_e)
 \]</div>
 <p>The strength of the interaction is controlled by Fermi constant <span class="math notranslate nohighlight">\(G_F\)</span>.</p>
-<p>In the modern view, <span class="math notranslate nohighlight">\(G_F\)</span> is expressed in term of the weak constant, <span class="math notranslate nohighlight">\(g\)</span>, and the <span class="math notranslate nohighlight">\(W\)</span> mass, <span class="math notranslate nohighlight">\(m_W\)</span>:</p>
+<p>In the modern view, <span class="math notranslate nohighlight">\(G_F\)</span> is expressed in terms of the weak coupling constant, <span class="math notranslate nohighlight">\(g\)</span>, and the <span class="math notranslate nohighlight">\(W\)</span> mass, <span class="math notranslate nohighlight">\(m_W\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{G_F}{\sqrt{2}} = \frac{g^2}{ 8 m_W^2}
@@ -791,18 +591,14 @@ G_F = 1.1663788(7) \times 10^{-5} \; \mathrm{GeV}^{-2}
 \]</div>
 <p>Fermi argued that the weak interaction is weak because it is short range, not because the coupling itself is small.</p>
 <p>This interaction would also predict the scattering of neutrinos off matter, via the inverse process <span class="math notranslate nohighlight">\(\bar{\nu}_e + p \to n + e^+\)</span></p>
-<div class="section" id="unitarity-violation-in-fermi-theory-and-the-need-for-the-w-boson">
+<section id="unitarity-violation-in-fermi-theory-and-the-need-for-the-w-boson">
 <h3>Unitarity violation in Fermi theory and the need for the <span class="math notranslate nohighlight">\(W\)</span> boson<a class="headerlink" href="#unitarity-violation-in-fermi-theory-and-the-need-for-the-w-boson" title="Permalink to this heading">#</a></h3>
 <p>The Fermi theory is an effective theory valid only at low energies. The amplitude for <span class="math notranslate nohighlight">\(\nu_\mu + e^- \to \nu_e + \mu^-\)</span> grows with energy:
 $<span class="math notranslate nohighlight">\(
 \mathcal{M} \sim G_F\, s, \qquad s = E_{\rm CM}^2
-\)</span><span class="math notranslate nohighlight">\(
-Unitarity of the S-matrix requires \)</span>|a_J| \leq 1<span class="math notranslate nohighlight">\( for each partial wave, which is violated above:
-\)</span><span class="math notranslate nohighlight">\(
-\sqrt{s_{\rm max}} \sim \frac{1}{\sqrt{G_F}} \approx 300 \; \mathrm{GeV}
-\)</span><span class="math notranslate nohighlight">\(
-The cure is the \)</span>W<span class="math notranslate nohighlight">\( boson propagator, which tames the high-energy behaviour:
-\)</span><span class="math notranslate nohighlight">\(
+\)</span>$</p>
+<p>The cure is the <span class="math notranslate nohighlight">\(W\)</span> boson propagator, which tames the high-energy behaviour:
+$<span class="math notranslate nohighlight">\(
 \frac{G_F}{\sqrt{2}} \quad\xrightarrow{\text{full theory}}\quad \frac{g^2}{8} \cdot \frac{1}{q^2 - m_W^2} \quad\xrightarrow{q^2 \ll m_W^2}\quad \frac{g^2}{8 m_W^2} = \frac{G_F}{\sqrt{2}}
 \)</span><span class="math notranslate nohighlight">\(
 The \)</span>W^\pm<span class="math notranslate nohighlight">\( and \)</span>Z^0<span class="math notranslate nohighlight">\( bosons were discovered at CERN in 1983 by the UA1 and UA2 collaborations at the \)</span>Sp\bar{p}S<span class="math notranslate nohighlight">\(. Their masses, \)</span>m_W \approx 80.4<span class="math notranslate nohighlight">\( GeV and \)</span>m_Z \approx 91.2$ GeV, were in spectacular agreement with the GWS prediction.</p>
@@ -817,84 +613,68 @@ $<span class="math notranslate nohighlight">\(
 \frac{G_F}{\sqrt{2}} = \frac{g^2}{8 m_W^2} \quad \Rightarrow \quad m_W = \left(\frac{\pi\alpha}{\sqrt{2}\,G_F\sin^2\theta_W}\right)^{1/2}
 \)</span>$</p>
 <p><strong>Questions:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Derive <span class="math notranslate nohighlight">\(G_F\)</span> from the measured lifetime <span class="math notranslate nohighlight">\(\tau_\mu = 2.1970 \times 10^{-6}\)</span> s. Compare with the PDG value.</p></li>
 <li><p>Extract the weak coupling <span class="math notranslate nohighlight">\(g\)</span> and compare <span class="math notranslate nohighlight">\(\alpha_W = g^2/4\pi\)</span> with <span class="math notranslate nohighlight">\(\alpha_{em}\)</span>.</p></li>
 <li><p>Verify <span class="math notranslate nohighlight">\(\sin^2\theta_W = 1 - m_W^2/m_Z^2\)</span> using the PDG masses.</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sm</span> <span class="kn">import</span> <span class="n">fermi_constant_from_muon</span>
-<span class="n">fermi_constant_from_muon</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>In 1934 <a class="reference external" href="https://en.wikipedia.org/wiki/Hans_Bethe">Bethe</a> and Peierls were able to estimate the cross section for this process <a class="reference external" href="https://www.nature.com/articles/133532a0">[3]</a>, finding it smaller than <span class="math notranslate nohighlight">\(10^{-44} \; \mathrm{cm^2}\)</span> for a neutrino energy of 2 MeV.</p>
 <div class="math notranslate nohighlight">
 \[
 \sigma(\bar{\nu}_e + p \to n + e^+) \simeq 10^{-47} \mathrm{(E/MeV)^2 m^2}
 \]</div>
 <p>Bethe: <em>“it was absolutely impossible to observe processes of this kind”.</em></p>
-<p><strong>Question:</strong> What is the mean free path for a 1 MeV <span class="math notranslate nohighlight">\(\nu\)</span> in water? and in lead?</p>
-<p><strong>Question:</strong> What is the energy threshold for the inverse <span class="math notranslate nohighlight">\(\beta\)</span> decay?</p>
 <p><strong>Exercise: Neutrino mean free path</strong></p>
 <p>The mean free path in a medium with target number density <span class="math notranslate nohighlight">\(n\)</span> is:
 $<span class="math notranslate nohighlight">\(
 \lambda = \frac{1}{n \cdot \sigma(E_\nu)}
 \)</span><span class="math notranslate nohighlight">\(
-Using the IBD cross section \)</span>\sigma \approx 9.52\times10^{-44}(E_\nu/\mathrm{MeV})^2\ \mathrm{cm}^2$:</p>
+Using the cross section \)</span>\sigma \approx 9.52\times10^{-44}(E_\nu/\mathrm{MeV})^2\ \mathrm{cm}^2$:</p>
 <p><strong>Questions:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Compute and plot <span class="math notranslate nohighlight">\(\lambda(E_\nu)\)</span> in water, lead and iron for <span class="math notranslate nohighlight">\(0.1 \leq E_\nu \leq 10^4\)</span> MeV.</p></li>
 <li><p>At what energy does <span class="math notranslate nohighlight">\(\lambda\)</span> in water become comparable to the Earth’s radius (<span class="math notranslate nohighlight">\(R_\oplus = 6\,371\)</span> km)?</p></li>
 <li><p>Can a 1 MeV solar neutrino escape the Sun (<span class="math notranslate nohighlight">\(R_\odot = 696\,000\)</span> km, mostly hydrogen)?</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sm</span> <span class="kn">import</span> <span class="n">neutrino_mean_free_path</span>
-<span class="n">neutrino_mean_free_path</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="the-discovery-of-the-neutrino-the-experiment-of-cowan-and-reines">
+</section>
+</section>
+<section id="the-discovery-of-the-neutrino-the-experiment-of-cowan-and-reines">
 <h2>The discovery of the neutrino. The experiment of Cowan and Reines<a class="headerlink" href="#the-discovery-of-the-neutrino-the-experiment-of-cowan-and-reines" title="Permalink to this heading">#</a></h2>
-<p>B. Pontecorvo <a class="reference external" href="https://www.youtube.com/watch?v=yXrHnsBgQSw&amp;t=9s">[&gt;]</a> who suggested that indeed one could use the large neutrino fluxes becoming available [4] in nuclear reactors.</p>
+<p>B. Pontecorvo <a class="reference external" href="https://www.youtube.com/watch?v=yXrHnsBgQSw&amp;t=9s">[&gt;]</a> suggested that indeed one could use the large neutrino fluxes becoming available [4] in nuclear reactors.</p>
 <p>F. Reines and C. L. Cowan devised a method to detect antineutrinos coming from a nuclear reactor.</p>
-<p>Using the Savanna River reactor, SC, with 0.7 GW, with produced a flux <span class="math notranslate nohighlight">\(\phi \simeq 10^{17}\)</span> <span class="math notranslate nohighlight">\(\nu\mathrm{/(m^2 \, s)}\)</span></p>
-<p><strong>Question:</strong> the Savannah River reactor had 0.7 GW power, each fission releases 196 MeV, and 6 neutrinos that takes 9 MeV/fission. Compute the neutrino flux at 10 m below the reactor, and the rate of interaction on the free protons (H) in a 100 kg water detector.</p>
-<table class="colwidths-auto table">
+<p>Using the Savannah River reactor, SC, with 0.7 GW, which produced a flux <span class="math notranslate nohighlight">\(\phi \simeq 10^{17}\)</span> <span class="math notranslate nohighlight">\(\nu\mathrm{/(m^2 \, s)}\)</span></p>
+<p><strong>Question:</strong> the Savannah River reactor had 0.7 GW power, each fission released 196 MeV, and 6 neutrinos that took 9 MeV/fission. Compute the neutrino flux at 10 m below the reactor, and the rate of interaction on the free protons (H) in a 100 kg water detector.</p>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/cowan_reines_detector.png"><img alt="_images/cowan_reines_detector.png" class="align-center" src="_images/cowan_reines_detector.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/cowan_reines_detector.png"><img alt="_images/cowan_reines_detector.png" class="align-center" src="_images/cowan_reines_detector.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <ul class="simple">
 <li><p>two modules 100 kg water blocks sandwiched between two liquid scintillator chambers</p></li>
-<li><p>looking the inverse <span class="math notranslate nohighlight">\(\beta\)</span> interaction</p></li>
-<li><p>main backgrounds: neutrons spallation, cosmic rays, and natural radioactivity</p></li>
+<li><p>looking for the inverse <span class="math notranslate nohighlight">\(\beta\)</span> interaction</p></li>
+<li><p>main backgrounds: neutron spallation, cosmic rays, and natural radioactivity</p></li>
 <li><p>counting experiment: using on/off of the reactor</p></li>
 </ul>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/cowan_reines_method.png"><img alt="_images/cowan_reines_method.png" class="align-center" src="_images/cowan_reines_method.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/cowan_reines_method.png"><img alt="_images/cowan_reines_method.png" class="align-center" src="_images/cowan_reines_method.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>It exploits simultaneous emission of a neutron and a positron in inverse beta decays to significantly reduce backgrounds.</p>
 <p>The detection exploits two time-correlated signals that form a nearly background-free signature:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><strong>Prompt signal</strong> (<span class="math notranslate nohighlight">\(t = 0\)</span>): the positron annihilates immediately with an electron, producing <strong>two coincident 511 keV photons</strong> detected in the liquid scintillator layers on either side of the water target.</p></li>
 <li><p><strong>Delayed signal</strong> (<span class="math notranslate nohighlight">\(\Delta t \sim 5\)</span>–<span class="math notranslate nohighlight">\(10\ \mu\)</span>s later): the neutron thermalises and is captured on cadmium nuclei dissolved in the water (<span class="math notranslate nohighlight">\(\mathrm{CdCl_2}\)</span>), emitting a <strong>cascade of <span class="math notranslate nohighlight">\(\gamma\)</span>-rays of total energy <span class="math notranslate nohighlight">\(\sim 9\)</span> MeV</strong>:
 $<span class="math notranslate nohighlight">\(
@@ -904,43 +684,37 @@ e^+ + e^- \to 2\gamma\;(511\;\mathrm{keV}) \quad \xrightarrow{\ \Delta t \sim 5\
 <p>The requirement of <strong>delayed coincidence</strong> in the same detector module, combined with the characteristic time interval, reduces accidental backgrounds by many orders of magnitude. Switching the reactor on/off provided a direct background subtraction.</p>
 <p><strong>Exercise: Reactor neutrino flux and expected event rate</strong></p>
 <p><strong>Questions:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Given <span class="math notranslate nohighlight">\(P = 0.7\)</span> GW, <span class="math notranslate nohighlight">\(E_{\rm fission} = 196\)</span> MeV, and 6 <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> per fission, compute the total fission rate <span class="math notranslate nohighlight">\(\dot{N}_f\)</span> and the flux <span class="math notranslate nohighlight">\(\phi\)</span> at <span class="math notranslate nohighlight">\(d = 11\)</span> m.</p></li>
 <li><p>How many free protons <span class="math notranslate nohighlight">\(N_p\)</span> are in 200 kg of water?</p></li>
 <li><p>Using <span class="math notranslate nohighlight">\(\langle E_\nu \rangle \approx 3.5\)</span> MeV, compute the expected event rate. Compare with <span class="math notranslate nohighlight">\(2.9 \pm 0.2\)</span> events/hour after applying a detection efficiency <span class="math notranslate nohighlight">\(\varepsilon \approx 10\%\)</span>.</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sm</span> <span class="kn">import</span> <span class="n">reactor_flux</span>
-<span class="n">reactor_flux</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>They observed <span class="math notranslate nohighlight">\(2.9\pm0.2\)</span> events/hour not explained by background.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/cowan_reines_osciloscope.png"><img alt="_images/cowan_reines_osciloscope.png" class="align-center" src="_images/cowan_reines_osciloscope.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/cowan_reines_osciloscope.png"><img alt="_images/cowan_reines_osciloscope.png" class="align-center" src="_images/cowan_reines_osciloscope.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>In 1956 they were able to detect neutrinos <a class="reference external" href="https://www.nature.com/articles/178446a0">[5]</a> and soon wrote a telegram to Pauli.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/cowan_reines_telegram.png"><img alt="_images/cowan_reines_telegram.png" class="align-center" src="_images/cowan_reines_telegram.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/cowan_reines_telegram.png"><img alt="_images/cowan_reines_telegram.png" class="align-center" src="_images/cowan_reines_telegram.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Frederick_Reines">Reines</a> received the Nobel Prize in Physics in 1995</p>
-<div class="section" id="parity-violation-the-wu-experiment-1957">
+<section id="parity-violation-the-wu-experiment-1957">
 <h3>Parity violation: the Wu experiment (1957)<a class="headerlink" href="#parity-violation-the-wu-experiment-1957" title="Permalink to this heading">#</a></h3>
 <p>Lee and Yang [14] showed in 1956 that parity had <strong>never been tested</strong> in weak interactions. C. S. Wu et al. immediately devised a decisive experiment: aligning the spins of <span class="math notranslate nohighlight">\(^{60}\)</span>Co nuclei in a strong magnetic field at <span class="math notranslate nohighlight">\(T \sim 10\)</span> mK, and observing the angular distribution of the emitted electrons:
 $<span class="math notranslate nohighlight">\(
@@ -948,7 +722,7 @@ $<span class="math notranslate nohighlight">\(
 \)</span><span class="math notranslate nohighlight">\(
 **If parity were conserved**, flipping the magnetic field (which reverses the spin polarisation) should yield the same electron flux in all directions. Instead, electrons were emitted **preferentially opposite to the nuclear spin**:
 \)</span><span class="math notranslate nohighlight">\(
-W(\theta) \propto 1 - \frac{v_e}{c}\,\langle J \rangle\cos\theta
+W(\theta) \propto 1 - \beta_e\,\langle J \rangle\cos\theta
 \)</span><span class="math notranslate nohighlight">\(
 where \)</span>\theta$ is the angle between the electron momentum and the polarisation axis. The asymmetry was <strong>maximal</strong> — parity is completely violated in weak decays.</p>
 <p><strong>Combined with Goldhaber’s result</strong> (<span class="math notranslate nohighlight">\(h_\nu = -1\)</span>), this established that:</p>
@@ -957,11 +731,63 @@ where \)</span>\theta$ is the angle between the electron momentum and the polari
 <li><p>Charge conjugation <strong>C</strong> is also maximally violated: the mirror image of a <span class="math notranslate nohighlight">\(\nu_L\)</span> is a <span class="math notranslate nohighlight">\(\nu_R\)</span>, which does not interact weakly.</p></li>
 <li><p>This motivated the V−A theory (Feynman–Gell-Mann, Sudarshan–Marshak, 1958).</p></li>
 </ul>
+</section>
+</section>
+<section id="the-helicity-of-the-neutrino">
+<h2>The helicity of the neutrino.<a class="headerlink" href="#the-helicity-of-the-neutrino" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/goldhaber_decays.png"><img alt="_images/goldhaber_decays.png" class="align-center" src="_images/goldhaber_decays.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="section" id="the-va-structure-of-the-weak-current">
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Maurice_Goldhaber">Goldhaber</a> at Brookhaven measured the neutrino helicity in 1958 via an ingenious experiment [6].</p>
+<p>Measuring the gamma polarization of the electron capture in S wave in <span class="math notranslate nohighlight">\(\mathrm{^{152}Eu}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{Eu}  + e^- \to \mathrm{^*Sm} + \nu_e \to \mathrm{Sm} + \gamma + \nu_e
+\]</div>
+<p>The gamma has the same polarization as the neutrino helicity.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/goldhaber_experiment.png"><img alt="_images/goldhaber_experiment.png" class="align-center" src="_images/goldhaber_experiment.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Only neutrinos going upwards are selected.</p>
+<ul>
+<li><p>the recoil of <span class="math notranslate nohighlight">\(\mathrm{Sm}^*\)</span> is transferred to the gamma.</p></li>
+<li><p>Only gammas which are back-to-back to neutrinos have enough energy to produce resonance absorption.</p></li>
+</ul>
+</li>
+<li><p>the polarization of the gamma is selected via the <span class="math notranslate nohighlight">\(B\)</span> field orientation (up/down) in the ferro-magnetic support.</p>
+<ul>
+<li><p>Only electrons with opposite spin to the <span class="math notranslate nohighlight">\(B\)</span> suffer E.C.</p></li>
+<li><p>This selects electrons with spin up/down.</p></li>
+</ul>
+</li>
+<li><p>Switch  the polarity of <span class="math notranslate nohighlight">\(B\)</span> and detect number of gammas in NaI (that is helicity of the neutrino).</p></li>
+<li><p>Measured neutrino helicity:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+-1 \pm 0.3
+\]</div>
+<section id="the-va-structure-of-the-weak-current">
 <h3>The V−A structure of the weak current<a class="headerlink" href="#the-va-structure-of-the-weak-current" title="Permalink to this heading">#</a></h3>
 <p>The five Lorentz-invariant bilinear covariants and their transformation properties under parity:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Type</p></th>
 <th class="head"><p>Operator</p></th>
@@ -997,17 +823,18 @@ where \)</span>\theta$ is the angle between the electron momentum and the polari
 </tr>
 </tbody>
 </table>
+</div>
 <p>Sudarshan and Marshak, and independently Feynman and Gell-Mann (1958), proposed the <strong>V−A</strong> current:
 $<span class="math notranslate nohighlight">\(
-J^\mu_{\rm CC} = \bar{\psi}_\nu \gamma^\mu (1 - \gamma^5) \psi_\ell = 2\,\bar{\psi}_{\nu_L} \gamma^\mu \psi_{\ell_L}
+J^\mu_{\rm CC} = \bar{\psi}_\nu \gamma^\mu \frac{1}{2}(1 - \gamma^5) \psi_\ell = \bar{\psi}_{\nu_L} \gamma^\mu \psi_{\ell_L}
 \)</span>$</p>
 <p>The factor <span class="math notranslate nohighlight">\((1 - \gamma^5)/2 \equiv P_L\)</span> is the <strong>left-handed chirality projector</strong>. For massless particles, chirality equals helicity, so V−A couples <strong>only to left-handed fermions</strong> (and right-handed antifermions).</p>
 <p>The Fermi Lagrangian in V−A form is:
 $<span class="math notranslate nohighlight">\(
 \mathcal{L}_F = -\frac{G_F}{\sqrt{2}} \left(\bar{\psi}_p \gamma^\mu (1-\gamma^5) \psi_n\right)\left(\bar{\psi}_e \gamma_\mu (1-\gamma^5) \psi_\nu\right) + \mathrm{h.c.}
 \)</span>$</p>
-</div>
-<div class="section" id="the-neutrino-in-the-electroweak-standard-model">
+</section>
+<section id="the-neutrino-in-the-electroweak-standard-model">
 <h3>The neutrino in the electroweak Standard Model<a class="headerlink" href="#the-neutrino-in-the-electroweak-standard-model" title="Permalink to this heading">#</a></h3>
 <p>Glashow (1961), Weinberg (1967) and Salam (1968) embedded the V−A structure into a gauge theory with symmetry group <span class="math notranslate nohighlight">\(SU(2)_L \times U(1)_Y\)</span>.</p>
 <p>Leptons are organised as <strong>left-handed doublets</strong> and <strong>right-handed singlets</strong> under <span class="math notranslate nohighlight">\(SU(2)_L\)</span>:</p>
@@ -1036,57 +863,6 @@ L_i = \begin{pmatrix} \nu_{iL} \\ \ell_{iL} \end{pmatrix}, \quad i = e,\mu,\tau
 \text{Mass:} &amp; m_\nu = 0 \quad\text{(not protected by symmetry — accidental)}
 \end{array}
 \end{split}\]</div>
-</div>
-</div>
-<div class="section" id="the-helicity-of-the-neutrino">
-<h2>The helicity of the neutrino.<a class="headerlink" href="#the-helicity-of-the-neutrino" title="Permalink to this heading">#</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/goldhaber_decays.png"><img alt="_images/goldhaber_decays.png" class="align-center" src="_images/goldhaber_decays.png" style="width: 300px;" /></a></p></td>
-</tr>
-</tbody>
-</table>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Maurice_Goldhaber">Goldhaber</a> at Brookhaven measured the neutrino helicity in 1958 via an ingenious experiment [6].</p>
-<p>Measuring the gamma polarization of the electron capture in S wave in <span class="math notranslate nohighlight">\(\mathrm{^{152}Eu}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
-\mathrm{Eu}  + e^- \to \mathrm{^*Sm} + \nu_e \to \mathrm{Sm} + \gamma + \nu_e
-\]</div>
-<p>The gamma has the same polarization as the neutrino helicity.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/goldhaber_experiment.png"><img alt="_images/goldhaber_experiment.png" class="align-center" src="_images/goldhaber_experiment.png" style="width: 300px;" /></a></p></td>
-</tr>
-</tbody>
-</table>
-<ul class="simple">
-<li><p>Only neutrinos going upwards are selected.</p>
-<ul>
-<li><p>the recoil of <span class="math notranslate nohighlight">\(\mathrm{Sm}^*\)</span> is transfered to the gamma.</p></li>
-<li><p>Only gammas which are back-to-back to neutrinos have enough energy to produce resonance absortion.</p></li>
-</ul>
-</li>
-<li><p>the polarization of the gamma is selected via the <span class="math notranslate nohighlight">\(B\)</span> field orientation (up/down) in the ferro-magnetic support.</p>
-<ul>
-<li><p>Only electrons with oposite spin to the <span class="math notranslate nohighlight">\(B\)</span> suffer E.C.</p></li>
-<li><p>This select electrons with spin up/down.</p></li>
-</ul>
-</li>
-<li><p>Switch  the polarity of <span class="math notranslate nohighlight">\(B\)</span> and detect number of gammas in NaI (that is helicity of the neutrino).</p></li>
-<li><p>Measured neutrino helicity:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
--1 \pm 0.3
-\]</div>
 <p><strong>Exercise: Helicity suppression in pion and kaon leptonic decays</strong></p>
 <p>For a two-body decay <span class="math notranslate nohighlight">\(\pi^+ \to \ell^+ + \nu_\ell\)</span>, the helicity of the <span class="math notranslate nohighlight">\(\nu_\ell\)</span> is fixed by momentum conservation to be <span class="math notranslate nohighlight">\(h = +1\)</span> (right-handed). But the SM couples only left-handed neutrinos. The amplitude is therefore suppressed by the lepton mass:</p>
 <div class="math notranslate nohighlight">
@@ -1094,40 +870,34 @@ L_i = \begin{pmatrix} \nu_{iL} \\ \ell_{iL} \end{pmatrix}, \quad i = e,\mu,\tau
 \frac{\Gamma(\pi^+ \to e^+ \nu_e)}{\Gamma(\pi^+ \to \mu^+ \nu_\mu)} = \frac{m_e^2}{m_\mu^2} \cdot \frac{(m_\pi^2 - m_e^2)^2}{(m_\pi^2 - m_\mu^2)^2}
 \]</div>
 <p><strong>Questions:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Compute the ratio from PDG masses. Compare with the measured value <span class="math notranslate nohighlight">\(1.2327 \times 10^{-4}\)</span>.</p></li>
 <li><p>Repeat the calculation for the kaon: <span class="math notranslate nohighlight">\(K^+ \to \ell^+ \nu_\ell\)</span>. PDG value: <span class="math notranslate nohighlight">\(2.434 \times 10^{-5}\)</span>.</p></li>
 <li><p>Plot <span class="math notranslate nohighlight">\(\Gamma(P \to \ell\nu) \propto m_\ell^2(m_P^2 - m_\ell^2)^2\)</span> as a function of <span class="math notranslate nohighlight">\(m_\ell\)</span> and locate <span class="math notranslate nohighlight">\(m_e\)</span> and <span class="math notranslate nohighlight">\(m_\mu\)</span>.</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sm</span> <span class="kn">import</span> <span class="n">pion_helicity_suppression</span>
-<span class="n">pion_helicity_suppression</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="neutrinos-maximally-violate-c-and-p-in-the-sm">
+</section>
+<section id="neutrinos-maximally-violate-c-and-p-in-the-sm">
 <h3>Neutrinos maximally violate C and P in the SM<a class="headerlink" href="#neutrinos-maximally-violate-c-and-p-in-the-sm" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/SM_pidecay_CP.png"><img alt="_images/SM_pidecay_CP.png" class="align-center" src="_images/SM_pidecay_CP.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/SM_pidecay_CP.png"><img alt="_images/SM_pidecay_CP.png" class="align-center" src="_images/SM_pidecay_CP.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>Pion decays to leptons are helicity suppressed. Pions decay to muons 99% of the time.</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{m_e^2}{m_\mu^2} = 0.22 \times 10^{-4}, \;\; \frac{\Gamma(\pi^+ \to e^+ \, \nu_e)}{ \Gamma(\pi^+ \to \mu^+ \, \nu_\mu)} = 1.2 \times 10^{-4}
 \]</div>
 <p><strong>Questions:</strong> Apply the same argument to kaon semileptonic decays.</p>
-</div>
-</div>
-<div class="section" id="the-three-neutrino-families">
+</section>
+</section>
+<section id="the-three-neutrino-families">
 <h2>The three neutrino families<a class="headerlink" href="#the-three-neutrino-families" title="Permalink to this heading">#</a></h2>
 <p>In the SM helicity and chirality are related.</p>
 <div class="math notranslate nohighlight">
@@ -1143,7 +913,7 @@ P_{R, L } = \frac{1}{2}(1 \pm \gamma^5) = \frac{1}{2} \left(1 \pm \frac{{\bf s} 
 <p>Landau [13], Lee and Yang [14] and Salam [15] in 1957 proposed that neutrinos can be described with a left-handed Weyl spinor.</p>
 <p>This property was embedded in the V-A theory of weak interactions and ultimately in the SM by S. L. Glashow [16] in 1961, S. Weinberg [17] in 1967, and A. Salam [18] in 1968.</p>
 <p><strong>Question:</strong> Write the helicity states as left and right states.</p>
-<div class="section" id="the-discovery-of-the-muon-and-the-muon-neutrino">
+<section id="the-discovery-of-the-muon-and-the-muon-neutrino">
 <h3>The discovery of the muon and the muon neutrino<a class="headerlink" href="#the-discovery-of-the-muon-and-the-muon-neutrino" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The muon was discovered in 1937 by J. C. Street and E. C. Stevenson [19] and by S.
@@ -1158,22 +928,23 @@ H. Neddermeyer and C. D. Anderson [20].</p>
 </ul>
 </li>
 </ul>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/mu_emulsion.png"><img alt="_images/mu_emulsion.png" class="align-center" src="_images/mu_emulsion.png" style="width: 800px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/mu_emulsion.png"><img alt="_images/mu_emulsion.png" class="align-center" src="_images/mu_emulsion.png" style="width: 800px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <ul class="simple">
-<li><p>It can enter Fermi interactions with a neutrino. But is the same neutrino of the <span class="math notranslate nohighlight">\(\beta\)</span> decay?</p></li>
+<li><p>It can enter Fermi interactions with a neutrino. But is it the same neutrino as in <span class="math notranslate nohighlight">\(\beta\)</span> decay?</p></li>
 <li><p>Rabi: <em>How order this?</em> Why there are three families?</p></li>
 </ul>
-</div>
-<div class="section" id="the-discovery-of-the-nu-mu">
+</section>
+<section id="the-discovery-of-the-nu-mu">
 <h3>The discovery of the <span class="math notranslate nohighlight">\(\nu_\mu\)</span><a class="headerlink" href="#the-discovery-of-the-nu-mu" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Following a suggestion by Pontecorvo [20]</p></li>
@@ -1184,16 +955,17 @@ H. Neddermeyer and C. D. Anderson [20].</p>
 \[
 \pi^- \to \mu^- + \bar{\nu}_\mu, \; \pi^+ \to \mu^+ + \nu_\mu, 
 \]</div>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/brookhaven_munu_experiment.png"><img alt="_images/brookhaven_munu_experiment.png" class="align-center" src="_images/brookhaven_munu_experiment.png" style="width: 800px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/brookhaven_munu_experiment.png"><img alt="_images/brookhaven_munu_experiment.png" class="align-center" src="_images/brookhaven_munu_experiment.png" style="width: 800px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <ul class="simple">
 <li><p>Spark chambers were a novel technology. Photographs synchronized with the beam pulse.</p></li>
 <li><p>10 modules of 9 spark chambers <span class="math notranslate nohighlight">\(1.1 \times 1.1\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>, 10 tons.</p></li>
@@ -1203,19 +975,20 @@ H. Neddermeyer and C. D. Anderson [20].</p>
 <li><p>34 events with penetrating tracks originated in the chambers.</p></li>
 <li><p>Neutrinos produced in pion decays associated with a muon do not lead to electrons in scatterings off matter [22]</p></li>
 </ul>
-</div>
-<div class="section" id="the-third-family-the-tau-and-the-tau-neutrino">
+</section>
+<section id="the-third-family-the-tau-and-the-tau-neutrino">
 <h3>The third family: the tau and the tau neutrino<a class="headerlink" href="#the-third-family-the-tau-and-the-tau-neutrino" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/tau_discovery.png"><img alt="_images/tau_discovery.png" class="align-center" src="_images/tau_discovery.png" style="width: 600px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/tau_discovery.png"><img alt="_images/tau_discovery.png" class="align-center" src="_images/tau_discovery.png" style="width: 600px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <ul class="simple">
 <li><p>Perl et al., in 1975 at SPEAR in SLAC, discovered the tau lepton <span class="math notranslate nohighlight">\(\tau\)</span> near the production threshold <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.35.1489">[23]</a></p>
 <ul>
@@ -1224,16 +997,17 @@ H. Neddermeyer and C. D. Anderson [20].</p>
 </ul>
 </li>
 </ul>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nutau_discovery.png"><img alt="_images/nutau_discovery.png" class="align-center" src="_images/nutau_discovery.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/nutau_discovery.png"><img alt="_images/nutau_discovery.png" class="align-center" src="_images/nutau_discovery.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <ul class="simple">
 <li><p>Niwa et al., in 2000 at Fermilab, using the emulsion technique, produced <span class="math notranslate nohighlight">\(\nu_\tau\)</span> from <span class="math notranslate nohighlight">\(D_s\)</span> semileptonic decays <a class="reference external" href="https://arxiv.org/abs/hep-ex/0012035">[24]</a></p>
 <ul>
@@ -1241,22 +1015,23 @@ H. Neddermeyer and C. D. Anderson [20].</p>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="lepton-universality">
+</section>
+<section id="lepton-universality">
 <h3>Lepton Universality<a class="headerlink" href="#lepton-universality" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Lepton Universality implies that the coupling to each lepton doublet is the same, <span class="math notranslate nohighlight">\(g/\sqrt{2}\)</span>.</p></li>
 </ul>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/lepton_universality.png"><img alt="_images/lepton_universality.png" class="align-center" src="_images/lepton_universality.png" style="width: 1000px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/lepton_universality.png"><img alt="_images/lepton_universality.png" class="align-center" src="_images/lepton_universality.png" style="width: 1000px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Question:</strong> Compare the decay width, <span class="math notranslate nohighlight">\(\tau \to \nu_\tau \, \mu \, \bar{\nu}_\mu\)</span> and <span class="math notranslate nohighlight">\(\tau \to \nu_\tau \, e \, \bar{\nu}_e\)</span></p>
 <div class="math notranslate nohighlight">
 \[
@@ -1296,21 +1071,13 @@ $<span class="math notranslate nohighlight">\(
 f(x) = 1 - 8x + 8x^3 - x^4 - 12x^2\ln x
 \)</span>$</p>
 <p><strong>Questions:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Compute <span class="math notranslate nohighlight">\(g_\mu/g_e\)</span> from the ratio <span class="math notranslate nohighlight">\(\mathrm{BR}(\tau\to\mu\nu\nu)/\mathrm{BR}(\tau\to e\nu\nu)\)</span> using PDG values.</p></li>
 <li><p>Compute <span class="math notranslate nohighlight">\(g_\tau/g_\mu\)</span> comparing the partial widths of <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\tau\)</span> leptonic decays.</p></li>
 <li><p>Are both ratios consistent with universality at the per-mille level? Compute the deviation in units of <span class="math notranslate nohighlight">\(\sigma\)</span>.</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sm</span> <span class="kn">import</span> <span class="n">lepton_universality</span>
-<span class="n">lepton_universality</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="lepton-number-conservation-violation">
+</section>
+<section id="lepton-number-conservation-violation">
 <h3>Lepton Number Conservation (Violation)<a class="headerlink" href="#lepton-number-conservation-violation" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Lepton Number Conservation implies that with every lepton produced there is its anti-neutrino with the same flavour.</p>
@@ -1320,16 +1087,17 @@ f(x) = 1 - 8x + 8x^3 - x^4 - 12x^2\ln x
 </ul>
 </li>
 </ul>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/lfv_muenu.png"><img alt="_images/lfv_muenu.png" class="align-center" src="_images/lfv_muenu.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/lfv_muenu.png"><img alt="_images/lfv_muenu.png" class="align-center" src="_images/lfv_muenu.png" style="width: 400px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <ul class="simple">
 <li><p>Long history of searches for Lepton Flavour Violation processes with null results</p>
 <ul>
@@ -1339,32 +1107,34 @@ f(x) = 1 - 8x + 8x^3 - x^4 - 12x^2\ln x
 </li>
 </ul>
 <p>LFV searches summary <a class="reference external" href="http://pdg.lbl.gov/2019/reviews/rpp2019-rev-conservation-laws.pdf">[26]</a></p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/LFV_limits.png"><img alt="_images/LFV_limits.png" class="align-center" src="_images/LFV_limits.png" style="width: 1000px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/LFV_limits.png"><img alt="_images/LFV_limits.png" class="align-center" src="_images/LFV_limits.png" style="width: 1000px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-<div class="section" id="neutral-currents">
+</section>
+</section>
+<section id="neutral-currents">
 <h2>Neutral currents<a class="headerlink" href="#neutral-currents" title="Permalink to this heading">#</a></h2>
-<div class="section" id="gargamelle">
+<section id="gargamelle">
 <h3>Gargamelle<a class="headerlink" href="#gargamelle" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/gargamelle_nc.png"><img alt="_images/gargamelle_nc.png" class="align-center" src="_images/gargamelle_nc.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/gargamelle_nc.png"><img alt="_images/gargamelle_nc.png" class="align-center" src="_images/gargamelle_nc.png" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>Neutral Currents were detected at the Gargamelle experiment at CERN in 1973 [27].</p>
 <ul class="simple">
 <li><p>Gargamelle was a tank of 15 tons of freon, a gigantic bubble chamber.</p></li>
@@ -1375,8 +1145,8 @@ f(x) = 1 - 8x + 8x^3 - x^4 - 12x^2\ln x
 \[
 \left.\frac{\rm NC}{\rm CC}\right|_{\nu} = 0.21 \pm 0.03, \;\; \left.\frac{\rm NC}{\rm CC}\right|_{\bar{\nu}} = 0.45 \pm 0.09
 \]</div>
-</div>
-<div class="section" id="the-first-nc-event-a-recoil-electron">
+</section>
+<section id="the-first-nc-event-a-recoil-electron">
 <h3>The first NC event: a recoil electron<a class="headerlink" href="#the-first-nc-event-a-recoil-electron" title="Permalink to this heading">#</a></h3>
 <p>The most convincing initial evidence for NC was not a hadronic event but a single <strong>recoil electron</strong> from the elastic process:
 $<span class="math notranslate nohighlight">\(
@@ -1391,7 +1161,7 @@ $<span class="math notranslate nohighlight">\(
 \Rightarrow \quad \sin^2\theta_W \approx 0.23
 \)</span>$
 This value, consistent with the GWS electroweak unification, was the <strong>first experimental confirmation of the SM electroweak structure</strong>.</p>
-<p>The NC  lagrangian is:</p>
+<p>The NC Lagrangian is:</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L}_{NC} = - \frac{g}{2 \cos \theta_W} \sum_{f} \bar{\psi}_f \gamma^\mu (g_V^f - g_A^f \gamma^5) \psi_f Z_\mu
@@ -1403,34 +1173,36 @@ g_V^f = T_3^f - 2 Q_f \sin^2 \theta_W, \;\; g_A^f = T_3^f
 \]</div>
 <p>Depends on the weak-isospin component <span class="math notranslate nohighlight">\(T_3\)</span> and the charge <span class="math notranslate nohighlight">\(Q\)</span> in electron units.</p>
 <p>For neutrinos <span class="math notranslate nohighlight">\(g_V^\nu = g_A^\nu = 1/2\)</span></p>
-</div>
-<div class="section" id="only-three-neutrino-families">
+</section>
+<section id="only-three-neutrino-families">
 <h3>Only three neutrino families<a class="headerlink" href="#only-three-neutrino-families" title="Permalink to this heading">#</a></h3>
 <p>Lepton Electron Positron (LEP) was a CERN <span class="math notranslate nohighlight">\(e^+e^-\)</span> collider (1989–2000)</p>
 <p>With 4 large general purpose detectors: ALEPH, DELPHI, OPAL, L3.</p>
 <p>One of their main results was the measurement of the properties of the Z boson, in particular its width <span class="math notranslate nohighlight">\(\Gamma_Z\)</span>. LEP collected 7 M Z events.</p>
 <p>The LEP detectors were equipped with large areas of Silicon Microstrip detectors with excellent position resolution <span class="math notranslate nohighlight">\(\mathcal{O}(10) \; \mu\mathrm{m}\)</span>.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/ALEPH_event.png"><img alt="_images/ALEPH_event.png" class="align-center" src="_images/ALEPH_event.png" style="width: 800px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/ALEPH_event.png"><img alt="_images/ALEPH_event.png" class="align-center" src="_images/ALEPH_event.png" style="width: 800px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>The LEP measurements (in MeV) <a class="reference external" href="https://arxiv.org/abs/hep-ex/0509008">[28]</a>:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/LEP_Zwidth_nus.png"><img alt="_images/LEP_Zwidth_nus.png" class="align-center" src="_images/LEP_Zwidth_nus.png" style="width: 600px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/LEP_Zwidth_nus.png"><img alt="_images/LEP_Zwidth_nus.png" class="align-center" src="_images/LEP_Zwidth_nus.png" style="width: 600px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>The <span class="math notranslate nohighlight">\(e^+ \, e^- \to f \, \bar{f}\)</span> cross section is enhanced in the <span class="math notranslate nohighlight">\(Z\)</span> pole:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1449,8 +1221,8 @@ g_V^f = T_3^f - 2 Q_f \sin^2 \theta_W, \;\; g_A^f = T_3^f
 \[
 \frac{G_F m_Z^3}{ 6 \sqrt{2} \pi} \simeq 334 \; \mathrm{MeV} \to \Gamma_{\nu\bar{\nu}} \simeq 167 \; \mathrm{MeV}
 \]</div>
-</div>
-<div class="section" id="invisible-width-and-model-independent-extraction-of-n-nu">
+</section>
+<section id="invisible-width-and-model-independent-extraction-of-n-nu">
 <h3>Invisible width and model-independent extraction of <span class="math notranslate nohighlight">\(N_\nu\)</span><a class="headerlink" href="#invisible-width-and-model-independent-extraction-of-n-nu" title="Permalink to this heading">#</a></h3>
 <p>The total Z width decomposes as:
 $<span class="math notranslate nohighlight">\(
@@ -1483,24 +1255,16 @@ N_\nu = \frac{\Gamma_{\mathrm{inv}}}{\Gamma^{\rm SM}_{\bar{\nu}\nu}} = 2.984 \pm
 \sigma_{\rm had}(\sqrt{s}) = \frac{12\pi s}{m_Z^2} \frac{\Gamma_{ee}\,\Gamma_{\rm had}}{(s - m_Z^2)^2 + m_Z^2\Gamma_Z^2}
 \]</div>
 <p><strong>Questions:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Compute the SM partial widths <span class="math notranslate nohighlight">\(\Gamma_{\nu\bar\nu}\)</span>, <span class="math notranslate nohighlight">\(\Gamma_{\ell\bar{\ell}}\)</span>, <span class="math notranslate nohighlight">\(\Gamma_{\rm had}\)</span> and the total width <span class="math notranslate nohighlight">\(\Gamma_Z\)</span> for <span class="math notranslate nohighlight">\(N_\nu = 2, 3, 4\)</span>.</p></li>
 <li><p>Plot <span class="math notranslate nohighlight">\(\sigma_{\rm had}(\sqrt{s})\)</span> for the three cases and compare the peak values.</p></li>
 <li><p>Fit the simulated LEP data below to extract <span class="math notranslate nohighlight">\(N_\nu\)</span> as a free parameter using <code class="docutils literal notranslate"><span class="pre">scipy.optimize.curve_fit</span></code>.</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sm</span> <span class="kn">import</span> <span class="n">z_lineshape</span>
-<span class="n">z_lineshape</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="nc-couplings-of-sm-fermions">
+</section>
+<section id="nc-couplings-of-sm-fermions">
 <h3>NC couplings of SM fermions<a class="headerlink" href="#nc-couplings-of-sm-fermions" title="Permalink to this heading">#</a></h3>
 <p>Using <span class="math notranslate nohighlight">\(\sin^2\theta_W \simeq 0.2312\)</span>, the vector and axial couplings <span class="math notranslate nohighlight">\(g_V^f = T_3^f - 2Q_f\sin^2\theta_W\)</span>, <span class="math notranslate nohighlight">\(g_A^f = T_3^f\)</span> for each SM fermion are:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Fermion</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
@@ -1541,6 +1305,7 @@ N_\nu = \frac{\Gamma_{\mathrm{inv}}}{\Gamma^{\rm SM}_{\bar{\nu}\nu}} = 2.984 \pm
 </tr>
 </tbody>
 </table>
+</div>
 <p><em>Observations:</em></p>
 <ul class="simple">
 <li><p>Neutrinos couple <strong>maximally</strong> with <span class="math notranslate nohighlight">\(g_V = g_A = 1/2\)</span> — purely left-handed, as required by the absence of <span class="math notranslate nohighlight">\(\nu_R\)</span>.</p></li>
@@ -1548,45 +1313,46 @@ N_\nu = \frac{\Gamma_{\mathrm{inv}}}{\Gamma^{\rm SM}_{\bar{\nu}\nu}} = 2.984 \pm
 <li><p>The colour factor <span class="math notranslate nohighlight">\(N_c = 3\)</span> for quarks gives <span class="math notranslate nohighlight">\(\Gamma(Z \to q\bar{q}) = 3\,\Gamma(Z\to\ell\bar\ell)\)</span>.</p></li>
 </ul>
 <p><strong>Question:</strong> Show that <span class="math notranslate nohighlight">\(\sin^2\theta_W = 1/4\)</span> makes <span class="math notranslate nohighlight">\(g_V^e = 0\)</span> exactly. What does this imply for the forward–backward asymmetry in <span class="math notranslate nohighlight">\(e^+e^- \to \mu^+\mu^-\)</span> at the Z pole?</p>
-</div>
-</div>
-<div class="section" id="summary">
+</section>
+</section>
+<section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>Each experiment presented in this notebook added a key piece to the construction of the Standard Model:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Experiment</p></th>
-<th class="text-align:left head"><p>Discovery</p></th>
-<th class="text-align:left head"><p>Consequence for the SM</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Experiment</p></th>
+<th class="head text-left"><p>Discovery</p></th>
+<th class="head text-left"><p>Consequence for the SM</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p>Pauli / Fermi (1930–34)</p></td>
-<td class="text-align:left"><p>Neutrino postulated; β decay theory</p></td>
-<td class="text-align:left"><p>Weak interaction as a 4-fermion current</p></td>
+<tr class="row-even"><td class="text-left"><p>Pauli / Fermi (1930–34)</p></td>
+<td class="text-left"><p>Neutrino postulated; β decay theory</p></td>
+<td class="text-left"><p>Weak interaction as a 4-fermion current</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p>Cowan &amp; Reines (1956)</p></td>
-<td class="text-align:left"><p>First neutrino detection</p></td>
-<td class="text-align:left"><p>Confirmed the neutrino existence</p></td>
+<tr class="row-odd"><td class="text-left"><p>Cowan &amp; Reines (1956)</p></td>
+<td class="text-left"><p>First neutrino detection</p></td>
+<td class="text-left"><p>Confirmed the neutrino existence</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p>Goldhaber (1958)</p></td>
-<td class="text-align:left"><p>Neutrino helicity <span class="math notranslate nohighlight">\(= -1\)</span></p></td>
-<td class="text-align:left"><p>Neutrinos are left-handed; V−A structure</p></td>
+<tr class="row-even"><td class="text-left"><p>Goldhaber (1958)</p></td>
+<td class="text-left"><p>Neutrino helicity <span class="math notranslate nohighlight">\(= -1\)</span></p></td>
+<td class="text-left"><p>Neutrinos are left-handed; V−A structure</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p>Lederman et al. (1962)</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\mu \neq \nu_e\)</span></p></td>
-<td class="text-align:left"><p>Lepton flavour number is conserved</p></td>
+<tr class="row-odd"><td class="text-left"><p>Lederman et al. (1962)</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\nu_\mu \neq \nu_e\)</span></p></td>
+<td class="text-left"><p>Lepton flavour number is conserved</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p>Gargamelle (1973)</p></td>
-<td class="text-align:left"><p>Neutral currents observed</p></td>
-<td class="text-align:left"><p>Confirmed the <span class="math notranslate nohighlight">\(SU(2)_L \times U(1)_Y\)</span> electroweak structure</p></td>
+<tr class="row-even"><td class="text-left"><p>Gargamelle (1973)</p></td>
+<td class="text-left"><p>Neutral currents observed</p></td>
+<td class="text-left"><p>Confirmed the <span class="math notranslate nohighlight">\(SU(2)_L \times U(1)_Y\)</span> electroweak structure</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p>LEP (1989–2000)</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(N_\nu = 2.984 \pm 0.008\)</span></p></td>
-<td class="text-align:left"><p>Exactly three neutrino families in the SM</p></td>
+<tr class="row-odd"><td class="text-left"><p>LEP (1989–2000)</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(N_\nu = 2.984 \pm 0.008\)</span></p></td>
+<td class="text-left"><p>Exactly three neutrino families in the SM</p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>The neutrino in the Standard Model is therefore:</p>
 <ul class="simple">
 <li><p><strong>massless</strong>, left-handed (<span class="math notranslate nohighlight">\(\nu_L\)</span>), with negative helicity</p></li>
@@ -1597,9 +1363,9 @@ N_\nu = \frac{\Gamma_{\mathrm{inv}}}{\Gamma^{\rm SM}_{\bar{\nu}\nu}} = 2.984 \pm
 </ul>
 <p>But Nature tells a different story — neutrinos <em>do</em> have mass and <em>do</em> change flavour.<br />
 That is the subject of the next notebooks.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="references">
+<section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <p>[1] J. Chadwick, <a class="reference external" href="https://www.nature.com/articles/129312a0">Nature 129 (1932) 312</a></p>
 <p>[2] E. Fermi, Nuovo Cim. 11 (1934) 1.</p>
@@ -1630,8 +1396,8 @@ and Analyticity”, Stockholm, Sweden, 1968, edited by N. Svartholm, p. 367.</p>
 <p>[26] A. Pich, M. Ramsey-Musolf, Particle Data Group, <a class="reference external" href="https://pdg.lbl.gov/2023/reviews/rpp2023-rev-conservation-laws.pdf">Tests of Conservation Laws (2023)</a></p>
 <p>[27] F.J. Hasert et al., Gargamelle Collaboration, <a class="reference external" href="https://doi.org/10.1016/0370-2693(73)90499-1">Phys. Lett. B 46 (1973) 138</a></p>
 <p>[28] LEP Electroweak Working Group, <a class="reference external" href="https://arxiv.org/abs/hep-ex/0509008">arXiv:hep-ex/0509008</a></p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1645,7 +1411,7 @@ and Analyticity”, Stockholm, Sweden, 1968, edited by N. Svartholm, p. 367.</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -1653,50 +1419,116 @@ and Analyticity”, Stockholm, Sweden, 1968, edited by N. Svartholm, p. 367.</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="nu_index.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">The mysteries of the neutrinos</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="nu_oscillations.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Neutrino Oscillations: Theory and Foundations</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-postulated-the-existence-of-the-neutrino">Pauli postulated the existence of the neutrino</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unitarity-violation-in-fermi-theory-and-the-need-for-the-w-boson">Unitarity violation in Fermi theory and the need for the <span class="math notranslate nohighlight">\(W\)</span> boson</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discovery-of-the-neutrino-the-experiment-of-cowan-and-reines">The discovery of the neutrino. The experiment of Cowan and Reines</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parity-violation-the-wu-experiment-1957">Parity violation: the Wu experiment (1957)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-helicity-of-the-neutrino">The helicity of the neutrino.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-va-structure-of-the-weak-current">The V−A structure of the weak current</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutrino-in-the-electroweak-standard-model">The neutrino in the electroweak Standard Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrinos-maximally-violate-c-and-p-in-the-sm">Neutrinos maximally violate C and P in the SM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-three-neutrino-families">The three neutrino families</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discovery-of-the-muon-and-the-muon-neutrino">The discovery of the muon and the muon neutrino</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-discovery-of-the-nu-mu">The discovery of the <span class="math notranslate nohighlight">\(\nu_\mu\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-third-family-the-tau-and-the-tau-neutrino">The third family: the tau and the tau neutrino</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lepton-universality">Lepton Universality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lepton-number-conservation-violation">Lepton Number Conservation (Violation)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutral-currents">Neutral currents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gargamelle">Gargamelle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-first-nc-event-a-recoil-electron">The first NC event: a recoil electron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-three-neutrino-families">Only three neutrino families</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invisible-width-and-model-independent-extraction-of-n-nu">Invisible width and model-independent extraction of <span class="math notranslate nohighlight">\(N_\nu\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nc-couplings-of-sm-fermions">NC couplings of SM fermions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By José Ángel Hernando Morata<br/>
-  
-      &copy; Copyright USC - J.A. Hernando - 2023.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By José Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright USC - J.A. Hernando - 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

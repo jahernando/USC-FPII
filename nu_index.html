@@ -1,34 +1,46 @@
 
+
 <!DOCTYPE html>
 
-<html lang="en">
+
+<html lang="en" data-content_root="" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The mysteries of the neutrinos &#8212; Neutrinos - USC</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>The mysteries of the neutrinos &#8212; Neutrinos - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -37,12 +49,12 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -52,61 +64,108 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'nu_index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Neutrinos and the construction of the Standard Model" href="nu_sm.html" />
     <link rel="prev" title="Neutrinos - USC" href="intro.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Neutrinos - USC</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Neutrinos - USC - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Neutrinos - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -116,362 +175,278 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   The mysteries of the neutrinos
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_sm.html">
-   Neutrinos and the construction of the Standard Model
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_oscillations.html">
-   Neutrino Oscillations: Theory and Foundations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_oscillations_exp.html">
-   Neutrino Oscillations: Experimental Evidence
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_mass.html">
-   Neutrino Mass: Scale and Absolute Measurements
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nu_majorana.html">
-   Are neutrinos Majorana particles?
-  </a>
- </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">The mysteries of the neutrinos</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_index.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FPII/master?urlpath=tree/docs/nu_index.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="_static/images/logo_binder.svg">
   </span>
-<span class="headerbtn__text-container">Binder</span>
+<span class="btn__text-container">Binder</span>
 </a>
-
-      </li>
+</li>
       
-      <li>
-        <a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_index.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FPII/blob/master/docs/nu_index.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_index.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/nu_index.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/jahernando/USC-FPII"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnu_index.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/nu_index.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#neutrinos-in-nature">
-     Neutrinos in Nature
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-urgent-questions">
-     Some urgent questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#course-structure">
-   Course Structure
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conceptual-map">
-     Conceptual map
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#open-questions">
-     Open questions
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>The mysteries of the neutrinos</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#neutrinos-in-nature">
-     Neutrinos in Nature
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-urgent-questions">
-     Some urgent questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#course-structure">
-   Course Structure
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conceptual-map">
-     Conceptual map
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#open-questions">
-     Open questions
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The mysteries of the neutrinos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrinos-in-the-sm">Neutrinos in the SM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrinos-in-nature">Neutrinos in Nature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-urgent-questions">Some urgent questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-map">Conceptual map</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="the-mysteries-of-the-neutrinos">
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-mysteries-of-the-neutrinos">
 <h1>The mysteries of the neutrinos<a class="headerlink" href="#the-mysteries-of-the-neutrinos" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
 </pre></div>
 </div>
@@ -485,48 +460,77 @@ title="Print to PDF"
 <p><em>About</em></p>
 <p>These lectures are about some selected topics on Neutrino Physics.</p>
 <p>They cover the relevance of the neutrino in the construction of the Standard Model, neutrino oscillations and double-beta decay searches.</p>
-<div class="section" id="introduction">
+<section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p>Neutrinos</p>
+<p><strong>What are neutrinos?</strong></p>
 <ul class="simple">
-<li><p>are the closest thing to nothing we have discovered.</p></li>
-<li><p>played an important role in the construction of the Standard Model (SM)</p></li>
-<li><p>have provided the <strong>only evidence of Physics Beyond the SM</strong> (BSM)</p></li>
+<li><p>Are one of the fundamental fermions of Nature.</p></li>
+<li><p>They are abundant (~336 1/cm<span class="math notranslate nohighlight">\(^3\)</span> relic cosmic Neutrinos, <span class="math notranslate nohighlight">\(10^{11}\)</span> 1/cm<span class="math notranslate nohighlight">\(^2\)</span>s) solar neutrinos on Earth!</p></li>
+<li><p>They cover a large range of energy in Nature! (from meV to PeV)</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/intro_plot_nue_energies.png"><img alt="_images/intro_plot_nue_energies.png" src="_images/intro_plot_nue_energies.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Are the closest thing to nothing we have discovered: they only interact weakly, are electrically neutral, and have a tiny mass (&lt;eV!)</p></li>
+<li><p>Played an important role in the construction of the Standard Model (SM)</p></li>
+<li><p>have provided the <strong>only evidence of Physics Beyond the SM</strong> (BSM) =&gt; Neutrino Oscillations</p></li>
 <li><p>are unique: neutrinos are the only fundamental fermions that could be their own antiparticle.</p></li>
 </ul>
-<p>Two major discoveries and one confirmation in the last decades:</p>
+<p><strong>Why are neutrinos particularly <em>cool</em>?</strong></p>
+<ul class="simple">
+<li><p>have provided the <strong>only evidence of Physics Beyond the SM</strong> (BSM) =&gt; Neutrino Oscillations</p></li>
+<li><p>They have tiny masses compared with other fermions, We do not have a natural explanation for that!</p></li>
+<li><p>we do not know their nature: neutrinos are the only fundamental fermions that could be their own antiparticle. They can be purely neutral! Neutrinos can be Majorana fermions.</p></li>
+<li><p>we do not know how they acquire mass via the Higgs mechanism (which is related to their nature)</p></li>
+</ul>
+<p><strong>Neutrinos are one of the relevant topics in the last decades of HEP</strong></p>
+<p>Two major discoveries and one confirmation:</p>
 <ul class="simple">
 <li><p>Higgs discovery (<a class="reference external" href="https://arxiv.org/abs/1207.7214">ATLAS</a>, <a class="reference external" href="https://arxiv.org/abs/1207.7235">CMS</a>) <a class="reference external" href="http://pdg.lbl.gov/2022/reviews/rpp2024-rev-higgs-boson.pdf">pdg-review</a></p></li>
 <li><p>Confirmation of the Cabibbo-Kobayashi-Maskawa Unitary Matrix (BaBar, Belle, LHCb, …), <a class="reference external" href="http://pdg.lbl.gov/2024/reviews/rpp2024-rev-ckm-matrix.pdf">pdg-review</a></p></li>
 <li><p>Discovery of the neutrino oscillations (<a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">Super-Kamiokande</a>, <a class="reference external" href="https://arxiv.org/abs/1109.0763">SNO</a>) <a class="reference external" href="http://pdg.lbl.gov/2024/reviews/rpp2024-rev-neutrino-mixing.pdf">pdg-review</a></p></li>
 </ul>
 <p>The CKM and PMNS matrices are both rooted in Higgs physics: they arise from the Yukawa couplings of quarks and leptons to the Higgs field across three generations.</p>
-<p>Neutrino oscillation simplified summary:</p>
-<table class="colwidths-auto table">
+<p>Neutrino oscillation old-days plot:</p>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nu_oscillation_dm2_tan2theta.png"><img alt="_images/nu_oscillation_dm2_tan2theta.png" src="_images/nu_oscillation_dm2_tan2theta.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/nu_oscillation_dm2_tan2theta.png"><img alt="_images/nu_oscillation_dm2_tan2theta.png" src="_images/nu_oscillation_dm2_tan2theta.png" style="width: 400px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
 </tr>
 </tbody>
 </table>
-<p>Fermions in the SM:</p>
-<table class="colwidths-auto table">
+</div>
+</section>
+<section id="neutrinos-in-the-sm">
+<h2>Neutrinos in the SM<a class="headerlink" href="#neutrinos-in-the-sm" title="Permalink to this heading">#</a></h2>
+<p>The fermions table:</p>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><img alt="_images/teo_su3_su2l_u1y_fermions.png" src="_images/teo_su3_su2l_u1y_fermions.png" /></p></td>
+<tr class="row-even"><td class="text-center"><p><img alt="_images/teo_su3_su2l_u1y_fermions.png" src="_images/teo_su3_su2l_u1y_fermions.png" /></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>Leptons in the SM:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -556,13 +560,13 @@ e_R, \mu_R, \tau_R
 \[
 \mathcal{L}_{NC} = - \frac{g_W}{2 \cos \theta_W} \sum_{\alpha = e, \mu, \tau} \bar{\nu}_{\alpha L} \gamma^\mu \nu_{\alpha L} Z_\mu
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(g_W\)</span> is the weak constant and <span class="math notranslate nohighlight">\(\theta_W\)</span> the Weinberg angle.</p>
+<p>where <span class="math notranslate nohighlight">\(g_W\)</span> is the weak coupling constant and <span class="math notranslate nohighlight">\(\theta_W\)</span> the Weinberg angle.</p>
 <p>The V-A structure is explicit in the interaction Lagrangian.</p>
 <ul class="simple">
 <li><p>The lepton number in the SM is (accidentally) preserved.</p></li>
 <li><p>Furthermore, flavour lepton number is also accidentally preserved: electron (<span class="math notranslate nohighlight">\(L_e\)</span>), muon (<span class="math notranslate nohighlight">\(L_\mu\)</span>) and tau (<span class="math notranslate nohighlight">\(L_\tau\)</span>).</p></li>
 </ul>
-<div class="section" id="neutrinos-in-nature">
+<section id="neutrinos-in-nature">
 <h3>Neutrinos in Nature<a class="headerlink" href="#neutrinos-in-nature" title="Permalink to this heading">#</a></h3>
 <p>But neutrinos in Nature:</p>
 <ul class="simple">
@@ -579,62 +583,84 @@ e_R, \mu_R, \tau_R
 <li><p>Their absolute mass scale is not yet known, but it is very small compared to the masses of the charged leptons, <span class="math notranslate nohighlight">\(m_\nu \ll m_e\)</span>.</p></li>
 <li><p>We need to complete the SM to include neutrino masses, but there are two possibilities: either Dirac (simple extension of the SM) or Majorana (which implies BSM).</p></li>
 </ul>
-</div>
-<div class="section" id="some-urgent-questions">
+</section>
+<section id="some-urgent-questions">
 <h3>Some urgent questions<a class="headerlink" href="#some-urgent-questions" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Is the neutrino its own antiparticle? Is it Dirac or Majorana?</p></li>
-<li><p>What is the neutrino mass? What is the neutrino mass hierarchy?</p></li>
 <li><p>Why is the neutrino mass so small? Is there a new energy scale, <span class="math notranslate nohighlight">\(\Lambda\)</span>, related to neutrino masses?</p></li>
-<li><p>Do neutrinos violate CP?</p></li>
 </ul>
-<p>The vastly different scale of neutrino masses compared with other fermions may be an indication of a new energy scale.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="_images/nu_mass_scale.png"><img alt="_images/nu_mass_scale.png" src="_images/nu_mass_scale.png" style="width: 800px;" /></a></p></td>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="_images/nu_mass_scale.png"><img alt="_images/nu_mass_scale.png" src="_images/nu_mass_scale.png" style="width: 800px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-<div class="section" id="course-structure">
+<p>The vastly different scale of neutrino masses compared with other fermions may be an indication of a new energy scale.</p>
+<p>But the mass of the neutrino, the flavour structure and its coupling with the Higgs, open more questions:</p>
+<ul class="simple">
+<li><p>What is the neutrino mass? What is the neutrino mass hierarchy?</p></li>
+<li><p>Is the neutrino its own antiparticle? Is it Dirac or Majorana?</p></li>
+<li><p>What are value of the mixing parameters? Do neutrinos violate CP?</p></li>
+</ul>
+<p><strong>Neutrinos are the most elusive particles in the SM!</strong></p>
+</section>
+<section id="open-questions">
+<h3>Open questions<a class="headerlink" href="#open-questions" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Mass ordering</strong>: is <span class="math notranslate nohighlight">\(m_3 &gt; m_2 &gt; m_1\)</span> (NH) or <span class="math notranslate nohighlight">\(m_3 &lt; m_1 &lt; m_2\)</span> (IH)?</p></li>
+<li><p><strong>CP violation</strong>: is <span class="math notranslate nohighlight">\(\delta_{CP}\neq 0\)</span>? Is it related with leptogenesis?</p></li>
+<li><p><strong>Absolute mass</strong>: what is <span class="math notranslate nohighlight">\(m_1\)</span>? Is the spectrum quasi-degenerate?</p></li>
+<li><p><strong>Majorana nature</strong>: are neutrinos their own antiparticle?</p></li>
+<li><p><strong>New physics</strong>: non-standard interactions, extra dimensions, …</p></li>
+</ol>
+</section>
+</section>
+<section id="course-structure">
 <h2>Course Structure<a class="headerlink" href="#course-structure" title="Permalink to this heading">#</a></h2>
 <p>These lectures are organised in <strong>five notebooks</strong>, following the logical development of neutrino physics:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Notebook</p></th>
 <th class="head"><p>Topic</p></th>
 <th class="head"><p>Key concepts</p></th>
+<th class="head"><p>Status</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="nu_sm.html"><span class="doc std std-doc">Neutrinos &amp; the SM</span></a></p></td>
+<tr class="row-even"><td><p>Neutrinos &amp; the SM</p></td>
 <td><p>History and Standard Model</p></td>
 <td><p>Pauli, Cowan-Reines, V-A, helicity, 3 families, LEP</p></td>
+<td><p><em>under revision</em></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="nu_oscillations.html"><span class="doc std std-doc">Oscillations: Theory</span></a></p></td>
+<tr class="row-odd"><td><p>Oscillations: Theory</p></td>
 <td><p>Mixing and oscillation theory</p></td>
 <td><p>2-family formula, MSW, PMNS, solar, atmospheric</p></td>
+<td><p><em>under revision</em></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="nu_oscillations_exp.html"><span class="doc std std-doc">Oscillations: Experiments</span></a></p></td>
+<tr class="row-even"><td><p>Oscillations: Experiments</p></td>
 <td><p>Precision &amp; new generation</p></td>
 <td><p>θ₁₃ (Daya Bay), δ_CP (T2K+NOvA), JUNO, DUNE, HyperK</p></td>
+<td><p><em>under revision</em></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="nu_mass.html"><span class="doc std std-doc">Neutrino Mass</span></a></p></td>
+<tr class="row-odd"><td><p>Neutrino Mass</p></td>
 <td><p>Absolute mass scale</p></td>
 <td><p>KATRIN, Project 8, Planck, DESI, mass ordering</p></td>
+<td><p><em>under revision</em></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="nu_majorana.html"><span class="doc std std-doc">Majorana Neutrinos</span></a></p></td>
+<tr class="row-even"><td><p>Majorana Neutrinos</p></td>
 <td><p>Dirac vs Majorana</p></td>
 <td><p>Seesaw, leptogenesis, ββ0ν, LEGEND, KamLAND-Zen, NEXT</p></td>
+<td><p><em>under revision</em></p></td>
 </tr>
 </tbody>
 </table>
-<div class="section" id="conceptual-map">
+</div>
+<section id="conceptual-map">
 <h3>Conceptual map<a class="headerlink" href="#conceptual-map" title="Permalink to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Standard Model (massless ν)
         │
@@ -655,20 +681,9 @@ e_R, \mu_R, \tau_R
    Seesaw mechanism  ──►  Heavy right-handed ν  ──►  GUT-scale physics
 </pre></div>
 </div>
-</div>
-<div class="section" id="open-questions">
-<h3>Open questions<a class="headerlink" href="#open-questions" title="Permalink to this heading">#</a></h3>
-<ol class="simple">
-<li><p><strong>Mass ordering</strong>: is <span class="math notranslate nohighlight">\(m_3 &gt; m_2 &gt; m_1\)</span> (NH) or <span class="math notranslate nohighlight">\(m_3 &lt; m_1 &lt; m_2\)</span> (IH)?</p></li>
-<li><p><strong>CP violation</strong>: does <span class="math notranslate nohighlight">\(\delta_{CP}\neq 0\)</span>? Is it related to baryogenesis?</p></li>
-<li><p><strong>Absolute mass</strong>: what is <span class="math notranslate nohighlight">\(m_1\)</span>? Is the spectrum quasi-degenerate?</p></li>
-<li><p><strong>Majorana nature</strong>: are neutrinos their own antiparticle?</p></li>
-<li><p><strong>Sterile neutrinos</strong>: do light or heavy sterile states exist?</p></li>
-<li><p><strong>New physics</strong>: non-standard interactions, extra dimensions, …</p></li>
-</ol>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -682,7 +697,7 @@ e_R, \mu_R, \tau_R
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -690,50 +705,104 @@ e_R, \mu_R, \tau_R
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Neutrinos - USC</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="nu_sm.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Neutrinos and the construction of the Standard Model</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By José Ángel Hernando Morata<br/>
-  
-      &copy; Copyright USC - J.A. Hernando - 2023.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
 
-
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Neutrinos - USC</p>
       </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrinos-in-the-sm">Neutrinos in the SM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrinos-in-nature">Neutrinos in Nature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-urgent-questions">Some urgent questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-questions">Open questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-map">Conceptual map</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By José Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright USC - J.A. Hernando - 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
