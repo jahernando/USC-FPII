@@ -5,8 +5,9 @@ format: jb-book
 root: intro.md
 chapters:
 - file: nu_index.ipynb
-- file: nu_sm.ipynb
-- file: nu_oscillations.ipynb
-- file: nu_oscillations_exp.ipynb
-- file: nu_mass.ipynb
-- file: nu_majorana.ipynb
+# Chapters under revision — will be added as they are reviewed:
+# - file: nu_sm.ipynb
+# - file: nu_oscillations.ipynb
+# - file: nu_oscillations_exp.ipynb
+# - file: nu_mass.ipynb
+# - file: nu_majorana.ipynb
