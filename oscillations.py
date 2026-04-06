@@ -159,7 +159,7 @@ def plot_2fam_interactive():
         ax2.grid(True, alpha=0.3)
 
         fig.suptitle(
-            fr'2 familias: $\theta = {theta_deg:.1f}°$,  '
+            fr'2 families: $\theta = {theta_deg:.1f}°$,  '
             fr'$\Delta m^2 = {dm2:.2e}$ eV²',
             fontsize=13
         )
@@ -235,22 +235,22 @@ def plot_3fam_interactive(bf=None):
         Pmat  = np.array([[osc_prob_3fam(a, b, L, E_ref, U, dm21, dm31)
                            for b in range(3)] for a in range(3)])
         im = ax2.imshow(Pmat, vmin=0, vmax=1, cmap='RdYlGn', aspect='equal')
-        plt.colorbar(im, ax=ax2, label='Probabilidad')
+        plt.colorbar(im, ax=ax2, label='Probability')
         ax2.set_xticks(range(3))
         ax2.set_xticklabels(_FLABELS, fontsize=12)
         ax2.set_yticks(range(3))
         ax2.set_yticklabels(_FLABELS, fontsize=12)
-        ax2.set_xlabel('Sabor final', fontsize=11)
-        ax2.set_ylabel('Sabor inicial', fontsize=11)
+        ax2.set_xlabel('Final flavour', fontsize=11)
+        ax2.set_ylabel('Initial flavour', fontsize=11)
         for a in range(3):
             for b in range(3):
                 color = 'black' if 0.2 < Pmat[a, b] < 0.8 else 'white'
                 ax2.text(b, a, f'{Pmat[a, b]:.3f}', ha='center', va='center',
                          fontsize=10, color=color)
-        ax2.set_title(fr'Matriz $\mathcal{{P}}$ a $E = {E_ref:.0f}$ GeV', fontsize=12)
+        ax2.set_title(fr'Matrix $\mathcal{{P}}$ at $E = {E_ref:.0f}$ GeV', fontsize=12)
 
         fig.suptitle(
-            fr'3 familias: $\theta_{{12}}={th12_deg:.1f}°$, '
+            fr'3 families: $\theta_{{12}}={th12_deg:.1f}°$, '
             fr'$\theta_{{13}}={th13_deg:.1f}°$, '
             fr'$\theta_{{23}}={th23_deg:.1f}°$, '
             fr'$\delta_\mathrm{{CP}}={delta_deg:.0f}°$ — '
@@ -265,7 +265,7 @@ def plot_3fam_interactive(bf=None):
         _plot,
         alpha_i    = widgets.Dropdown(
             options=[('νe', 0), ('νμ', 1), ('ντ', 2)], value=1,
-            description='ν inicial:', style={'description_width': 'initial'}),
+            description='Initial ν:', style={'description_width': 'initial'}),
         log_L      = widgets.FloatSlider(
             value=3.0, min=1.0, max=5.0, step=0.1,
             description='log₁₀(L/km)', style={'description_width': 'initial'},
