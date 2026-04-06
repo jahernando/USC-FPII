@@ -461,7 +461,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactive-oscillation-three-families-pmns">Interactive oscillation: three families (PMNS)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-experimental-evidence">Next: Experimental Evidence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-current-and-future-experiments">Next: Current and Future Experiments</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
@@ -633,7 +633,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Apr  6 12:16:55 2026
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Apr  6 12:37:36 2026
 </pre></div>
 </div>
 </div>
@@ -848,7 +848,7 @@ L_{osc} = \pi \frac{2 E}{\Delta m^2}
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "67128df6680f4b96a3ddc96fda6141bc", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "ec3d6ad8362143feab122eed1dc29c02", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <p><strong>Exercise: Oscillation length and experimental regimes</strong></p>
 <p>The two-family oscillation probability depends only on the ratio <span class="math notranslate nohighlight">\(\Delta m^2 L/E\)</span> through the phase:
@@ -1831,11 +1831,17 @@ P(\bar\nu_e \to \bar\nu_e) \simeq 1 - \sin^2 2\theta_{13}\,\sin^2\!\left(1.267\,
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \mathcal{P}(\nu_\alpha \to \nu_\beta)  = \delta_{\alpha \beta} - 4  \sum_i |U_{\alpha i}|^2   \delta_{\alpha \beta} \sin^2 \frac{\Delta E_{ip}t}{2} \\
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 	 + 4 \sum_{i,j} \mathrm{Re}\left[ U_{\beta i} U^*_{\alpha i} U^*_{\beta j} U_{\alpha j} \right] \cos \frac{\Delta E_{ij}t}{2} \sin \frac{\Delta E_{ip}t}{2}
 	\sin \frac{\Delta E_{jp} t}{2} \\
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
 	 + 4 \sum_{i,j} \mathrm{Im}\left[ U_{\beta i} U^*_{\alpha i} U^*_{\beta j} U_{\alpha j} \right] \sin \frac{\Delta E_{ij}t}{2} \sin \frac{\Delta E_{ip}t}{2}
 	\sin \frac{\Delta E_{jp} t}{2}.
-\end{split}\]</div>
+\]</div>
 <p>With:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1848,8 +1854,11 @@ P(\bar\nu_e \to \bar\nu_e) \simeq 1 - \sin^2 2\theta_{13}\,\sin^2\!\left(1.267\,
  \mathcal{A}_{\alpha \beta} = e^{-i E_p t}\sum_{i} U_{\beta i} U^*_{\alpha i} \, e^{-i (E_i-E_p)}
 \]</div>
 <div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{A}_{\alpha \beta} =  \sum_i U_{\beta i} U^*_{\alpha i} (e^{-i \Delta E_{ip} t} + 1 - 1)   \\
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
 \[
-\mathcal{A}_{\alpha \beta} =  \sum_i U_{\beta i} U^*_{\alpha i} (e^{-i \Delta E_{ip} t} + 1 - 1)   
 = \sum_{i} U_{\beta i} U^*_{\alpha i} + \sum_i U_{\beta i} U^*_{\alpha i} e^{-i\frac{\Delta E_{ip t}}{2}}
 \left(e^{-i\frac{\Delta E_{ip t}}{2}} - e^{+i\frac{\Delta E_{ip t}}{2}}  \right)
 \]</div>
@@ -2047,9 +2056,9 @@ DayaBay experiment with <span class="math notranslate nohighlight">\(L=1\)</span
 </section>
 </section>
 <hr class="docutils" />
-<section id="next-experimental-evidence">
-<h2>Next: Experimental Evidence<a class="headerlink" href="#next-experimental-evidence" title="Permalink to this heading">#</a></h2>
-<p>The experimental results — solar, atmospheric, reactor (θ₁₃), long-baseline (δ_CP, mass ordering) and the new generation of experiments — are covered in the companion notebook <strong><a class="reference internal" href="nu_oscillations_exp.html"><span class="doc std std-doc">Neutrino Oscillations: Experimental Evidence</span></a></strong>.</p>
+<section id="next-current-and-future-experiments">
+<h2>Next: Current and Future Experiments<a class="headerlink" href="#next-current-and-future-experiments" title="Permalink to this heading">#</a></h2>
+<p>Long-baseline experiments (NOvA, T2K), global fits, and the next generation of experiments (JUNO, DUNE, Hyper-Kamiokande, KM3NeT) are covered in the companion notebook <strong><a class="reference internal" href="nu_oscillations_exp.html"><span class="doc std std-doc">Current and Future Neutrino Oscillation Experiments</span></a></strong>.</p>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
@@ -2170,7 +2179,7 @@ DayaBay experiment with <span class="math notranslate nohighlight">\(L=1\)</span
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactive-oscillation-three-families-pmns">Interactive oscillation: three families (PMNS)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-experimental-evidence">Next: Experimental Evidence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-current-and-future-experiments">Next: Current and Future Experiments</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
