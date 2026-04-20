@@ -70,6 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'nu_oscillations';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Current and Future Neutrino Oscillation Experiments" href="nu_oscillations_exp.html" />
     <link rel="prev" title="Neutrinos and the construction of the Standard Model" href="nu_sm.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -181,6 +182,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="nu_index.html">The mysteries of the neutrinos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nu_sm.html">Neutrinos and the construction of the Standard Model</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Neutrino Oscillations: Theory and Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nu_oscillations_exp.html">Current and Future Neutrino Oscillation Experiments</a></li>
 </ul>
 
     </div>
@@ -815,7 +817,7 @@ L_{osc} = \pi \frac{2 E}{\Delta m^2}
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "f698869cfa2c40feb4fe828820ffb79a", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "a0dd071d35bf4bc2888cb2df860f8374", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <p><strong>Exercise: Oscillation length and experimental regimes</strong></p>
 <p>The two-family oscillation probability depends only on the ratio <span class="math notranslate nohighlight">\(\Delta m^2 L/E\)</span> through the phase:
@@ -1158,6 +1160,16 @@ U  \mathcal{H} U^T = \frac{\Delta m^2_m}{4E}\begin{pmatrix}
 \[
 \Delta m^{2}_{m}= \Delta m^{2}_{21} \sqrt{(\cos 2 \theta_0 - x)^2 + \sin^2 2 \theta_0}
 \]</div>
+<p>The <span class="math notranslate nohighlight">\(H\)</span> in the mass-effective base:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{H} = \frac{1}{4E} \begin{pmatrix}  - \Delta m^2_{m}&amp; 0 \\ 0 &amp; \Delta m^2_{m} \end{pmatrix} 
+\end{split}\]</div>
+<p>that relates to the flavour base:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U = \begin{pmatrix} \cos \theta_m &amp; \sin \theta_m \\ - \sin \theta_m &amp; \cos \theta_m \end{pmatrix}
+\end{split}\]</div>
 <p>The effective propagation probability:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1263,12 +1275,35 @@ N_e(t) = N_e(0) e^{-r/R}
 <a class="reference external" href="https://arxiv.org/abs/0808.2868">[29]</a></p></li>
 <li><p>Survival probability depends on the neutrino energy range</p></li>
 </ul>
+<p><strong>Question:</strong></p>
+<p>Consider that above the resonance <span class="math notranslate nohighlight">\(P_{ee} = \sin^2 \theta\)</span> and below the resonance <span class="math notranslate nohighlight">\(P_{ee} = 1 - \frac{1}{2} \sin^2 2\theta\)</span>. Using the values from the previous figure, which shows the experimental results, estimate <span class="math notranslate nohighlight">\(\theta_{12}\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">pee_after</span> <span class="o">=</span> <span class="mf">0.28</span>
+<span class="n">theta12</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">pee_after</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;theta12 = </span><span class="si">{</span><span class="n">theta12</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> rad = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta12</span><span class="p">)</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> deg&quot;</span><span class="p">)</span>
+
+<span class="n">pee_before</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="mf">0.5</span><span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta12</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;pee_before = </span><span class="si">{</span><span class="n">pee_before</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta12 = 0.558 rad = 31.9 deg
+pee_before = 0.597
+</pre></div>
+</div>
+</div>
+</div>
 <p><strong>Exercise: The MSW resonance in the Sun</strong></p>
-<p>The effective mixing angle in matter is enhanced at the resonance energy:
-$<span class="math notranslate nohighlight">\(
+<p>The effective mixing angle in matter is enhanced at the resonance energy:</p>
+<div class="math notranslate nohighlight">
+\[
 E_{\rm res} = \frac{\Delta m^2 \cos 2\theta_0}{2\,V_e}, \qquad V_e \simeq 7.63\times10^{-14}\,Y_e\,\rho\;[\mathrm{g/cm}^3]\;\mathrm{eV}
-\)</span><span class="math notranslate nohighlight">\(
-At resonance (\)</span>E = E_{\rm res}<span class="math notranslate nohighlight">\(), \)</span>\theta_m = 45°<span class="math notranslate nohighlight">\( regardless of the vacuum angle. For neutrinos produced above the resonance and propagating adiabatically, the exit state is \)</span>|\nu_2\rangle<span class="math notranslate nohighlight">\( and the survival probability simplifies to \)</span>P(\nu_e\to\nu_e) \simeq \sin^2\theta_{12}$.</p>
+\]</div>
+<p>At resonance (<span class="math notranslate nohighlight">\(E = E_{\rm res}\)</span>), <span class="math notranslate nohighlight">\(\theta_m = 45°\)</span> regardless of the vacuum angle. For neutrinos produced above the resonance and propagating adiabatically, the exit state is <span class="math notranslate nohighlight">\(|\nu_2\rangle\)</span> and the survival probability simplifies to <span class="math notranslate nohighlight">\(P(\nu_e\to\nu_e) \simeq \sin^2\theta_{12}\)</span>.</p>
 <p><strong>Questions:</strong></p>
 <ol class="arabic simple">
 <li><p>Using the solar core density <span class="math notranslate nohighlight">\(\rho \simeq 150\)</span> g/cm<span class="math notranslate nohighlight">\(^3\)</span> and <span class="math notranslate nohighlight">\(Y_e \simeq 0.5\)</span>, compute <span class="math notranslate nohighlight">\(V_e\)</span> in eV and the resonance energy <span class="math notranslate nohighlight">\(E_{\rm res}\)</span> for the solar parameters (<span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span>, <span class="math notranslate nohighlight">\(\theta_{12}\)</span>). Do the <span class="math notranslate nohighlight">\(^8\)</span>B solar neutrinos (<span class="math notranslate nohighlight">\(E\sim 5\)</span>–15 MeV) sit above or below the resonance?</p></li>
@@ -1631,7 +1666,7 @@ with \)</span>R_E = 6371<span class="math notranslate nohighlight">\( km. Downwa
 </tbody>
 </table>
 </div>
-<p>Observation of oscillation with <span class="math notranslate nohighlight">\(\theta_{13}\)</span>, Daya Bay <a class="reference external" href="https://arxiv.org/abs/1203.1669">[26]</a>, in 2012.</p>
+<p>Observation of oscillation with <span class="math notranslate nohighlight">\(\theta_{13}\)</span>, Daya Bay <a class="reference external" href="https://arxiv.org/abs/1203.1669">[26b]</a>, in 2012.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p></p></th>
@@ -1928,14 +1963,20 @@ P(\bar\nu_e \to \bar\nu_e) \simeq 1 - \sin^2 2\theta_{13}\,\sin^2\!\left(1.267\,
 \]</div>
 <p>The oscillation probability in terms of <span class="math notranslate nohighlight">\(\Delta m^2_\odot, \, \Delta m^2_A\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\mathcal{P}(\nu_\alpha \to \nu_\beta) = \delta_{\alpha \beta} - 4 \, |U_{\alpha 3}|^2 (\delta_{\alpha \beta} - |U_{\beta 3}|^2 )   \sin^2 \frac{\Delta m^2_A L}{4 E} \\
-	 - 4 \, |U_{\alpha 2}|^2 (\delta_{\alpha \beta} - |U_{\beta 2}|^2 )   \sin^2 \frac{\Delta m^2_\odot L}{4 E} \\
-	 \pm 8 \, \mathrm{Re}\left[ U_{\beta 3} U^*_{\alpha 3} U^*_{\beta 2} U_{\alpha 2} \right] \cos \frac{\Delta m^2_A L}{4 E} \sin \frac{\Delta m^2_A L}{4 E}
-	\sin \frac{\Delta m^2_\odot L}{4 E}  \\
-	 + 8 \, \mathrm{Im}\left[ U_{\beta 3} U^*_{\alpha 3} U^*_{\beta 2} U_{\alpha 2} \right] \sin \frac{\Delta m^2_A L}{4 E} \sin \frac{\Delta m^2_A L}{4 E}
-	\sin \frac{\Delta m^2_\odot L}{4 E}.
-\end{split}\]</div>
+\[
+\mathcal{P}(\nu_\alpha \to \nu_\beta) = \delta_{\alpha \beta} - 4 \, |U_{\alpha 3}|^2 (\delta_{\alpha \beta} - |U_{\beta 3}|^2 )   \sin^2 \frac{\Delta m^2_A L}{4 E} 
+	 - 4 \, |U_{\alpha 2}|^2 (\delta_{\alpha \beta} - |U_{\beta 2}|^2 )   \sin^2 \frac{\Delta m^2_\odot L}{4 E} 
+     \]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> $$
+ \pm 8 \, \mathrm{Re}\left[ U_{\beta 3} U^*_{\alpha 3} U^*_{\beta 2} U_{\alpha 2} \right] \cos \frac{\Delta m^2_A L}{4 E} \sin \frac{\Delta m^2_A L}{4 E}
+\sin \frac{\Delta m^2_\odot L}{4 E}  
+$$
+$$
+ + 8 \, \mathrm{Im}\left[ U_{\beta 3} U^*_{\alpha 3} U^*_{\beta 2} U_{\alpha 2} \right] \sin \frac{\Delta m^2_A L}{4 E} \sin \frac{\Delta m^2_A L}{4 E}
+\sin \frac{\Delta m^2_\odot L}{4 E}.
+</pre></div>
+</div>
+<p>$$</p>
 </section>
 <section id="oscillation-probability-in-experimental-scenarios">
 <h3>Oscillation probability in experimental scenarios<a class="headerlink" href="#oscillation-probability-in-experimental-scenarios" title="Permalink to this heading">#</a></h3>
@@ -1963,8 +2004,11 @@ MINOS experiment with <span class="math notranslate nohighlight">\(L \sim 750\)<
 <p>And we recover the two-family oscillation formula.</p>
 <p>We can compute now the probability to oscillate to other flavors at MINOS, with the previous approximations:</p>
 <div class="math notranslate nohighlight">
+\[
+\mathcal{P}(\nu_\mu \to \nu_e)  \simeq 4 s^2_{23} c^2_{13} s^2_{13} \sin^2 \frac{\Delta m^2_A L}{4 E} \sim 0 
+\]</div>
+<div class="math notranslate nohighlight">
 \[\begin{split}
-\mathcal{P}(\nu_\mu \to \nu_e)  \simeq 4 s^2_{23} c^2_{13} s^2_{13} \sin^2 \frac{\Delta m^2_A L}{4 E} \sim 0 \\
 \mathcal{P}(\nu_\mu \to \nu_\tau)  \simeq 4 s^2_{23} c^2_{13} c^2_{23} c^2_{13} \sin^2 \frac{\Delta m^2_A L}{4 E} \simeq \sin^2 2 \theta_{23} \sin^2 \frac{\Delta m^2_A L}{4E} \\
 \end{split}\]</div>
 <p>Notice that as <span class="math notranslate nohighlight">\(\mathcal{P}(\nu_\mu \to \nu_e)\)</span> is suppressed, then it is sensitive to second-order effects,</p>
@@ -2023,7 +2067,7 @@ DayaBay experiment with <span class="math notranslate nohighlight">\(L=1\)</span
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "d2a27a0d5d6844e4a47b149c83160c4b", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "931a433ee7594c93b3a9a31ac1d84810", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 </section>
 </section>
@@ -2050,7 +2094,7 @@ DayaBay experiment with <span class="math notranslate nohighlight">\(L=1\)</span
 <p>[23] A. Gando et al. (KamLAND), Phys. Rev. D88, 3, 033001 (2013), <a class="reference external" href="https://arxiv.org/abs/1303.4667">[arXiv:1303.4667]</a>;</p>
 <p>[24] Y. Fukuda et al. (Super-Kamiokande), Phys. Rev. Lett. 81, 1562 (1998), <a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">[hep-ex/9807003]</a>.</p>
 <p>[25] Y. Ashie et al. (Super-Kamiokande), Phys. Rev. Lett. 93, 101801 (2004), <a class="reference external" href="https://arxiv.org/abs/hep-ex/0404034">[hep-ex/0404034]</a>.</p>
-<p>[26] F. P. An et al. (Daya Bay), Phys. Rev. Lett. 108, 171803 (2012), <a class="reference external" href="https://arxiv.org/abs/1203.1669">[arXiv:1203.1669]</a>.</p>
+<p>[26b] F. P. An et al. (Daya Bay), Phys. Rev. Lett. 108, 171803 (2012), <a class="reference external" href="https://arxiv.org/abs/1203.1669">[arXiv:1203.1669]</a>.</p>
 <p>[27] D. Adey et al. (Daya Bay), Phys. Rev. Lett. 121, 24, 241805 (2018), <a class="reference external" href="https://arxiv.org/abs/1809.02261">[arXiv:1809.02261]</a>.
 6th February, 2020</p>
 <p>[28] G. Bak et al. (RENO), Phys. Rev. Lett. 121, 20, 201801 (2018), <a class="reference external" href="https://arxiv.org/abs/1806.00248">[arXiv:1806.00248]</a>.</p>
@@ -2098,6 +2142,15 @@ DayaBay experiment with <span class="math notranslate nohighlight">\(L=1\)</span
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Neutrinos and the construction of the Standard Model</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="nu_oscillations_exp.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Current and Future Neutrino Oscillation Experiments</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
