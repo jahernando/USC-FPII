@@ -1,0 +1,727 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Informe de revisión — nu_oscillations_exp.ipynb &#8212; Neutrinos - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/review-nu_oscillations_exp';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Neutrinos - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Neutrinos - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../nu_index.html">The mysteries of the neutrinos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_sm.html">Neutrinos and the construction of the Standard Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations.html">Neutrino Oscillations: Theory and Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations_exp.html">Current and Future Neutrino Oscillation Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_mass_nature.html">Neutrino Mass and Nature</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnotes/review-nu_oscillations_exp.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notes/review-nu_oscillations_exp.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Informe de revisión — nu_oscillations_exp.ipynb</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brevedad-slide-friendly">1. Brevedad (slide-friendly)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estilo-telegrafico">2. Estilo telegráfico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ingles">3. Inglés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-de-slideshow">4. Metadata de slideshow</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-celda-sin-metadata-auto-fix-pendiente">4a. Celda sin metadata (auto-fix pendiente)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-valores-existentes-dudosos">4b. Valores existentes dudosos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-resumen">4c. Resumen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-ejercicios">5. Formato de ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recuento-global">Recuento global</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acciones-pendientes-requieren-permisos">Acciones pendientes (requieren permisos)</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="informe-de-revision-nu-oscillations-exp-ipynb">
+<h1>Informe de revisión — <code class="docutils literal notranslate"><span class="pre">nu_oscillations_exp.ipynb</span></code><a class="headerlink" href="#informe-de-revision-nu-oscillations-exp-ipynb" title="Permalink to this heading">#</a></h1>
+<p><em>Generado: 2026-04-20 · 65 celdas (0–64) · Ruta: <code class="docutils literal notranslate"><span class="pre">USC-FPII/nu_oscillations_exp.ipynb</span></code></em></p>
+<p><strong>Nota operativa:</strong> Auto-fix de metadata no aplicado (permisos <code class="docutils literal notranslate"><span class="pre">NotebookEdit</span></code> denegados en el subagente).</p>
+<hr class="docutils" />
+<section id="brevedad-slide-friendly">
+<h2>1. Brevedad (slide-friendly)<a class="headerlink" href="#brevedad-slide-friendly" title="Permalink to this heading">#</a></h2>
+<p><strong>Resumen:</strong> 3 celdas exceden ~20 líneas; 2 en el límite.</p>
+<ul class="simple">
+<li><p><strong>Cell #25 (md, slide) — Alto</strong> — <strong>Exercise: LBL appearance probability</strong> (35 líneas). Split: enunciado + 3 <code class="docutils literal notranslate"><span class="pre">fragment</span></code> (Q1/Q2/Q3).</p></li>
+<li><p><strong>Cell #36 (md, slide) — Alto</strong> — <strong>Exercise: JUNO reactor spectrum</strong> (30 líneas). Misma estructura.</p></li>
+<li><p><strong>Cell #38 (md, “-”) — Medio</strong> — DUNE Physics/Beam/Status (22 líneas). Mover <strong>Status</strong> a <code class="docutils literal notranslate"><span class="pre">fragment</span></code>.</p></li>
+<li><p><strong>Cell #46 (md, “-”) — Medio</strong> — HK construction (18 líneas). Separar <strong>J-PARC beam</strong> en <code class="docutils literal notranslate"><span class="pre">fragment</span></code>.</p></li>
+<li><p><strong>Cell #60 (md, slide) — Medio</strong> — IceCube DeepCore/Upgrade/Astrophysical (~28 líneas). 3 subslides.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="estilo-telegrafico">
+<h2>2. Estilo telegráfico<a class="headerlink" href="#estilo-telegrafico" title="Permalink to this heading">#</a></h2>
+<p><strong>Resumen:</strong> 4 celdas con prosa o sin bold labels.</p>
+<ul class="simple">
+<li><p><strong>Cell #2 (md, slide) — Medio</strong> — Frase introductoria de prosa. Reemplazar por <code class="docutils literal notranslate"><span class="pre">**Experimental</span> <span class="pre">programme:**</span></code>.</p></li>
+<li><p><strong>Cell #9 (md, “-”) — Alto</strong> — 3 frases seguidas sobre NOvA νμ→νμ y octant ambiguity. Convertir a bullets.</p></li>
+<li><p><strong>Cell #26 (md, slide) — Medio</strong> — Dos frases largas sobre NuFit. Reemplazar por <code class="docutils literal notranslate"><span class="pre">**Global</span> <span class="pre">fits:**</span> <span class="pre">...</span> <span class="pre">→</span> <span class="pre">[NuFit](http://www.nu-fit.org)</span></code>.</p></li>
+<li><p><strong>Cell #40 (md, “-”) — Bajo</strong> — Frase suelta sobre ProtoDUNE; redundante con #39.</p></li>
+<li><p><strong>Cell #56 (md, slide) — Medio</strong> — Frase de prosa sola. Convertir a bullet o mover a <code class="docutils literal notranslate"><span class="pre">notes</span></code>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="ingles">
+<h2>3. Inglés<a class="headerlink" href="#ingles" title="Permalink to this heading">#</a></h2>
+<p><strong>Resumen:</strong> 3-4 errores menores.</p>
+<ul class="simple">
+<li><p><strong>Cell #3 — Medio</strong> — <code class="docutils literal notranslate"><span class="pre">&quot;Long</span> <span class="pre">Base</span> <span class="pre">Line&quot;</span></code> → <code class="docutils literal notranslate"><span class="pre">&quot;Long-Baseline&quot;</span></code> (término estándar).</p></li>
+<li><p><strong>Cell #14 — Bajo</strong> — Caption tabla: <code class="docutils literal notranslate"><span class="pre">ICHEP</span> <span class="pre">2021</span></code> → <code class="docutils literal notranslate"><span class="pre">ICHEP</span> <span class="pre">2022</span></code> (inconsistente con título y filename).</p></li>
+<li><p><strong>Cell #18 — Bajo</strong> — <code class="docutils literal notranslate"><span class="pre">δ-CP</span></code> → <code class="docutils literal notranslate"><span class="pre">$\delta_{\rm</span> <span class="pre">CP}$</span></code> (consistencia).</p></li>
+<li><p><strong>Cell #25 — Bajo</strong> — <code class="docutils literal notranslate"><span class="pre">hierarchy--δ_CP</span></code> doble guión → em-dash.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="metadata-de-slideshow">
+<h2>4. Metadata de slideshow<a class="headerlink" href="#metadata-de-slideshow" title="Permalink to this heading">#</a></h2>
+<p><strong>Estado:</strong> 65 celdas. <strong>1 celda sin metadata</strong> (fix requerido). 10 celdas con valores dudosos.</p>
+<section id="a-celda-sin-metadata-auto-fix-pendiente">
+<h3>4a. Celda sin metadata (auto-fix pendiente)<a class="headerlink" href="#a-celda-sin-metadata-auto-fix-pendiente" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #55 (md) — Alto</strong> — <code class="docutils literal notranslate"><span class="pre">&quot;metadata&quot;:</span> <span class="pre">{}</span></code> vacío (SVG timeline). Valor sugerido: <code class="docutils literal notranslate"><span class="pre">fragment</span></code> (continúa el Summary de #54).</p></li>
+</ul>
+<p>Fix JSON:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;slideshow&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;slide_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fragment&quot;</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="b-valores-existentes-dudosos">
+<h3>4b. Valores existentes dudosos<a class="headerlink" href="#b-valores-existentes-dudosos" title="Permalink to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cell</p></th>
+<th class="head"><p>Actual</p></th>
+<th class="head"><p>Sugerido</p></th>
+<th class="head"><p>Motivo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>slide</p></td>
+<td><p>fragment</p></td>
+<td><p>Continúa título H1 de #1</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H3 <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">List</span> <span class="pre">of</span> <span class="pre">LBL</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H3 <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">NOvA</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H4 <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">NOvA</span> <span class="pre">10-yr</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H3 <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">T2K</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H3 <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">T2K</span> <span class="pre">+</span> <span class="pre">NOvA</span> <span class="pre">joint</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>34</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H4 <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">JUNO</span> <span class="pre">first</span> <span class="pre">results</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>50</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H4 <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">HK</span> <span class="pre">sensitivity</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>58</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H4 <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">KM3NeT/ORCA</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>59</p></td>
+<td><p>slide</p></td>
+<td><p>subslide</p></td>
+<td><p>H4 <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">KM3NeT/ARCA</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>61–64</p></td>
+<td><p>slide / “-”</p></td>
+<td><p>skip</p></td>
+<td><p>References</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="c-resumen">
+<h3>4c. Resumen<a class="headerlink" href="#c-resumen" title="Permalink to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Estado</p></th>
+<th class="head"><p>Celdas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">slide_type</span></code> explícito</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">&quot;-&quot;</span></code> (válido)</p></td>
+<td><p>28</p></td>
+</tr>
+<tr class="row-even"><td><p>Sin metadata (fix)</p></td>
+<td><p><strong>1</strong> (#55)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Total</strong></p></td>
+<td><p><strong>65</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="formato-de-ejercicios">
+<h2>5. Formato de ejercicios<a class="headerlink" href="#formato-de-ejercicios" title="Permalink to this heading">#</a></h2>
+<p><strong>Resumen:</strong> 2 ejercicios con encabezado no uniforme y longitud excesiva.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cell</p></th>
+<th class="head"><p>Encabezado actual</p></th>
+<th class="head"><p>Recomendado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>#25</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">LBL</span> <span class="pre">appearance</span> <span class="pre">probability...**</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Exercise</span> <span class="pre">1:</span> <span class="pre">LBL</span> <span class="pre">appearance</span> <span class="pre">probability</span> <span class="pre">and</span> <span class="pre">CP</span> <span class="pre">asymmetry</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>#36</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">JUNO</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">reactor</span> <span class="pre">spectrum...**</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Exercise</span> <span class="pre">2:</span> <span class="pre">JUNO</span> <span class="pre">reactor</span> <span class="pre">spectrum</span> <span class="pre">interference</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ambos con <code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">subslide</span></code> y split Q1/Q2/Q3 en <code class="docutils literal notranslate"><span class="pre">fragment</span></code>.</p>
+</section>
+<hr class="docutils" />
+<section id="recuento-global">
+<h2>Recuento global<a class="headerlink" href="#recuento-global" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Prioridad</p></th>
+<th class="head"><p>Issues</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Alto</p></td>
+<td><p>3 (cells #25, #36, #55)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Medio</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-even"><td><p>Bajo</p></td>
+<td><p>4</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="acciones-pendientes-requieren-permisos">
+<h3>Acciones pendientes (requieren permisos)<a class="headerlink" href="#acciones-pendientes-requieren-permisos" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Cell #55</strong> — Añadir <code class="docutils literal notranslate"><span class="pre">slideshow.slide_type</span> <span class="pre">=</span> <span class="pre">&quot;fragment&quot;</span></code> al <code class="docutils literal notranslate"><span class="pre">metadata:</span> <span class="pre">{}</span></code> vacío.</p></li>
+<li><p>Resto de sugerencias son cambios de contenido del autor.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brevedad-slide-friendly">1. Brevedad (slide-friendly)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estilo-telegrafico">2. Estilo telegráfico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ingles">3. Inglés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-de-slideshow">4. Metadata de slideshow</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-celda-sin-metadata-auto-fix-pendiente">4a. Celda sin metadata (auto-fix pendiente)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-valores-existentes-dudosos">4b. Valores existentes dudosos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-resumen">4c. Resumen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-ejercicios">5. Formato de ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recuento-global">Recuento global</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acciones-pendientes-requieren-permisos">Acciones pendientes (requieren permisos)</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By José Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright USC - J.A. Hernando - 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

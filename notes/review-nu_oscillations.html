@@ -1,0 +1,861 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Review — nu_oscillations.ipynb &#8212; Neutrinos - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/review-nu_oscillations';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Neutrinos - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Neutrinos - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../nu_index.html">The mysteries of the neutrinos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_sm.html">Neutrinos and the construction of the Standard Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations.html">Neutrino Oscillations: Theory and Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations_exp.html">Current and Future Neutrino Oscillation Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_mass_nature.html">Neutrino Mass and Nature</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnotes/review-nu_oscillations.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notes/review-nu_oscillations.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Review — nu_oscillations.ipynb</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brevity-slide-friendly">1. Brevity (slide-friendly)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-blocks-slide-rendering">High (blocks slide rendering)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-tight-fit-recommend-trimming">Medium (tight fit, recommend trimming)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-cosmetic-borderline">Low (cosmetic / borderline)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telegraphic-style">2. Telegraphic style</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-breaks-slide-flow-with-long-prose">High (breaks slide flow with long prose)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium">Medium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low">Low</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#english-spelling-grammar-terminology">3. English (spelling, grammar, terminology)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high">High</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Medium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Low</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slideshow-metadata">4. Slideshow metadata</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cells-with-questionable-slide-type-present-but-potentially-incorrect">Cells with questionable slide_type (present but potentially incorrect)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-format">5. Exercise format</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-cells-identified">Exercise cells identified</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issues">Issues</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-issues-other-notes">Global issues / other notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priority-matrix-all-issues">Priority matrix (all issues)</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="review-nu-oscillations-ipynb">
+<h1>Review — nu_oscillations.ipynb<a class="headerlink" href="#review-nu-oscillations-ipynb" title="Permalink to this heading">#</a></h1>
+<p><em>Reviewer: lecture-nb-reviewer agent · Date: 2026-04-20</em>
+<em>Path: <code class="docutils literal notranslate"><span class="pre">USC-FPII/nu_oscillations.ipynb</span></code> · 113 cells (0–112)</em></p>
+<hr class="docutils" />
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Criterion</p></th>
+<th class="head"><p>Issues found</p></th>
+<th class="head"><p>High</p></th>
+<th class="head"><p>Medium</p></th>
+<th class="head"><p>Low</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1. Brevity</p></td>
+<td><p>18 cells</p></td>
+<td><p>5</p></td>
+<td><p>9</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>2. Telegraphic style</p></td>
+<td><p>14 cells</p></td>
+<td><p>2</p></td>
+<td><p>8</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>3. English</p></td>
+<td><p>14 issues</p></td>
+<td><p>3</p></td>
+<td><p>7</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>4. Slideshow metadata</p></td>
+<td><p>0 missing</p></td>
+<td><p>—</p></td>
+<td><p>5 (wrong type)</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>5. Exercise format</p></td>
+<td><p>6 exercises</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Global totals: 113 cells · 10 high · 22 medium · 15 low</strong></p>
+</section>
+<hr class="docutils" />
+<section id="brevity-slide-friendly">
+<h2>1. Brevity (slide-friendly)<a class="headerlink" href="#brevity-slide-friendly" title="Permalink to this heading">#</a></h2>
+<p><strong>Findings:</strong> 18 cells exceed recommended length or are candidates for splitting. 5 are flagged High (likely to overflow a slide). The code cell #0 (CSS) is intentionally long but is <code class="docutils literal notranslate"><span class="pre">skip</span></code>, which is correct.</p>
+<section id="high-blocks-slide-rendering">
+<h3>High (blocks slide rendering)<a class="headerlink" href="#high-blocks-slide-rendering" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #41</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;In</span> <span class="pre">the</span> <span class="pre">two-family</span> <span class="pre">case,</span> <span class="pre">the</span> <span class="pre">free</span> <span class="pre">Hamiltonian…&quot;</span></code> — <strong>26 rendered lines</strong> with 4 display equations. Split after the <code class="docutils literal notranslate"><span class="pre">U</span> <span class="pre">H</span> <span class="pre">U^T</span></code> product into a new subslide or fragment.</p></li>
+<li><p><strong>Cell #43</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">matter</span> <span class="pre">part</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Hamiltonian…&quot;</span></code> — <strong>23 lines</strong>, 3 display equations. Split after defining x into a new cell.</p></li>
+<li><p><strong>Cell #47</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Resonance</span> <span class="pre">condition.</span> <span class="pre">When</span> <span class="pre">increasing</span> <span class="pre">the</span> <span class="pre">density…&quot;</span></code> — <strong>25 lines</strong>, 4 display equations. Split resonance condition (lines 1–12) from the inequality constraint (lines 13–25).</p></li>
+<li><p><strong>Cell #96</strong> (md, skip) — derivation “Manipulating the amplitude” — <strong>32 lines</strong> with 6 equations. Marked <code class="docutils literal notranslate"><span class="pre">skip</span></code>; OK for students but consider moving the entire derivation to a notes file.</p></li>
+<li><p><strong>Cell #103</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Let's</span> <span class="pre">consider</span> <span class="pre">the</span> <span class="pre">case</span> <span class="pre">of</span> <span class="pre">atmospheric</span> <span class="pre">neutrinos</span> <span class="pre">with</span> <span class="pre">accelerator…&quot;</span></code> — <strong>22 lines</strong>, 5 equations. Split MINOS ν_μ survival derivation into two cells.</p></li>
+</ul>
+</section>
+<section id="medium-tight-fit-recommend-trimming">
+<h3>Medium (tight fit, recommend trimming)<a class="headerlink" href="#medium-tight-fit-recommend-trimming" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #17</strong> (md, slide) — E/L regimes discussion — <strong>19 lines</strong>. Three indented cases with sub-equations. Consider one case per fragment.</p></li>
+<li><p><strong>Cell #21</strong> (md, slide) — Exercise: Oscillation length — <strong>17 lines</strong>. Two questions with inline math. Acceptable as exercise but tight.</p></li>
+<li><p><strong>Cell #22</strong> (md, slide) — Exercise: Exclusion region — <strong>16 lines</strong> + 3-part question 2 inline. Split Q1 from Q2/Q3.</p></li>
+<li><p><strong>Cell #38</strong> (md, slide) — Matter potential V_e estimate — <strong>20 lines</strong> with Sun/Earth values. Consider two cells.</p></li>
+<li><p><strong>Cell #46</strong> (md, slide) — Matter domination scenarios — <strong>19 lines</strong>. Split vacuum limit from matter domination.</p></li>
+<li><p><strong>Cell #50</strong> (md, slide) — MSW adiabatic P(νe→νe) — <strong>16 lines</strong>. Just within limit but dense.</p></li>
+<li><p><strong>Cell #55</strong> (md, slide) — Exercise: MSW resonance — <strong>16 lines</strong>. Two multi-part questions. Split Q1/Q2.</p></li>
+<li><p><strong>Cell #95</strong> (md, slide) — Three-family amplitude derivation — <strong>30 lines</strong> (at the limit). Consider splitting at the probability formula line.</p></li>
+<li><p><strong>Cell #101</strong> (md, slide) — φ_solar/φ_atm ratio approximation — <strong>21 lines</strong>. Split the two cases into separate fragments.</p></li>
+</ul>
+</section>
+<section id="low-cosmetic-borderline">
+<h3>Low (cosmetic / borderline)<a class="headerlink" href="#low-cosmetic-borderline" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #7</strong> (md, slide) — oscillation diagram + 3 equations — <strong>18 lines</strong>. Borderline; image helps.</p></li>
+<li><p><strong>Cell #14</strong> (md, slide) — 3 regimes + first-max equation — <strong>18 lines</strong>.</p></li>
+<li><p><strong>Cell #97</strong> (md, slide) — simplified three-family formula — <strong>16 lines</strong> mostly equations; OK.</p></li>
+<li><p><strong>Cell #110</strong> (md, slide) — References — <strong>45 lines</strong>. Use <code class="docutils literal notranslate"><span class="pre">skip</span></code> or split into two slides; or reduce to a single-line bibliography pointer.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="telegraphic-style">
+<h2>2. Telegraphic style<a class="headerlink" href="#telegraphic-style" title="Permalink to this heading">#</a></h2>
+<p><strong>Findings:</strong> 14 cells contain prose sentences where bullets or bold-label format would be more slide-appropriate. The NB mixes telegraphic cells (good) with paragraph prose cells (should be revised).</p>
+<section id="high-breaks-slide-flow-with-long-prose">
+<h3>High (breaks slide flow with long prose)<a class="headerlink" href="#high-breaks-slide-flow-with-long-prose" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p><strong>Cell #4</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">Introduction</span></code> — 5 full prose sentences with no bullets. Convert to a 4-bullet timeline:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- 1960s: theoretical introduction of mixing/oscillations
+- 1970s–1994: **Solar Neutrino Problem** — Davis deficit
+- 1997: **SK first evidence** of atmospheric oscillations
+- Today: solid 3-family picture; some anomalies remain
+</pre></div>
+</div>
+</li>
+<li><p><strong>Cell #40</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Neutrino</span> <span class="pre">propagation</span> <span class="pre">in</span> <span class="pre">matter</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">described</span> <span class="pre">by</span> <span class="pre">quantum</span> <span class="pre">mechanics,</span> <span class="pre">via</span> <span class="pre">a</span> <span class="pre">modified</span> <span class="pre">Dirac</span> <span class="pre">equation</span> <span class="pre">or</span> <span class="pre">QFT,</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">same</span> <span class="pre">result.</span> <span class="pre">We</span> <span class="pre">present</span> <span class="pre">here</span> <span class="pre">the</span> <span class="pre">propagation…&quot;</span></code> — Two-sentence prose intro followed by math. Convert to: <code class="docutils literal notranslate"><span class="pre">**Method:**</span> <span class="pre">Schrödinger</span> <span class="pre">equation</span> <span class="pre">(same</span> <span class="pre">result</span> <span class="pre">as</span> <span class="pre">QFT</span> <span class="pre">approach)</span></code>.</p></li>
+</ul>
+</section>
+<section id="medium">
+<h3>Medium<a class="headerlink" href="#medium" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #5</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;And</span> <span class="pre">again</span> <span class="pre">Pontecorvo</span> <span class="pre">associated</span> <span class="pre">neutrino</span> <span class="pre">mixing</span> <span class="pre">and</span> <span class="pre">oscillations</span> <span class="pre">[25]</span> <span class="pre">in</span> <span class="pre">1967.&quot;</span></code> — Conversational connector “And again”. Replace with <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">1967:</span> <span class="pre">Pontecorvo</span> <span class="pre">linked</span> <span class="pre">mixing</span> <span class="pre">and</span> <span class="pre">oscillations</span> <span class="pre">[25]</span></code>.</p></li>
+<li><p><strong>Cell #35</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;From</span> <span class="pre">a</span> <span class="pre">combined</span> <span class="pre">result</span> <span class="pre">of</span> <span class="pre">three</span> <span class="pre">phases</span> <span class="pre">of</span> <span class="pre">SNO</span> <span class="pre">[17],</span> <span class="pre">the</span> <span class="pre">total</span> <span class="pre">flux</span> <span class="pre">of</span> <span class="pre">8B</span> <span class="pre">solar</span> <span class="pre">neutrino</span> <span class="pre">is…&quot;</span></code> — Passive/wordy. Suggest: <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">SNO</span> <span class="pre">combined</span> <span class="pre">(3</span> <span class="pre">phases)</span> <span class="pre">[17]:</span> <span class="pre">$\Phi_{^8\!B}</span> <span class="pre">=</span> <span class="pre">(5.25\pm0.16^{+0.11}_{-0.14})\times10^6$</span> <span class="pre">cm⁻²s⁻¹</span> <span class="pre">—</span> <span class="pre">consistent</span> <span class="pre">with</span> <span class="pre">SSM</span></code>.</p></li>
+<li><p><strong>Cell #37</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Neutrinos</span> <span class="pre">can</span> <span class="pre">*coherently</span> <span class="pre">scatter*</span> <span class="pre">via</span> <span class="pre">NC</span> <span class="pre">in</span> <span class="pre">matter,</span> <span class="pre">but</span> <span class="pre">only</span> <span class="pre">νe</span> <span class="pre">can</span> <span class="pre">CC!</span> <span class="pre">(Mikheyev,</span> <span class="pre">Smirnov</span> <span class="pre">effect</span> <span class="pre">[20])</span> <span class="pre">The</span> <span class="pre">interaction</span> <span class="pre">will</span> <span class="pre">be</span> <span class="pre">related</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">*density</span> <span class="pre">of</span> <span class="pre">electrons*…&quot;</span></code> — Two loose sentences. Add bold labels: <code class="docutils literal notranslate"><span class="pre">**NC:**</span> <span class="pre">all</span> <span class="pre">flavours</span> <span class="pre">scatter</span> <span class="pre">coherently;</span> <span class="pre">**CC:**</span> <span class="pre">νe</span> <span class="pre">only</span> <span class="pre">(Wolfenstein–MSW</span> <span class="pre">[20])</span></code>.</p></li>
+<li><p><strong>Cell #46</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Therefore</span> <span class="pre">νe</span> <span class="pre">↔</span> <span class="pre">ν₂</span> <span class="pre">and</span> <span class="pre">νμ</span> <span class="pre">↔</span> <span class="pre">ν₁.</span> <span class="pre">Neutrinos</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">given</span> <span class="pre">flavour</span> <span class="pre">have</span> <span class="pre">unique</span> <span class="pre">mass</span> <span class="pre">states</span> <span class="pre">and</span> <span class="pre">they</span> <span class="pre">do</span> <span class="pre">not</span> <span class="pre">oscillate!&quot;</span></code> — Connector “Therefore”. Rewrite as bullets: <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">νe</span> <span class="pre">↔</span> <span class="pre">ν₂,</span> <span class="pre">νμ</span> <span class="pre">↔</span> <span class="pre">ν₁</span> <span class="pre">(unique</span> <span class="pre">mass</span> <span class="pre">states)</span></code> / <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">No</span> <span class="pre">oscillation</span> <span class="pre">in</span> <span class="pre">matter-dominated</span> <span class="pre">limit</span></code>.</p></li>
+<li><p><strong>Cell #49</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;When</span> <span class="pre">the</span> <span class="pre">matter</span> <span class="pre">density</span> <span class="pre">varies</span> <span class="pre">along</span> <span class="pre">propagation,</span> <span class="pre">the</span> <span class="pre">solutions</span> <span class="pre">are</span> <span class="pre">more</span> <span class="pre">complicated…</span> <span class="pre">But</span> <span class="pre">if</span> <span class="pre">the</span> <span class="pre">density</span> <span class="pre">variation</span> <span class="pre">is</span> <span class="pre">slow</span> <span class="pre">(adiabatic</span> <span class="pre">regime)…&quot;</span></code> — Long compound sentence with “But if”. Rewrite as two bullets: <code class="docutils literal notranslate"><span class="pre">**Variable</span> <span class="pre">density:**</span> <span class="pre">numerical</span> <span class="pre">solutions</span> <span class="pre">in</span> <span class="pre">general</span></code> / <code class="docutils literal notranslate"><span class="pre">**Adiabatic</span> <span class="pre">limit:**</span> <span class="pre">density</span> <span class="pre">varies</span> <span class="pre">slowly</span> <span class="pre">→</span> <span class="pre">stay</span> <span class="pre">in</span> <span class="pre">same</span> <span class="pre">mass</span> <span class="pre">eigenstate</span></code>.</p></li>
+<li><p><strong>Cell #50</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;If</span> <span class="pre">the</span> <span class="pre">energy</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">neutrino</span> <span class="pre">is</span> <span class="pre">below</span> <span class="pre">the</span> <span class="pre">resonance,</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">vacuum</span> <span class="pre">dominated,</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">detector</span> <span class="pre">size</span> <span class="pre">(Earth)</span> <span class="pre">is</span> <span class="pre">large</span> <span class="pre">compared</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">oscillation</span> <span class="pre">length,</span> <span class="pre">the</span> <span class="pre">probability</span> <span class="pre">is</span> <span class="pre">averaged&quot;</span></code> — 35-word sentence. Break into: <code class="docutils literal notranslate"><span class="pre">**Below</span> <span class="pre">resonance**</span> <span class="pre">(vacuum-dominated,</span> <span class="pre">L</span> <span class="pre">≫</span> <span class="pre">L_osc):</span> <span class="pre">averaged</span> <span class="pre">probability</span></code>.</p></li>
+<li><p><strong>Cell #104</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Notice</span> <span class="pre">that</span> <span class="pre">as</span> <span class="pre">P(νμ→νe)</span> <span class="pre">is</span> <span class="pre">suppressed,</span> <span class="pre">then</span> <span class="pre">it</span> <span class="pre">is</span> <span class="pre">sensitive</span> <span class="pre">to</span> <span class="pre">second-order</span> <span class="pre">effects,&quot;</span></code> — Sentence cut off (comma at end). Complete or remove. Suggest: <code class="docutils literal notranslate"><span class="pre">**Note:**</span> <span class="pre">P(νμ→νe)</span> <span class="pre">suppressed</span> <span class="pre">→</span> <span class="pre">probe</span> <span class="pre">of</span> <span class="pre">sub-leading</span> <span class="pre">effects</span> <span class="pre">(θ₁₃,</span> <span class="pre">δCP)</span></code>.</p></li>
+<li><p><strong>Cell #2</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Present</span> <span class="pre">the</span> <span class="pre">theory</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">main</span> <span class="pre">experimental</span> <span class="pre">evidence</span> <span class="pre">for</span> <span class="pre">neutrino</span> <span class="pre">oscillations.&quot;</span></code> — Single full sentence as entire cell body. Convert to bold label: <code class="docutils literal notranslate"><span class="pre">**Goal:**</span> <span class="pre">theory</span> <span class="pre">of</span> <span class="pre">oscillations</span> <span class="pre">+</span> <span class="pre">main</span> <span class="pre">experimental</span> <span class="pre">evidence</span></code>.</p></li>
+</ul>
+</section>
+<section id="low">
+<h3>Low<a class="headerlink" href="#low" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #6</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;About</span> <span class="pre">the</span> <span class="pre">derivation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">probability</span> <span class="pre">formula:</span> <span class="pre">The</span> <span class="pre">basic</span> <span class="pre">ingredients:</span> <span class="pre">…</span> <span class="pre">Different</span> <span class="pre">derivations</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">same</span> <span class="pre">result:&quot;</span></code> — Nearly telegraphic but “About the derivation” heading is not a bold label. Change to <code class="docutils literal notranslate"><span class="pre">**Derivation</span> <span class="pre">approaches:**</span></code>.</p></li>
+<li><p><strong>Cell #99</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;There</span> <span class="pre">are</span> <span class="pre">at</span> <span class="pre">least</span> <span class="pre">three</span> <span class="pre">massive</span> <span class="pre">neutrinos,</span> <span class="pre">we</span> <span class="pre">define</span> <span class="pre">two</span> <span class="pre">mass</span> <span class="pre">squared</span> <span class="pre">differences&quot;</span></code> — Run-on. Split: <code class="docutils literal notranslate"><span class="pre">**Two</span> <span class="pre">independent</span> <span class="pre">Δm²:**</span> <span class="pre">(solar</span> <span class="pre">+</span> <span class="pre">atmospheric)</span></code>.</p></li>
+<li><p><strong>Cell #74</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;T2K</span> <span class="pre">exploits</span> <span class="pre">the</span> <span class="pre">fact</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">neutrino</span> <span class="pre">spectrum</span> <span class="pre">is</span> <span class="pre">narrower</span> <span class="pre">(but</span> <span class="pre">less</span> <span class="pre">intense)</span> <span class="pre">off-axis</span> <span class="pre">by</span> <span class="pre">2.5°&quot;</span></code> — Wordy. Suggest: <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">Off-axis</span> <span class="pre">beam</span> <span class="pre">(2.5°):</span> <span class="pre">narrower,</span> <span class="pre">less</span> <span class="pre">intense</span> <span class="pre">spectrum</span></code>.</p></li>
+<li><p><strong>Cell #63</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">solution</span> <span class="pre">is</span> <span class="pre">MSW</span> <span class="pre">adiabatic</span> <span class="pre">flavour</span> <span class="pre">transitions</span> <span class="pre">in</span> <span class="pre">solar</span> <span class="pre">matter,</span> <span class="pre">the</span> <span class="pre">so-called</span> <span class="pre">large</span> <span class="pre">mixing</span> <span class="pre">angle</span> <span class="pre">(LMA),</span> <span class="pre">with</span> <span class="pre">parameters:&quot;</span></code> — One sentence OK but “the so-called” is informal. Suggest: <code class="docutils literal notranslate"><span class="pre">**Solution:**</span> <span class="pre">MSW</span> <span class="pre">adiabatic</span> <span class="pre">transitions</span> <span class="pre">in</span> <span class="pre">solar</span> <span class="pre">matter</span> <span class="pre">→</span> <span class="pre">**LMA</span> <span class="pre">solution**</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="english-spelling-grammar-terminology">
+<h2>3. English (spelling, grammar, terminology)<a class="headerlink" href="#english-spelling-grammar-terminology" title="Permalink to this heading">#</a></h2>
+<p><strong>Findings:</strong> 14 issues found. 3 are High (wrong standard terminology or grammar errors that could confuse students). Most are typos or inconsistencies.</p>
+<section id="high">
+<h3>High<a class="headerlink" href="#high" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #35</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;In</span> <span class="pre">2001,</span> <span class="pre">SNO</span> <span class="pre">reported</span> <span class="pre">the</span> <span class="pre">initial</span> <span class="pre">result</span> <span class="pre">of</span> <span class="pre">CC</span> <span class="pre">measurement</span> <span class="pre">[15],</span> <span class="pre">was</span> <span class="pre">evidence</span> <span class="pre">of</span> <span class="pre">non-νe</span> <span class="pre">flux.&quot;</span></code> — Fragment: missing subject, “was evidence” needs “which was” or rephrase. Suggest: <code class="docutils literal notranslate"><span class="pre">&quot;SNO</span> <span class="pre">(2001)</span> <span class="pre">[15]:</span> <span class="pre">CC</span> <span class="pre">result</span> <span class="pre">showed</span> <span class="pre">non-νe</span> <span class="pre">component</span> <span class="pre">in</span> <span class="pre">solar</span> <span class="pre">flux&quot;</span></code>.</p></li>
+<li><p><strong>Cell #250</strong> (source line, md) — <code class="docutils literal notranslate"><span class="pre">&quot;Coherence</span> <span class="pre">of</span> <span class="pre">mass</span> <span class="pre">eigen-states</span> <span class="pre">over</span> <span class="pre">macroscopic</span> <span class="pre">distances&quot;</span></code> → <code class="docutils literal notranslate"><span class="pre">eigenstates</span></code> (one word, no hyphen). Standard particle physics terminology. Also appears at line 284: <code class="docutils literal notranslate"><span class="pre">&quot;eigen-states</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">free</span> <span class="pre">hamiltonian&quot;</span></code> → <code class="docutils literal notranslate"><span class="pre">eigenstates</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">free</span> <span class="pre">Hamiltonian</span></code>. Affects cells #6 and #7.</p></li>
+<li><p><strong>Cell #1160</strong> (source line, md, cell #45) — <code class="docutils literal notranslate"><span class="pre">&quot;**Questions:**</span> <span class="pre">Check</span> <span class="pre">that</span> <span class="pre">they</span> <span class="pre">correspond</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">eigen-values</span> <span class="pre">of</span> <span class="pre">H&quot;</span></code> → <code class="docutils literal notranslate"><span class="pre">eigenvalues</span></code>. Standard notation.</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Medium<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #5</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;And</span> <span class="pre">again</span> <span class="pre">Pontecorvo</span> <span class="pre">associated</span> <span class="pre">neutrino</span> <span class="pre">mixing</span> <span class="pre">and</span> <span class="pre">oscillations</span> <span class="pre">[25]</span> <span class="pre">in</span> <span class="pre">1967.&quot;</span></code> — “And again” is informal/informal connector. Rewrite: <code class="docutils literal notranslate"><span class="pre">&quot;Pontecorvo</span> <span class="pre">(1967)</span> <span class="pre">associated</span> <span class="pre">neutrino</span> <span class="pre">mixing</span> <span class="pre">with</span> <span class="pre">oscillations</span> <span class="pre">[25].&quot;</span></code> or bullet form.</p></li>
+<li><p><strong>Cell #25</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;During</span> <span class="pre">1964-2005</span> <span class="pre">J.</span> <span class="pre">Bahcall</span> <span class="pre">et</span> <span class="pre">al</span> <span class="pre">elaborated</span> <span class="pre">the</span> <span class="pre">Standard</span> <span class="pre">Solar</span> <span class="pre">Model,</span> <span class="pre">SSM.&quot;</span></code> — <code class="docutils literal notranslate"><span class="pre">elaborated</span></code> is a false cognate from Spanish (<code class="docutils literal notranslate"><span class="pre">elaboró</span></code>). Correct: <code class="docutils literal notranslate"><span class="pre">developed</span></code> or <code class="docutils literal notranslate"><span class="pre">constructed</span></code>. Also missing comma: “Bahcall et al., SSM”.</p></li>
+<li><p><strong>Cell #26</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">detector</span> <span class="pre">techniques</span> <span class="pre">are</span> <span class="pre">sensitive</span> <span class="pre">to</span> <span class="pre">different</span> <span class="pre">energy</span> <span class="pre">ranges.</span> <span class="pre">Galium:&quot;</span></code> — <code class="docutils literal notranslate"><span class="pre">Galium</span></code> → <code class="docutils literal notranslate"><span class="pre">Gallium</span></code> (standard English spelling).</p></li>
+<li><p><strong>Cell #37</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Neutrinos</span> <span class="pre">can</span> <span class="pre">*coherently</span> <span class="pre">scatter*</span> <span class="pre">via</span> <span class="pre">NC</span> <span class="pre">in</span> <span class="pre">matter,</span> <span class="pre">but</span> <span class="pre">only</span> <span class="pre">νe</span> <span class="pre">can</span> <span class="pre">CC!&quot;</span></code> — “can CC” is not standard phrasing. Suggest: <code class="docutils literal notranslate"><span class="pre">only</span> <span class="pre">νe</span> <span class="pre">scatter</span> <span class="pre">via</span> <span class="pre">CC</span></code> or <code class="docutils literal notranslate"><span class="pre">only</span> <span class="pre">νe</span> <span class="pre">have</span> <span class="pre">CC</span> <span class="pre">interactions</span></code>.</p></li>
+<li><p><strong>Cell #40</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;Where</span> <span class="pre">H₀</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">hamiltonian</span> <span class="pre">and</span> <span class="pre">U</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">mix</span> <span class="pre">matrix</span> <span class="pre">in</span> <span class="pre">vacuum&quot;</span></code> — <code class="docutils literal notranslate"><span class="pre">hamiltonian</span></code> → <code class="docutils literal notranslate"><span class="pre">Hamiltonian</span></code> (proper noun); <code class="docutils literal notranslate"><span class="pre">mix</span> <span class="pre">matrix</span></code> → <code class="docutils literal notranslate"><span class="pre">mixing</span> <span class="pre">matrix</span></code>.</p></li>
+<li><p><strong>Cell #56</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;###</span> <span class="pre">[KamLand</span> <span class="pre">Experiment]&quot;</span></code> — heading uses <code class="docutils literal notranslate"><span class="pre">KamLand</span></code>; correct is <code class="docutils literal notranslate"><span class="pre">KamLAND</span></code> (all experiments inside use correct capitalisation). Fix heading.</p></li>
+<li><p><strong>Cell #74</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;off-axis</span> <span class="pre">by</span> <span class="pre">2.5$^o$</span> <span class="pre">degrees&quot;</span></code> — <code class="docutils literal notranslate"><span class="pre">$^o$</span> <span class="pre">degrees</span></code> is redundant (“degrees degrees”). Use either <code class="docutils literal notranslate"><span class="pre">$2.5°$</span></code> or <code class="docutils literal notranslate"><span class="pre">$2.5^\circ$</span></code>. Also: <code class="docutils literal notranslate"><span class="pre">JPARC</span></code> → <code class="docutils literal notranslate"><span class="pre">J-PARC</span></code>.</p></li>
+<li><p><strong>Cell #82</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;##</span> <span class="pre">SBL</span> <span class="pre">Reactor</span> <span class="pre">Experiments.</span> <span class="pre">The</span>&#160; <span class="pre">$\theta_{13}$</span> <span class="pre">angle&quot;</span></code> — double space before <code class="docutils literal notranslate"><span class="pre">$\theta_{13}$</span></code>. Minor but visible in source.</p></li>
+<li><p><strong>Cell #89</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;###</span> <span class="pre">DoubleCHOOZ&quot;</span></code> — inconsistent: roadmap (cell #3, line 180) calls it <code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">Chooz</span></code>. Standardise to <code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">CHOOZ</span></code> (official experiment name).</p></li>
+<li><p><strong>Cell #999</strong> (source line, md, cell #40) — <code class="docutils literal notranslate"><span class="pre">&quot;Where</span> <span class="pre">H₀</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">hamiltonian</span> <span class="pre">and</span> <span class="pre">U</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">mix</span> <span class="pre">matrix</span> <span class="pre">in</span> <span class="pre">vacuum,</span> <span class="pre">and</span> <span class="pre">Ve</span> <span class="pre">affects</span> <span class="pre">only</span> <span class="pre">νe.&quot;</span></code> — capital <code class="docutils literal notranslate"><span class="pre">Where</span></code> mid-cell (should be lowercase since it continues a math expression block).</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Low<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cell #4</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;neutrino</span> <span class="pre">oscillation</span> <span class="pre">with</span> <span class="pre">three</span> <span class="pre">neutrino</span> <span class="pre">flavours&quot;</span></code> — British <code class="docutils literal notranslate"><span class="pre">flavours</span></code> vs. American <code class="docutils literal notranslate"><span class="pre">flavors</span></code>. NB mixes both; pick one convention and apply throughout (current dominant usage in the NB is <code class="docutils literal notranslate"><span class="pre">flavour</span></code> — acceptable for a European course).</p></li>
+<li><p><strong>Cell #74</strong> (md, slide) — <code class="docutils literal notranslate"><span class="pre">&quot;T2K</span> <span class="pre">exploits</span> <span class="pre">the</span> <span class="pre">fact</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">neutrino</span> <span class="pre">spectrum</span> <span class="pre">is</span> <span class="pre">narrower</span> <span class="pre">(but</span> <span class="pre">less</span> <span class="pre">intense)</span> <span class="pre">off-axis&quot;</span></code> — <code class="docutils literal notranslate"><span class="pre">exploits</span></code> sounds slightly informal in academic English. Neutral: <code class="docutils literal notranslate"><span class="pre">T2K</span> <span class="pre">uses</span> <span class="pre">the</span> <span class="pre">off-axis</span> <span class="pre">configuration</span> <span class="pre">(2.5°):</span></code>.</p></li>
+<li><p><strong>Cell #104</strong> (md, slide) — cut-off sentence: <code class="docutils literal notranslate"><span class="pre">&quot;Notice</span> <span class="pre">that</span> <span class="pre">as</span> <span class="pre">P(νμ→νe)</span> <span class="pre">is</span> <span class="pre">suppressed,</span> <span class="pre">then</span> <span class="pre">it</span> <span class="pre">is</span> <span class="pre">sensitive</span> <span class="pre">to</span> <span class="pre">second-order</span> <span class="pre">effects,&quot;</span></code> — trailing comma, sentence incomplete. Fix or remove.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="slideshow-metadata">
+<h2>4. Slideshow metadata<a class="headerlink" href="#slideshow-metadata" title="Permalink to this heading">#</a></h2>
+<p><strong>Findings:</strong> All 113 cells already have <code class="docutils literal notranslate"><span class="pre">slide_type</span></code> defined. <strong>No auto-fix was needed.</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metric</p></th>
+<th class="head"><p>Count</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cells with <code class="docutils literal notranslate"><span class="pre">slide_type</span></code> defined</p></td>
+<td><p>113</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cells where <code class="docutils literal notranslate"><span class="pre">slide_type</span></code> was added</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Cells with questionable <code class="docutils literal notranslate"><span class="pre">slide_type</span></code> (suggest manual review)</p></td>
+<td><p>5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="cells-with-questionable-slide-type-present-but-potentially-incorrect">
+<h3>Cells with questionable slide_type (present but potentially incorrect)<a class="headerlink" href="#cells-with-questionable-slide-type-present-but-potentially-incorrect" title="Permalink to this heading">#</a></h3>
+<p>Rule: exercise cells should be <code class="docutils literal notranslate"><span class="pre">subslide</span></code>; continuation math cells of a derivation should be <code class="docutils literal notranslate"><span class="pre">fragment</span></code> or <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p>
+<ul class="simple">
+<li><p><strong>Cell #21</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>) — <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Oscillation</span> <span class="pre">length…**</span></code> — exercises should be <code class="docutils literal notranslate"><span class="pre">subslide</span></code> (new slide independent of section). Suggest changing to <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p></li>
+<li><p><strong>Cell #22</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>) — <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Exclusion</span> <span class="pre">region…**</span></code> — same rationale. Suggest <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p></li>
+<li><p><strong>Cell #55</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>) — <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">The</span> <span class="pre">MSW</span> <span class="pre">resonance…**</span></code> — suggest <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p></li>
+<li><p><strong>Cell #62</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>) — <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">KamLAND…**</span></code> — suggest <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p></li>
+<li><p><strong>Cell #72</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>) — <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">SuperKamiokande…**</span></code> — suggest <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p></li>
+<li><p><strong>Cell #92</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>) — <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Daya</span> <span class="pre">Bay…**</span></code> — suggest <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p></li>
+<li><p><strong>Cell #16</strong> (code, <code class="docutils literal notranslate"><span class="pre">slide</span></code>) — <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">oscillations</span></code> (bare import) — a standalone import as <code class="docutils literal notranslate"><span class="pre">slide</span></code> will show an empty code slide. Suggest <code class="docutils literal notranslate"><span class="pre">skip</span></code> or <code class="docutils literal notranslate"><span class="pre">fragment</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="exercise-format">
+<h2>5. Exercise format<a class="headerlink" href="#exercise-format" title="Permalink to this heading">#</a></h2>
+<p><strong>Findings:</strong> 6 exercise cells found; 1 additional <code class="docutils literal notranslate"><span class="pre">Question</span></code>-style cell. Overall consistency is good. All use <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">&lt;Title&gt;**</span></code> format. Issues are minor.</p>
+<section id="exercise-cells-identified">
+<h3>Exercise cells identified<a class="headerlink" href="#exercise-cells-identified" title="Permalink to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cell</p></th>
+<th class="head"><p>Header pattern</p></th>
+<th class="head"><p>slide_type</p></th>
+<th class="head"><p>Length</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>#21</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Oscillation</span> <span class="pre">length</span> <span class="pre">and</span> <span class="pre">experimental</span> <span class="pre">regimes**</span></code></p></td>
+<td><p>slide</p></td>
+<td><p>17 lines</p></td>
+<td><p>3 questions; good structure</p></td>
+</tr>
+<tr class="row-odd"><td><p>#22</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Exclusion</span> <span class="pre">region</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">(Δm²,</span> <span class="pre">sin²2θ)</span> <span class="pre">plane**</span></code></p></td>
+<td><p>slide</p></td>
+<td><p>16 lines</p></td>
+<td><p>3 sub-questions; good</p></td>
+</tr>
+<tr class="row-even"><td><p>#55</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">The</span> <span class="pre">MSW</span> <span class="pre">resonance</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">Sun**</span></code></p></td>
+<td><p>slide</p></td>
+<td><p>16 lines</p></td>
+<td><p>2 questions; OK</p></td>
+</tr>
+<tr class="row-odd"><td><p>#62</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">KamLAND</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">measurement</span> <span class="pre">of</span> <span class="pre">θ₁₂**</span></code></p></td>
+<td><p>slide</p></td>
+<td><p>13 lines</p></td>
+<td><p>2 questions; OK</p></td>
+</tr>
+<tr class="row-even"><td><p>#72</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">SuperKamiokande</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">Up/Down</span> <span class="pre">asymmetry**</span></code></p></td>
+<td><p>slide</p></td>
+<td><p>14 lines</p></td>
+<td><p>2 questions; OK</p></td>
+</tr>
+<tr class="row-odd"><td><p>#92</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Daya</span> <span class="pre">Bay</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">reactor</span> <span class="pre">determination</span> <span class="pre">of</span> <span class="pre">θ₁₃**</span></code></p></td>
+<td><p>slide</p></td>
+<td><p>13 lines</p></td>
+<td><p>2 questions; OK</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="issues">
+<h3>Issues<a class="headerlink" href="#issues" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Consistency (Medium):</strong> All 6 exercises use <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Title**</span></code> format — consistent. However, all are <code class="docutils literal notranslate"><span class="pre">slide_type=slide</span></code> instead of <code class="docutils literal notranslate"><span class="pre">subslide</span></code>. This means they are embedded in the flow of the surrounding section rather than starting a fresh slide stack. Recommend changing all 6 to <code class="docutils literal notranslate"><span class="pre">subslide</span></code> for cleaner navigation in RISE.</p></li>
+<li><p><strong>Numbering (Low):</strong> Exercises are not numbered (no “Exercise 1”, “Exercise 2”…). If the NB is used standalone, numbered exercises aid reference. Consider adding <code class="docutils literal notranslate"><span class="pre">**Exercise</span> <span class="pre">1:**</span></code>, <code class="docutils literal notranslate"><span class="pre">**Exercise</span> <span class="pre">2:**</span></code>, etc.</p></li>
+<li><p><strong>Question cells (Low):</strong> There are also two bare <code class="docutils literal notranslate"><span class="pre">**Question:**</span></code> cells (cells ~#15 and ~#45, lines 473 and 551/1160) with a different format from the Exercise cells. Decide: convert to <code class="docutils literal notranslate"><span class="pre">**Exercise</span> <span class="pre">N:**</span></code> or keep as inline quick questions. Currently inconsistent with the 6 main exercises.</p></li>
+<li><p><strong>Cell #53</strong> (md, subslide) — <code class="docutils literal notranslate"><span class="pre">**Question:**</span></code> — this has <code class="docutils literal notranslate"><span class="pre">subslide</span></code> correctly, unlike the 6 exercise cells which have <code class="docutils literal notranslate"><span class="pre">slide</span></code>. It is an isolated estimation question without a title label. Add a brief title: <code class="docutils literal notranslate"><span class="pre">**Question:</span> <span class="pre">estimate</span> <span class="pre">θ₁₂</span> <span class="pre">from</span> <span class="pre">Borexino</span> <span class="pre">data**</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="global-issues-other-notes">
+<h2>Global issues / other notes<a class="headerlink" href="#global-issues-other-notes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Image filename typo:</strong> Cell #7 references <code class="docutils literal notranslate"><span class="pre">./imgs/nu_oscilations_diagram.png</span></code> (one <code class="docutils literal notranslate"><span class="pre">l</span></code> in <code class="docutils literal notranslate"><span class="pre">oscilations</span></code>). If the file is actually named that way on disk, it works, but the filename itself is misspelled. Consider renaming to <code class="docutils literal notranslate"><span class="pre">nu_oscillations_diagram.png</span></code> and updating the reference.</p></li>
+<li><p><strong>Cell #1 type mismatch:</strong> The cell at JSON line 141 is <code class="docutils literal notranslate"><span class="pre">cell_type:</span> <span class="pre">markdown</span></code> but its slide_type is <code class="docutils literal notranslate"><span class="pre">slide</span></code> with no markdown heading — its source is <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">orbit_nb</span></code>. This is actually <code class="docutils literal notranslate"><span class="pre">cell_type:</span> <span class="pre">code</span></code> looking at context; confirm that the metadata matches the cell type in the JSON.</p></li>
+<li><p><strong>Trailing content cell #104:</strong> Sentence <code class="docutils literal notranslate"><span class="pre">&quot;Notice</span> <span class="pre">that</span> <span class="pre">as</span> <span class="pre">P(νμ→νe)</span> <span class="pre">is</span> <span class="pre">suppressed,</span> <span class="pre">then</span> <span class="pre">it</span> <span class="pre">is</span> <span class="pre">sensitive</span> <span class="pre">to</span> <span class="pre">second-order</span> <span class="pre">effects,&quot;</span></code> ends with a comma and no closing thought. This is likely an incomplete draft sentence. Either complete it (<code class="docutils literal notranslate"><span class="pre">&quot;…to</span> <span class="pre">subleading</span> <span class="pre">effects:</span> <span class="pre">θ₁₃</span> <span class="pre">and</span> <span class="pre">δ_CP&quot;</span></code>) or remove.</p></li>
+<li><p><strong>Reference numbering:</strong> References jump from [1] directly to [5], then [6,7,8,13,14,15,16,17,20,21,22,23,24,25,26b,27,28,29,33,38]. References [2,3,4,9,10,11,12,18,19,26,30,31,32,34–37] are absent. This is not an error (references may be used in other NB chapters) but a reader might notice the gaps.</p></li>
+<li><p><strong>Cell #109</strong> (<code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">Next:</span> <span class="pre">Current</span> <span class="pre">and</span> <span class="pre">Future</span> <span class="pre">Experiments</span></code>) is a placeholder with no content. Mark <code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">skip</span></code> or add a brief bullet list of upcoming topics.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="priority-matrix-all-issues">
+<h2>Priority matrix (all issues)<a class="headerlink" href="#priority-matrix-all-issues" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Priority</p></th>
+<th class="head"><p>Count</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>High</strong></p></td>
+<td><p>10</p></td>
+<td><p>5 overlong cells (overflow), 2 prose-heavy cells (no bullets), 3 grammar/terminology errors</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Medium</strong></p></td>
+<td><p>22</p></td>
+<td><p>9 moderately long cells, 8 telegraphic style issues, 7 English errors, 5 wrong slide_type for exercises</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Low</strong></p></td>
+<td><p>15</p></td>
+<td><p>4 borderline-length cells, 4 minor style, 4 low-severity English, 3 exercise format cosmetics</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brevity-slide-friendly">1. Brevity (slide-friendly)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-blocks-slide-rendering">High (blocks slide rendering)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-tight-fit-recommend-trimming">Medium (tight fit, recommend trimming)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-cosmetic-borderline">Low (cosmetic / borderline)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telegraphic-style">2. Telegraphic style</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-breaks-slide-flow-with-long-prose">High (breaks slide flow with long prose)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium">Medium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low">Low</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#english-spelling-grammar-terminology">3. English (spelling, grammar, terminology)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high">High</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Medium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Low</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slideshow-metadata">4. Slideshow metadata</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cells-with-questionable-slide-type-present-but-potentially-incorrect">Cells with questionable slide_type (present but potentially incorrect)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-format">5. Exercise format</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-cells-identified">Exercise cells identified</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issues">Issues</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-issues-other-notes">Global issues / other notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priority-matrix-all-issues">Priority matrix (all issues)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By José Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright USC - J.A. Hernando - 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
