@@ -1,0 +1,870 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Review — nu_mass_nature.ipynb &#8212; Neutrinos - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/review-nu_mass_nature';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Neutrinos - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Neutrinos - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../nu_index.html">The mysteries of the neutrinos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_sm.html">Neutrinos and the construction of the Standard Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations.html">Neutrino Oscillations: Theory and Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations_exp.html">Current and Future Neutrino Oscillation Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_mass_nature.html">Neutrino Mass and Nature</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnotes/review-nu_mass_nature.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notes/review-nu_mass_nature.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Review — nu_mass_nature.ipynb</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-auto-fix-status">Metadata auto-fix status</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-1-brevity-slide-friendly">Section 1 — Brevity (slide-friendly)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-2-telegraphic-style">Section 2 — Telegraphic Style</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-3-english">Section 3 — English</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-4-slideshow-metadata">Section 4 — Slideshow Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-5-exercise-format-consistency">Section 5 — Exercise Format Consistency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-summary">Global Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="review-nu-mass-nature-ipynb">
+<h1>Review — nu_mass_nature.ipynb<a class="headerlink" href="#review-nu-mass-nature-ipynb" title="Permalink to this heading">#</a></h1>
+<p><em>Generated: 2026-04-20 · 104 cells (2 code + 102 markdown)</em></p>
+<hr class="docutils" />
+<section id="metadata-auto-fix-status">
+<h2>Metadata auto-fix status<a class="headerlink" href="#metadata-auto-fix-status" title="Permalink to this heading">#</a></h2>
+<p><strong>BLOCKED — auto-fix could not be applied.</strong></p>
+<p>The Edit tool is rejected for <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files (tool returns “Use NotebookEdit”), and NotebookEdit does not expose a metadata field — it only replaces cell source. The complete list of cells requiring <code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">fragment</span></code> is provided in Section 4 below so the fix can be applied manually or via a script.</p>
+<p><strong>Manual fix script</strong> (run once in terminal):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span><span class="o">,</span><span class="w"> </span><span class="nn">pathlib</span>
+
+<span class="n">NB</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;USC-FPII/nu_mass_nature.ipynb&quot;</span><span class="p">)</span>
+<span class="n">nb</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">NB</span><span class="o">.</span><span class="n">read_text</span><span class="p">())</span>
+
+<span class="n">FRAGMENT_IDS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;ae1fb101&quot;</span><span class="p">,</span>  <span class="c1"># cell 9  — KATRIN MAC-E method</span>
+    <span class="s2">&quot;c3adebbd&quot;</span><span class="p">,</span>  <span class="c1"># cell 17 — Tension cosmological cap</span>
+    <span class="s2">&quot;cb611238&quot;</span><span class="p">,</span>  <span class="c1"># cell 22 — sterile ν_R continuation</span>
+    <span class="s2">&quot;4872f780&quot;</span><span class="p">,</span>  <span class="c1"># cell 26 — Dirac/Majorana nature question</span>
+    <span class="s2">&quot;7cc34ca7&quot;</span><span class="p">,</span>  <span class="c1"># cell 28 — Weinberg op. continuation</span>
+    <span class="s2">&quot;23ccf7de&quot;</span><span class="p">,</span>  <span class="c1"># cell 33 — Majorana PMNS phases</span>
+    <span class="s2">&quot;76836614&quot;</span><span class="p">,</span>  <span class="c1"># cell 39 — LNV helicity suppression</span>
+    <span class="s2">&quot;28bba958&quot;</span><span class="p">,</span>  <span class="c1"># cell 49 — Th232/U238 decay chains</span>
+    <span class="s2">&quot;e2c033a4&quot;</span><span class="p">,</span>  <span class="c1"># cell 50 — muon flux image</span>
+    <span class="s2">&quot;c9a6f9a0&quot;</span><span class="p">,</span>  <span class="c1"># cell 55 — EXO-200 images</span>
+    <span class="s2">&quot;d296fe8d&quot;</span><span class="p">,</span>  <span class="c1"># cell 60 — KamLAND-Zen spectra + result</span>
+    <span class="s2">&quot;7c45fd00&quot;</span><span class="p">,</span>  <span class="c1"># cell 62 — KamLAND-Zen 800 result</span>
+    <span class="s2">&quot;3a831343&quot;</span><span class="p">,</span>  <span class="c1"># cell 67 — LEGEND spectrum cuts image</span>
+    <span class="s2">&quot;20dff6e4&quot;</span><span class="p">,</span>  <span class="c1"># cell 68 — LEGEND-200 spectrum images</span>
+    <span class="s2">&quot;d9291831&quot;</span><span class="p">,</span>  <span class="c1"># cell 69 — LEGEND-200 published results</span>
+    <span class="s2">&quot;973eb82d&quot;</span><span class="p">,</span>  <span class="c1"># cell 72 — CUORE assembly images</span>
+    <span class="s2">&quot;acfe260c&quot;</span><span class="p">,</span>  <span class="c1"># cell 76 — NEXT-100 xsection image</span>
+    <span class="s2">&quot;945449de&quot;</span><span class="p">,</span>  <span class="c1"># cell 77 — NEXT topology images</span>
+    <span class="s2">&quot;45141e1d&quot;</span><span class="p">,</span>  <span class="c1"># cell 78 — NEXT sensitivity plots</span>
+    <span class="s2">&quot;25f474e7&quot;</span><span class="p">,</span>  <span class="c1"># cell 81 — NEXT-100 detector images</span>
+    <span class="s2">&quot;3f89d19a&quot;</span><span class="p">,</span>  <span class="c1"># cell 82 — NEXT-100 events images</span>
+    <span class="s2">&quot;5040bcd7&quot;</span><span class="p">,</span>  <span class="c1"># cell 83 — First NEXT-100 results</span>
+    <span class="s2">&quot;65a38d95&quot;</span><span class="p">,</span>  <span class="c1"># cell 87 — next-gen sensitivities table</span>
+    <span class="s2">&quot;40d03de2&quot;</span><span class="p">,</span>  <span class="c1"># cell 89 — ESPP ton-scale table</span>
+    <span class="s2">&quot;04a74731&quot;</span><span class="p">,</span>  <span class="c1"># cell 90 — Theory/R&amp;D priorities</span>
+    <span class="s2">&quot;5dcf320d&quot;</span><span class="p">,</span>  <span class="c1"># cell 91 — bb0nu timeline image</span>
+    <span class="s2">&quot;a78db253&quot;</span><span class="p">,</span>  <span class="c1"># cell 94 — Conclusions continuation</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">cell</span> <span class="ow">in</span> <span class="n">nb</span><span class="p">[</span><span class="s2">&quot;cells&quot;</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">cell</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span> <span class="ow">in</span> <span class="n">FRAGMENT_IDS</span><span class="p">:</span>
+        <span class="n">cell</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;metadata&quot;</span><span class="p">,</span> <span class="p">{})</span>
+        <span class="n">cell</span><span class="p">[</span><span class="s2">&quot;metadata&quot;</span><span class="p">][</span><span class="s2">&quot;slideshow&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;slide_type&quot;</span><span class="p">:</span> <span class="s2">&quot;fragment&quot;</span><span class="p">}</span>
+
+<span class="n">NB</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done —&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">FRAGMENT_IDS</span><span class="p">),</span> <span class="s2">&quot;cells patched.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="section-1-brevity-slide-friendly">
+<h2>Section 1 — Brevity (slide-friendly)<a class="headerlink" href="#section-1-brevity-slide-friendly" title="Permalink to this heading">#</a></h2>
+<p><strong>Summary: 6 cells with length or density issues (2 High, 4 Medium).</strong></p>
+<ul class="simple">
+<li><p><strong>Cell #51</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Sensitivity</span> <span class="pre">regimes</span></code>): 18 rendered lines including two display equations + figure + long caption sentence. Will overflow a standard slide. <strong>Priority: Alto</strong> — split into (a) the two-regime equations and (b) the figure + caption.</p></li>
+<li><p><strong>Cell #85</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Summary:</span> <span class="pre">current</span> <span class="pre">limits</span> <span class="pre">and</span> <span class="pre">future</span> <span class="pre">prospects</span></code>): 18+ lines — long table (5 cols × 4 rows) plus 5 prose bullet points. <strong>Priority: Alto</strong> — move the 5 “Key observations” bullets to a <code class="docutils literal notranslate"><span class="pre">fragment</span></code> cell.</p></li>
+<li><p><strong>Cell #56</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">**EXO-200</span> <span class="pre">results:**</span></code>): 14 lines including a centred figure. Borderline; acceptable but the prose sentence at the end could be a separate fragment. <strong>Priority: Medio</strong>.</p></li>
+<li><p><strong>Cell #65</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">GERDA</span> <span class="pre">(2015–2020)</span></code>): 16 lines including two sub-figures and a result sentence. Likely overflows. <strong>Priority: Medio</strong> — move result sentence to a fragment.</p></li>
+<li><p><strong>Cell #99</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Other</span> <span class="pre">long-lived</span> <span class="pre">particle</span> <span class="pre">experiments</span></code>): 15 lines including a 5-row table + 5-bullet complementarity block + 2-line conclusion sentence. Tight but borderline. <strong>Priority: Medio</strong>.</p></li>
+<li><p><strong>Cell #100–101</strong> (md, slide — References): 16 lines each. References pages are typically <code class="docutils literal notranslate"><span class="pre">notes</span></code> or <code class="docutils literal notranslate"><span class="pre">skip</span></code> in slide presentations, not standalone slides displayed to students. <strong>Priority: Bajo</strong> — consider setting <code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">notes</span></code> or <code class="docutils literal notranslate"><span class="pre">skip</span></code>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="section-2-telegraphic-style">
+<h2>Section 2 — Telegraphic Style<a class="headerlink" href="#section-2-telegraphic-style" title="Permalink to this heading">#</a></h2>
+<p><strong>Summary: 5 cells with prose issues (1 High, 4 Medium).</strong></p>
+<ul class="simple">
+<li><p><strong>Cell #16</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">DESI</span> <span class="pre">2024</span></code>): Source line 480 contains a run-on sentence spanning 2 lines without a period: <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">Dark</span> <span class="pre">Energy</span> <span class="pre">Spectroscopic</span> <span class="pre">Instrument</span> <span class="pre">(DESI)</span> <span class="pre">measured</span> <span class="pre">BAO</span> <span class="pre">from</span> <span class="pre">&gt;6</span> <span class="pre">million</span> <span class="pre">extragalactic</span> <span class="pre">objects</span> <span class="pre">(galaxies,</span> <span class="pre">quasars,</span> <span class="pre">Lyα</span> <span class="pre">forest)</span> <span class="pre">across</span> <span class="pre">0.1</span> <span class="pre">&lt;</span> <span class="pre">z</span> <span class="pre">&lt;</span> <span class="pre">4.2</span> <span class="pre">in</span> <span class="pre">its</span> <span class="pre">first</span> <span class="pre">year</span> <span class="pre">of</span> <span class="pre">observations&quot;</span></code>. This is a continuous prose sentence. <strong>Priority: Alto</strong> → Replace with bullet format: <code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">&gt;6</span> <span class="pre">million</span> <span class="pre">objects</span> <span class="pre">(galaxies,</span> <span class="pre">QSOs,</span> <span class="pre">Lyα)</span> <span class="pre">across</span> <span class="pre">0.1</span> <span class="pre">&lt;</span> <span class="pre">z</span> <span class="pre">&lt;</span> <span class="pre">4.2</span> <span class="pre">—</span> <span class="pre">first</span> <span class="pre">year</span></code>.</p></li>
+<li><p><strong>Cell #26</strong> (md, MISSING slide_type — <code class="docutils literal notranslate"><span class="pre">&quot;Neutrinos</span> <span class="pre">have</span> <span class="pre">mass...&quot;</span></code>): 2 lines of narrative prose with no bullet structure: <code class="docutils literal notranslate"><span class="pre">&quot;Neutrinos</span> <span class="pre">have</span> <span class="pre">mass</span> <span class="pre">—</span> <span class="pre">as</span> <span class="pre">demonstrated</span> <span class="pre">by</span> <span class="pre">oscillations</span> <span class="pre">—</span> <span class="pre">and</span> <span class="pre">they</span> <span class="pre">are</span> <span class="pre">the</span> <span class="pre">only</span> <span class="pre">fundamental</span> <span class="pre">fermions</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">be</span> <span class="pre">Majorana</span> <span class="pre">particles.</span> <span class="pre">/</span> <span class="pre">*What,</span> <span class="pre">then,</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">nature</span> <span class="pre">of</span> <span class="pre">neutrinos:</span> <span class="pre">Dirac</span> <span class="pre">or</span> <span class="pre">Majorana?*&quot;</span></code>. <strong>Priority: Medio</strong> — acceptable as a rhetorical bridging cell but should be a <code class="docutils literal notranslate"><span class="pre">fragment</span></code> under cell #25. Keep as-is if intentional; else refactor to bold-label + one-liner.</p></li>
+<li><p><strong>Cell #52</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Detector</span> <span class="pre">requirements</span></code>): Last sentence is prose: <code class="docutils literal notranslate"><span class="pre">&quot;Different</span> <span class="pre">isotopes</span> <span class="pre">and</span> <span class="pre">detection</span> <span class="pre">techniques</span> <span class="pre">offer</span> <span class="pre">complementary</span> <span class="pre">trade-offs</span> <span class="pre">between</span> <span class="pre">these</span> <span class="pre">three</span> <span class="pre">requirements,</span> <span class="pre">as</span> <span class="pre">we</span> <span class="pre">shall</span> <span class="pre">see</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">next</span> <span class="pre">section.&quot;</span></code> This is a connector phrase typical of written text. <strong>Priority: Medio</strong> → Delete or replace with <code class="docutils literal notranslate"><span class="pre">→</span> <span class="pre">see</span> <span class="pre">next</span> <span class="pre">section</span></code>.</p></li>
+<li><p><strong>Cell #60</strong> (md, MISSING — KamLAND-Zen result): Last sentence is a long 2-line prose statement: <code class="docutils literal notranslate"><span class="pre">&quot;Despite</span> <span class="pre">the</span> <span class="pre">modest</span> <span class="pre">energy</span> <span class="pre">resolution,</span> <span class="pre">the</span> <span class="pre">large</span> <span class="pre">mass</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">absence</span> <span class="pre">of</span> <span class="pre">events</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">RoI</span> <span class="pre">made</span> <span class="pre">this</span> <span class="pre">the</span> <span class="pre">world-leading</span> <span class="pre">limit</span> <span class="pre">at</span> <span class="pre">the</span> <span class="pre">time.&quot;</span></code> <strong>Priority: Medio</strong> → Convert to two bullets: <code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">Modest</span> <span class="pre">ΔE</span> <span class="pre">(~10%</span> <span class="pre">FWHM)</span> <span class="pre">compensated</span> <span class="pre">by</span> <span class="pre">large</span> <span class="pre">mass</span></code> and <code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">World-leading</span> <span class="pre">limit</span> <span class="pre">at</span> <span class="pre">the</span> <span class="pre">time</span></code>.</p></li>
+<li><p><strong>Cell #85</strong> (md, slide — Summary table): 5 “Key observations” bullets are written as full sentences with subordinate clauses (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;the</span> <span class="pre">discovery</span> <span class="pre">gain</span> <span class="pre">of</span> <span class="pre">CUPID</span> <span class="pre">comes</span> <span class="pre">from</span> <span class="pre">scintillation</span> <span class="pre">particle</span> <span class="pre">ID,</span> <span class="pre">reducing</span> <span class="pre">the</span> <span class="pre">α</span> <span class="pre">background</span> <span class="pre">by</span> <span class="pre">two</span> <span class="pre">orders</span> <span class="pre">of</span> <span class="pre">magnitude&quot;</span></code>). <strong>Priority: Medio</strong> → Compress to short telegraphic labels.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="section-3-english">
+<h2>Section 3 — English<a class="headerlink" href="#section-3-english" title="Permalink to this heading">#</a></h2>
+<p><strong>Summary: 6 issues found (0 High, 4 Medium, 2 Bajo).</strong></p>
+<ul class="simple">
+<li><p><strong>Cell #57</strong> (md, slide): Heading <code class="docutils literal notranslate"><span class="pre">&quot;####</span> <span class="pre">nEXO</span> <span class="pre">(very</span> <span class="pre">likely</span> <span class="pre">out</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">race!)&quot;</span></code> — editorial comment in a heading is informal and student-facing. Also potentially factually contentious. <strong>Priority: Medio</strong> → Rename to <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">nEXO</span> <span class="pre">(5-tonne</span> <span class="pre">LXe</span> <span class="pre">TPC,</span> <span class="pre">SNOLAB)</span></code> and move the comment to the cell body if needed.</p></li>
+<li><p><strong>Cell #80</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">NEXT-100</span> <span class="pre">(2024–)</span></code>): Source line 1841: <code class="docutils literal notranslate"><span class="pre">&quot;first</span> <span class="pre">xenon</span> <span class="pre">operation</span> <span class="pre">at</span> <span class="pre">4</span> <span class="pre">bar</span> <span class="pre">in</span> <span class="pre">October</span> <span class="pre">2024</span> <span class="pre">[[NEXT-7]](https://arxiv.org/abs/2511.01710)&quot;</span></code> — reference [NEXT-7] is cited here but in the References (cell #102) it points to arXiv:2505.17848 which is the NEXT-100 detector paper, while arXiv:2511.01710 is [NEXT-8] (Kr calibration). <strong>Priority: Medio</strong> — fix reference label to <code class="docutils literal notranslate"><span class="pre">[[NEXT-7]](https://arxiv.org/abs/2505.17848)</span></code> in cell #80 (the commissioning context is more naturally reference [NEXT-7]).</p></li>
+<li><p><strong>Cell #81</strong> (md, MISSING — NEXT-100 images): Image caption <code class="docutils literal notranslate"><span class="pre">&quot;NEXT100</span> <span class="pre">traking</span> <span class="pre">and</span> <span class="pre">energy</span> <span class="pre">planes&quot;</span></code> — typo: <code class="docutils literal notranslate"><span class="pre">&quot;traking&quot;</span></code> → <code class="docutils literal notranslate"><span class="pre">&quot;tracking&quot;</span></code>. <strong>Priority: Medio</strong>.</p></li>
+<li><p><strong>Cell #14</strong> (md, slide — <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Future</span> <span class="pre">experiments</span> <span class="pre">/</span> <span class="pre">###</span> <span class="pre">Project</span> <span class="pre">8</span></code>): Two consecutive <code class="docutils literal notranslate"><span class="pre">###</span></code> headings in one cell (<code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Future</span> <span class="pre">experiments\n###</span> <span class="pre">Project</span> <span class="pre">8</span></code>). This renders as two headings on the same slide without visual separation, and structurally conflates section and subsection. <strong>Priority: Medio</strong> → Remove the <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Future</span> <span class="pre">experiments</span></code> heading and start directly with <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Project</span> <span class="pre">8</span></code>, or promote Project 8 to its own slide.</p></li>
+<li><p><strong>Cell #15</strong> (md, slide): Mixes <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Cosmological</span> <span class="pre">bounds</span> <span class="pre">on</span> <span class="pre">neutrino</span> <span class="pre">mass</span></code> and <code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">CMB</span> <span class="pre">+</span> <span class="pre">BAO:</span> <span class="pre">Planck</span> <span class="pre">2018</span></code> in a single cell — two heading levels rendered together. <strong>Priority: Bajo</strong> — structurally works but is inconsistent with the pattern used elsewhere (e.g., DESI 2024 gets its own slide cell #16).</p></li>
+<li><p><strong>Cell #53</strong> (md, slide): Section heading <code class="docutils literal notranslate"><span class="pre">&quot;##</span> <span class="pre">The</span> <span class="pre">Experimental</span> <span class="pre">Search</span> <span class="pre">for</span> <span class="pre">ββ0ν</span> <span class="pre">Decays&quot;</span></code> — no number (other sections are <code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">1.</span></code>, <code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">2.</span></code>, <code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">3.</span></code>). The heading immediately continues with <code class="docutils literal notranslate"><span class="pre">&quot;###</span> <span class="pre">Liquid</span> <span class="pre">xenon</span> <span class="pre">experiments&quot;</span></code> in the same cell. <strong>Priority: Bajo</strong> → Add section number <code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">4.</span></code> and split the <code class="docutils literal notranslate"><span class="pre">###</span></code> subsection to a separate cell.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="section-4-slideshow-metadata">
+<h2>Section 4 — Slideshow Metadata<a class="headerlink" href="#section-4-slideshow-metadata" title="Permalink to this heading">#</a></h2>
+<p><strong>Summary: 27 cells without <code class="docutils literal notranslate"><span class="pre">slide_type</span></code> (all should be <code class="docutils literal notranslate"><span class="pre">fragment</span></code>). 77 cells already have metadata.</strong></p>
+<p>All 27 missing cells follow content slides (not section titles) and contain continuation text or image panels — all should be <code class="docutils literal notranslate"><span class="pre">fragment</span></code>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cell #</p></th>
+<th class="head"><p>Cell ID</p></th>
+<th class="head"><p>First-line identifier</p></th>
+<th class="head"><p>Recommended <code class="docutils literal notranslate"><span class="pre">slide_type</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>ae1fb101</p></td>
+<td><p>Detection method — MAC-E filter</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>17</p></td>
+<td><p>c3adebbd</p></td>
+<td><p><strong>Tension!</strong> cosmological cap</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>22</p></td>
+<td><p>cb611238</p></td>
+<td><p>sterile ν_R field, hierarchy problem</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p>4872f780</p></td>
+<td><p>Neutrinos have mass… Dirac or Majorana?</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>28</p></td>
+<td><p>7cc34ca7</p></td>
+<td><p>Weinberg op. only 5-dim op., Feynman diagrams</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>33</p></td>
+<td><p>23ccf7de</p></td>
+<td><p><strong>Majorana case</strong>: PMNS Majorana phases</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>39</p></td>
+<td><p>76836614</p></td>
+<td><p>LNV helicity-suppressed probabilities table</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>49</p></td>
+<td><p>28bba958</p></td>
+<td><p>Th232 / U238 decay chain images</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>50</p></td>
+<td><p>e2c033a4</p></td>
+<td><p>Muon flux vs depth underground labs</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>55</p></td>
+<td><p>c9a6f9a0</p></td>
+<td><p>EXO-200 detection technique / calibration images</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>60</p></td>
+<td><p>d296fe8d</p></td>
+<td><p>KamLAND-Zen spectra + result sentence</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>62</p></td>
+<td><p>7c45fd00</p></td>
+<td><p>KamLAND-Zen 800 exclusion + combined result</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>67</p></td>
+<td><p>3a831343</p></td>
+<td><p>LEGEND energy spectrum cuts (image)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>68</p></td>
+<td><p>20dff6e4</p></td>
+<td><p>LEGEND-200 spectrum two-panel images</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>69</p></td>
+<td><p>d9291831</p></td>
+<td><p>LEGEND-200 published results (PRL 2026)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>72</p></td>
+<td><p>973eb82d</p></td>
+<td><p>CUORE assembly images</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>76</p></td>
+<td><p>acfe260c</p></td>
+<td><p>NEXT-100 cross-section (image)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>77</p></td>
+<td><p>945449de</p></td>
+<td><p>NEXT topology / blobs discrimination</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>78</p></td>
+<td><p>45141e1d</p></td>
+<td><p>NEXT T_bb0nu vs Exposure / BkgIndex plots</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>81</p></td>
+<td><p>25f474e7</p></td>
+<td><p>NEXT-100 detector and tracking planes (images)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>82</p></td>
+<td><p>3f89d19a</p></td>
+<td><p>NEXT-100 S2 / Kr events (images)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>83</p></td>
+<td><p>5040bcd7</p></td>
+<td><p>First NEXT-100 results (Nov 2025)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>87</p></td>
+<td><p>65a38d95</p></td>
+<td><p>Next-gen sensitivities table (4 experiments)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>89</p></td>
+<td><p>40d03de2</p></td>
+<td><p>ESPP ton-scale experiments table</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>90</p></td>
+<td><p>04a74731</p></td>
+<td><p>Theory / R&amp;D priorities + bottom-line</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-odd"><td><p>91</p></td>
+<td><p>5dcf320d</p></td>
+<td><p>ββ0ν timeline SVG (image)</p></td>
+<td><p>fragment</p></td>
+</tr>
+<tr class="row-even"><td><p>94</p></td>
+<td><p>a78db253</p></td>
+<td><p>Conclusions continuation: m_ν cosmic role</p></td>
+<td><p>fragment</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Counts:</strong></p>
+<ul class="simple">
+<li><p>Cells already with <code class="docutils literal notranslate"><span class="pre">slide_type</span></code>: 77</p></li>
+<li><p>Cells missing <code class="docutils literal notranslate"><span class="pre">slide_type</span></code> (to add): 27 (all → <code class="docutils literal notranslate"><span class="pre">fragment</span></code>)</p></li>
+<li><p>Values to review manually: 0</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="section-5-exercise-format-consistency">
+<h2>Section 5 — Exercise Format Consistency<a class="headerlink" href="#section-5-exercise-format-consistency" title="Permalink to this heading">#</a></h2>
+<p><strong>Summary: 5 exercises identified. 3 issues (2 Medium, 1 Bajo).</strong></p>
+<p>The 5 exercises and their cells:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>#</p></th>
+<th class="head"><p>Cell</p></th>
+<th class="head"><p>Heading pattern</p></th>
+<th class="head"><p>slide_type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>E1</p></td>
+<td><p>13</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">KATRIN</span> <span class="pre">—</span> <span class="pre">endpoint</span> <span class="pre">spectrum</span> <span class="pre">and</span> <span class="pre">kinematic</span> <span class="pre">neutrino</span> <span class="pre">mass**</span></code></p></td>
+<td><p>slide</p></td>
+</tr>
+<tr class="row-odd"><td><p>E2</p></td>
+<td><p>36</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">The</span> <span class="pre">seesaw</span> <span class="pre">mechanism</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">PMNS</span> <span class="pre">matrix**</span></code></p></td>
+<td><p>slide</p></td>
+</tr>
+<tr class="row-even"><td><p>E3</p></td>
+<td><p>45</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Effective</span> <span class="pre">Majorana</span> <span class="pre">mass</span> <span class="pre">spectrum**</span></code></p></td>
+<td><p>slide</p></td>
+</tr>
+<tr class="row-odd"><td><p>E4</p></td>
+<td><p>46</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Half-life</span> <span class="pre">limits</span> <span class="pre">and</span> <span class="pre">NME</span> <span class="pre">uncertainty**</span></code></p></td>
+<td><p>slide</p></td>
+</tr>
+<tr class="row-even"><td><p>E5</p></td>
+<td><p>92</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">Experimental</span> <span class="pre">sensitivity</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">function</span> <span class="pre">of</span> <span class="pre">exposure**</span></code></p></td>
+<td><p>slide</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Consistent features:</strong> all use <code class="docutils literal notranslate"><span class="pre">**Exercise:</span> <span class="pre">&lt;title&gt;**</span></code> as first line, all have <code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">slide</span></code>, all include numbered questions below. Good overall consistency.</p>
+<p><strong>Issues:</strong></p>
+<ul class="simple">
+<li><p><strong>E1 vs E2–E5 internal structure:</strong> E1 has three questions without a <code class="docutils literal notranslate"><span class="pre">**Questions:**</span></code> label header — the list begins immediately after the formula. E2–E5 all use <code class="docutils literal notranslate"><span class="pre">**Questions:**</span></code> (or <code class="docutils literal notranslate"><span class="pre">**Part</span> <span class="pre">A</span> <span class="pre">/</span> <span class="pre">Part</span> <span class="pre">B**</span></code>) as a sub-label before the numbered list. <strong>Priority: Medio</strong> → Add <code class="docutils literal notranslate"><span class="pre">**Questions:**</span></code> label to E1, after the display equation block.</p></li>
+<li><p><strong>E2 question length:</strong> E2 (cell #36) has 5 questions and two labelled parts (Part A / Part B), making it significantly longer (15+ lines) than the other exercises (~10 lines each). <strong>Priority: Medio</strong> → Consider splitting into two exercises or moving Part B to a <code class="docutils literal notranslate"><span class="pre">fragment</span></code> cell.</p></li>
+<li><p><strong>Numbering:</strong> There are no exercise numbers in the headings (no “Exercise 1”, “Exercise 2”, etc.) — just descriptive titles. This is internally consistent but differs from the numbered exercise pattern used in other NB chapters. <strong>Priority: Bajo</strong> — flag for course-level standardisation.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="global-summary">
+<h2>Global Summary<a class="headerlink" href="#global-summary" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Criterion</p></th>
+<th class="head"><p>Cells affected</p></th>
+<th class="head"><p>High</p></th>
+<th class="head"><p>Medium</p></th>
+<th class="head"><p>Low</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1. Brevity</p></td>
+<td><p>6</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>2. Telegraphic style</p></td>
+<td><p>5</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>3. English</p></td>
+<td><p>6</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>4. Slide metadata</p></td>
+<td><p>27</p></td>
+<td><p>0*</p></td>
+<td><p>0</p></td>
+<td><p>27</p></td>
+</tr>
+<tr class="row-even"><td><p>5. Exercises</p></td>
+<td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Total</strong></p></td>
+<td><p><strong>35 distinct cells</strong></p></td>
+<td><p><strong>3</strong></p></td>
+<td><p><strong>12</strong></p></td>
+<td><p><strong>5 (+27 metadata)</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>* The 27 metadata issues are not “blocking” in the sense of corrupting content, but they do cause slides to be presented as <code class="docutils literal notranslate"><span class="pre">—</span></code> (untyped) and may render unexpectedly in RISE. Treat as <strong>Medium</strong> for course use.</p>
+<p><strong>Top-priority actions:</strong></p>
+<ol class="arabic simple">
+<li><p>Run the Python script above to add <code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">fragment</span></code> to all 27 missing cells.</p></li>
+<li><p>Split cell #51 (<code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Sensitivity</span> <span class="pre">regimes</span></code>, 18 lines) and cell #85 (<code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Summary:</span> <span class="pre">current</span> <span class="pre">limits</span></code>, 18+ lines).</p></li>
+<li><p>Fix the prose sentence in cell #16 (DESI 2024 description).</p></li>
+<li><p>Rename the heading of cell #57 (nEXO) and fix the <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Future</span> <span class="pre">experiments</span></code> double-heading in cell #14.</p></li>
+<li><p>Fix the <code class="docutils literal notranslate"><span class="pre">&quot;traking&quot;</span></code> typo in cell #81.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-auto-fix-status">Metadata auto-fix status</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-1-brevity-slide-friendly">Section 1 — Brevity (slide-friendly)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-2-telegraphic-style">Section 2 — Telegraphic Style</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-3-english">Section 3 — English</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-4-slideshow-metadata">Section 4 — Slideshow Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-5-exercise-format-consistency">Section 5 — Exercise Format Consistency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-summary">Global Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By José Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright USC - J.A. Hernando - 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,727 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Informe de revision — nu_index.ipynb &#8212; Neutrinos - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/orbit.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/review-nu_index';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Neutrinos - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Neutrinos - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Neutrinos - USC
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../nu_index.html">The mysteries of the neutrinos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_sm.html">Neutrinos and the construction of the Standard Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations.html">Neutrino Oscillations: Theory and Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_oscillations_exp.html">Current and Future Neutrino Oscillation Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nu_mass_nature.html">Neutrino Mass and Nature</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FPII/issues/new?title=Issue%20on%20page%20%2Fnotes/review-nu_index.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notes/review-nu_index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Informe de revision — nu_index.ipynb</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brevedad-slide-friendly">1. Brevedad (slide-friendly)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estilo-telegrafico">2. Estilo telegráfico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ingles">3. Inglés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-de-slideshow">4. Metadata de slideshow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-ejercicios">5. Formato de ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recuento-global">Recuento global</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-ejecutivo">Resumen ejecutivo</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="informe-de-revision-nu-index-ipynb">
+<h1>Informe de revision — <code class="docutils literal notranslate"><span class="pre">nu_index.ipynb</span></code><a class="headerlink" href="#informe-de-revision-nu-index-ipynb" title="Permalink to this heading">#</a></h1>
+<p><em>Fecha: 2026-04-20 · 26 celdas · ruta: <code class="docutils literal notranslate"><span class="pre">USC-FPII/nu_index.ipynb</span></code></em></p>
+<hr class="docutils" />
+<section id="brevedad-slide-friendly">
+<h2>1. Brevedad (slide-friendly)<a class="headerlink" href="#brevedad-slide-friendly" title="Permalink to this heading">#</a></h2>
+<p><strong>Celdas afectadas: 5</strong></p>
+<ul class="simple">
+<li><p><strong>Cell #11</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): 21 líneas renderizadas. Combina la tabla de doblets leptónicos, los números cuánticos del neutrino SM y la ecuación de masa. <strong>Alto</strong> — muy probable desbordamiento de pantalla en RISE.</p>
+<ul>
+<li><p>Sugerencia: partir en dos celdas: (a) doblets + quantum numbers, (b) ausencia de <span class="math notranslate nohighlight">\(\nu_R\)</span> + término de masa.</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #15</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): 3 bullets de 2–3 líneas cada uno sobre PMNS, masa absoluta y Dirac/Majorana. 16–18 líneas renderizadas. <strong>Medio</strong> — riesgo de overflow en slides con fuente estándar.</p>
+<ul>
+<li><p>Sugerencia: cada bullet → una celda <code class="docutils literal notranslate"><span class="pre">fragment</span></code>, o comprimir a frases más cortas.</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #21</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): diagrama ASCII de 22 líneas (incluyendo el bloque de código). <strong>Medio</strong> — el diagrama es ancho y alto a la vez; puede no caber verticalmente.</p>
+<ul>
+<li><p>Sugerencia: cambiar a <code class="docutils literal notranslate"><span class="pre">subslide</span></code>, reducir anchura del ASCII o usar una imagen.</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #24</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): 11 líneas para 5 conferencias. Cada entrada es una frase completa con ciudad, país, fechas. <strong>Bajo</strong> — justo en el límite.</p>
+<ul>
+<li><p>Sugerencia: convertir a tabla de 3 columnas (Conferencia | Lugar | Año).</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #8</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): 13 líneas. Último párrafo en prosa (línea final sobre CKM/PMNS) añade una línea no estructurada al final de un bloque de bullets. <strong>Bajo</strong> — no desborda pero contamina el estilo.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="estilo-telegrafico">
+<h2>2. Estilo telegráfico<a class="headerlink" href="#estilo-telegrafico" title="Permalink to this heading">#</a></h2>
+<p><strong>Celdas afectadas: 7</strong></p>
+<ul class="simple">
+<li><p><strong>Cell #3</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): <code class="docutils literal notranslate"><span class="pre">slide_type=slide</span></code>. Dos frases de prosa continua sin bullets ni bold labels.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">These</span> <span class="pre">lectures</span> <span class="pre">are</span> <span class="pre">about</span> <span class="pre">some</span> <span class="pre">selected</span> <span class="pre">topics…</span></code> → <strong>Alto</strong> para un NB de estilo telegráfico.</p></li>
+<li><p>Sugerencia: <code class="docutils literal notranslate"><span class="pre">**Topics:**</span> <span class="pre">neutrino</span> <span class="pre">in</span> <span class="pre">SM</span> <span class="pre">·</span> <span class="pre">oscillations</span> <span class="pre">·</span> <span class="pre">double-beta</span> <span class="pre">decay</span></code> (1 bullet, telegraphic).</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #6</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): bullets inconsistentes: los dos primeros empiezan con “They” (capitalizado), el tercero con “are” (minúscula). <strong>Bajo.</strong></p>
+<ul>
+<li><p>Sugerencia: <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">Unique:</span> <span class="pre">only</span> <span class="pre">fundamental</span> <span class="pre">fermion</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">be</span> <span class="pre">its</span> <span class="pre">own</span> <span class="pre">antiparticle.</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Cell #7</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): bullets de 2 líneas cada uno. El tercero y cuarto son especialmente largos:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;we</span> <span class="pre">do</span> <span class="pre">not</span> <span class="pre">know</span> <span class="pre">their</span> <span class="pre">nature:</span> <span class="pre">neutrinos</span> <span class="pre">are</span> <span class="pre">the</span> <span class="pre">only</span> <span class="pre">fundamental</span> <span class="pre">fermions</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">be</span> <span class="pre">their</span> <span class="pre">own</span> <span class="pre">antiparticle.</span> <span class="pre">They</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">purely</span> <span class="pre">neutral!</span> <span class="pre">Neutrinos</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">Majorana</span> <span class="pre">fermions.&quot;</span></code> → 3 frases en un solo bullet. <strong>Medio.</strong></p></li>
+<li><p>Sugerencia: separar en 2 bullets o comprimir a <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">Unknown</span> <span class="pre">nature:</span> <span class="pre">could</span> <span class="pre">be</span> <span class="pre">Majorana</span> <span class="pre">(purely</span> <span class="pre">neutral)</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #8</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): párrafo final de prosa: <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">CKM</span> <span class="pre">and</span> <span class="pre">PMNS</span> <span class="pre">matrices</span> <span class="pre">are</span> <span class="pre">both</span> <span class="pre">rooted</span> <span class="pre">in</span> <span class="pre">Higgs</span> <span class="pre">physics:</span> <span class="pre">they</span> <span class="pre">arise</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">Yukawa</span> <span class="pre">couplings</span> <span class="pre">of</span> <span class="pre">quarks</span> <span class="pre">and</span> <span class="pre">leptons</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">Higgs</span> <span class="pre">field</span> <span class="pre">across</span> <span class="pre">three</span> <span class="pre">generations.&quot;</span></code> — 2 líneas continuas sin bullet. <strong>Medio.</strong></p>
+<ul>
+<li><p>Sugerencia: eliminar o convertir en nota (<code class="docutils literal notranslate"><span class="pre">&lt;!--</span> <span class="pre">--&gt;</span></code> o celda <code class="docutils literal notranslate"><span class="pre">notes</span></code>).</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #15</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): tres bullets de 2–3 líneas, sin bold labels. Tendencia a prosa larga. <strong>Medio.</strong></p>
+<ul>
+<li><p>Sugerencia: añadir bold labels al inicio de cada bullet, e.g. <code class="docutils literal notranslate"><span class="pre">**PMNS</span> <span class="pre">matrix:**</span></code>, <code class="docutils literal notranslate"><span class="pre">**Absolute</span> <span class="pre">mass:**</span></code>, <code class="docutils literal notranslate"><span class="pre">**Dirac</span> <span class="pre">vs</span> <span class="pre">Majorana:**</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #16</strong> (md, <code class="docutils literal notranslate"><span class="pre">subslide</span></code>): caption debajo de la imagen: <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">vastly</span> <span class="pre">different</span> <span class="pre">scale</span> <span class="pre">of</span> <span class="pre">neutrino</span> <span class="pre">masses</span> <span class="pre">compared</span> <span class="pre">with</span> <span class="pre">other</span> <span class="pre">fermions</span> <span class="pre">may</span> <span class="pre">be</span> <span class="pre">an</span> <span class="pre">indication</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">energy</span> <span class="pre">scale.&quot;</span></code> — frase de prosa tras un figura. <strong>Bajo.</strong></p>
+<ul>
+<li><p>Sugerencia: convertir en bullet italicizado o eliminar (la figura habla por sí sola).</p></li>
+</ul>
+</li>
+<li><p><strong>Cell #17</strong> (md, <code class="docutils literal notranslate"><span class="pre">fragment</span></code>): empieza con <code class="docutils literal notranslate"><span class="pre">&quot;But</span> <span class="pre">the</span> <span class="pre">mass</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">neutrino,</span> <span class="pre">the</span> <span class="pre">flavour</span> <span class="pre">structure</span> <span class="pre">and</span> <span class="pre">their</span> <span class="pre">coupling</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">Higgs,</span> <span class="pre">raise</span> <span class="pre">further</span> <span class="pre">questions:&quot;</span></code> — conector de prosa largo antes de los bullets. <strong>Medio.</strong></p>
+<ul>
+<li><p>Sugerencia: reemplazar por bold label: <code class="docutils literal notranslate"><span class="pre">**Further</span> <span class="pre">open</span> <span class="pre">questions:**</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="ingles">
+<h2>3. Inglés<a class="headerlink" href="#ingles" title="Permalink to this heading">#</a></h2>
+<p><strong>Celdas afectadas: 3</strong></p>
+<ul class="simple">
+<li><p><strong>Cell #6</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): inconsistencia de capitalización en lista.</p></li>
+<li><p><strong>Cell #7</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): bullets sin capitalización consistente.</p></li>
+<li><p><strong>Cell #17</strong> (md, <code class="docutils literal notranslate"><span class="pre">fragment</span></code>): British English (<code class="docutils literal notranslate"><span class="pre">flavour</span></code>) coherente, pero introductoria larga. <strong>Bajo.</strong></p></li>
+</ul>
+<p>No errores de terminología técnica graves.</p>
+</section>
+<hr class="docutils" />
+<section id="metadata-de-slideshow">
+<h2>4. Metadata de slideshow<a class="headerlink" href="#metadata-de-slideshow" title="Permalink to this heading">#</a></h2>
+<p><strong>Estado inicial:</strong></p>
+<ul class="simple">
+<li><p>26 celdas totales</p></li>
+<li><p>24 celdas con <code class="docutils literal notranslate"><span class="pre">slide_type</span></code> definido y no vacío</p></li>
+<li><p>2 celdas con <code class="docutils literal notranslate"><span class="pre">slide_type:</span> <span class="pre">&quot;&quot;</span></code> (vacío): Cell #0 y Cell #25</p></li>
+</ul>
+<p><strong>Auto-fix requerido (no aplicado — permisos denegados):</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Celda</p></th>
+<th class="head"><p>Tipo</p></th>
+<th class="head"><p>slide_type actual</p></th>
+<th class="head"><p>Valor inferido</p></th>
+<th class="head"><p>Regla</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>#0</p></td>
+<td><p>code</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">skip</span></code></p></td>
+<td><p>celda de setup (<code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">orbit_nb</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>#25</p></td>
+<td><p>code</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">skip</span></code></p></td>
+<td><p>celda vacía al final</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Celdas a revisar manualmente:</strong></p>
+<ul class="simple">
+<li><p><strong>Cell #13</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): considerar <code class="docutils literal notranslate"><span class="pre">fragment</span></code>.</p></li>
+<li><p><strong>Cell #18</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): 1 línea, considerar <code class="docutils literal notranslate"><span class="pre">fragment</span></code>.</p></li>
+<li><p><strong>Cell #21</strong> (md, <code class="docutils literal notranslate"><span class="pre">slide</span></code>): <code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Conceptual</span> <span class="pre">map</span></code>, considerar <code class="docutils literal notranslate"><span class="pre">subslide</span></code>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="formato-de-ejercicios">
+<h2>5. Formato de ejercicios<a class="headerlink" href="#formato-de-ejercicios" title="Permalink to this heading">#</a></h2>
+<p><strong>No se detectaron ejercicios.</strong> <code class="docutils literal notranslate"><span class="pre">nu_index</span></code> es índice/introducción.</p>
+</section>
+<hr class="docutils" />
+<section id="recuento-global">
+<h2>Recuento global<a class="headerlink" href="#recuento-global" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Prioridad</p></th>
+<th class="head"><p>N issues</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Alto</strong></p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Medio</strong></p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Bajo</strong></p></td>
+<td><p>10</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Total: 26 celdas · 2 issues altos · 6 medios · 10 bajos</strong></p>
+</section>
+<hr class="docutils" />
+<section id="resumen-ejecutivo">
+<h2>Resumen ejecutivo<a class="headerlink" href="#resumen-ejecutivo" title="Permalink to this heading">#</a></h2>
+<p><strong>Modificaciones pendientes de aplicación manual:</strong></p>
+<ol class="arabic simple">
+<li><p>Cell #0 (<code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">orbit_nb</span></code>): <code class="docutils literal notranslate"><span class="pre">&quot;slide_type&quot;:</span> <span class="pre">&quot;&quot;</span></code> → <code class="docutils literal notranslate"><span class="pre">&quot;skip&quot;</span></code></p></li>
+<li><p>Cell #25 (empty code): <code class="docutils literal notranslate"><span class="pre">&quot;slide_type&quot;:</span> <span class="pre">&quot;&quot;</span></code> → <code class="docutils literal notranslate"><span class="pre">&quot;skip&quot;</span></code></p></li>
+</ol>
+<p><strong>Problemas principales:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Prioridad</p></th>
+<th class="head"><p>Celda</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Alto</p></td>
+<td><p>#3</p></td>
+<td><p>Prosa continua; reformular en bullets telegráficos</p></td>
+</tr>
+<tr class="row-odd"><td><p>Alto</p></td>
+<td><p>#11</p></td>
+<td><p>21 líneas (SM lepton content + mass term); partir en dos</p></td>
+</tr>
+<tr class="row-even"><td><p>Medio</p></td>
+<td><p>#7</p></td>
+<td><p>Bullets de 2–3 líneas; comprimir o separar en fragments</p></td>
+</tr>
+<tr class="row-odd"><td><p>Medio</p></td>
+<td><p>#8</p></td>
+<td><p>Párrafo final de prosa tras bullets; eliminar o convertir a <code class="docutils literal notranslate"><span class="pre">notes</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Medio</p></td>
+<td><p>#15</p></td>
+<td><p>Bullets prose-heavy (PMNS/Majorana); añadir bold labels</p></td>
+</tr>
+<tr class="row-odd"><td><p>Medio</p></td>
+<td><p>#17</p></td>
+<td><p>Conector <code class="docutils literal notranslate"><span class="pre">&quot;But</span> <span class="pre">the</span> <span class="pre">mass</span> <span class="pre">of…&quot;</span></code>; reemplazar por bold label</p></td>
+</tr>
+<tr class="row-even"><td><p>Bajo</p></td>
+<td><p>#6, #7</p></td>
+<td><p>Inconsistencia de capitalización en bullets</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bajo</p></td>
+<td><p>#13, #18, #21</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">slide_type</span></code> presente pero posiblemente inadecuado</p></td>
+</tr>
+<tr class="row-even"><td><p>Bajo</p></td>
+<td><p>#16</p></td>
+<td><p>Caption de figura en prosa; convertir o eliminar</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bajo</p></td>
+<td><p>#24</p></td>
+<td><p>Lista de conferencias verbosa; considerar tabla</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brevedad-slide-friendly">1. Brevedad (slide-friendly)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estilo-telegrafico">2. Estilo telegráfico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ingles">3. Inglés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-de-slideshow">4. Metadata de slideshow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-ejercicios">5. Formato de ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recuento-global">Recuento global</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-ejecutivo">Resumen ejecutivo</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By José Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright USC - J.A. Hernando - 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
