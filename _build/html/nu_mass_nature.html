@@ -428,15 +428,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roadmap">Roadmap</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-limits-on-the-neutrino-mass">1. Experimental Limits on the Neutrino Mass</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-limits-on-the-neutrino-mass">Experimental Limits on the Neutrino Mass</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrino-mass-from-oscillations-recap">Neutrino mass from oscillations: recap</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-neutrino-mass-measurements">Kinematic neutrino mass measurements</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-experiment">KATRIN experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-first-results-2019">KATRIN: first results (2019)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-combined-result-knm1knm5">KATRIN: combined result (KNM1–KNM5)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-evolution-of-results">KATRIN: evolution of results</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#future-experiments">Future experiments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-8">Project 8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cosmological-bounds-on-neutrino-mass">Cosmological bounds on neutrino mass</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cmb-bao-planck-2018">CMB + BAO: Planck 2018</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#desi-2024-baryon-acoustic-oscillations">DESI 2024: Baryon Acoustic Oscillations</a></li>
@@ -445,7 +443,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-neutrino-mass-constraints">Summary: neutrino mass constraints</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-provide-mass-to-the-neutrinos">2. How to Provide Mass to the Neutrinos</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-provide-mass-to-the-neutrinos">How to Provide Mass to the Neutrinos</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-neutrino-masses">Dirac neutrino masses</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-masses-in-the-sm">Dirac masses in the SM</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#majorana-fermions">Majorana fermions</a><ul class="nav section-nav flex-column">
@@ -464,7 +462,7 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-determine-the-nature-of-the-neutrino">3. How to Determine the Nature of the Neutrino</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-determine-the-nature-of-the-neutrino">How to Determine the Nature of the Neutrino</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signature-of-dirac-and-majorana-neutrinos">Signature of Dirac and Majorana neutrinos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-beta-decay-without-neutrinos">Double beta decay without neutrinos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-beta-2-nu-the-allowed-double-beta-decay"><span class="math notranslate nohighlight">\(\beta\beta 2\nu\)</span>: the allowed double beta decay</a></li>
@@ -652,25 +650,6 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="neutrino-mass-and-nature">
 <h1>Neutrino Mass and Nature<a class="headerlink" href="#neutrino-mass-and-nature" title="Permalink to this heading">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="o">%</span><span class="k">reload_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-
-<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Apr 20 17:01:34 2026
-</pre></div>
-</div>
-</div>
-</div>
 <p><strong>Objective:</strong></p>
 <p>Oscillations prove <span class="math notranslate nohighlight">\(m_\nu \neq 0\)</span>, but only measure <span class="math notranslate nohighlight">\(\Delta m^2\)</span>. Three questions:</p>
 <ul class="simple">
@@ -690,7 +669,7 @@ document.write(`
 </ol>
 </section>
 <section id="experimental-limits-on-the-neutrino-mass">
-<h2>1. Experimental Limits on the Neutrino Mass<a class="headerlink" href="#experimental-limits-on-the-neutrino-mass" title="Permalink to this heading">#</a></h2>
+<h2>Experimental Limits on the Neutrino Mass<a class="headerlink" href="#experimental-limits-on-the-neutrino-mass" title="Permalink to this heading">#</a></h2>
 <section id="neutrino-mass-from-oscillations-recap">
 <h3>Neutrino mass from oscillations: recap<a class="headerlink" href="#neutrino-mass-from-oscillations-recap" title="Permalink to this heading">#</a></h3>
 <p>Oscillations <span class="math notranslate nohighlight">\(\Rightarrow\)</span> mass-squared differences:</p>
@@ -891,19 +870,6 @@ Estimate the fraction of the spectrum affected for <span class="math notranslate
 <span class="math notranslate nohighlight">\(m_{\beta\beta}\)</span> from KamLAND-Zen? What are the key differences?</p></li>
 </ol>
 </section>
-<section id="future-experiments">
-<h3>Future experiments<a class="headerlink" href="#future-experiments" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="project-8">
-<h3>Project 8<a class="headerlink" href="#project-8" title="Permalink to this heading">#</a></h3>
-<p><a class="reference external" href="https://www.project8.org">Project 8</a> uses <strong>Cyclotron Radiation Emission Spectroscopy (CRES)</strong> to measure tritium <span class="math notranslate nohighlight">\(\beta\)</span>-decay with single-electron sensitivity.</p>
-<ul class="simple">
-<li><p>Demonstrated 18 eV resolution on a single electron in a magnetic trap</p></li>
-<li><p>Target: <span class="math notranslate nohighlight">\(m_{\nu_e} &lt; 40\)</span> meV with an atomic tritium source</p></li>
-<li><p>Complementary to KATRIN: different systematic uncertainties</p></li>
-<li><p>Timeline: atomic source R&amp;D ~2026; physics run &gt;2030</p></li>
-</ul>
-</section>
 <section id="cosmological-bounds-on-neutrino-mass">
 <h3>Cosmological bounds on neutrino mass<a class="headerlink" href="#cosmological-bounds-on-neutrino-mass" title="Permalink to this heading">#</a></h3>
 <p>Massive <span class="math notranslate nohighlight">\(\nu\)</span> suppress small-scale structure (free-streaming) <span class="math notranslate nohighlight">\(\Rightarrow\)</span> constraint on <span class="math notranslate nohighlight">\(\Sigma m_\nu = m_1 + m_2 + m_3\)</span>.</p>
@@ -998,7 +964,7 @@ Estimate the fraction of the spectrum affected for <span class="math notranslate
 </section>
 </section>
 <section id="how-to-provide-mass-to-the-neutrinos">
-<h2>2. How to Provide Mass to the Neutrinos<a class="headerlink" href="#how-to-provide-mass-to-the-neutrinos" title="Permalink to this heading">#</a></h2>
+<h2>How to Provide Mass to the Neutrinos<a class="headerlink" href="#how-to-provide-mass-to-the-neutrinos" title="Permalink to this heading">#</a></h2>
 <section id="dirac-neutrino-masses">
 <h3>Dirac neutrino masses<a class="headerlink" href="#dirac-neutrino-masses" title="Permalink to this heading">#</a></h3>
 <p>Dirac spinor — Dirac equation, decomposable into chiral parts:</p>
@@ -1263,7 +1229,7 @@ U_{PMNS} = U^\dagger_l \, U_\nu
 </section>
 </section>
 <section id="how-to-determine-the-nature-of-the-neutrino">
-<h2>3. How to Determine the Nature of the Neutrino<a class="headerlink" href="#how-to-determine-the-nature-of-the-neutrino" title="Permalink to this heading">#</a></h2>
+<h2>How to Determine the Nature of the Neutrino<a class="headerlink" href="#how-to-determine-the-nature-of-the-neutrino" title="Permalink to this heading">#</a></h2>
 <section id="signature-of-dirac-and-majorana-neutrinos">
 <h3>Signature of Dirac and Majorana neutrinos<a class="headerlink" href="#signature-of-dirac-and-majorana-neutrinos" title="Permalink to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -2098,7 +2064,7 @@ T^{0\nu}_{1/2} &gt; 3.8 \times 10^{26} \; \text{yr at 90\% CL}
 <td class="text-center"><p><a class="reference internal" href="_images/NEXT100_trk_ene_planes_2505.17848.png"><img alt="_images/NEXT100_trk_ene_planes_2505.17848.png" class="align-center" src="_images/NEXT100_trk_ene_planes_2505.17848.png" style="width: 300px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>NEXT100 detector</p></td>
-<td class="text-center"><p>NEXT100 traking and energy planes</p></td>
+<td class="text-center"><p>NEXT100 tracking and energy planes</p></td>
 </tr>
 </tbody>
 </table>
@@ -2604,15 +2570,13 @@ M \cdot t &amp; \text{(zero-background)} \\
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roadmap">Roadmap</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-limits-on-the-neutrino-mass">1. Experimental Limits on the Neutrino Mass</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-limits-on-the-neutrino-mass">Experimental Limits on the Neutrino Mass</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutrino-mass-from-oscillations-recap">Neutrino mass from oscillations: recap</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-neutrino-mass-measurements">Kinematic neutrino mass measurements</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-experiment">KATRIN experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-first-results-2019">KATRIN: first results (2019)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-combined-result-knm1knm5">KATRIN: combined result (KNM1–KNM5)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#katrin-evolution-of-results">KATRIN: evolution of results</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#future-experiments">Future experiments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-8">Project 8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cosmological-bounds-on-neutrino-mass">Cosmological bounds on neutrino mass</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cmb-bao-planck-2018">CMB + BAO: Planck 2018</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#desi-2024-baryon-acoustic-oscillations">DESI 2024: Baryon Acoustic Oscillations</a></li>
@@ -2621,7 +2585,7 @@ M \cdot t &amp; \text{(zero-background)} \\
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-neutrino-mass-constraints">Summary: neutrino mass constraints</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-provide-mass-to-the-neutrinos">2. How to Provide Mass to the Neutrinos</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-provide-mass-to-the-neutrinos">How to Provide Mass to the Neutrinos</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-neutrino-masses">Dirac neutrino masses</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-masses-in-the-sm">Dirac masses in the SM</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#majorana-fermions">Majorana fermions</a><ul class="nav section-nav flex-column">
@@ -2640,7 +2604,7 @@ M \cdot t &amp; \text{(zero-background)} \\
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-determine-the-nature-of-the-neutrino">3. How to Determine the Nature of the Neutrino</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-determine-the-nature-of-the-neutrino">How to Determine the Nature of the Neutrino</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signature-of-dirac-and-majorana-neutrinos">Signature of Dirac and Majorana neutrinos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-beta-decay-without-neutrinos">Double beta decay without neutrinos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-beta-2-nu-the-allowed-double-beta-decay"><span class="math notranslate nohighlight">\(\beta\beta 2\nu\)</span>: the allowed double beta decay</a></li>
